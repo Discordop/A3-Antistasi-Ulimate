@@ -25,6 +25,7 @@ A3A_hasCup = false;
 A3A_hasAegis = false;
 A3A_hasGlobMob = false;
 A3A_hasGlobMobAaf = false;
+A3A_hasIFA = false;
 
 //Aegis submods
 private _activeAegis = false;
@@ -46,10 +47,12 @@ private _activeSaf = false;
 //Actual Detection
 //IFA Detection
 if (isClass (configFile >> "CfgPatches" >> "LIB_Core")) then {
-    private _text = "IFA detected, but it is no longer supported, please remove this mod";
-    systemChat _text;
-    [1, _text, _fileName] call A3A_fnc_log;
-    ["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
+    A3A_hasIFA = true;
+    Info("IFA Detected");
+    //Error("IFA detected, but it is no longer supported, please remove this mod");
+    //["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
+
+    //This was supposed to be disabled but oh well we need ww2 to work!
 };
 
 if (isClass (configFile >> "CfgPatches" >> "vn_weapons")) then {
