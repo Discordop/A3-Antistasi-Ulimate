@@ -22,10 +22,10 @@ A3A_hasADV = false;
 A3A_hasD3S = false;
 A3A_hasRDS = false;
 A3A_hasCup = false;
+A3A_hasIFA = false;
 A3A_hasAegis = false;
 A3A_hasGlobMob = false;
 A3A_hasGlobMobAaf = false;
-A3A_hasIFA = false;
 
 //Aegis submods
 private _activeAegis = false;
@@ -46,13 +46,9 @@ private _activeSaf = false;
 
 //Actual Detection
 //IFA Detection
-if (isClass (configFile >> "CfgPatches" >> "LIB_Core")) then {
-    A3A_hasIFA = true;
-    Info("IFA Detected");
-    //Error("IFA detected, but it is no longer supported, please remove this mod");
-    //["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
-
-    //This was supposed to be disabled but oh well we need ww2 to work!
+if (isClass (configfile >> "CfgPatches" >> "LIB_core")) then {
+  A3A_hasIFA = true;
+	diag_log format ["%1: [Antistasi] | INFO | initVar | IFA Detected.",servertime];
 };
 
 if (isClass (configFile >> "CfgPatches" >> "vn_weapons")) then {
@@ -139,6 +135,7 @@ if(isClass (configFile >> "CfgFactionClasses" >> "BLU_A_F")) then {
   diag_log format ["%1: [Antistasi] | INFO | initVar | Arma 3 Aegis Detected.", servertime];
 };
 
+
 //Arma 3 Atlas detection
 if (isClass (configFile >> "CfgFactionClasses" >> "Atlas_BLU_G_F")) then {
   _activeAtlas = true;
@@ -215,6 +212,14 @@ if((_activeAfrf || _activeUsaf || _activeGref || _activeSaf) && (_activeCupUnits
 	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
 };
 
+if (A3A_hasAceMedical && isClass (configFile >> "CfgPatches" >> "LIB_core")) then {
+	private _text = "IFA is detected but also ace is loaded. Please remove ace to fix this error.";
+  systemChat _text;
+  [1, _text, _fileName] call A3A_fnc_log;
+	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
+};
+
+
 //No Mods found logging
-if (!A3A_hasRHS && !A3A_hasCup && !A3A_hasAegis) then {[2,"No Side Replacement Mods Detected.",_fileName] call A3A_fnc_log;};
+if (!A3A_hasRHS && !A3A_hasCup && !A3A_hasAegis && !A3A_IFA) then {[2,"No Side Replacement Mods Detected.",_fileName] call A3A_fnc_log;};
 if (!A3A_hasIvory && !A3A_hasTCGM && !A3A_hasADV) then {[2,"No Addon Mods Detected.",_fileName] call A3A_fnc_log;};

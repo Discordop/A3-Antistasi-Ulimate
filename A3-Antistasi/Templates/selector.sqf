@@ -70,23 +70,6 @@ A3A_Reb_template = switch(true) do {
         };
         "RHS"
     };
-    case (A3A_hasIFA): {
-        switch(true) do {
-            case (toLower worldName in arcticmaps): {
-	        Info("Using Arctic POL Template");
-                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Arctic.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
-            };
-            case (toLower worldName in temperatemaps): {
-                Info("Using Temperate POL Templates");
-                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Temperate.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
-            };
-            default {
-	        Info("Using Arid POL Templates");
-                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Arid.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
-            };
-        };
-        "IFA"
-    };
     case (A3A_hasCup): {
         switch(true) do {
             case (_terrainName in _temperateMaps);
@@ -106,6 +89,23 @@ A3A_Reb_template = switch(true) do {
             ["Templates\NewTemplates\Aegis\Aegis_Reb_CHDKZ.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
             [2, "Using Temperate CHDKZ Template", _filename] call A3A_fnc_log;
         };
+    };
+    case (A3A_hasIFA): {
+        switch(true) do {
+            case (_terrainName in tropicalMaps): {
+                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Tropical.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using IFA REB Tropical Template", _filename] call A3A_fnc_log;
+            };
+            case (_terrainName in _temperateMaps): {
+                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Temperate.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Temperate IFA REB Template", _filename] call A3A_fnc_log;
+            };
+            default {
+                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Arid.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using IFA REB Arid Templates", _filename] call A3A_fnc_log;
+            };
+        };
+        "IFA"
     };
     case (A3A_hasVN && {A3A_hasUR}): {
         ["Templates\NewTemplates\VN_UR\VN_UR_Reb_KPNLF.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
@@ -207,23 +207,6 @@ A3A_Occ_template = switch(true) do {
         };
         "RHS"
     };
-    case (A3A_hasIFA): {
-        switch(true) do {
-            case (toLower worldName in arcticmaps): {
-	        Info("Using Arctic WEH Template");
-                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Arctic.sqf", west] call A3A_fnc_compatibilityLoadFaction;
-            };
-            case (toLower worldName in temperatemaps): {
-	        Info("Using Temperate WEH Template");
-                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
-            };
-            default {
-	        Info("Using Arid WEH Template");
-                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Arid.sqf", west] call A3A_fnc_compatibilityLoadFaction;
-            };
-       };
-	     "IFA"
-    };
     case (A3A_hasCup): {
         switch(cupOccupantFaction) do {
             case (0): { //USAF
@@ -271,10 +254,27 @@ A3A_Occ_template = switch(true) do {
         };
         "CUP"
     };
-    case (A3A_hasAegis): {
+        case (A3A_hasAegis): {
         ["Templates\NewTemplates\Aegis\Aegis_AI_EUROFOR.sqf", west] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using Aegis EUROFOR Template", _filename] call A3A_fnc_log;
         "Vanilla" //intentionally, as aegis expands vanilla
+    };
+    case (A3A_hasIFA): {
+        switch(true) do {
+            case (_terrainName in tropicalMaps): {
+                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Tropical.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using SDK Template", _filename] call A3A_fnc_log;
+            };
+            case (_terrainName in _temperateMaps): {
+                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Temperate Napa Template", _filename] call A3A_fnc_log;
+            };
+            default {
+                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Arid.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using arid Napa Templates", _filename] call A3A_fnc_log;
+            };
+        };
+        "IFA"
     };
     case (A3A_hasVN && {A3A_hasUR}): {
         ["Templates\NewTemplates\VN_UR\VN_UR_MACV.sqf", west] call A3A_fnc_compatibilityLoadFaction;
@@ -345,23 +345,6 @@ A3A_Inv_template = switch(true) do{
         };
         "RHS"
     };
-        case (A3A_hasIFA): {
-        switch(true) do {
-            case (toLower worldName in arcticmaps): {
-	        Info("Using Arctic SOV Template");
-                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Arctic.sqf", east] call A3A_fnc_compatibilityLoadFaction;
-            };
-            case (toLower worldName in temperatemaps): {
-	        Info("Using Temperate SOV Template");
-                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Temperate.sqf", east] call A3A_fnc_compatibilityLoadFaction;
-            };
-            default {
-	        Info("Using Arid SOV Template");
-                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Arid.sqf", east] call A3A_fnc_compatibilityLoadFaction;
-            };
-        };
-        "IFA"
-    };
     case (A3A_hasCup): {
         switch(true) do {
             case (_terrainName in _temperateMaps);
@@ -376,10 +359,27 @@ A3A_Inv_template = switch(true) do{
         };
         "CUP"
     };
-    case (A3A_hasAegis): {
+        case (A3A_hasAegis): {
         ["Templates\NewTemplates\Aegis\Aegis_AI_AFRF.sqf", east] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using Aegis Russia Template", _filename] call A3A_fnc_log;
         "Vanilla" //intentionally, as aegis expands vanilla
+    };
+    case (A3A_hasIFA): {
+        switch(true) do {
+            case (_terrainName in tropicalMaps): {
+                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Tropical.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using SDK Template", _filename] call A3A_fnc_log;
+            };
+            case (_terrainName in _temperateMaps): {
+                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Temperate.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Temperate Napa Template", _filename] call A3A_fnc_log;
+            };
+            default {
+                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Arid.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using arid Napa Templates", _filename] call A3A_fnc_log;
+            };
+        };
+        "IFA"
     };
     case (A3A_hasVN && {A3A_hasUR}): {
         ["Templates\NewTemplates\VN_UR\VN_UR_PAVN.sqf", east] call A3A_fnc_compatibilityLoadFaction;
@@ -476,15 +476,14 @@ A3A_Civ_template = switch(true) do {
         [2, "Using RHS Civ Template", _filename] call A3A_fnc_log;
         "RHS"
     };
-        case (A3A_hasIFA): {
-        Info("Using IFA Civ Template");
-        ["Templates\NewTemplates\IFA\IFA_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
-	    "IFA"
-    };
     case (A3A_hasVN): {
         ["Templates\NewTemplates\VN\VN_CIV.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using VN CIV Template", _filename] call A3A_fnc_log;
         "VN"
+    };
+    case (A3A_hasIFA): {
+        ["Templates\NewTemplates\IFA\IFA_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using IFA CIV Template", _filename] call A3A_fnc_log
     };
     default {
         ["Templates\NewTemplates\Vanilla\Vanilla_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
@@ -526,7 +525,7 @@ if (A3A_hasRHS) then {call compileScript ["Templates\NewTemplates\RHS\RHS_Logist
 if (A3A_has3CBFactions) then {call compileScript ["Templates\NewTemplates\3CBF\3CBF_Logistics_Nodes.sqf"]};
 if (A3A_hasCup) then {call compileScript ["Templates\NewTemplates\CUP\Cup_Logistics_Nodes.sqf"];};
 if (A3A_hasAegis) then {call compileScript ["Templates\NewTemplates\Aegis\Aegis_Logistics_Nodes.sqf"];};
+if (A3A_hasIFA) then {call compileScript ["Templates\NewTemplates\IFA\IFA_Logistics_Nodes.sqf"];};
 if (A3A_hasGlobMob) then {call compileScript ["Templates\NewTemplates\GM\GM_Logistics_Nodes.sqf"];};
 if (A3A_hasVN) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\VN\VN_Logistics_Nodes.sqf"};
 if (A3A_hasUR) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\VN_UR\VN_UR_Logistics_Nodes.sqf"};
-if (A3A_hasIFA) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\IFA\IFA_Logistics_Nodes.sqf"};
