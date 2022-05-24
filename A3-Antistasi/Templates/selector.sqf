@@ -92,10 +92,7 @@ A3A_Reb_template = switch(true) do {
     };
     case (A3A_hasIFA): {
         switch(true) do {
-            case (_terrainName in tropicalMaps): {
-                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Tropical.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
-                [2, "Using IFA REB Tropical Template", _filename] call A3A_fnc_log;
-            };
+            case (_terrainName in tropicalMaps);
             case (_terrainName in _temperateMaps): {
                 ["Templates\NewTemplates\IFA\IFA_Reb_POL_Temperate.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using Temperate IFA REB Template", _filename] call A3A_fnc_log;
@@ -261,10 +258,7 @@ A3A_Occ_template = switch(true) do {
     };
     case (A3A_hasIFA): {
         switch(true) do {
-            case (_terrainName in tropicalMaps): {
-                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Tropical.sqf", west] call A3A_fnc_compatibilityLoadFaction;
-                [2, "Using SDK Template", _filename] call A3A_fnc_log;
-            };
+            case (_terrainName in tropicalMaps);
             case (_terrainName in _temperateMaps): {
                 ["Templates\NewTemplates\IFA\IFA_AI_WEH_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using Temperate Napa Template", _filename] call A3A_fnc_log;
@@ -366,17 +360,14 @@ A3A_Inv_template = switch(true) do{
     };
     case (A3A_hasIFA): {
         switch(true) do {
-            case (_terrainName in tropicalMaps): {
-                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Tropical.sqf", east] call A3A_fnc_compatibilityLoadFaction;
-                [2, "Using SDK Template", _filename] call A3A_fnc_log;
-            };
+            case (_terrainName in tropicalMaps);
             case (_terrainName in _temperateMaps): {
                 ["Templates\NewTemplates\IFA\IFA_AI_SOV_Temperate.sqf", east] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using Temperate Napa Template", _filename] call A3A_fnc_log;
             };
             default {
-                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Arid.sqf", east] call A3A_fnc_compatibilityLoadFaction;
-                [2, "Using arid Napa Templates", _filename] call A3A_fnc_log;
+                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Temperate.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Temperate WW2 Soviet Templates", _filename] call A3A_fnc_log;
             };
         };
         "IFA"
