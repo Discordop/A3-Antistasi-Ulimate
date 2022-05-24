@@ -3,8 +3,8 @@
 //////////////////////////
 // this is a plus template
 
-["name", "Wehrmacht"] call _fnc_saveToTemplate;
-["spawnMarkerName", "Wehrmacht Reinforcements"] call _fnc_saveToTemplate;
+["name", "Afrika Korps"] call _fnc_saveToTemplate;
+["spawnMarkerName", "Afrika Korps Reinforcements"] call _fnc_saveToTemplate;
 
 ["flag", "LIB_FlagCarrier_GER"] call _fnc_saveToTemplate;
 ["flagTexture", "ww2\core_t\if_decals_t\german\flag_ger_co.paa"] call _fnc_saveToTemplate;
@@ -88,34 +88,34 @@
 ["surrenderCrate", "LIB_AmmoCrate_Arty_SU"] call _fnc_saveToTemplate; 
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; 
 
-["vehiclesBasic", ["LIB_Kfz1"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["LIB_Kfz1","LIB_Kfz1_camo","LIB_Kfz1_Hood"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed",["LIB_Kfz1_MG42","LIB_Kfz1_MG42_camo"]] call _fnc_saveToTemplate;
-["vehiclesTrucks", ["LIB_OpelBlitz_Open_Y_Camo","LIB_OpelBlitz_Tent_Y_Camo","LIB_SdKfz_7"]] call _fnc_saveToTemplate;
-["vehiclesCargoTrucks", ["LIB_OpelBlitz_Open_Y_Camo","LIB_SdKfz_7"]] call _fnc_saveToTemplate;
+["vehiclesBasic", ["LIB_DAK_Kfz1"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["LIB_DAK_Kfz1","LIB_DAK_Kfz1_Hood"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed",["LIB_DAK_Kfz1_MG42"]] call _fnc_saveToTemplate;
+["vehiclesTrucks", ["LIB_DAK_OpelBlitz_Open","LIB_DAK_OpelBlitz_Tent","LIB_DAK_SdKfz_7"]] call _fnc_saveToTemplate;
+["vehiclesCargoTrucks", ["LIB_DAK_OpelBlitz_Open","LIB_DAK_SdKfz_7"]] call _fnc_saveToTemplate;
 ["vehiclesAmmoTrucks", ["LIB_OpelBlitz_Ammo"]] call _fnc_saveToTemplate;
 ["vehiclesRepairTrucks", ["LIB_OpelBlitz_Parm"]] call _fnc_saveToTemplate;
 ["vehiclesFuelTrucks", ["LIB_OpelBlitz_Fuel"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["LIB_OpelBlitz_Ambulance"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["LIB_SdKfz251_FFV","LIB_SdKfz251"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["LIB_PzKpfwIV_H","LIB_PzKpfwIV_H","LIB_PzKpfwV","LIB_PzKpfwVI_E","LIB_FlakPanzerIV_Wirbelwind"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["LIB_SdKfz_7_AA"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["LIB_DAK_SdKfz251_FFV","LIB_DAK_SdKfz251"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["LIB_DAK_PzKpfwIV_H","LIB_DAK_PzKpfwIV_H","LIB_DAK_PzKpfwVI_E","LIB_DAK_FlakPanzerIV_Wirbelwind"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["LIB_DAK_SdKfz_7_AA"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", ["not_supported"]] call _fnc_saveToTemplate;			
 ["vehiclesIFVs", ["not_supported"]] call _fnc_saveToTemplate;				
 
-["vehiclesSam", ["LIB_FlaK_36_AA","LIB_FlaK_36"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
+["vehiclesSam", ["LIB_DAK_FlaK_36_AA","LIB_DAK_FlaK_36"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
 ["vehiclesTransportBoats", ["LIB_LCA"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["LIB_UK_LCI"]] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", ["not_supported"]] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["LIB_Ju87"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["LIB_FW190F8"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["LIB_DAK_Ju87"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["LIB_DAK_FW190F8"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["LIB_C47_RAF_snafu"]] call _fnc_saveToTemplate;
 
-["vehiclesHelisLight", ["LIB_OpelBlitz_Open_Y_Camo"]] call _fnc_saveToTemplate;
-["vehiclesHelisTransport", ["LIB_OpelBlitz_Tent_Y_Camo","LIB_SdKfz251","LIB_SdKfz251_FFV"]] call _fnc_saveToTemplate;
-["vehiclesHelisAttack", ["LIB_PzKpfwVI_E"]] call _fnc_saveToTemplate;
+["vehiclesHelisLight", ["LIB_DAK_OpelBlitz_Open"]] call _fnc_saveToTemplate;
+["vehiclesHelisTransport", ["LIB_DAK_OpelBlitz_Tent","LIB_DAK_SdKfz251","LIB_DAK_SdKfz251_FFV"]] call _fnc_saveToTemplate;
+["vehiclesHelisAttack", ["LIB_DAK_PzKpfwVI_E"]] call _fnc_saveToTemplate;
 
 ["vehiclesArtillery", [["LIB_leFH18", ["LIB_20x_Shell_105L28_Gr39HlC_HE","LIB_20x_Shell_105L28_Gr38_HE"]]]] call _fnc_saveToTemplate;
 
@@ -123,21 +123,21 @@
 ["uavsPortable", ["not_supported"]] call _fnc_saveToTemplate;
 
 //Config special vehicles
-["vehiclesMilitiaLightArmed", ["LIB_Kfz1_MG42","LIB_Kfz1_MG42_camo"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTrucks", ["LIB_OpelBlitz_Open_Y_Camo","LIB_OpelBlitz_Tent_Y_Camo"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["LIB_Kfz1","LIB_Kfz1_camo","LIB_Kfz1_Hood"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaLightArmed", ["LIB_DAK_Kfz1_MG42","LIB_DAK_Kfz1_MG42_camo"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTrucks", ["LIB_DAK_OpelBlitz_Open","LIB_DAK_OpelBlitz_Tent"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["LIB_DAK_Kfz1","LIB_DAK_Kfz1_Hood"]] call _fnc_saveToTemplate;
 
-["vehiclesMilitiaApcs", ["LIB_SdKfz251", "LIB_SdKfz_7"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTanks", ["LIB_T34_76_captured"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaApcs", ["LIB_DAK_SdKfz251", "LIB_DAK_SdKfz_7"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTanks", ["LIB_Churchill_Mk7_desert"]] call _fnc_saveToTemplate;
 
-["vehiclesPolice", ["LIB_Kfz1"]] call _fnc_saveToTemplate;
+["vehiclesPolice", ["LIB_DAK_Kfz1"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["I_G_HMG_02_high_F"]] call _fnc_saveToTemplate;
-["staticAT", ["LIB_Pak40"]] call _fnc_saveToTemplate;
+["staticAT", ["LIB_DAK_Pak40"]] call _fnc_saveToTemplate;
 ["staticAA", ["LIB_FlaK_38"]] call _fnc_saveToTemplate;
 ["staticMortars", ["LIB_GrWr34"]] call _fnc_saveToTemplate;
 
-["staticHowitzers", ["LIB_Nebelwerfer41_Camo"]] call _fnc_saveToTemplate;
+["staticHowitzers", ["LIB_Nebelwerfer41_Gelbbraun"]] call _fnc_saveToTemplate;
 
 ["mortarMagazineHE", "LIB_8Rnd_81mmHE_GRWR34"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "LIB_81mm_GRWR34_SmokeShell"] call _fnc_saveToTemplate;
