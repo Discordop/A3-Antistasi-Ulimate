@@ -476,14 +476,14 @@ A3A_Civ_template = switch(true) do {
         [2, "Using RHS Civ Template", _filename] call A3A_fnc_log;
         "RHS"
     };
+    case (A3A_hasIFA): {
+        ["Templates\NewTemplates\IFA\IFA_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using IFA CIV Template", _filename] call A3A_fnc_log
+    };
     case (A3A_hasVN): {
         ["Templates\NewTemplates\VN\VN_CIV.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using VN CIV Template", _filename] call A3A_fnc_log;
         "VN"
-    };
-    case (A3A_hasIFA): {
-        ["Templates\NewTemplates\IFA\IFA_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
-        [2, "Using IFA CIV Template", _filename] call A3A_fnc_log
     };
     default {
         ["Templates\NewTemplates\Vanilla\Vanilla_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;

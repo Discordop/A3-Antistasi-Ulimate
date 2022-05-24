@@ -48,7 +48,8 @@ private _activeSaf = false;
 //IFA Detection
 if (isClass (configfile >> "CfgPatches" >> "LIB_core")) then {
   A3A_hasIFA = true;
-	diag_log format ["%1: [Antistasi] | INFO | initVar | IFA Detected.",servertime];
+  A3A_hasVN = true;
+  [2,"Iront Front Detected.",_fileName] call A3A_fnc_log;
 };
 
 if (isClass (configFile >> "CfgPatches" >> "vn_weapons")) then {
@@ -219,7 +220,13 @@ if (A3A_hasAceMedical && isClass (configFile >> "CfgPatches" >> "LIB_core")) the
 	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
 };
 
+if (isClass (configFile >> "CfgPatches" >> "vn_weapons") && isClass (configFile >> "CfgPatches" >> "LIB_core")) then {
+	private _text = "IFA is loaded but also SOGPF is loaded. Please unload SOGPF to fix this error.";
+  systemChat _text;
+  [1, _text, _fileName] call A3A_fnc_log;
+	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
+};
 
 //No Mods found logging
-if (!A3A_hasRHS && !A3A_hasCup && !A3A_hasAegis && !A3A_IFA) then {[2,"No Side Replacement Mods Detected.",_fileName] call A3A_fnc_log;};
+if (!A3A_hasRHS && !A3A_hasCup && !A3A_hasAegis && !A3A_hasIFA) then {[2,"No Side Replacement Mods Detected.",_fileName] call A3A_fnc_log;};
 if (!A3A_hasIvory && !A3A_hasTCGM && !A3A_hasADV) then {[2,"No Addon Mods Detected.",_fileName] call A3A_fnc_log;};
