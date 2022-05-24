@@ -128,7 +128,7 @@
 ["vehiclesMilitiaCars", ["LIB_DAK_Kfz1","LIB_DAK_Kfz1_Hood"]] call _fnc_saveToTemplate;
 
 ["vehiclesMilitiaApcs", ["LIB_DAK_SdKfz251", "LIB_DAK_SdKfz_7"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTanks", ["LIB_Churchill_Mk7_desert"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTanks", ["LIB_T34_76_captured"]] call _fnc_saveToTemplate;
 
 ["vehiclesPolice", ["LIB_DAK_Kfz1"]] call _fnc_saveToTemplate;
 
