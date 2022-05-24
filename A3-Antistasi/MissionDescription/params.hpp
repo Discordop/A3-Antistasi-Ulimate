@@ -253,7 +253,7 @@ class Params
      {
           title="Select Occupant Faction";
 		values[]={9999, 0, 1, 2, 3, 4};
-		texts[]={"Load From Save (Default - US Army)", "US Army", "Chernarus Defence Forces (CDF)", "Horizon Islands Legion (HIL)", "Takistani Army (TKA)", "US Army Cold War (Enables Cold War Mode, Red Army as Invaders faction)"};
+		texts[]={"Load From Save (Default - US Army)", "US Army", "Chernarus Defence Forces (CDF)", "Horizon Islands Legion (HIL)", "Takistani Army (TKA)", "Cold War Mode (US Army Cold War and Red Army)"};
 		default = 9999;
      };
 

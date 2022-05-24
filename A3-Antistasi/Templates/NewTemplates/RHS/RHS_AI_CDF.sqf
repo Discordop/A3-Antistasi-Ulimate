@@ -105,7 +105,7 @@
 ["vehiclesSam", ["B_Radar_System_01_F","B_SAM_System_03_F"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
 ["vehiclesTransportBoats", ["B_Boat_Transport_01_F"]] call _fnc_saveToTemplate; 	
-["vehiclesGunBoats", ["rhsusf_mkvsoc"]] call _fnc_saveToTemplate; 			
+["vehiclesGunBoats", ["B_Boat_Armed_01_minigun_F"]] call _fnc_saveToTemplate; 			
 ["vehiclesAmphibious", ["rhsgref_cdf_b_btr80"]] call _fnc_saveToTemplate; 		
 
 ["vehiclesPlanesCAS", ["rhs_l159_cdf_b_CDF","rhsgref_cdf_b_su25", "rhs_l39_cdf_b_cdf"]] call _fnc_saveToTemplate; 		

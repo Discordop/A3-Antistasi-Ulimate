@@ -71,6 +71,7 @@ private _destroyedPositions = destroyedBuildings apply { getPosATL _x };
 ["areInvadersDefeated", areInvadersDefeated] call A3A_fnc_setStatVariable;
 ["traderPosition", traderPosition] call A3A_fnc_setStatVariable;
 ["rebelLoadouts", rebelLoadouts] call A3A_fnc_setStatVariable;
+["randomizeRebelLoadoutUniforms", randomizeRebelLoadoutUniforms] call A3A_fnc_setStatVariable;
 
 //Save aggression values
 ["aggressionOccupants", [aggressionLevelOccupants, aggressionStackOccupants]] call A3A_fnc_setStatVariable;

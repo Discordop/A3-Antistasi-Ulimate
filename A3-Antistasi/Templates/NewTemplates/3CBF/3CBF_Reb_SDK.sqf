@@ -125,6 +125,13 @@ private _initialRebelEquipment = [
 "rhs_weap_m3a1", "rhs_weap_m38","UK3CB_Sten",
 "rhs_weap_type94_new","rhs_weap_tt33","rhs_weap_Izh18","rhs_weap_kar98k", "UK3CB_Enfield",
 "rhs_weap_panzerfaust60",
+"UK3CB_CZ550", "UK3CB_CZ550_5rnd_Mag", "UK3CB_CZ550_5rnd_Mag_R", "UK3CB_CZ550_5rnd_Mag_RT", 
+"UK3CB_CZ550_5rnd_Mag_Y", "UK3CB_CZ550_5rnd_Mag_YT", "UK3CB_CZ550_5rnd_Mag_G", 
+"UK3CB_CZ550_5rnd_Mag_GT", "UK3CB_CZ550_5rnd_Mag_W", "UK3CB_CZ550_5rnd_Mag_WT",
+"UK3CB_M1903A1",
+"UK3CB_M1903A1_3006_5rnd_Magazine","UK3CB_M1903A1_3006_5rnd_Magazine_R","UK3CB_M1903A1_3006_5rnd_Magazine_RT",
+"UK3CB_M1903A1_3006_5rnd_Magazine_Y","UK3CB_M1903A1_3006_5rnd_Magazine_YT","UK3CB_M1903A1_3006_5rnd_Magazine_G",
+"UK3CB_M1903A1_3006_5rnd_Magazine_GT","UK3CB_M1903A1_3006_5rnd_Magazine_W","UK3CB_M1903A1_3006_5rnd_Magazine_WT",
 "UK3CB_Sten_34Rnd_Magazine","UK3CB_Sten_34Rnd_Magazine_RT", "UK3CB_Enfield_10rnd_Mag", "UK3CB_Enfield_10rnd_Mag_RT",
 "rhs_mag_6x8mm_mhp","rhs_mag_762x25_8","rhsgref_1Rnd_00Buck","rhsgref_1Rnd_Slug","rhsgref_5Rnd_792x57_kar98k",
 "rhsgref_mag_rkg3em",
@@ -134,7 +141,8 @@ private _initialRebelEquipment = [
 "rhs_grenade_nbhgr39_mag", "rhs_grenade_sthgr24_mag", "rhs_grenade_sthgr43_mag",
 "rhs_grenade_khattabka_vog17_mag", "rhs_grenade_khattabka_vog25_mag",
 "rhs_vest_pistol_holster","rhs_vest_commander","rhs_6sh46",
-"rhs_acc_2dpZenit","Binocular","Laserbatteries"];
+"rhs_acc_2dpZenit","Binocular","Laserbatteries"
+];
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment pushBack "tf_anprc155"};
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","TFAR_anprc154"]};

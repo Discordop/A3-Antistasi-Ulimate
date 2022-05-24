@@ -25,7 +25,7 @@ private _specialVarLoads = [
 	"idleassets","chopForest","weather","killZones","jna_dataList","controlsSDK","mrkCSAT","nextTick",
 	"bombRuns","wurzelGarrison","aggressionOccupants", "aggressionInvaders", "attackCountdownInvaders", "testingTimerIsActive",
 	"traderDiscount", "supportPoints", "isTraderQuestCompleted", "traderPosition", "areOccupantsDefeated", "areInvadersDefeated",
-	"rebelLoadouts",
+	"rebelLoadouts", "randomizeRebelLoadoutUniforms", 
 	"version", "HR_Garage"
 ];
 
@@ -454,6 +454,11 @@ if (_varName in _specialVarLoads) then {
 		};
 		traderDiscount = _varValue;
 		publicVariable "traderDiscount";
+	};
+
+	if(_varName == 'randomizeRebelLoadoutUniforms') then {
+		randomizeRebelLoadoutUniforms = _varValue;
+		publicVariable "randomizeRebelLoadoutUniforms";
 	};
 
     if(_varname == 'traderPosition') then {

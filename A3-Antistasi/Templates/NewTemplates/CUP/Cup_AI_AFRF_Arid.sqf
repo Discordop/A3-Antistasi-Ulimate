@@ -270,6 +270,8 @@ _sfLoadoutData setVariable ["AALaunchers", [
 
 //SF Weapons
 _sfLoadoutData setVariable ["rifles", [
+["CUP_arifle_AK15_tan", "CUP_muzzle_Bizon", "", "CUP_optic_1P87_RIS_desert", ["CUP_30Rnd_762x39_AK15_Tan_M", "CUP_30Rnd_762x39_AK15_Tan_M", "CUP_30Rnd_762x39_AKM_bakelite_desert_M"], [], ""],
+["CUP_arifle_AK15_VG_arid", "CUP_muzzle_Bizon", "", "CUP_optic_1P87_RIS_desert", ["CUP_30Rnd_762x39_AK15_Tan_M", "CUP_30Rnd_762x39_AK15_Tan_M", "CUP_30Rnd_762x39_AKM_bakelite_desert_M"], [], ""],
 ["CUP_arifle_AKM", "CUP_muzzle_Bizon", "", "CUP_optic_1p63", ["CUP_30Rnd_762x39_AK47_M", "CUP_30Rnd_762x39_AK47_M", "CUP_30Rnd_TE1_Green_Tracer_762x39_AK47_M"], [], ""],
 ["CUP_arifle_AKM", "CUP_muzzle_Bizon", "", "CUP_optic_ekp_8_02", ["CUP_30Rnd_762x39_AK47_M", "CUP_30Rnd_762x39_AK47_M", "CUP_30Rnd_TE1_Green_Tracer_762x39_AK47_M"], [], ""],
 ["CUP_arifle_AKM", "CUP_muzzle_Bizon", "", "CUP_optic_PechenegScope", ["CUP_30Rnd_762x39_AK47_M", "CUP_30Rnd_762x39_AK47_M", "CUP_30Rnd_TE1_Green_Tracer_762x39_AK47_M"], [], ""]
@@ -280,6 +282,8 @@ _sfLoadoutData setVariable ["carbines", [
 ["CUP_arifle_AKMS", "CUP_muzzle_Bizon", "", "CUP_optic_PechenegScope", ["CUP_30Rnd_762x39_AK47_M", "CUP_30Rnd_762x39_AK47_M", "CUP_30Rnd_TE1_Green_Tracer_762x39_AK47_M"], [], ""]
 ]]; 					
 _sfLoadoutData setVariable ["grenadeLaunchers", [
+["CUP_arifle_AK15_GP34_tan", "CUP_muzzle_Bizon", "", "CUP_optic_1P87_RIS_desert", ["CUP_30Rnd_762x39_AK15_Tan_M", "CUP_30Rnd_762x39_AK15_Tan_M", "CUP_30Rnd_762x39_AKM_bakelite_desert_M"], ["CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_SMOKE_GP25_M"], ""],
+["CUP_arifle_AK15_GP34_arid", "CUP_muzzle_Bizon", "", "CUP_optic_1P87_RIS_desert", ["CUP_30Rnd_762x39_AK15_Tan_M", "CUP_30Rnd_762x39_AK15_Tan_M", "CUP_30Rnd_762x39_AKM_bakelite_desert_M"], ["CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_SMOKE_GP25_M"], ""],
 ["CUP_arifle_AKMS_GL", "CUP_muzzle_Bizon", "", "CUP_optic_1p63", ["CUP_30Rnd_762x39_AK47_M", "CUP_30Rnd_762x39_AK47_M", "CUP_30Rnd_TE1_Green_Tracer_762x39_AK47_M"], ["CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_SMOKE_GP25_M"], ""],
 ["CUP_arifle_AKMS_GL", "CUP_muzzle_Bizon", "", "CUP_optic_ekp_8_02", ["CUP_30Rnd_762x39_AK47_M", "CUP_30Rnd_762x39_AK47_M", "CUP_30Rnd_TE1_Green_Tracer_762x39_AK47_M"], ["CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_SMOKE_GP25_M"], ""],
 ["CUP_arifle_AKMS_GL", "CUP_muzzle_Bizon", "", "CUP_optic_PechenegScope", ["CUP_30Rnd_762x39_AK47_M", "CUP_30Rnd_762x39_AK47_M", "CUP_30Rnd_TE1_Green_Tracer_762x39_AK47_M"], ["CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_SMOKE_GP25_M"], ""],
@@ -447,6 +451,9 @@ _eliteLoadoutData setVariable ["AALaunchers", [
 ]];
 
 _eliteLoadoutData setVariable ["rifles", [
+["CUP_arifle_AK12_black", "", "acc_pointer_IR", "CUP_optic_1P87_RIS", ["CUP_30Rnd_545x39_AK12_M", "CUP_30Rnd_545x39_AK12_M", "CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M"], [], ""],
+["CUP_arifle_AK12_bicolor", "", "acc_pointer_IR", "CUP_optic_1P87_RIS", ["CUP_30Rnd_545x39_AK12_M", "CUP_30Rnd_545x39_AK12_M", "CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M"], [], ""],
+["CUP_arifle_AK107", "", "acc_pointer_IR", "CUP_optic_PSO_1_AK", ["CUP_30Rnd_545x39_AK74M_M", "CUP_30Rnd_545x39_AK74M_M", "CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M"], [], ""],
 ["CUP_arifle_AK107", "", "acc_pointer_IR", "", ["CUP_30Rnd_545x39_AK74M_M", "CUP_30Rnd_545x39_AK74M_M", "CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M"], [], ""],
 ["CUP_arifle_AK107", "", "acc_pointer_IR", "CUP_optic_PSO_1_AK", ["CUP_30Rnd_545x39_AK74M_M", "CUP_30Rnd_545x39_AK74M_M", "CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M"], [], ""],
 ["CUP_arifle_AK107_top_rail", "", "acc_pointer_IR", "CUP_optic_1P87_RIS", ["CUP_30Rnd_545x39_AK74M_M", "CUP_30Rnd_545x39_AK74M_M", "CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M"], [], ""],
@@ -463,6 +470,8 @@ _eliteLoadoutData setVariable ["carbines", [
 ["CUP_arifle_AK105_railed", "", "acc_pointer_IR", "optic_Arco_AK_blk_F", ["CUP_30Rnd_545x39_AK74M_M", "CUP_30Rnd_545x39_AK74M_M", "CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M"], [], "bipod_02_F_blk"]
 ]]; 					
 _eliteLoadoutData setVariable ["grenadeLaunchers", [
+["CUP_arifle_AK12_GP34_black", "", "acc_pointer_IR", "CUP_optic_1P87_RIS", ["CUP_30Rnd_545x39_AK12_M", "CUP_30Rnd_545x39_AK12_M", "CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M"], ["CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_SMOKE_GP25_M", "CUP_IlumFlareWhite_GP25_M"], ""],
+["CUP_arifle_AK12_GP34_bicolor", "", "acc_pointer_IR", "CUP_optic_1P87_RIS", ["CUP_30Rnd_545x39_AK12_M", "CUP_30Rnd_545x39_AK12_M", "CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M"], ["CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_SMOKE_GP25_M", "CUP_IlumFlareWhite_GP25_M"], ""],
 ["CUP_arifle_AK105", "", "acc_pointer_IR", "", ["CUP_30Rnd_545x39_AK74M_M", "CUP_30Rnd_545x39_AK74M_M", "CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M"], ["CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_SMOKE_GP25_M", "CUP_IlumFlareWhite_GP25_M"], ""],
 ["CUP_arifle_AK105", "", "acc_pointer_IR", "CUP_optic_PSO_1_AK", ["CUP_30Rnd_545x39_AK74M_M", "CUP_30Rnd_545x39_AK74M_M", "CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M"], ["CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_SMOKE_GP25_M", "CUP_IlumFlareWhite_GP25_M"], ""],
 ["CUP_arifle_AK105_top_rail", "", "acc_pointer_IR", "CUP_optic_1P87_RIS", ["CUP_30Rnd_545x39_AK74M_M", "CUP_30Rnd_545x39_AK74M_M", "CUP_30Rnd_TE1_Green_Tracer_545x39_AK74M_M"], ["CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_SMOKE_GP25_M", "CUP_IlumFlareWhite_GP25_M"], ""],

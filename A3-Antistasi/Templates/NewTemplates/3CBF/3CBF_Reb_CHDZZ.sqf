@@ -117,6 +117,13 @@ private _initialRebelEquipment = [
 "rhs_weap_m3a1", "rhs_weap_m38","UK3CB_Sten",
 "rhs_weap_type94_new","rhs_weap_tt33","rhs_weap_Izh18","rhs_weap_kar98k", "UK3CB_Enfield",
 "rhs_weap_panzerfaust60",
+"UK3CB_CZ550", "UK3CB_CZ550_5rnd_Mag", "UK3CB_CZ550_5rnd_Mag_R", "UK3CB_CZ550_5rnd_Mag_RT", 
+"UK3CB_CZ550_5rnd_Mag_Y", "UK3CB_CZ550_5rnd_Mag_YT", "UK3CB_CZ550_5rnd_Mag_G", 
+"UK3CB_CZ550_5rnd_Mag_GT", "UK3CB_CZ550_5rnd_Mag_W", "UK3CB_CZ550_5rnd_Mag_WT",
+"UK3CB_M1903A1",
+"UK3CB_M1903A1_3006_5rnd_Magazine","UK3CB_M1903A1_3006_5rnd_Magazine_R","UK3CB_M1903A1_3006_5rnd_Magazine_RT",
+"UK3CB_M1903A1_3006_5rnd_Magazine_Y","UK3CB_M1903A1_3006_5rnd_Magazine_YT","UK3CB_M1903A1_3006_5rnd_Magazine_G",
+"UK3CB_M1903A1_3006_5rnd_Magazine_GT","UK3CB_M1903A1_3006_5rnd_Magazine_W","UK3CB_M1903A1_3006_5rnd_Magazine_WT",
 "UK3CB_Sten_34Rnd_Magazine","UK3CB_Sten_34Rnd_Magazine_RT", "UK3CB_Enfield_10rnd_Mag", "UK3CB_Enfield_10rnd_Mag_RT",
 "rhs_mag_6x8mm_mhp","rhs_mag_762x25_8","rhsgref_1Rnd_00Buck","rhsgref_1Rnd_Slug","rhsgref_5Rnd_792x57_kar98k",
 "rhsgref_mag_rkg3em",
@@ -165,7 +172,7 @@ shop_wheel_apc = ["UK3CB_CHD_I_BTR60", "UK3CB_CHD_I_BTR70", "UK3CB_B_LAV25_HIDF"
 shop_track_apc = ["UK3CB_TKA_B_M113_M240", "UK3CB_CHD_I_MTLB_PKT", "UK3CB_CHD_I_BMD1PK"];
 shop_heli = ["UK3CB_I_G_UH1H_GUNSHIP_FIA", "UK3CB_CHD_I_Mi8AMTSh"];
 shop_tank = ["UK3CB_CHD_I_T34", "UK3CB_CHD_I_T55", "UK3CB_CW_US_B_EARLY_M60a1"];
-shop_plane = ["RHSGREF_A29B_HIDF", "UK3CB_MDF_I_Mystere_CAS1", "rhs_l159_CDF"];
+shop_plane = ["RHSGREF_A29B_HIDF", "UK3CB_LDF_I_MIG21_CAS", "rhs_l159_CDF"];
 
 additionalShopLight = ["rhssaf_m1151_olive_pkm", "rhssaf_m1025_olive_m2", "rhs_tigr_sts_vmf"];
 additionalShopAtgmVehicles = ["UK3CB_CW_US_B_EARLY_M151_Jeep_TOW", "UK3CB_CW_US_B_LATE_M1025_TOW", "UK3CB_CHD_I_BRDM2_ATGM"];

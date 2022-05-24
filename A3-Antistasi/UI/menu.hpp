@@ -428,7 +428,7 @@ class radioComm: SimpleMenuBigger
 			x = 0.477 * safezoneW + safezoneX;
 			y = 0.584 * safezoneH + safezoneY;
 			tooltip = $STR_antistasi_dialogs_commander_tooltip;
-			action = "closeDialog 0; createDialog 'commanderComm';";
+			action = "closeDialog 0; if (player == theBoss) then {createDialog 'commanderComm';} else {[""Commander Menu"", ""Only Player Commander has access to this function.""] call A3A_fnc_customHint;};";
 		};
 
 		class r5Button: SimpleButton

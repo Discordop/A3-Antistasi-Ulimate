@@ -64,17 +64,17 @@ private _moneyEarned = 0;
     };
 
      _weaponsWithAttachments = weaponsItems _lootContainer;
-    if(count _weaponsWithAttachments > 0) then {
+    if (count _weaponsWithAttachments > 0) then {
         {
             _vehicle addWeaponWithAttachmentsCargoGlobal [_x, 1];
         } forEach _weaponsWithAttachments;
     };
 
-    if(_lootContainer isKindOf "Man") then {
+    if (_lootContainer isKindOf "Man") then {
         _body = _lootContainer;
 
         _assignedItems = assignedItems _body;
-        if(count _assignedItems > 0) then {
+        if (count _assignedItems > 0) then {
             {
                 _vehicle addItemCargoGlobal [_x,1];
                 _body unassignItem _x;
@@ -116,7 +116,7 @@ private _moneyEarned = 0;
         };
 
         _bodyWeapons = weapons _body;
-        if(count _bodyWeapons > 0) then {
+        if (count _bodyWeapons > 0) then {
             {
                 
                 _vehicle addWeaponCargoGlobal [_x, 1];
@@ -125,20 +125,17 @@ private _moneyEarned = 0;
         };
 
         removeAllWeapons _body;
-    };
-
-    if !(_lootContainer isKindOf "Man") then {
+    } else {
         deleteVehicle _lootContainer;
     };
-
 } forEach _supplies;
 
 
-if(_moneyEarned > 0) then {
+if (_moneyEarned > 0) then {
     _allPlayers = (call BIS_fnc_listPlayers) select { side _x == teamPlayer || side _x == civilian };
     _playersCount = count _allPlayers;
     
-    if(_playersCount > 0) then {
+    if (_playersCount > 0) then {
         _incomePerPlayer = round((_moneyEarned / _playersCount) / 10);
         {
             [_incomePerPlayer, _x] call A3A_fnc_playerScoreAdd;

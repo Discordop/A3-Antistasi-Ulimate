@@ -51,6 +51,9 @@ if (_change) then {
             };
         };
     };
+    if (_action == "UNIFORMRANDOMIZE") exitWith {
+        publicVariable "randomizeRebelLoadoutUniforms";
+    };
 } else {
     _representation = if(_currentValue) then {_allValues select 0} else {_allValues select 1};
     ctrlSetText [(_idc + 3), _representation];

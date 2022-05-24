@@ -19,6 +19,11 @@ switch (_table) do {
                 _return pushBack isPlayerParadropable;
                 _return pushBack ["ENABLED", "DISABLED"];
             };
+            case 5500: {
+                _return pushBack "randomizeRebelLoadoutUniforms";
+                _return pushBack randomizeRebelLoadoutUniforms;
+                _return pushBack ["ENABLED", "DISABLED"];
+            };
         };			
     };
 };

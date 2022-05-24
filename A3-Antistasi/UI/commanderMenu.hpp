@@ -480,10 +480,39 @@ class commanderMenu
 					action = "[] call SCRT_fnc_ui_createRebelLoadoutMenu;";
 				};
 
+				class uniformRandomizeButton: RscControlsGroupNoScrollbarsMain 
+				{
+					idc = 5500;
+					y = "18 * pixelGridNoUIScale * pixelH";
+					class Controls 
+					{
+						class SwitchPic: switchButtonPic
+						{			
+							idc = 5501;
+							text = "\A3\ui_f\data\igui\cfg\simpletasks\letters\r_ca.paa";
+						};
+						class SwitchTitle: switchButtonTitle
+						{			
+							idc = 5502;	
+							text = "RANDOMIZE UNIFORMS";
+						};
+						class SwitchText: switchButtonSelect
+						{			
+							idc = 5503;
+							text = "";
+						};
+						class SwitchButton: switchButton {
+							idc = 5504;
+							action = "['MAIN', 5500, true, 'UNIFORMRANDOMIZE'] call SCRT_fnc_ui_switchButton";
+							tooltip = "Disables/Enables uniform and unarmored headgear randomization on custom rebel loadouts.";
+						};
+					};		
+				};
+
 				class hqSpacer2: brSpacer 
 				{
 					idc = 3105;					
-					y = "18 * pixelGridNoUIScale * pixelH";	
+					y = "22 * pixelGridNoUIScale * pixelH";	
 				};
 
 				class movePetrosButton: ButtonBase
