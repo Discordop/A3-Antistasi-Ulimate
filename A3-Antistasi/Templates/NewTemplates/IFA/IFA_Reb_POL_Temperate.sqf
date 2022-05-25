@@ -121,7 +121,7 @@ shop_plane = ["LIB_US_P39", "LIB_P47"];
 additionalShopLight = ['LIB_US_Willys_MB_Ambulance', 'LIB_US_Willys_MB_M1919'];
 additionalShopAtgmVehicles = [];
 additionalShopManpadsVehicles = [];
-additionalShopArtillery = ['LIB_FlaK_36_ARTY'];
+additionalShopArtillery = [];
 
 //military building models (common for all sides)
 smallBunker = "Land_BagBunker_Small_F";
