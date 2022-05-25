@@ -16,7 +16,7 @@ diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Trader: %2
 switch (true) do {
     case (A3A_hasIFA): {
         diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using IFA trader stock.", servertime];
-        [_traderX, "ifa"] call HALs_store_fnc_addTrader;    
+        [_traderX, "ww2mod"] call HALs_store_fnc_addTrader;    
     };
    case (A3A_hasVN && {A3A_hasUR}): {
         diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using VN UR trader stock.", servertime];

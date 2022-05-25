@@ -137,7 +137,10 @@ if(_group getVariable ["canCallSupportAt", -1] < dateToNumber date) then
             else {
                 //if there is not a day, there are people in squad without NVG goggles and there are underbarrel launcher, then flares
                if ((sunOrMoon <1) && _noNvgIndex != -1 && count (getArray (configfile >> "CfgWeapons" >> primaryWeapon _x >> "muzzles")) == 2) then {
+if ((hasIFA and (typeOf _x in squadLeaders)) or (count (getArray (configfile >> "CfgWeapons" >> primaryWeapon _x >> "muzzles")) == 2)) then
+					{
                     [_x] call A3A_fnc_useFlares;
+                    };
 				};
 			};
 

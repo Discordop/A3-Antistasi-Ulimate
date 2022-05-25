@@ -115,8 +115,6 @@ DECLARE_SERVER_VAR(traderDiscount, 0);
 DECLARE_SERVER_VAR(paradropAttendants, []);
 //Stores  custom AI rebel loadouts.
 DECLARE_SERVER_VAR(rebelLoadouts, createHashMap);
-//Override uniforms on rebel loadouts
-DECLARE_SERVER_VAR(randomizeRebelLoadoutUniforms, true);
 
 //Check if occupants and invaders are defeated
 DECLARE_SERVER_VAR(areOccupantsDefeated, false);
@@ -127,9 +125,9 @@ DECLARE_SERVER_VAR(A3A_coldWarMode, false);
 //Currently destroyed buildings.
 //DECLARE_SERVER_VAR(destroyedBuildings, []);
 //Initial HR
-server setVariable ["hr", 8, true];
+server setVariable ["hr",8,true];
 //Initial faction money pool
-server setVariable ["resourcesFIA", 1000, true];
+server setVariable ["resourcesFIA",1000,true];
 // Time of last garbage clean. Note: serverTime may not reset to zero if server was not restarted. Therefore, it should capture the time at start of mission.
 DECLARE_SERVER_VAR(A3A_lastGarbageCleanTime, serverTime);
 

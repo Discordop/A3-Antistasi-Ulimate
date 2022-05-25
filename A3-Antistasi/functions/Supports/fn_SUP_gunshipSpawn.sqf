@@ -49,9 +49,6 @@ _strikePlane addEventHandler
     {
         //Missile launch against this plane detected, attack if vehicle, send other support if manpads
         params ["_plane", "_ammo", "_vehicle"];
-
-        if ((random 100) > 20) exitWith {}; 
-
         if !(_vehicle isKindOf "Man") then
         {
             //Vehicle fired a missile against the plane, add to target list if ground, no warning for players as this is an internal decision of the pilot

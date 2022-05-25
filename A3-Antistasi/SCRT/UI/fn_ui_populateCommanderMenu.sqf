@@ -137,7 +137,6 @@ lbSetCurSel [2758, 0];
 ["MAIN", 5100, false] call SCRT_fnc_ui_switchButton;
 ["MAIN", 5200, false] call SCRT_fnc_ui_switchButton;
 ["MAIN", 5400, false] call SCRT_fnc_ui_switchButton;
-["MAIN", 5500, false] call SCRT_fnc_ui_switchButton;
 
 // fog
 sliderSetRange [4041, 0, 100];

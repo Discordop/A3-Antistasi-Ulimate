@@ -45,7 +45,7 @@ _table setPos (_buildingPositions select 0);
 _table setPos [getPos _table select 0, getPos _table select 1, (getPos _table select 2) + 0.7]; 
 
 
-if (!A3A_hasVN) then {
+if (!A3A_hasVN || !A3A_hasIFA) then {
 	_laptopArray = [[_table, "TOP"],"Land_Laptop_02_unfolded_F",1,[0,0,0],180] call BIS_fnc_spawnObjects;
 	_laptop = _laptopArray select 0;
 	traderObjects pushBack _laptop;

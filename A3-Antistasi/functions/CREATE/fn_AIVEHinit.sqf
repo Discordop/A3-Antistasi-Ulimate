@@ -180,9 +180,6 @@ if(_veh isKindOf "Air") then
         "IncomingMissile",
         {
             params ["_target", "_ammo", "_vehicle", "_instigator"];
-
-			if ((random 100) > 10) exitWith {}; 
-
             private _group = group driver _target;
             private _supportTypes = [_group, _vehicle] call A3A_fnc_chooseSupport;
             _supportTypes = _supportTypes - ["QRF"];

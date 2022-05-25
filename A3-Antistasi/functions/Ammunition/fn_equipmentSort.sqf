@@ -2,6 +2,8 @@
 //      Backpacks Sorting        ///
 ////////////////////////////////////
 private _fileName = "fn_equipmentSort";
+ 
+//CHANGE THIS LATER
 
 {
 	private _itemFaction = getText (configfile >> "CfgVehicles" >> _x >> "faction");

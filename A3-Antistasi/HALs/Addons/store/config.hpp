@@ -11038,16 +11038,15 @@ class cfgHALsStore
 			ITEM(B_UavTerminal, 2500, MISC_STOCK);
 		};
 
-		class handgunsifa {
+			//TEMPLATE: ITEM(item_class, price, stock type)
+		class handgunsifaa{
 			displayName = "Handguns";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
-			//TEMPLATE: ITEM(item_class, price, stock type)
 			ITEM(LIB_Colt_M1911, 110, PISTOL_STOCK); //AMMO: LIB_7Rnd_45ACP
-			ITEM(LIB_Webley_mk6, 100, PISTOL_STOCK); //AMMO: LIB_6Rnd_455
 		};
 
-		class smgifa {
+		class smgifaa{
 			displayName = "Submachine Guns";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
@@ -11058,7 +11057,7 @@ class cfgHALsStore
 			ITEM(LIB_M1928A1_Thompson, 250, RIFLE_STOCK); // 30rnd mag: LIB_30Rnd_45ACP 30rnd mag tracer: LIB_30Rnd_45ACP_t
 		};
 		
-		class mgifa {
+		class mgifaa{
 			displayName = "Machine Guns";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
@@ -11068,7 +11067,7 @@ class cfgHALsStore
 			ITEM(LIB_M1918A2_BAR, 400, RIFLE_STOCK); //NORMAL: LIB_M1918A2_BAR BALL: LIB_20Rnd_762x63_M1
 		};
 
-		class riflesifa {
+		class riflesifaa{
 			displayName = "Rifles, Carbines";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			ITEM(LIB_LeeEnfield_No1, 225, RIFLE_STOCK); //NORMAL: LIB_10Rnd_770x56 BALL: LIB_10Rnd_770x56_MkVIII
@@ -11078,7 +11077,7 @@ class cfgHALsStore
 			ITEM(LIB_M1903A3_Springfield, 200, RIFLE_STOCK); //NORMAL: LIB_5Rnd_762x63 BALL: LIB_5Rnd_762x63_M1 TRACER: LIB_5Rnd_762x63_t
 		};
 
-		class sniperriflesifa {
+		class sniperriflesifaa{
 			displayName = "DMRs, Sniper Rifles, Battle Rifles";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
@@ -11086,21 +11085,19 @@ class cfgHALsStore
 			ITEM(LIB_M1903A4_Springfield, 570, RIFLE_STOCK); // SAME AS uns_springfield
 		};
 
-		class launchersifa{
+		class launchersifaa{
 			displayName = "Launchers";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
-			ITEM(LIB_M1A1_Bazooka, 350, 25); // LIB_1Rnd_60mm_M6
 			ITEM(LIB_PIAT, 350, 25); 
 		}; 
 
-		class launchermagazinesifa{
+		class launchermagazinesifaa{
 			displayName = "Launcher Ammunition";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
-			ITEM(LIB_1Rnd_60mm_M6, 100, 15); 
 			ITEM(LIB_1Rnd_89m_PIAT, 100, 15);
 		};
 
-		class riflegrenadesifa{
+		class riflegrenadesifaa{
 			displayName = "Rifle Grenades";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			ITEM(LIB_1Rnd_G_MillsBomb, 70, 25);
@@ -11108,7 +11105,7 @@ class cfgHALsStore
 			ITEM(LIB_1Rnd_G_Mk2, 90, 25);
 		};
 
-		class muzzlesifa{
+		class muzzlesifaa{
 			displayName = "Muzzle Accessories";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 			ITEM(lib_acc_gl_enfield_cup_empty, 80, MZ_STOCK);
@@ -11117,32 +11114,24 @@ class cfgHALsStore
 			ITEM(lib_acc_gl_m7, 80, MZ_STOCK);
 		};
 
-		class magazinesifa{
+		class magazinesww2{
 			displayName = "Magazines";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(LIB_7Rnd_45ACP, 17, MZ_STOCK);
-			ITEM(LIB_6Rnd_455, 12, MZ_STOCK);
-			ITEM(LIB_32Rnd_9x19_Sten, 20, MZ_STOCK);
-			ITEM(LIB_30Rnd_45ACP, 22, MZ_STOCK);
-			ITEM(LIB_30Rnd_45ACP_t, 25, MZ_STOCK);
-			ITEM(LIB_50Rnd_45ACP, 45, MZ_STOCK);
-			ITEM(LIB_50Rnd_762x63, 50, MZ_STOCK);
-			ITEM(LIB_50Rnd_762x63_M1, 75, MZ_STOCK);
-			ITEM(LIB_Bren_Mk2, 60, MZ_STOCK);
-			ITEM(LIB_30Rnd_770x56_MKVIII, 65, MZ_STOCK);
-			ITEM(LIB_M1918A2_BAR, 50, MZ_STOCK);
-			ITEM(LIB_20Rnd_762x63_M1, 55, MZ_STOCK);
-			ITEM(LIB_10Rnd_770x56, 20, MZ_STOCK);
-			ITEM(LIB_10Rnd_770x56_MkVIII, 27, MZ_STOCK);
-			ITEM(LIB_15Rnd_762x33, 20, MZ_STOCK);
-			ITEM(LIB_15Rnd_762x33_t, 25, MZ_STOCK);
-			ITEM(LIB_8Rnd_762x63, 26, MZ_STOCK);
-			ITEM(LIB_5Rnd_762x63_t, 28, MZ_STOCK);
-			ITEM(LIB_5Rnd_762x63_M1, 30, MZ_STOCK);
+            ITEM(LIB_32Rnd_9x19_Sten, 20, MZ_STOCK);
+            ITEM(LIB_30Rnd_45ACP, 22, MZ_STOCK);
+            ITEM(LIB_50Rnd_45ACP, 45, MZ_STOCK);
+            ITEM(LIB_50Rnd_762x63_M1, 75, MZ_STOCK);
+            ITEM(LIB_30Rnd_770x56_MKVIII, 65, MZ_STOCK);
+            ITEM(LIB_20Rnd_762x63_M1, 55, MZ_STOCK);
+            ITEM(LIB_10Rnd_770x56_MkVIII, 27, MZ_STOCK);
+            ITEM(LIB_15Rnd_762x33, 20, MZ_STOCK);
+            ITEM(LIB_8Rnd_762x63, 26, MZ_STOCK); 
+
 		};
 
-		class miscifa {
+		class miscifaa{
 			displayName = "Misc";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 
@@ -11150,27 +11139,27 @@ class cfgHALsStore
 			ITEM(LIB_Ladung_Small_MINE_mag, 400, MISC_STOCK);
 		};
 
-		class pointersifa {
+		class pointersifaa{
 			displayName = "Pointer Accessories";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(lib_m1918a2_bar_handle, 70, PN_STOCK);
 		};
 
-		class specialweaponsifa {
+		class specialweaponsifaa{
 			displayName = "Special Weapons";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			ITEM(LIB_M2_Flamethrower, 300, RIFLE_STOCK);
 			ITEM(B_LIB_US_M2Flamethrower, 800, RIFLE_STOCK);
 		};
 
-		class opticsifa {
+		class opticsifaa{
 			displayName = "Optics Accessories";
 			picture = "";
 			ITEM(lib_optic_zf4, 150, MAGAZINE_STOCK);
 		};
 
-		class underbarrelifa {
+		class underbarrelifaa{
 	     	displayName = "Backpack Static";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
@@ -12459,25 +12448,25 @@ class cfgHALsStore
 			};
 		};
 
-		class ifa
+		class ww2mod
 		{
 			displayName = "Arms Dealer Store";
 			categories[] = {
-				"handgunsifa",
-				"smgifa",
-				"mgifa",
-				"riflesifa",
-				"sniperriflesifa",
-				"launchersifa",
-				"launchermagazinesifa",
-				"riflegrenadesifa",
-				"muzzlesifa",
-				"magazinesifa", 
-				"pointersifa",
-				"specialweaponsifa",
-				"miscifa",
-				"opticsifa",
-				"underbarrelifa"
+				"handgunsifaa",
+				"smgifaa",
+				"mgifaa",
+				"riflesifaa",
+				"sniperriflesifaa",
+				"launchersifaa",
+				"launchermagazinesifaa",
+				"riflegrenadesifaa",
+				"muzzlesifaa",
+				"magazinesww2", 
+				"pointersifaa",
+				"specialweaponsifaa",
+				"miscifaa",
+				"opticsifaa",
+				"underbarrelifaa"
 			};
 		};
 		class vn
