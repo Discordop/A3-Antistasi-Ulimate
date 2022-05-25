@@ -53,7 +53,7 @@ switch (true) do {
     }; 
     default  {
         diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Initializing vanilla aaa trader.", servertime];
-        [_traderX, "ifaA3"] call HALs_store_fnc_addTrader;
+        [_traderX, "vanilla"] call HALs_store_fnc_addTrader;
     }; 
 };
 
