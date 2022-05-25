@@ -48,7 +48,6 @@ private _activeSaf = false;
 //IFA Detection
 if (isClass (configfile >> "CfgPatches" >> "LIB_core")) then {
   A3A_hasIFA = true;
-  A3A_hasVN = true;
   [2,"Iront Front Detected.",_fileName] call A3A_fnc_log;
 };
 
