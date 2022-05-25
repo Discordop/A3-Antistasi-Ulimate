@@ -14,7 +14,12 @@ diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Choosing t
 diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Trader: %2", servertime, str _traderX];
 
 switch (true) do {
-    case (A3A_hasVN && {A3A_hasUR}): {
+    case (A3A_hasIFA): {
+        systemChat "Hello World";
+        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using IFA trader stock.", servertime];
+        [_traderX, "ifaA3"] call HALs_store_fnc_addTrader;    
+    };
+   case (A3A_hasVN && {A3A_hasUR}): {
         diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using VN UR trader stock.", servertime];
         [_traderX, "vnur"] call HALs_store_fnc_addTrader;
     };
@@ -45,11 +50,11 @@ switch (true) do {
     case (A3A_hasCup): {
         diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using CUP trader stock.", servertime];
         [_traderX, "cup"] call HALs_store_fnc_addTrader;
-    };
+    }; 
     default  {
-        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Initializing vanilla trader.", servertime];
-        [_traderX, "vanilla"] call HALs_store_fnc_addTrader;
-    };
+        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Initializing vanilla aaa trader.", servertime];
+        [_traderX, "ifaA3"] call HALs_store_fnc_addTrader;
+    }; 
 };
 
 [] call SCRT_fnc_trader_removeUnlockedItemsFromStock;
