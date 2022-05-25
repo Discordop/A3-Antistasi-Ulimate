@@ -74,7 +74,8 @@ try {
 	[_trader, _target] call HALs_store_fnc_addActionTrader;
 	true
 } catch {
-	[_exception] call HALs_fnc_log;
+	diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | add trader error: %2", servertime, _exception];
+//	[_exception] call HALs_fnc_log;
 	[_exception select 0] call BIS_fnc_error;
 	false
 };
