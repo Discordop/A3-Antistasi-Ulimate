@@ -2,7 +2,7 @@
 
 ## 1.8.3
 ## Additions
-- Ability to toggle uniform and non-armored headgear randomization for Rebel Loadouts via new switch button in commander menu (ENABLED is pre -1.8.3 behaviour, DISABLED completely disabled uniform and headgear randomization allowing commanders to standartize look of their rebels)
+- Ability to toggle uniform and non-armored headgear randomization for Rebel Loadouts via new switch button in commander menu (ENABLED is pre -1.8.3 behaviour, DISABLED completely disables uniform and headgear randomization allowing commanders to standartize look of their rebels)
 - (3CBF) Added CZ550 and M1903A1 to starting gear
 - (3CBF) Added USP, PPSH-41, FN FAL, ACR, AUG, Scoped M1901A1, CZ-550 Scope to Arms Dealer store
 - (3CBF) Added SKS to CDF and AFRF militia units (carbines category)
@@ -10,7 +10,6 @@
 - (CUP) Added AK-12, AK-15 to AFRF elite and specops units
 
 ### Changes
-- (3CBF, CUP) Templates, store, starting weapons update 
 - It is no longer guaranteed that firing missile at aircraft will trigger support response (20% chance for CAS, ASF and Gunship supports, 10% chance for everything else)
 - Fixed exploit that allowed to call commander menu while being not a commander
 - (3CBF, RHS) Replaced Mk. V boat with vanilla boat due to balance issues
