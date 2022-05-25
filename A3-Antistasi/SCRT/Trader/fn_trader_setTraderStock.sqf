@@ -15,9 +15,8 @@ diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Trader: %2
 
 switch (true) do {
     case (A3A_hasIFA): {
-        systemChat "Hello World";
         diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using IFA trader stock.", servertime];
-        [_traderX, "ifaA3"] call HALs_store_fnc_addTrader;    
+        [_traderX, "ifa"] call HALs_store_fnc_addTrader;    
     };
    case (A3A_hasVN && {A3A_hasUR}): {
         diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using VN UR trader stock.", servertime];
@@ -52,7 +51,7 @@ switch (true) do {
         [_traderX, "cup"] call HALs_store_fnc_addTrader;
     }; 
     default  {
-        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Initializing vanilla aaa trader.", servertime];
+        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Initializing vanilla trader.", servertime];
         [_traderX, "vanilla"] call HALs_store_fnc_addTrader;
     }; 
 };
