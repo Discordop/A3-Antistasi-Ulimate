@@ -211,7 +211,7 @@ _loadoutData setVariable ["NVGs", []];
 _loadoutData setVariable ["binoculars", ["LIB_Binocular_GER"]];
 _loadoutData setVariable ["rangefinder", ["LIB_Binocular_GER"]];
 
-_loadoutData setVariable ["uniforms", ["U_LIB_GER_Soldier_camo3","U_LIB_GER_Pionier","U_LIB_GER_Schutze"]];
+_loadoutData setVariable ["uniforms", []];
 _loadoutData setVariable ["MGvests", []];
 _loadoutData setVariable ["MEDvests", []];
 _loadoutData setVariable ["SLvests", []];
@@ -253,16 +253,16 @@ _loadoutData setVariable ["items_unarmed_extras", []];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_sfLoadoutData setVariable ["uniforms", ["U_LIB_ST_Soldier_E44_Camo","U_LIB_ST_Unterofficier_E44","U_LIB_ST_Soldier_E44_Camo2"]];
-_sfLoadoutData setVariable ["vests", ["V_LIB_DAK_VestMP40","V_LIB_DAK_VestKar98","V_LIB_DAK_VestG43","V_LIB_GER_OfficerVest"]];
+_sfLoadoutData setVariable ["uniforms", ["U_LIB_ST_Soldier_Camo","U_LIB_ST_Soldier_E44_Camo"]];
+_sfLoadoutData setVariable ["vests", ["V_LIB_GER_VestMP40","V_LIB_GER_VestKar98","V_LIB_GER_VestG43","V_LIB_GER_OfficerVest"]];
 
-_sfLoadoutData setVariable ["MGvests", ["V_LIB_DAK_VestMP40"]]; 
+_sfLoadoutData setVariable ["MGvests", ["V_LIB_GER_VestMP40"]]; 
 _sfLoadoutData setVariable ["MEDvests", ["V_LIB_GER_OfficerVest"]]; 
-_sfLoadoutData setVariable ["GLvests", ["V_LIB_DAK_VestG43"]]; 
+_sfLoadoutData setVariable ["GLvests", ["V_LIB_GER_VestG43"]]; 
 
-_sfLoadoutData setVariable ["backpacks", ["B_LIB_GER_Tonister34_cowhide","B_LIB_GER_Backpack"]];
+_sfLoadoutData setVariable ["backpacks", ["B_LIB_GER_Tonister34_cowhide","B_LIB_GER_SapperBackpack_empty"]];
 
-_sfLoadoutData setVariable ["helmets", ["H_LIB_GER_Helmet_painted","H_LIB_GER_Helmet_Utility_Oak"]];
+_sfLoadoutData setVariable ["helmets", ["H_LIB_ST_Helmet","H_LIB_GER_HelmetUtility_Oak"]];
 _sfLoadoutData setVariable ["NVGs", []];
 _sfLoadoutData setVariable ["binoculars", ["LIB_Binocular_GER"]];
 _sfLoadoutData setVariable ["antiInfantryGrenades", ["lib_shg24"]];
@@ -294,23 +294,24 @@ _sfLoadoutData setVariable ["ATLaunchers", [
 _sfLoadoutData setVariable ["sidearms", [["LIB_P08", "", "", "", ["LIB_8Rnd_9x19_P08"], [], ""],
         ["LIB_P38", "", "", "", ["LIB_8Rnd_9x19"], [], ""]]];
 
-_sfLoadoutData setVariable ["GLsidearms", []];
+_sfLoadoutData setVariable ["GLsidearms", [["LIB_P08", "", "", "", ["LIB_8Rnd_9x19_P08"], [], ""],
+        ["LIB_P38", "", "", "", ["LIB_8Rnd_9x19"], [], ""]]];
 
 /////////////////////////////////
 //    Military Loadout Data    //
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militaryLoadoutData setVariable ["uniforms", ["U_LIB_ST_Soldier_E44_Camo","U_LIB_ST_Unterofficier_E44","U_LIB_ST_Soldier_E44_Camo2"]];
-_militaryLoadoutData setVariable ["vests", ["V_LIB_DAK_VestMP40","V_LIB_DAK_VestKar98","V_LIB_DAK_VestG43","V_LIB_GER_OfficerVest"]];
+_militaryLoadoutData setVariable ["uniforms", ["U_LIB_GER_Unterofficer","U_LIB_GER_Soldier2","U_LIB_GER_Gefreiter"]];
+_militaryLoadoutData setVariable ["vests", ["V_LIB_GER_VestMP40","V_LIB_GER_VestKar98","V_LIB_GER_VestG43","V_LIB_GER_OfficerVest"]];
 
 _militaryLoadoutData setVariable ["MGvests", ["V_LIB_GER_VestMG"]];
 _militaryLoadoutData setVariable ["MEDvests", ["V_LIB_GER_PioneerVest"]];
-_militaryLoadoutData setVariable ["SLvests", ["V_LIB_DAK_VestUnterofficer"]];
-_militaryLoadoutData setVariable ["SNIvests", ["V_LIB_DAK_VestKar98"]];
+_militaryLoadoutData setVariable ["SLvests", ["V_LIB_GER_VestUnterofficer"]];
+_militaryLoadoutData setVariable ["SNIvests", ["V_LIB_GER_VestKar98"]];
 _militaryLoadoutData setVariable ["GLvests", ["V_LIB_GER_FSJ_VestKar98"]];
-_militaryLoadoutData setVariable ["backpacks", ["B_LIB_GER_Tonister34_cowhide","B_LIB_GER_Backpack"]];
-_militaryLoadoutData setVariable ["helmets", ["H_LIB_GER_Helmet_painted","H_LIB_GER_Helmet_Utility_Oak"]];
+_militaryLoadoutData setVariable ["backpacks", ["B_LIB_GER_Tonister34_cowhide","B_LIB_GER_SapperBackpack_empty","B_LIB_GER_A_frame"]];
+_militaryLoadoutData setVariable ["helmets", ["H_LIB_GER_Helmet","H_LIB_GER_Helmet_Glasses","H_LIB_GER_Helmet_net","H_LIB_GER_Helmet_ns","H_LIB_GER_Helmet_os"]];
 
 _militaryLoadoutData setVariable ["antiInfantryGrenades", ["lib_shg24"]];
 
@@ -380,7 +381,7 @@ _policeLoadoutData setVariable ["sidearms", [
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militiaLoadoutData setVariable ["uniforms", ["U_LIB_GER_Schutze_HBT","U_LIB_GER_Unterofficer_HBT"]];
+_militiaLoadoutData setVariable ["uniforms", ["U_LIB_GER_Schutze","U_LIB_GER_Recruit"]];
 _militiaLoadoutData setVariable ["vests", ["V_LIB_GER_VestKar98","V_LIB_GER_VestMP40"]];
 _militiaLoadoutData setVariable ["backpacks", ["B_LIB_GER_A_frame"]];
 _militiaLoadoutData setVariable ["helmets", ["H_LIB_GER_Helmet"]];
@@ -427,14 +428,14 @@ _militiaLoadoutData setVariable ["antiInfantryGrenades", ["LIB_Shg24"]];
 //    Elite Loadout Data    //
 /////////////////////////////////
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_eliteLoadoutData setVariable ["uniforms", ["U_LIB_ST_Soldier_E44_Camo","U_LIB_ST_Unterofficier_E44","U_LIB_ST_Soldier_E44_Camo2"]];
-_eliteLoadoutData setVariable ["vests", ["V_LIB_DAK_VestMP40","V_LIB_DAK_VestKar98","V_LIB_DAK_VestG43","V_LIB_GER_OfficerVest"]];
+_eliteLoadoutData setVariable ["uniforms", ["U_LIB_ST_Soldier_Camo","U_LIB_ST_Soldier_E44_Camo"]];
+_eliteLoadoutData setVariable ["vests", ["V_LIB_GER_VestMP40","V_LIB_GER_VestKar98","V_LIB_GER_VestG43","V_LIB_GER_OfficerVest"]];
 _eliteLoadoutData setVariable ["MGvests", ["V_LIB_GER_VestMG"]];
 _eliteLoadoutData setVariable ["MEDvests", ["V_LIB_GER_PioneerVest"]];
-_eliteLoadoutData setVariable ["GLvests", ["V_LIB_GER_FSJ_VestKar98"]];
+_eliteLoadoutData setVariable ["GLvests", ["V_LIB_GER_VestG43"]];
 
-_eliteLoadoutData setVariable ["backpacks", ["B_LIB_GER_Tonister34_cowhide","B_LIB_GER_Backpack"]];
-_eliteLoadoutData setVariable ["helmets", ["H_LIB_GER_Helmet_painted","H_LIB_GER_Helmet_Utility_Oak"]];
+_eliteLoadoutData setVariable ["backpacks", ["B_LIB_GER_Tonister34_cowhide","B_LIB_GER_SapperBackpack_empty"]];
+_eliteLoadoutData setVariable ["helmets", ["H_LIB_ST_Helmet","H_LIB_GER_HelmetUtility_Oak"]];
 _eliteLoadoutData setVariable ["NVGs", []];
 _eliteLoadoutData setVariable ["binoculars", ["LIB_Binocular_GER"]];
 _eliteLoadoutData setVariable ["antiInfantryGrenades", ["lib_shg24"]];

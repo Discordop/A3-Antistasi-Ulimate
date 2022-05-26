@@ -191,8 +191,6 @@ _loadoutData setVariable ["antiTankGrenades", ["LIB_Rpg6"]];
 _loadoutData setVariable ["smokeGrenades", ["LIB_RDG"]];
 _loadoutData setVariable ["signalsmokeGrenades", ["not_supported"]];
 
-
-
 _loadoutData setVariable ["maps", ["ItemMap"]];
 _loadoutData setVariable ["watches", ["LIB_GER_ItemWatch"]];
 _loadoutData setVariable ["compasses", ["LIB_GER_ItemCompass_deg"]];
@@ -202,21 +200,20 @@ _loadoutData setVariable ["NVGs", []];
 _loadoutData setVariable ["binoculars", ["LIB_Binocular_SU"]];
 _loadoutData setVariable ["rangefinder", ["LIB_Binocular_SU"]];
 
-_loadoutData setVariable ["uniforms", ["U_LIB_SOV_Tank_ryadovoi"]];
+_loadoutData setVariable ["uniforms", [""]];
 _loadoutData setVariable ["offuniforms", []];
-_loadoutData setVariable ["vests", ["V_LIB_SOV_IShBrVestMG","V_LIB_SOV_RAZV_OfficerVest"]];
-_loadoutData setVariable ["Hvests", ["V_LIB_SOV_IShBrVestMG"]];
-_loadoutData setVariable ["GLvests", ["V_LIB_SOV_IShBrVestMG"]];
-_loadoutData setVariable ["backpacks", ["B_LIB_SOV_RA_Rucksack"]];
+_loadoutData setVariable ["vests", ["",""]];
+_loadoutData setVariable ["Hvests", [""]];
+_loadoutData setVariable ["GLvests", [""]];
+_loadoutData setVariable ["backpacks", [""]];
 _loadoutData setVariable ["longRangeRadios", []];
-_loadoutData setVariable ["helmets", ["H_LIB_SOV_RA_Helmet"]];
+_loadoutData setVariable ["helmets", [""]];
 
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
 _loadoutData setVariable ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the basic medical loadout for vanilla
 _loadoutData setVariable ["items_medical_standard", ["STANDARD"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the standard medical loadout for vanilla
 _loadoutData setVariable ["items_medical_medic", ["MEDIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the medic medical loadout for vanilla
 _loadoutData setVariable ["items_miscEssentials", [] call A3A_fnc_itemset_miscEssentials];
-
 
 _loadoutData setVariable ["items_squadleader_extras", []];
 _loadoutData setVariable ["items_rifleman_extras", []];
@@ -242,10 +239,14 @@ _loadoutData setVariable ["items_unarmed_extras", []];
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _sfLoadoutData setVariable ["uniforms", ["U_LIB_SOV_Razvedchik_am"]];
-_sfLoadoutData setVariable ["backpacks", ["B_LIB_SOV_RA_Rucksack2_Green"]];
+_sfLoadoutData setVariable ["vests", ["V_LIB_SOV_IShBrVestPPShMag","V_LIB_SOV_IShBrVestPPShDisc","V_LIB_SOV_IShBrVestMG"]];
+_sfLoadoutData setVariable ["MGvests", ["V_LIB_SOV_IShBrVestPPShMag"]]; 
+_sfLoadoutData setVariable ["MEDvests", ["V_LIB_SOV_IShBrVestMG"]]; 
+_sfLoadoutData setVariable ["GLvests", ["V_LIB_SOV_IShBrVestPPShDisc"]]; 
+_sfLoadoutData setVariable ["backpacks", ["B_LIB_SOV_RA_Rucksack2_Gas_Kit_Shinel_Green"]];
 _sfLoadoutData setVariable ["helmets", ["H_LIB_SOV_RA_Helmet"]];
 _sfLoadoutData setVariable ["NVGs", []];
-_sfLoadoutData setVariable ["binoculars", ["LIB_Binocular_GER"]];
+_sfLoadoutData setVariable ["binoculars", ["LIB_Binocular_SU"]];
 _sfLoadoutData setVariable ["missileATLaunchers", [
 ["LIB_M1A1_Bazooka", "", "", "",["LIB_1Rnd_60mm_M6"], [], ""],
 ["LIB_M1A1_Bazooka", "", "", "",["LIB_1Rnd_60mm_M6"], [], ""]
@@ -273,13 +274,13 @@ _sfLoadoutData setVariable ["sidearms", [["LIB_TT33", "", "", "", ["LIB_8Rnd_762
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _militaryLoadoutData setVariable ["uniforms", ["U_LIB_SOV_Strelok_summer"]];
-_militaryLoadoutData setVariable ["offuniforms", ["U_LIB_NKVD_Starshina"]];
+_militaryLoadoutData setVariable ["offuniforms", ["U_LIB_SOV_Kapitan_summer"]];
 _militaryLoadoutData setVariable ["vests", ["V_LIB_SOV_RA_MosinBelt","V_LIB_SOV_RA_PPShBelt"]];
-_militaryLoadoutData setVariable ["GLvests", ["V_LIB_SOV_IShBrVestPPShMag"]]; 
-_militaryLoadoutData setVariable ["Hvests", ["V_LIB_SOV_IShBrVestMG"]]; 
-_militaryLoadoutData setVariable ["backpacks", ["B_LIB_SOV_RA_Rucksack"]];
+_militaryLoadoutData setVariable ["GLvests", ["V_LIB_SOV_RA_SVTBelt"]]; 
+_militaryLoadoutData setVariable ["Hvests", ["V_LIB_SOV_RA_OfficerVest"]]; 
+_militaryLoadoutData setVariable ["backpacks", ["B_LIB_SOV_RA_Rucksack_Green"]];
 _militaryLoadoutData setVariable ["helmets", ["H_LIB_SOV_RA_PrivateCap","H_LIB_SOV_RA_Helmet"]];
-_militaryLoadoutData setVariable ["binoculars", ["LIB_Binocular_GER"]];
+_militaryLoadoutData setVariable ["binoculars", ["LIB_Binocular_SU"]];
 
 _militaryLoadoutData setVariable ["rifles", [
 	["LIB_M9130", "", "", "", ["LIB_5Rnd_762x54_D"], [], ""],
@@ -317,12 +318,12 @@ _policeLoadoutData setVariable ["sidearms", [["LIB_TT33", "", "", "", ["LIB_8Rnd
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militiaLoadoutData setVariable ["uniforms", ["U_LIB_SOV_Strelokart"]];
-_militiaLoadoutData setVariable ["offuniforms", ["U_LIB_NKVD_Starshina"]]; 
+_militiaLoadoutData setVariable ["uniforms", ["U_LIB_SOV_Strelok_summer"]];
+_militiaLoadoutData setVariable ["offuniforms", ["U_LIB_SOV_Sergeant"]]; 
 _militiaLoadoutData setVariable ["vests", ["V_LIB_SOV_RA_MosinBelt","V_LIB_SOV_RA_PPShBelt"]];
-_militiaLoadoutData setVariable ["GLvests", ["V_HarnessOGL_ghex_F"]];
-_militiaLoadoutData setVariable ["Hvests", ["V_TacVest_oli"]];
-_militiaLoadoutData setVariable ["backpacks", ["B_LIB_SOV_RA_Rucksack"]];
+_militiaLoadoutData setVariable ["GLvests", ["V_LIB_SOV_RA_SVTBelt"]];
+_militiaLoadoutData setVariable ["Hvests", ["V_LIB_SOV_RA_OfficerVest"]];
+_militiaLoadoutData setVariable ["backpacks", ["B_LIB_SOV_RA_Rucksack_Green"]];
 _militiaLoadoutData setVariable ["helmets", ["H_LIB_SOV_RA_PrivateCap"]];
 _militiaLoadoutData setVariable ["rifles", [["LIB_M9130", "", "", "", ["LIB_5Rnd_762x54"], [], ""],
         ["LIB_M38", "", "", "", ["LIB_5Rnd_762x54"], [], ""],
@@ -345,13 +346,13 @@ _militiaLoadoutData setVariable ["sidearms", [["LIB_TT33", "", "", "", ["LIB_8Rn
 /////////////////////////////////
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_eliteLoadoutData setVariable ["uniforms", ["U_LIB_SOV_Razvedchik_lis"]];
-_eliteLoadoutData setVariable ["offuniforms", ["U_LIB_NKVD_Starshina"]];
+_eliteLoadoutData setVariable ["uniforms", ["U_LIB_SOV_Razvedchik_am"]];
+_eliteLoadoutData setVariable ["offuniforms", ["U_LIB_SOV_Razvedchik_mix"]];
 _eliteLoadoutData setVariable ["vests", ["V_LIB_SOV_IShBrVestMG"]];
 _eliteLoadoutData setVariable ["GLvests", ["V_LIB_SOV_IShBrVestPPShMag"]];
 _eliteLoadoutData setVariable ["Hvests", ["V_LIB_SOV_IShBrVestPPShDisc"]];
-_eliteLoadoutData setVariable ["backpacks", ["B_LIB_SOV_RA_Rucksack2_Gas_Kit_Shinel_Green", "B_LIB_SOV_RA_Rucksack2_Green"]];
-_eliteLoadoutData setVariable ["helmets", ["H_LIB_SOV_RA_Helmet", "H_LIB_SOV_RA_PrivateCap"]];
+_eliteLoadoutData setVariable ["backpacks", ["B_LIB_SOV_RA_Rucksack_Gas_Kit_Green", "B_LIB_SOV_RA_Rucksack2_Gas_Kit_Green"]];
+_eliteLoadoutData setVariable ["helmets", ["H_LIB_SOV_RA_Helmet", "H_LIB_SOV_RA_OfficerCap"]];
 _eliteLoadoutData setVariable ["binoculars", ["LIB_Binocular_SU"]];
 _eliteLoadoutData setVariable ["missileATLaunchers", [
 ["LIB_M1A1_Bazooka", "", "", "",["LIB_1Rnd_60mm_M6"], [], ""],
@@ -371,11 +372,7 @@ _eliteLoadoutData setVariable ["carbines", [
 _eliteLoadoutData setVariable ["grenadeLaunchers", [
 	["LIB_M9130_DYAKONOV", "LIB_ACC_GL_DYAKONOV_Empty", "", "", ["LIB_5Rnd_762x54"], ["LIB_1Rnd_G_DYAKONOV"], ""]
 	]];
-
-_militaryLoadoutData setVariable ["SMGs", [
-	["LIB_PPSh41_m", "", "", "", ["LIB_35Rnd_762x25_t"], [], ""],
-    ["LIB_PPSh41_d", "", "", "", ["LIB_71Rnd_762x25_t2"], [], ""]
-	]];
+	
 _eliteLoadoutData setVariable ["SMGs", [
 	["LIB_PPSh41_m", "", "", "", ["LIB_35Rnd_762x25_t"], [], ""],
     ["LIB_M1A1_Thompson", "", "", "", ["LIB_30Rnd_45ACP_t"], [], ""],
@@ -393,8 +390,7 @@ _eliteLoadoutData setVariable ["marksmanRifles", [
 	]];
 
 _eliteLoadoutData setVariable ["sniperRifles", [
-	["LIB_M9130PU", "", "", "", ["LIB_5Rnd_762x54_b30","LIB_5Rnd_762x54","LIB_5Rnd_762x54"], [], ""], 
-    ["LIB_M1903A4_Springfield", "", "", "", ["LIB_5Rnd_762x63","LIB_5Rnd_762x63_M1","LIB_5Rnd_762x63_t"], [], ""]
+	["LIB_M9130PU", "", "", "", ["LIB_5Rnd_762x54_b30","LIB_5Rnd_762x54","LIB_5Rnd_762x54"], [], ""]
 ]];
 _eliteLoadoutData setVariable ["sidearms", [
 	["LIB_TT33", "", "", "", ["LIB_8Rnd_762x25"], [], ""]
