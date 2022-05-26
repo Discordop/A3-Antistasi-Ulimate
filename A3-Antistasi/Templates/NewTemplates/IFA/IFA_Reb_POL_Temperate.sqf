@@ -109,12 +109,12 @@ lootCrate = "Box_Syndicate_Ammo_F";
 rallyPoint = "B_RadioBag_01_wdl_F";
 
 //black market stuff
-shop_UAV = [];
+shop_UAV = ["LIB_CG4_WACO", "LIB_MKI_HADRIAN", "LIB_HORSA", "LIB_HORSA_RAF"];
 shop_AA = ["LIB_SdKfz_7_AA"];
 shop_MRAP = ["LIB_UniversalCarrier"];
 shop_wheel_apc = ["LIB_US_Scout_M3_FFV"];
 shop_track_apc = ["LIB_US_M3_Halftrack"];
-shop_heli = [];
+shop_heli = ["LIB_C47_Skytrain", "LIB_C47_RAF"];
 shop_tank = ["LIB_M3A3_Stuart", "LIB_M4A3_75", "LIB_Cromwell_Mk4"];
 shop_plane = ["LIB_US_P39", "LIB_P47"];
 
