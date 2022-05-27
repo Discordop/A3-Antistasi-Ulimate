@@ -1,7 +1,11 @@
 # Changelog
 
+## 1.8.3.1
+### Changes
+- Fixed inability to access commander reassign button in commander menu for non-commanders
+
 ## 1.8.3
-## Additions
+### Additions
 - Ability to toggle uniform and non-armored headgear randomization for Rebel Loadouts via new switch button in commander menu (ENABLED is pre -1.8.3 behaviour, DISABLED completely disables uniform and headgear randomization allowing commanders to standartize look of their rebels)
 - (3CBF) Added CZ550 and M1903A1 to starting gear
 - (3CBF) Added USP, PPSH-41, FN FAL, ACR, AUG, Scoped M1901A1, CZ-550 Scope to Arms Dealer store

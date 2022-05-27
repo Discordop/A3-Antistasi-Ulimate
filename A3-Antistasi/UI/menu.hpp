@@ -428,7 +428,7 @@ class radioComm: SimpleMenuBigger
 			x = 0.477 * safezoneW + safezoneX;
 			y = 0.584 * safezoneH + safezoneY;
 			tooltip = $STR_antistasi_dialogs_commander_tooltip;
-			action = "closeDialog 0; if (player == theBoss) then {createDialog 'commanderComm';} else {[""Commander Menu"", ""Only Player Commander has access to this function.""] call A3A_fnc_customHint;};";
+			action = "closeDialog 0; createDialog 'commanderComm';";
 		};
 
 		class r5Button: SimpleButton
@@ -668,7 +668,7 @@ class commanderComm: SimpleMenuBig
 			x = 0.257187 * safezoneW + safezoneX;
 			y = 0.29 * safezoneH + safezoneY;
 			tooltip = $STR_antistasi_dialogs_add_recruit_squad_tooltip;
-			action = "closeDialog 0;if (player == theBoss) then { [] spawn A3A_fnc_squadRecruit; } else {[""Recruit Squad"", ""Only Player Commander has access to this function""] call A3A_fnc_customHint;};";
+			action = "if (player == theBoss) then {closeDialog 0; [] spawn A3A_fnc_squadRecruit; } else {[""Recruit Squad"", ""Only Player Commander has access to this function""] call A3A_fnc_customHint;};";
 		};
 
 		class l2Button: SimpleButton
@@ -678,7 +678,7 @@ class commanderComm: SimpleMenuBig
 			x = 0.257187 * safezoneW + safezoneX;
 			y = 0.388 * safezoneH + safezoneY;
 			tooltip = $STR_antistasi_dialogs_add_rally_point_tooltip;
-			action = "closeDialog 0; [] call SCRT_fnc_rally_toggleRallyPoint;";
+			action = "if (player == theBoss) then {closeDialog 0; [] call SCRT_fnc_rally_toggleRallyPoint;} else {[""Place / Remove Rally Point"", ""Only Player Commander has access to this function.""] call A3A_fnc_customHint;};";
 		};
 
 		class l3Button: SimpleButton
@@ -688,7 +688,7 @@ class commanderComm: SimpleMenuBig
 			x = 0.257187 * safezoneW + safezoneX;
 			y = 0.486 * safezoneH + safezoneY;
 			tooltip = $STR_antistasi_dialogs_share_faction_money_tooltip;
-			action = "closeDialog 0; [] call SCRT_fnc_common_shareFactionMoneyWithMembers";
+			action = "if (player == theBoss) then {closeDialog 0; [] call SCRT_fnc_common_shareFactionMoneyWithMembers;} else {[""Share Faction Money"", ""Only Player Commander has access to this function.""] call A3A_fnc_customHint;};";
 		};
 
 		class l4Button: SimpleButton
@@ -708,7 +708,7 @@ class commanderComm: SimpleMenuBig
 			x = 0.477 * safezoneW + safezoneX;
 			y = 0.29 * safezoneH + safezoneY;
 			tooltip = $STR_antistasi_dialogs_open_add_to_air_tooltip;
-			action = "closeDialog 0; [] call A3A_fnc_addBombRun";
+			action = "if (player == theBoss) then {closeDialog 0; [] call A3A_fnc_addBombRun;} else {[""Add to Air Support"", ""Only Player Commander has access to this function.""] call A3A_fnc_customHint;};";
 		};
 
 		class r2Button: SimpleButton
