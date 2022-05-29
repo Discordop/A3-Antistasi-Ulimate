@@ -14,4 +14,4 @@
 - Discord Rich Presence by ConnorAU 
 - Antistasi Plus fork by Socrates
 
-- Antistasi Ultimate by Karl, Stutpip123, Silence
+- Antistasi Ultimate by Karl, Stutpip123
