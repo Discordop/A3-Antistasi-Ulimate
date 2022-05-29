@@ -105,6 +105,11 @@ A3A_Reb_template = switch(true) do {
         [2, "Using Mandalorian Template", _filename] call A3A_fnc_log;
         "CW"
     };
+    case (A3A_hasHalo): {
+        ["Templates\NewTemplates\Halo\Halo_Reb_Temperate.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using Halo Reb Template", _filename] call A3A_fnc_log;
+        "Halo"
+    };
     case (A3A_hasIFA): {
         switch(true) do {
             case (_terrainName in tropicalMaps);
@@ -276,6 +281,11 @@ A3A_Occ_template = switch(true) do {
         [2, "Using Republic Template", _filename] call A3A_fnc_log;
         "CW"
     };
+    case (A3A_hasHalo): {
+        ["Templates\NewTemplates\Halo\Halo_AI_UNSC_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using Halo UNSC Template", _filename] call A3A_fnc_log;
+        "Halo"
+    };
     case (A3A_hasIFA): {
         switch(true) do {
             case (_terrainName in tropicalMaps);
@@ -382,6 +392,11 @@ A3A_Inv_template = switch(true) do{
         ["Templates\NewTemplates\CW\CW_AI_CIS.sqf", east] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using CIS Template", _filename] call A3A_fnc_log;
         "CW"
+    };
+    case (A3A_hasHalo): {
+        ["Templates\NewTemplates\Halo\Halo_AI_INS_Temperate.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using Halo Ins Template", _filename] call A3A_fnc_log;
+        "Halo"
     };
     case (A3A_hasIFA): {
         switch(true) do {

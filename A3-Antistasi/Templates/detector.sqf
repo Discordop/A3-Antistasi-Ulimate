@@ -27,6 +27,7 @@ A3A_hasAegis = false;
 A3A_hasGlobMob = false;
 A3A_hasGlobMobAaf = false;
 A3A_hasCW = false;
+A3A_hasHalo = false;
 
 //Aegis submods
 private _activeAegis = false;
@@ -56,6 +57,12 @@ if (isClass (configfile >> "CfgPatches" >> "LIB_core")) then {
 //if (isClass (configFile >> "CfgFactionClasses" >> "JLTS_CIS") && isClass (configFile >> "CfgFactionClasses" >> "442_CIS") && isClass (configFile >> "CfgFactionClasses" >> "3AS_CIS") && isClass (configFile >> "CfgFactionClasses" >> "LS_CIS")) then {
   //A3A_hasCW = true;
   //[2,"Clone Wars Detected.",_fileName] call A3A_fnc_log;
+//};
+
+//Halo Detection
+//if (isClass (configFile >> "CfgFactionClasses" >> "OPTRE_UNSC")) then {
+ // A3A_hasHalo = true;
+  //[2,"Op Trebuchet Detected.",_fileName] call A3A_fnc_log;
 //};
 
 if (isClass (configFile >> "CfgPatches" >> "vn_weapons")) then {
@@ -234,5 +241,5 @@ if (!A3A_hasAceMedical && A3A_hasCW) then {
 };
 
 //No Mods found logging
-if (!A3A_hasRHS && !A3A_hasCup && !A3A_hasAegis && !A3A_hasIFA && !A3A_hasCW) then {[2,"No Side Replacement Mods Detected.",_fileName] call A3A_fnc_log;};
+if (!A3A_hasRHS && !A3A_hasCup && !A3A_hasAegis && !A3A_hasIFA && !A3A_hasCW && !A3A_hasHalo) then {[2,"No Side Replacement Mods Detected.",_fileName] call A3A_fnc_log;};
 if (!A3A_hasIvory && !A3A_hasTCGM && !A3A_hasADV) then {[2,"No Addon Mods Detected.",_fileName] call A3A_fnc_log;};
