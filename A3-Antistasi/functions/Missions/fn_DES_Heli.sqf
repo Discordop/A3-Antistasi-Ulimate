@@ -1,6 +1,10 @@
 //Mission: Destroy the helicopter
 if (!isServer and hasInterface) exitWith{};
 
+if (A3A_hasIFA) exitWith {
+[3, format ["Origin: Cancelling helo mission due to ifa being loaded"], _filename] call A3A_fnc_log;
+};
+
 private _missionOrigin = _this select 0;
 private _fileName = "fn_DES_Heli";
 private _difficult = if (random 10 < tierWar) then {true} else {false};

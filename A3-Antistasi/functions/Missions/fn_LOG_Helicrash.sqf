@@ -6,6 +6,10 @@ params ["_missionOrigin"];
 private _fileName = "fn_LOG_Helicrash";
 [2, "Helicrash mission init.", _fileName, true] call A3A_fnc_log;
 
+if (A3A_hasIFA) exitWith {
+[3, format ["Origin: Cancelling helo mission due to ifa being loaded"], _filename] call A3A_fnc_log;
+};
+
 private _missionOriginPos = getMarkerPos _missionOrigin;
 private _difficult = if (random 10 < tierWar) then {true} else {false};
 private _sideX = if (sidesX getVariable [_missionOrigin,sideUnknown] == Occupants) then {Occupants} else {Invaders};
@@ -135,7 +139,7 @@ if (count _crashPosition == 0) then {_crashPosition = _posCrashOrigin};
     _x enableSimulationGlobal false;
 } forEach nearestTerrainObjects [_crashPosition, ["ROCKS"], 50, false, true];
 {  
-    _x setDammage 1;
+    _x setDamage 1;
 } forEach nearestTerrainObjects [_crashPosition, ["Tree", "Bush", "BUILDING"], 20, false, true];
 
 [3, format ["Crash Location: %1, Aircraft: %2", _crashPosition, _helicopterClass], _filename] call A3A_fnc_log;
@@ -162,7 +166,7 @@ _groupPilot = createGroup _sideX;
 _pilot = [_groupPilot, _pilotClass, _crashPosition, [], 0, "NONE"] call A3A_fnc_createUnit;
 _pilotPosition = position _pilot;
 _bloodSplatter = createVehicle ["BloodSplatter_01_Large_New_F", [_pilotPosition select 0, _pilotPosition select 1, (_pilotPosition select 2) + 0.05], [], 0,  "CAN_COLLIDE"];
-_pilot setDammage 1;
+_pilot setDamage 1;
 
 _vehicles append [_pilot, _bloodSplatter];
 
@@ -464,7 +468,7 @@ if(_cargoVehicle distance _box < 50 && {alive _cargoVehicle} && {!isNull (driver
             waitUntil {sleep 1; _cargoVehicle distance _crashPosition > 150};
             _shell = "Sh_155mm_AMOS" createVehicle position _helicopter;
             _shell setVelocity [0,1,-1];
-            _helicopter setDammage 1;
+            _helicopter setDamage 1;
         };
     } else {
         [3, "Players disrupts mining operation.", _filename] call A3A_fnc_log;
