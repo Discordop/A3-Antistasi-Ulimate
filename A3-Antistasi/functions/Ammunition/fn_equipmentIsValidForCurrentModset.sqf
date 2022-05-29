@@ -103,6 +103,36 @@ if (A3A_hasIFA && {(_itemIsVanilla || _itemMod in _acemods || _itemMod in _TFARm
 	};
 };
 
+if (A3A_hasCW && {(_itemIsVanilla || _itemMod in _acemods || _itemMod in _TFARmods)}) exitWith {
+	switch (_categories select 0) do {
+		case "Item": {
+			switch (_categories select 1) do {
+				case "AccessoryMuzzle";
+				case "AccessoryPointer";
+				case "AccessorySights";
+				case "AccessoryBipod";
+				case "Binocular";
+				case "Compass";
+				case "GPS";
+				case "LaserDesignator";
+				case "MineDetector";
+				case "NVGoggles";
+				case "Radio";
+				case "UAVTerminal";
+				case "Compasses";
+				case "Unknown";
+				case "Watch": { false };
+				default { true };
+			};
+		};
+		case "Weapon";
+		case "Equipment";
+		case "Magazine";
+		case "Mine": { false };
+		default { true };
+	};
+};
+
 if (A3A_hasVN && {(_itemIsVanilla || _itemMod in _acemods || _itemMod in _TFARmods)}) exitWith {
 	switch (_categories select 0) do {
 		case "Item": {

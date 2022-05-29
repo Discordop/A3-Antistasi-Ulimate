@@ -26,6 +26,7 @@ A3A_hasIFA = false;
 A3A_hasAegis = false;
 A3A_hasGlobMob = false;
 A3A_hasGlobMobAaf = false;
+A3A_hasCW = false;
 
 //Aegis submods
 private _activeAegis = false;
@@ -50,6 +51,12 @@ if (isClass (configfile >> "CfgPatches" >> "LIB_core")) then {
   A3A_hasIFA = true;
   [2,"Iront Front Detected.",_fileName] call A3A_fnc_log;
 };
+
+//Clone Wars Detection
+//if (isClass (configFile >> "CfgFactionClasses" >> "JLTS_CIS") && isClass (configFile >> "CfgFactionClasses" >> "442_CIS") && isClass (configFile >> "CfgFactionClasses" >> "3AS_CIS") && isClass (configFile >> "CfgFactionClasses" >> "LS_CIS")) then {
+  //A3A_hasCW = true;
+  //[2,"Clone Wars Detected.",_fileName] call A3A_fnc_log;
+//};
 
 if (isClass (configFile >> "CfgPatches" >> "vn_weapons")) then {
   A3A_hasVN = true;
@@ -213,19 +220,19 @@ if((_activeAfrf || _activeUsaf || _activeGref || _activeSaf) && (_activeCupUnits
 };
 
 if (A3A_hasAceMedical && isClass (configFile >> "CfgPatches" >> "LIB_core")) then {
-	private _text = "IFA is detected but also ace is loaded. Please remove ace to fix this error.";
+	private _text = "IFA is detected but also Ace is loaded. Please remove Ace to fix this error.";
   systemChat _text;
   [1, _text, _fileName] call A3A_fnc_log;
 	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
 };
 
-if (isClass (configFile >> "CfgPatches" >> "vn_weapons") && isClass (configFile >> "CfgPatches" >> "LIB_core")) then {
-	private _text = "IFA is loaded but also SOGPF is loaded. Please unload SOGPF to fix this error.";
+if (!A3A_hasAceMedical && A3A_hasCW) then {
+	private _text = "Clone Wars modset loaded but Ace is missing, please load Ace";
   systemChat _text;
   [1, _text, _fileName] call A3A_fnc_log;
 	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
 };
 
 //No Mods found logging
-if (!A3A_hasRHS && !A3A_hasCup && !A3A_hasAegis && !A3A_hasIFA) then {[2,"No Side Replacement Mods Detected.",_fileName] call A3A_fnc_log;};
+if (!A3A_hasRHS && !A3A_hasCup && !A3A_hasAegis && !A3A_hasIFA && !A3A_hasCW) then {[2,"No Side Replacement Mods Detected.",_fileName] call A3A_fnc_log;};
 if (!A3A_hasIvory && !A3A_hasTCGM && !A3A_hasADV) then {[2,"No Addon Mods Detected.",_fileName] call A3A_fnc_log;};
