@@ -1,7 +1,7 @@
 <div align="center">
   <h1>Antistasi Ultimate</h1>
   <p>
-        Antistasi Ultimate is a fork version of Antistasi mission by Official Antistasi Community.
+        Antistasi Ultimate is a fork version of Antistasi Plus mission by Socrates forked from Official Antistasi Community.
   </p>
 </div>
 
