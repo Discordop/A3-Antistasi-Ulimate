@@ -214,6 +214,11 @@ A3A_Occ_template = switch(true) do {
         };
         "RHS"
     };
+    case (A3A_hasSwe): {
+        ["Templates\NewTemplates\Swe\Swe_AI_SweAF_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using Swedish Armed Forces Template", _filename] call A3A_fnc_log;
+        "Swe"
+    };
     case (A3A_hasCup): {
         switch(cupOccupantFaction) do {
             case (0): { //USAF
@@ -555,5 +560,7 @@ if (A3A_hasAegis) then {call compileScript ["Templates\NewTemplates\Aegis\Aegis_
 if (A3A_hasIFA) then {call compileScript ["Templates\NewTemplates\IFA\IFA_Logistics_Nodes.sqf"];};
 if (A3A_hasGlobMob) then {call compileScript ["Templates\NewTemplates\GM\GM_Logistics_Nodes.sqf"];};
 if (A3A_hasVN) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\VN\VN_Logistics_Nodes.sqf"};
+if (A3A_hasHalo) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\Halo\Halo_Logistics_Nodes.sqf"};
 if (A3A_hasCW) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\CW\CW_Logistics_Nodes.sqf"};
 if (A3A_hasUR) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\VN_UR\VN_UR_Logistics_Nodes.sqf"};
+if (A3A_hasSwe) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\Swe\Swe_Logistics_Nodes.sqf"};
