@@ -307,9 +307,9 @@ _sfLoadoutData setVariable ["sidearms", [
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
 _militaryLoadoutData setVariable ["uniforms", ["sfp_m90w_uniform", "sfp_m90w_uniform_ksk90_modern", "sfp_m90w_uniform_ksk90", "sfp_m90w_uniform_boots_m08", "sfp_m90w_uniform_m08", "sfp_m90w_uniform_modern", "sfp_m90w_uniform_dirty"]];		
-_militaryLoadoutData setVariable ["vests", ["sfp_kroppsskydd94", "sfp_kroppsskydd94_rifle1", "sfp_kroppsskydd94_sv2k_rifle1"]];			
-_militaryLoadoutData setVariable ["Hvests", ["sfp_kroppsskydd94_sv2k_rifle1_diaper"]];
-_militaryLoadoutData setVariable ["GLvests", ["sfp_kroppsskydd94_sv2k_rifle1"]];
+_militaryLoadoutData setVariable ["vests", ["sfp_stridsbalte_304k", "sfp_stridsbalte_304k_extrabag", "sfp_stridsbalte_304k_ar"]];			
+_militaryLoadoutData setVariable ["Hvests", ["sfp_stridsbalte_304k_gl"]];
+_militaryLoadoutData setVariable ["GLvests", ["sfp_stridsbalte_304k_gl"]];
 _militaryLoadoutData setVariable ["backpacks", ["sfp_backpack_stridssack2000","sfp_backpack_lk35"]];		
 _militaryLoadoutData setVariable ["helmets", ["sfp_m90w_helmet", "sfp_m90w_helmet_headset_nvg", "sfp_m90w_helmet_headset", "sfp_m90w_helmet_nvg", "sfp_m90w_helmet_peltor_nomic", "sfp_m90w_helmet_peltor_nvg", "sfp_m90w_helmet_peltor"]];		
 _militaryLoadoutData setVariable ["ATLaunchers", ["sfp_pskott86"]];  
