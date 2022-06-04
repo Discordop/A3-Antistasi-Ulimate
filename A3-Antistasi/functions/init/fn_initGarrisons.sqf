@@ -143,6 +143,10 @@ if (gameMode == 1) then
 			_mrkCSAT = ["airport_3","outpost_24","outpost_20", "outpost_23", "outpost_20","seaport_5","control_143", "control_144", "control_145", "control_149", "control_147","control_169", "control_165", "control_138", "control_137", "control_158"];
             _controlsCSAT = ["control_143", "control_144", "control_145", "control_149", "control_147","control_169", "control_165", "control_138", "control_137", "control_158"];
 		};
+		case "tem_anizay": {
+			_mrkCSAT = ["outpost_8", "factory_4", "resource_7", "outpost_7", "resource_8", "factory_3"];
+			_controlsCSAT = ["control_45", "control_44", "control_19", "control_20", "control_18"];
+		};
 		case "napf": {
 			_mrkCSAT = ["airport_2", "outpost_5", "outpost_6", "outpost_7", "seaport_1","control_44", "control_49", "control_43", "control_53", "control_23", "control_52", "control_46", "control_47", "control_54", "control_50", "control_16", "control_17"];
             _controlsCSAT = ["control_44", "control_49", "control_43", "control_53", "control_23", "control_52", "control_46", "control_47", "control_54", "control_50", "control_16", "control_17"];
