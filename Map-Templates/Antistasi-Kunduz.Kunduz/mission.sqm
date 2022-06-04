@@ -6,28 +6,32 @@ class EditorData
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=1026;
+	mods[]=
+	{
+		"3denEnhanced"
+	};
 	class ItemIDProvider
 	{
-		nextID=1467;
+		nextID=1470;
 	};
 	class MarkerIDProvider
 	{
-		nextID=5;
+		nextID=7;
 	};
 	class LayerIndexProvider
 	{
-		nextID=153;
+		nextID=175;
 	};
 	class Camera
 	{
-		pos[]={2700.6895,109.54944,4930.3496};
-		dir[]={-0.44577649,-0.79516906,0.41134566};
-		up[]={-0.58439726,0.60634834,0.53925651};
-		aside[]={0.67821097,1.9781291e-006,0.73497736};
+		pos[]={1468.7302,61.681473,3586.7153};
+		dir[]={-0.50734562,-0.62399536,0.59433609};
+		up[]={-0.40513104,0.7814272,0.47459599};
+		aside[]={0.76057547,-1.0989606e-007,0.64925337};
 	};
 };
 binarizationWanted=0;
-sourceName="Antistasi-Kunduz-2-4-1";
+sourceName="Antistasi-Kunduz";
 addons[]=
 {
 	"A3_Structures_F_Ind_Cargo",
@@ -188,21 +192,64 @@ class AddonsMetaData
 		};
 	};
 };
+dlcs[]=
+{
+	"Contact",
+	"Enoch",
+	"Heli",
+	"Expansion"
+};
 randomSeed=2288247;
+class ScenarioData
+{
+	author="Karl";
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
 class Mission
 {
 	class Intel
 	{
-		briefingName=$STR_antistasi_mission_info_kunduz_mapname_text;
+		briefingName="Antistasi Ultimate - Kunduz";
 		resistanceWest=0;
+		startWind=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
 		year=2035;
 		month=7;
 		hour=10;
 		minute=0;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
 	};
 	class Entities
 	{
-		items=456;
+		items=459;
 		class Item0
 		{
 			dataType="Object";
@@ -3351,7 +3398,7 @@ class Mission
 			};
 			id=955;
 			type="Land_WoodenBox_F";
-			atlOffset=-4.5776367e-005;
+			atlOffset=-4.6253204e-005;
 		};
 		class Item162
 		{
@@ -3368,7 +3415,7 @@ class Mission
 			};
 			id=956;
 			type="Land_WoodenBox_F";
-			atlOffset=-5.197525e-005;
+			atlOffset=-5.2452087e-005;
 		};
 		class Item163
 		{
@@ -4246,13 +4293,13 @@ class Mission
 						angles[]={0,2.7474451,0};
 					};
 					side="Empty";
-					flags=4;
 					class Attributes
 					{
 						skill=0.2;
 					};
 					id=1275;
 					type="CamoNet_OPFOR_open_F";
+					atlOffset=1.3946795;
 				};
 				class Item24
 				{
@@ -8587,16 +8634,16 @@ class Mission
 				class Item0
 				{
 					dataType="Marker";
-					position[]={1415.3971,23.813477,3642.7617};
-					name="outp_1_vehicle";
+					position[]={1415.397,23.813,3642.762};
+					name="milb_1_vehicle";
 					markerType="RECTANGLE";
 					type="rectangle";
 					colorName="ColorGreen";
-					a=24.227222;
-					b=9.3463001;
-					angle=117.14042;
+					a=24.226999;
+					b=9.3459997;
+					angle=117.13999;
 					id=1282;
-					atlOffset=-17.058563;
+					atlOffset=-17.059067;
 				};
 				class Item1
 				{
@@ -8629,16 +8676,16 @@ class Mission
 				class Item3
 				{
 					dataType="Marker";
-					position[]={1466.109,84.846191,3663.0681};
-					name="outpost_1";
+					position[]={1466.109,84.846001,3663.0681};
+					name="milbase_1";
 					markerType="RECTANGLE";
 					type="Empty";
-					colorName="ColorGreen";
-					a=82.330467;
-					b=84.119888;
-					angle=222.62746;
+					colorName="ColorRed";
+					a=82.330002;
+					b=84.120003;
+					angle=222.62698;
 					id=247;
-					atlOffset=45.310776;
+					atlOffset=45.310585;
 				};
 				class Item4
 				{
@@ -8718,7 +8765,7 @@ class Mission
 					colorName="ColorGreen";
 					a=15.121;
 					b=6.9070001;
-					angle=177.03894;
+					angle=177.03891;
 					id=1414;
 					atlOffset=-0.00039243698;
 				};
@@ -9010,7 +9057,7 @@ class Mission
 					position[]={3854.791,20.436001,4481.6221};
 					name="spawnpoint";
 					type="hd_start";
-					angle=28.146975;
+					angle=28.146967;
 					id=211;
 					atlOffset=12.870616;
 				};
@@ -10450,7 +10497,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupID [_value];";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -10875,6 +10922,45 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item456
+		{
+			dataType="Marker";
+			position[]={1484.505,35.167,3635.2471};
+			name="milb_1_mortar_1";
+			markerType="ELLIPSE";
+			type="";
+			colorName="ColorYellow";
+			a=5.8460002;
+			b=5.8340001;
+			id=1467;
+			atlOffset=1.4025841;
+		};
+		class Item457
+		{
+			dataType="Marker";
+			position[]={1400.0074,42.491253,3662.0442};
+			name="milb_1_mortar_2";
+			markerType="ELLIPSE";
+			type="";
+			colorName="ColorYellow";
+			a=5.8460002;
+			b=5.8340001;
+			id=1468;
+		};
+		class Item458
+		{
+			dataType="Marker";
+			position[]={1452.9821,37.443001,3619.3789};
+			name="milb_1_sam";
+			markerType="RECTANGLE";
+			type="";
+			colorName="ColorBrown";
+			a=17.448;
+			b=12.104;
+			angle=44.485996;
+			id=1469;
+			atlOffset=-0.0002822876;
 		};
 	};
 	class Connections
