@@ -90,16 +90,6 @@ A3A_Reb_template = switch(true) do {
             [2, "Using Temperate CHDKZ Template", _filename] call A3A_fnc_log;
         };
     };
-    case (A3A_hasVN && {A3A_hasUR}): {
-        ["Templates\NewTemplates\VN_UR\VN_UR_Reb_KPNLF.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
-        [2, "Using Unsung KPNLF Template", _filename] call A3A_fnc_log;
-        "VN"
-    };
-    case (A3A_hasVN): {
-        ["Templates\NewTemplates\VN\VN_Reb_KPNLF.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
-        [2, "Using KPNLF Template", _filename] call A3A_fnc_log;
-        "VN"
-    };
     case (A3A_hasCW): {
         ["Templates\NewTemplates\CW\CW_Reb_MAN.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using Mandalorian Template", _filename] call A3A_fnc_log;
@@ -123,6 +113,16 @@ A3A_Reb_template = switch(true) do {
             };
         };
         "IFA"
+    };
+    case (A3A_hasVN && {A3A_hasUR}): {
+        ["Templates\NewTemplates\VN_UR\VN_UR_Reb_KPNLF.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using Unsung KPNLF Template", _filename] call A3A_fnc_log;
+        "VN"
+    };
+    case (A3A_hasVN): {
+        ["Templates\NewTemplates\VN\VN_Reb_KPNLF.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using KPNLF Template", _filename] call A3A_fnc_log;
+        "VN"
     };
     default {
         switch(true) do {
@@ -214,6 +214,11 @@ A3A_Occ_template = switch(true) do {
         };
         "RHS"
     };
+    case (A3A_hasSwe): {
+        ["Templates\NewTemplates\Swe\Swe_AI_SweAF_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using Swedish Armed Forces Template", _filename] call A3A_fnc_log;
+        "Swe"
+    };
     case (A3A_hasCup): {
         switch(cupOccupantFaction) do {
             case (0): { //USAF
@@ -266,16 +271,6 @@ A3A_Occ_template = switch(true) do {
         [2, "Using Aegis EUROFOR Template", _filename] call A3A_fnc_log;
         "Vanilla" //intentionally, as aegis expands vanilla
     };
-    case (A3A_hasVN && {A3A_hasUR}): {
-        ["Templates\NewTemplates\VN_UR\VN_UR_MACV.sqf", west] call A3A_fnc_compatibilityLoadFaction;
-        [2, "Using Unsung VN MACV Template", _filename] call A3A_fnc_log;
-        "VN"
-    };
-    case (A3A_hasVN): {
-        ["Templates\NewTemplates\VN\VN_MACV.sqf", west] call A3A_fnc_compatibilityLoadFaction;
-        [2, "Using VN MACV Template", _filename] call A3A_fnc_log;
-        "VN"
-    };
     case (A3A_hasCW): {
         ["Templates\NewTemplates\CW\CW_AI_REP.sqf", west] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using Republic Template", _filename] call A3A_fnc_log;
@@ -299,6 +294,16 @@ A3A_Occ_template = switch(true) do {
             };
         };
         "IFA"
+    };
+    case (A3A_hasVN && {A3A_hasUR}): {
+        ["Templates\NewTemplates\VN_UR\VN_UR_MACV.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using Unsung VN MACV Template", _filename] call A3A_fnc_log;
+        "VN"
+    };
+    case (A3A_hasVN): {
+        ["Templates\NewTemplates\VN\VN_MACV.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using VN MACV Template", _filename] call A3A_fnc_log;
+        "VN"
     };
     default {
         switch(true) do {
@@ -378,16 +383,6 @@ A3A_Inv_template = switch(true) do{
         [2, "Using Aegis Russia Template", _filename] call A3A_fnc_log;
         "Vanilla" //intentionally, as aegis expands vanilla
     };
-    case (A3A_hasVN && {A3A_hasUR}): {
-        ["Templates\NewTemplates\VN_UR\VN_UR_PAVN.sqf", east] call A3A_fnc_compatibilityLoadFaction;
-        [2, "Using Unsung VN PAVN Template", _filename] call A3A_fnc_log;
-        "VN"
-    };
-    case (A3A_hasVN): {
-        ["Templates\NewTemplates\VN\VN_PAVN.sqf", east] call A3A_fnc_compatibilityLoadFaction;
-        [2, "Using VN PAVN Template", _filename] call A3A_fnc_log;
-        "VN"
-    };
     case (A3A_hasCW): {
         ["Templates\NewTemplates\CW\CW_AI_CIS.sqf", east] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using CIS Template", _filename] call A3A_fnc_log;
@@ -411,6 +406,16 @@ A3A_Inv_template = switch(true) do{
             };
         };
         "IFA"
+    };
+    case (A3A_hasVN && {A3A_hasUR}): {
+        ["Templates\NewTemplates\VN_UR\VN_UR_PAVN.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using Unsung VN PAVN Template", _filename] call A3A_fnc_log;
+        "VN"
+    };
+    case (A3A_hasVN): {
+        ["Templates\NewTemplates\VN\VN_PAVN.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using VN PAVN Template", _filename] call A3A_fnc_log;
+        "VN"
     };
     default {
         switch(true) do {//This one (vanilla) works differently so that we don't get DLC kit on modded maps.
@@ -497,11 +502,6 @@ A3A_Civ_template = switch(true) do {
         [2, "Using RHS Civ Template", _filename] call A3A_fnc_log;
         "RHS"
     };
-    case (A3A_hasVN): {
-        ["Templates\NewTemplates\VN\VN_CIV.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
-        [2, "Using VN CIV Template", _filename] call A3A_fnc_log;
-        "VN"
-    };
     case (A3A_hasCW): {
         ["Templates\NewTemplates\CW\CW_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using Clone Wars Civ Template", _filename] call A3A_fnc_log;
@@ -511,6 +511,11 @@ A3A_Civ_template = switch(true) do {
         ["Templates\NewTemplates\IFA\IFA_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using IFA CIV Template", _filename] call A3A_fnc_log;
 		"IFA"
+    };
+    case (A3A_hasVN): {
+        ["Templates\NewTemplates\VN\VN_CIV.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using VN CIV Template", _filename] call A3A_fnc_log;
+        "VN"
     };
     default {
         ["Templates\NewTemplates\Vanilla\Vanilla_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
@@ -555,5 +560,7 @@ if (A3A_hasAegis) then {call compileScript ["Templates\NewTemplates\Aegis\Aegis_
 if (A3A_hasIFA) then {call compileScript ["Templates\NewTemplates\IFA\IFA_Logistics_Nodes.sqf"];};
 if (A3A_hasGlobMob) then {call compileScript ["Templates\NewTemplates\GM\GM_Logistics_Nodes.sqf"];};
 if (A3A_hasVN) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\VN\VN_Logistics_Nodes.sqf"};
+if (A3A_hasHalo) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\Halo\Halo_Logistics_Nodes.sqf"};
 if (A3A_hasCW) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\CW\CW_Logistics_Nodes.sqf"};
 if (A3A_hasUR) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\VN_UR\VN_UR_Logistics_Nodes.sqf"};
+if (A3A_hasSwe) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\Swe\Swe_Logistics_Nodes.sqf"};
