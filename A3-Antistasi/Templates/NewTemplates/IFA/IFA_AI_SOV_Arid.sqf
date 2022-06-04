@@ -117,7 +117,7 @@
 ["vehiclesHelisTransport", ["LIB_SOV_M3_Halftrack"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", ["LIB_JS2_43"]] call _fnc_saveToTemplate;
 
-["vehiclesArtillery", [["LIB_leFH18", ["LIB_20x_Shell_105L28_Gr39HlC_HE","LIB_20x_Shell_105L28_Gr38_HE"]]]] call _fnc_saveToTemplate;
+["vehiclesArtillery", [["LIB_US6_BM13", ["LIB_16Rnd_BM13","LIB_16Rnd_BM13"]]]] call _fnc_saveToTemplate;
 
 
 ["uavsAttack", ["not_supported"]] call _fnc_saveToTemplate;
@@ -137,7 +137,7 @@
 ["staticAT", ["LIB_Zis3"]] call _fnc_saveToTemplate;
 ["staticAA", ["LIB_61k"]] call _fnc_saveToTemplate;
 ["staticMortars", ["LIB_BM37"]] call _fnc_saveToTemplate;
-["staticHowitzers", ["LIB_Nebelwerfer41_Camo"]] call _fnc_saveToTemplate;
+["staticHowitzers", ["LIB_Nebelwerfer41_Gelbbraun"]] call _fnc_saveToTemplate;
 
 ["mortarMagazineHE", "LIB_8Rnd_82mmHE_BM37"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "LIB_82mm_BM37_SmokeShell"] call _fnc_saveToTemplate;

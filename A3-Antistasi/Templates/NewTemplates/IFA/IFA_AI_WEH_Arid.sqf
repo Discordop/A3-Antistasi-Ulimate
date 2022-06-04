@@ -117,7 +117,7 @@
 ["vehiclesHelisTransport", ["LIB_DAK_OpelBlitz_Tent","LIB_DAK_SdKfz251","LIB_DAK_SdKfz251_FFV"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", ["LIB_DAK_PzKpfwVI_E"]] call _fnc_saveToTemplate;
 
-["vehiclesArtillery", [["LIB_leFH18", ["LIB_20x_Shell_105L28_Gr39HlC_HE","LIB_20x_Shell_105L28_Gr38_HE"]]]] call _fnc_saveToTemplate;
+["vehiclesArtillery", [["LIB_SdKfz124", ["LIB_20x_Shell_105L28_Gr39HlC_HE","LIB_20x_Shell_105L28_Gr38_HE"]]]] call _fnc_saveToTemplate;
 
 ["uavsAttack", ["not_supported"]] call _fnc_saveToTemplate;
 ["uavsPortable", ["not_supported"]] call _fnc_saveToTemplate;
@@ -137,12 +137,12 @@
 ["staticAA", ["LIB_FlaK_38"]] call _fnc_saveToTemplate;
 ["staticMortars", ["LIB_GrWr34"]] call _fnc_saveToTemplate;
 
-["staticHowitzers", ["LIB_Nebelwerfer41_Gelbbraun"]] call _fnc_saveToTemplate;
+["staticHowitzers", ["LIB_leFH18"]] call _fnc_saveToTemplate;
 
 ["mortarMagazineHE", "LIB_8Rnd_81mmHE_GRWR34"] call _fnc_saveToTemplate;
 ["mortarMagazineSmoke", "LIB_81mm_GRWR34_SmokeShell"] call _fnc_saveToTemplate;
 
-["howitzerMagazineHE", ["LIB_6Rnd_NbW41"]] call _fnc_saveToTemplate;
+["howitzerMagazineHE", ["LIB_20x_Shell_105L28_Gr38_HE"]] call _fnc_saveToTemplate;
 
 //Bagged weapon definitions
 ["baggedMGs", [["I_HMG_02_support_high_F", "I_G_HMG_02_high_weapon_F"]]] call _fnc_saveToTemplate;

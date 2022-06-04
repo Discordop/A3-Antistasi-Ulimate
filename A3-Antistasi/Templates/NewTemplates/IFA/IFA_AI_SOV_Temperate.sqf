@@ -117,7 +117,7 @@
 ["vehiclesHelisTransport", ["LIB_SOV_M3_Halftrack"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", ["LIB_JS2_43"]] call _fnc_saveToTemplate;
 
-["vehiclesArtillery", [["LIB_leFH18", ["LIB_20x_Shell_105L28_Gr39HlC_HE","LIB_20x_Shell_105L28_Gr38_HE"]]]] call _fnc_saveToTemplate;
+["vehiclesArtillery", [["LIB_US6_BM13", ["LIB_16Rnd_BM13","LIB_16Rnd_BM13"]]]] call _fnc_saveToTemplate;
 
 
 ["uavsAttack", ["not_supported"]] call _fnc_saveToTemplate;
