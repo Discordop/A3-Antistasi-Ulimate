@@ -1819,14 +1819,14 @@
         <Korean>바닥부터 FIA 군을 일으켜 다이나믹 미션이 생성되는 맵 전체에서 AAF와 CSAT을 패퇴시키십시오.</Korean>
       </Key>
       <Key ID="STR_antistasi_credits_generic_missionname_text">
-        <Original>Antistasi Plus - Altis Requiem</Original>
-        <English>Antistasi Plus - Altis Requiem</English>
-        <French>Antistasi Plus - Altis Requiem</French>
-        <Russian>Antistasi Plus - Реквием по Алтису</Russian>
-        <German>Antistasi Plus - Altis Requiem</German>
-        <Czech>Antistasi Plus - Altis Requiem</Czech>
-        <Korean>Antistasi Plus - Altis Requiem</Korean>
-        <Chinesesimp>Antistasi Plus - 阿尔蒂斯安魂曲</Chinesesimp>
+        <Original>Antistasi Ultimate - Altis Requiem</Original>
+        <English>Antistasi Ultimate - Altis Requiem</English>
+        <French>Antistasi Ultimate - Altis Requiem</French>
+        <Russian>Antistasi Ultimate - Реквием по Алтису</Russian>
+        <German>Antistasi Ultimate - Altis Requiem</German>
+        <Czech>Antistasi Ultimate - Altis Requiem</Czech>
+        <Korean>Antistasi Ultimate - Altis Requiem</Korean>
+        <Chinesesimp>Antistasi Ultimate - 阿尔蒂斯安魂曲</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_credits_generic_missiondesc_text">
         <Original>Be a Resistance leader, be a hero.</Original>
@@ -2098,18 +2098,18 @@
     </Container>
     <Container name="mission_info">
       <Key ID="STR_antistasi_mission_info_altis_mapname_short_text">
-        <Original>Antistasi Plus - Altis Requiem</Original>
-        <English>Antistasi Plus - Altis Requiem</English>
-        <Russian>Antistasi Plus - Реквием по Алтису</Russian>
-        <Chinesesimp>Antistasi Plus - 阿尔蒂斯安魂曲</Chinesesimp>
+        <Original>Antistasi Ultimate - Altis Requiem</Original>
+        <English>Antistasi Ultimate - Altis Requiem</English>
+        <Russian>Antistasi Ultimate - Реквием по Алтису</Russian>
+        <Chinesesimp>Antistasi Ultimate - 阿尔蒂斯安魂曲</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_altis_mapname_text">
-        <Original>Antistasi Plus - Altis Requiem</Original>
-        <English>Antistasi Plus - Altis Requiem</English>
-        <French>Antistasi Plus - Altis Requiem</French>
-        <Korean>Antistasi Plus - Altis Requiem</Korean>
-        <Chinesesimp>Antistasi Plus - 阿尔蒂斯安魂曲</Chinesesimp>
-        <Russian>Antistasi Plus - Реквием по Алтису</Russian>
+        <Original>Antistasi Ultimate - Altis Requiem</Original>
+        <English>Antistasi Ultimate - Altis Requiem</English>
+        <French>Antistasi Ultimate - Altis Requiem</French>
+        <Korean>Antistasi Ultimate - Altis Requiem</Korean>
+        <Chinesesimp>Antistasi Ultimate - 阿尔蒂斯安魂曲</Chinesesimp>
+        <Russian>Antistasi Ultimate - Реквием по Алтису</Russian>
       </Key>
       <Key ID="STR_antistasi_mission_info_altis_description_text">
         <Original>Be the Resistance Leader. Fight against a superior enemy in technology, number, assets and vehicles. Use guerrilla tactics in a totally dynamic world, with around 26 sidemissions, everywhere, anytime, anything.</Original>
@@ -2164,22 +2164,22 @@
         <Korean>자유보다 중요한건 없기에.</Korean>
       </Key>
       <Key ID="STR_antistasi_mission_info_tanoa_mapname_short_text">
-        <Original>Antistasi Plus - Horizon Islands</Original>
-        <English>Antistasi Plus - Horizon Islands</English>
-        <French>Antistasi Plus -  Îles Horizon</French>
-        <German>Antistasi Plus - Horizontinseln</German>
-        <Czech>Antistasi Plus - Horizon Islands</Czech>
-        <Russian>Antistasi Plus - Острова Горизонта</Russian>
-        <Chinesesimp>Antistasi Plus - 地平线群岛</Chinesesimp>
+        <Original>Antistasi Ultimate - Horizon Islands</Original>
+        <English>Antistasi Ultimate - Horizon Islands</English>
+        <French>Antistasi Ultimate -  Îles Horizon</French>
+        <German>Antistasi Ultimate - Horizontinseln</German>
+        <Czech>Antistasi Ultimate - Horizon Islands</Czech>
+        <Russian>Antistasi Ultimate - Острова Горизонта</Russian>
+        <Chinesesimp>Antistasi Ultimate - 地平线群岛</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_tanoa_mapname_text">
-        <Original>Antistasi Plus - Horizon Islands</Original>
-        <English>Antistasi Plus - Horizon Islands</English>
-        <French>Antistasi Plus -  Îles Horizon</French>
-        <German>Antistasi Plus - Horizontinseln</German>
-        <Czech>Antistasi Plus - Horizon Islands</Czech>
-        <Russian>Antistasi Plus - Острова Горизонта</Russian>
-        <Chinesesimp>Antistasi Plus - 地平线群岛</Chinesesimp>
+        <Original>Antistasi Ultimate - Horizon Islands</Original>
+        <English>Antistasi Ultimate - Horizon Islands</English>
+        <French>Antistasi Ultimate -  Îles Horizon</French>
+        <German>Antistasi Ultimate - Horizontinseln</German>
+        <Czech>Antistasi Ultimate - Horizon Islands</Czech>
+        <Russian>Antistasi Ultimate - Острова Горизонта</Russian>
+        <Chinesesimp>Antistasi Ultimate - 地平线群岛</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_tanoa_blurb_text">
         <Original>A pack of old men in a job where people die young.</Original>
@@ -2191,22 +2191,22 @@
         <Chinesesimp>一群老人们在做一项会让人英年逝世的工作。</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_livonia_mapname_short_text">
-        <Original>Antistasi Plus - Horizon Scan</Original>
-        <English>Antistasi Plus - Horizon Scan</English>
-        <French>Antistasi Plus - Analyse d'horizon</French>
-        <German>Antistasi Plus -  Horizontscan</German>
-        <Czech>Antistasi Plus - Horizon Scan</Czech>
-        <Russian>Antistasi Plus - Ливония</Russian>
-        <Chinesesimp>Antistasi Plus - 扫视地平线</Chinesesimp>
+        <Original>Antistasi Ultimate - Horizon Scan</Original>
+        <English>Antistasi Ultimate - Horizon Scan</English>
+        <French>Antistasi Ultimate - Analyse d'horizon</French>
+        <German>Antistasi Ultimate -  Horizontscan</German>
+        <Czech>Antistasi Ultimate - Horizon Scan</Czech>
+        <Russian>Antistasi Ultimate - Ливония</Russian>
+        <Chinesesimp>Antistasi Ultimate - 扫视地平线</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_livonia_mapname_text">
-        <Original>Antistasi Plus - Horizon Scan</Original>
-        <English>Antistasi Plus - Horizon Scan</English>
-        <French>Antistasi Plus - Analyse d'horizon</French>
-        <Russian>Antistasi Plus - Сканирование Горизонта</Russian>
-        <German>Antistasi Plus - Horizontscan</German>
-        <Czech>Antistasi Plus - Horizon Scan</Czech>
-        <Chinesesimp>Antistasi Plus - 扫视地平线</Chinesesimp>
+        <Original>Antistasi Ultimate - Horizon Scan</Original>
+        <English>Antistasi Ultimate - Horizon Scan</English>
+        <French>Antistasi Ultimate - Analyse d'horizon</French>
+        <Russian>Antistasi Ultimate - Сканирование Горизонта</Russian>
+        <German>Antistasi Ultimate - Horizontscan</German>
+        <Czech>Antistasi Ultimate - Horizon Scan</Czech>
+        <Chinesesimp>Antistasi Ultimate - 扫视地平线</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_livonia_description_text">
         <Original>Be the Resistance Leader. Fight against a superior enemy in technology, number, assets and vehicles. Use guerrilla tactics in a totally dynamic world, with around 18 sidemissions, everywhere, anytime, anything.</Original>
@@ -2228,22 +2228,22 @@
         <Chinesesimp>"……这是一片开阔的原野。"</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_chernarus2020_mapname_text">
-        <Original>Antistasi Plus - Harvest Blue</Original>
-        <English>Antistasi Plus - Harvest Blue</English>
-        <French>Antistasi Plus - Bleu récolte</French>
-        <German>Antistasi Plus - Ernte blau</German>
-        <Russian>Antistasi Plus - Лазурный урожай</Russian>
-        <Czech>Antistasi Plus - Harvest Blue</Czech>
-        <Chinesesimp>Antistasi Plus - 蓝色收获</Chinesesimp>
+        <Original>Antistasi Ultimate - Harvest Blue</Original>
+        <English>Antistasi Ultimate - Harvest Blue</English>
+        <French>Antistasi Ultimate - Bleu récolte</French>
+        <German>Antistasi Ultimate - Ernte blau</German>
+        <Russian>Antistasi Ultimate - Лазурный урожай</Russian>
+        <Czech>Antistasi Ultimate - Harvest Blue</Czech>
+        <Chinesesimp>Antistasi Ultimate - 蓝色收获</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_chernarus2020_mapname_short_text">
-        <Original>Antistasi Plus - Harvest Blue</Original>
-        <English>Antistasi Plus - Harvest Blue</English>
-        <French>Antistasi Plus - Bleu récolte</French>
-        <German>Antistasi Plus - Ernte blau</German>
-        <Chinesesimp>Antistasi Plus - 蓝色收获</Chinesesimp>
-        <Russian>Antistasi Plus - Лазурный урожай</Russian>
-        <Czech>Antistasi Plus - Harvest Blue</Czech>
+        <Original>Antistasi Ultimate - Harvest Blue</Original>
+        <English>Antistasi Ultimate - Harvest Blue</English>
+        <French>Antistasi Ultimate - Bleu récolte</French>
+        <German>Antistasi Ultimate - Ernte blau</German>
+        <Chinesesimp>Antistasi Ultimate - 蓝色收获</Chinesesimp>
+        <Russian>Antistasi Ultimate - Лазурный урожай</Russian>
+        <Czech>Antistasi Ultimate - Harvest Blue</Czech>
       </Key>
       <Key ID="STR_antistasi_mission_info_chernarus2020_blurb_text">
         <Original>Bardak is out there.</Original>
@@ -2255,22 +2255,22 @@
         <Czech>Bardak je někde poblíž. </Czech>
       </Key>
       <Key ID="STR_antistasi_mission_info_weferlingen_mapname_text">
-        <Original>Antistasi Plus - Code Red</Original>
-        <English>Antistasi Plus - Code Red</English>
-        <French>Antistasi Plus - Code rouge</French>
-        <German>Antistasi Plus - Alarmstufe Rot</German>
-        <Russian>Antistasi Plus - Код Красный</Russian>
-        <Czech>Antistasi Plus - Červený kód</Czech>
-        <Chinesesimp>阿尔提斯Plus - 红色代码</Chinesesimp>
+        <Original>Antistasi Ultimate - Code Red</Original>
+        <English>Antistasi Ultimate - Code Red</English>
+        <French>Antistasi Ultimate - Code rouge</French>
+        <German>Antistasi Ultimate - Alarmstufe Rot</German>
+        <Russian>Antistasi Ultimate - Код Красный</Russian>
+        <Czech>Antistasi Ultimate - Červený kód</Czech>
+        <Chinesesimp>阿尔提斯Ultimate - 红色代码</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_weferlingen_mapname_short_text">
-        <Original>Antistasi Plus - Code Red</Original>
-        <English>Antistasi Plus - Code Red</English>
-        <French>Antistasi Plus - Code rouge</French>
-        <German>Antistasi Plus - Alarmstufe Rot</German>
-        <Russian>Antistasi Plus - Код Красный</Russian>
-        <Czech>Antistasi Plus - Červený kód</Czech>
-        <Chinesesimp>阿尔提斯Plus - 红色代码</Chinesesimp>
+        <Original>Antistasi Ultimate - Code Red</Original>
+        <English>Antistasi Ultimate - Code Red</English>
+        <French>Antistasi Ultimate - Code rouge</French>
+        <German>Antistasi Ultimate - Alarmstufe Rot</German>
+        <Russian>Antistasi Ultimate - Код Красный</Russian>
+        <Czech>Antistasi Ultimate - Červený kód</Czech>
+        <Chinesesimp>阿尔提斯Ultimate - 红色代码</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_weferlingen_blurb_text">
         <Original>Border crossing never has been so easy.</Original>
@@ -2282,19 +2282,19 @@
         <Chinesesimp>越境从未如此容易。</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_taviana_mapname_text">
-        <Original>Antistasi Plus - The Red Dawn</Original>
-        <English>Antistasi Plus - The Red Dawn</English>
-        <French>Antistasi Plus - L'aube rouge</French>
-        <Russian>Antistasi Plus - Красный Рассвет</Russian>
-        <Chinesesimp>Antistasi Plus - 红色黎明</Chinesesimp>
+        <Original>Antistasi Ultimate - The Red Dawn</Original>
+        <English>Antistasi Ultimate - The Red Dawn</English>
+        <French>Antistasi Ultimate - L'aube rouge</French>
+        <Russian>Antistasi Ultimate - Красный Рассвет</Russian>
+        <Chinesesimp>Antistasi Ultimate - 红色黎明</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_taviana_mapname_short_text">
-        <Original>Antistasi Plus - The Red Dawn</Original>
-        <English>Antistasi Plus - The Red Dawn</English>
-        <German>Antistasi Plus - Die rote Morgendämmerung</German>
-        <French>Antistasi Plus - L'aube rouge</French>
-        <Russian>Antistasi Plus - Красный Рассвет</Russian>
-        <Chinesesimp>Antistasi Plus - 红色黎明</Chinesesimp>
+        <Original>Antistasi Ultimate - The Red Dawn</Original>
+        <English>Antistasi Ultimate - The Red Dawn</English>
+        <German>Antistasi Ultimate - Die rote Morgendämmerung</German>
+        <French>Antistasi Ultimate - L'aube rouge</French>
+        <Russian>Antistasi Ultimate - Красный Рассвет</Russian>
+        <Chinesesimp>Antistasi Ultimate - 红色黎明</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_taviana_blurb_text">
         <Original>Red in blue.</Original>
@@ -2305,20 +2305,20 @@
         <Chinesesimp>红蓝相间。</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_napf_mapname_text">
-        <Original>Antistasi Plus - Amber Insurgency</Original>
-        <English>Antistasi Plus - Amber Insurgency</English>
-        <French>Antistasi Plus - Insurrection ambre</French>
-        <German>Antistasi Plus - Bernsteinfarbener Aufstand</German>
-        <Chinesesimp>Antistasi Plus - 黄色叛乱</Chinesesimp>
-        <Russian>Antistasi Plus - Янтарное Восстание</Russian>
+        <Original>Antistasi Ultimate - Amber Insurgency</Original>
+        <English>Antistasi Ultimate - Amber Insurgency</English>
+        <French>Antistasi Ultimate - Insurrection ambre</French>
+        <German>Antistasi Ultimate - Bernsteinfarbener Aufstand</German>
+        <Chinesesimp>Antistasi Ultimate - 黄色叛乱</Chinesesimp>
+        <Russian>Antistasi Ultimate - Янтарное Восстание</Russian>
       </Key>
       <Key ID="STR_antistasi_mission_info_napf_mapname_short_text">
-        <Original>Antistasi Plus - Amber Ins.</Original>
-        <English>Antistasi Plus - Amber Ins.</English>
-        <French>Antistasi Plus - Insur. ambre</French>
-        <German>Antistasi Plus - Bernst. Aufstand</German>
-        <Russian>Antistasi Plus - Янтарь</Russian>
-        <Chinesesimp>Antistasi Plus - 黄色叛乱</Chinesesimp>
+        <Original>Antistasi Ultimate - Amber Ins.</Original>
+        <English>Antistasi Ultimate - Amber Ins.</English>
+        <French>Antistasi Ultimate - Insur. ambre</French>
+        <German>Antistasi Ultimate - Bernst. Aufstand</German>
+        <Russian>Antistasi Ultimate - Янтарь</Russian>
+        <Chinesesimp>Antistasi Ultimate - 黄色叛乱</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_napf_blurb_text">
         <Original>Yellow soil is under our boots.</Original>
@@ -2329,20 +2329,20 @@
         <Chinesesimp>黄土地就在我们脚下。</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_abramia_mapname_text">
-        <Original>Antistasi Plus - White Mountains</Original>
-        <English>Antistasi Plus - White Mountains</English>
-        <French>Antistasi Plus - Montagnes Blanches</French>
-        <German>Antistasi Plus - Weiße Berge</German>
-        <Russian>Antistasi Plus - Белые Горы</Russian>
-        <Chinesesimp>Antistasi Plus - 白色山脉</Chinesesimp>
+        <Original>Antistasi Ultimate - White Mountains</Original>
+        <English>Antistasi Ultimate - White Mountains</English>
+        <French>Antistasi Ultimate - Montagnes Blanches</French>
+        <German>Antistasi Ultimate - Weiße Berge</German>
+        <Russian>Antistasi Ultimate - Белые Горы</Russian>
+        <Chinesesimp>Antistasi Ultimate - 白色山脉</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_abramia_mapname_short_text">
-        <Original>Antistasi Plus - White Mountains</Original>
-        <English>Antistasi Plus - White Mountains</English>
-        <French>Antistasi Plus - Montagnes Blanches</French>
-        <German>Antistasi Plus - Weiße Berge</German>
-        <Chinesesimp>Antistasi Plus - 白色山脉</Chinesesimp>
-        <Russian>Antistasi Plus - Белые Горы</Russian>
+        <Original>Antistasi Ultimate - White Mountains</Original>
+        <English>Antistasi Ultimate - White Mountains</English>
+        <French>Antistasi Ultimate - Montagnes Blanches</French>
+        <German>Antistasi Ultimate - Weiße Berge</German>
+        <Chinesesimp>Antistasi Ultimate - 白色山脉</Chinesesimp>
+        <Russian>Antistasi Ultimate - Белые Горы</Russian>
       </Key>
       <Key ID="STR_antistasi_mission_info_abramia_blurb_text">
         <Original>Extreme elevation changes ahead.</Original>
@@ -2353,22 +2353,22 @@
         <Russian>Впереди резкие перепады высот.</Russian>
       </Key>
       <Key ID="STR_antistasi_mission_info_panthera_mapname_text">
-        <Original>Antistasi Plus - Waterways</Original>
-        <English>Antistasi Plus - Waterways</English>
-        <French>Antistasi Plus - Voies navigables</French>
-        <German>Antistasi Plus - Wasserstraßen</German>
-        <Russian>Antistasi Plus - Водные Пути</Russian>
-        <Czech>Antistasi Plus - Vodní cesty</Czech>
-        <Chinesesimp>Antistasi Plus - 航道</Chinesesimp>
+        <Original>Antistasi Ultimate - Waterways</Original>
+        <English>Antistasi Ultimate - Waterways</English>
+        <French>Antistasi Ultimate - Voies navigables</French>
+        <German>Antistasi Ultimate - Wasserstraßen</German>
+        <Russian>Antistasi Ultimate - Водные Пути</Russian>
+        <Czech>Antistasi Ultimate - Vodní cesty</Czech>
+        <Chinesesimp>Antistasi Ultimate - 航道</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_panthera_mapname_short_text">
-        <Original>Antistasi Plus - Waterways</Original>
-        <English>Antistasi Plus - Waterways</English>
-        <French>Antistasi Plus - Voies navigables</French>
-        <German>Antistasi Plus - Wasserstraßen</German>
-        <Russian>Antistasi Plus - Водные Пути</Russian>
-        <Czech>Antistasi Plus - Vodní cesty</Czech>
-        <Chinesesimp>Antistasi Plus - 航道</Chinesesimp>
+        <Original>Antistasi Ultimate - Waterways</Original>
+        <English>Antistasi Ultimate - Waterways</English>
+        <French>Antistasi Ultimate - Voies navigables</French>
+        <German>Antistasi Ultimate - Wasserstraßen</German>
+        <Russian>Antistasi Ultimate - Водные Пути</Russian>
+        <Czech>Antistasi Ultimate - Vodní cesty</Czech>
+        <Chinesesimp>Antistasi Ultimate - 航道</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_panthera_blurb_text">
         <Original>Rivers and mountains.</Original>
@@ -2380,22 +2380,22 @@
         <Chinesesimp>河流与山脉。</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_vt7_mapname_text">
-        <Original>Antistasi Plus - Kesäsota</Original>
-        <English>Antistasi Plus - Kesäsota</English>
-        <German>Antistasi Plus - Kesäsota</German>
-        <French>Antistasi Plus - Kesäsota</French>
-        <Czech>Antistasi Plus - Kesäsota</Czech>
-        <Russian>Antistasi Plus - Летняя Война</Russian>
-        <Chinesesimp>Antistasi Plus - 夏季战争</Chinesesimp>
+        <Original>Antistasi Ultimate - Kesäsota</Original>
+        <English>Antistasi Ultimate - Kesäsota</English>
+        <German>Antistasi Ultimate - Kesäsota</German>
+        <French>Antistasi Ultimate - Kesäsota</French>
+        <Czech>Antistasi Ultimate - Kesäsota</Czech>
+        <Russian>Antistasi Ultimate - Летняя Война</Russian>
+        <Chinesesimp>Antistasi Ultimate - 夏季战争</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_vt7_mapname_short_text">
-        <Original>Antistasi Plus - Kesäsota</Original>
-        <English>Antistasi Plus - Kesäsota</English>
-        <German>Antistasi Plus - Kesäsota</German>
-        <French>Antistasi Plus - Kesäsota</French>
-        <Czech>Antistasi Plus - Kesäsota</Czech>
-        <Russian>Antistasi Plus - Летняя Война</Russian>
-        <Chinesesimp>Antistasi Plus - 夏季战争</Chinesesimp>
+        <Original>Antistasi Ultimate - Kesäsota</Original>
+        <English>Antistasi Ultimate - Kesäsota</English>
+        <German>Antistasi Ultimate - Kesäsota</German>
+        <French>Antistasi Ultimate - Kesäsota</French>
+        <Czech>Antistasi Ultimate - Kesäsota</Czech>
+        <Russian>Antistasi Ultimate - Летняя Война</Russian>
+        <Chinesesimp>Antistasi Ultimate - 夏季战争</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_vt7_blurb_text">
         <Original>They are not here.</Original>
@@ -2407,22 +2407,22 @@
         <Chinesesimp>他们不在这里。</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_takistan_mapname_text">
-        <Original>Antistasi Plus - Takistan</Original>
-        <English>Antistasi Plus - Takistan</English>
-        <German>Antistasi Plus - Takistan</German>
-        <French>Antistasi Plus - Takistan</French>
-        <Czech>Antistasi Plus - Takistan</Czech>
-        <Russian>Antistasi Plus - Такистан</Russian>
-        <Chinesesimp>Antistasi Plus - 塔吉克斯坦</Chinesesimp>
+        <Original>Antistasi Ultimate - Takistan</Original>
+        <English>Antistasi Ultimate - Takistan</English>
+        <German>Antistasi Ultimate - Takistan</German>
+        <French>Antistasi Ultimate - Takistan</French>
+        <Czech>Antistasi Ultimate - Takistan</Czech>
+        <Russian>Antistasi Ultimate - Такистан</Russian>
+        <Chinesesimp>Antistasi Ultimate - 塔吉克斯坦</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_takistan_mapname_short_text">
-        <Original>Antistasi Plus - Takistan</Original>
-        <English>Antistasi Plus - Takistan</English>
-        <German>Antistasi Plus - Takistan</German>
-        <French>Antistasi Plus - Takistan</French>
-        <Czech>Antistasi Plus - Takistan</Czech>
-        <Russian>Antistasi Plus - Такистан</Russian>
-        <Chinesesimp>Antistasi Plus - 塔吉克斯坦</Chinesesimp>
+        <Original>Antistasi Ultimate - Takistan</Original>
+        <English>Antistasi Ultimate - Takistan</English>
+        <German>Antistasi Ultimate - Takistan</German>
+        <French>Antistasi Ultimate - Takistan</French>
+        <Czech>Antistasi Ultimate - Takistan</Czech>
+        <Russian>Antistasi Ultimate - Такистан</Russian>
+        <Chinesesimp>Antistasi Ultimate - 塔吉克斯坦</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_takistan_blurb_text">
         <Original>Not your kind of people.</Original>
@@ -2443,38 +2443,38 @@
         <Chinesesimp></Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_vidda_mapname_text">
-        <Original>Antistasi Plus - Nordvakt</Original>
-        <English>Antistasi Plus - Nordvakt</English>
-        <German>Antistasi Plus - Nordvakt</German>
-        <French>Antistasi Plus - Nordvakt</French>
-        <Czech>Antistasi Plus - Nordvakt</Czech>
-        <Russian>Antistasi Plus - Северный Дозор</Russian>
-        <Chinesesimp>Antistasi Plus - 诺德瓦克特</Chinesesimp>
+        <Original>Antistasi Ultimate - Nordvakt</Original>
+        <English>Antistasi Ultimate - Nordvakt</English>
+        <German>Antistasi Ultimate - Nordvakt</German>
+        <French>Antistasi Ultimate - Nordvakt</French>
+        <Czech>Antistasi Ultimate - Nordvakt</Czech>
+        <Russian>Antistasi Ultimate - Северный Дозор</Russian>
+        <Chinesesimp>Antistasi Ultimate - 诺德瓦克特</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_vidda_mapname_short_text">
-        <Original>Antistasi Plus - Nordvakt</Original>
-        <English>Antistasi Plus - Nordvakt</English>
-        <German>Antistasi Plus - Nordvakt</German>
-        <French>Antistasi Plus - Nordvakt</French>
-        <Czech>Antistasi Plus - Nordvakt</Czech>
-        <Russian>Antistasi Plus - Северный Дозор</Russian>
-        <Chinesesimp>Antistasi Plus - 诺德瓦克特</Chinesesimp>
+        <Original>Antistasi Ultimate - Nordvakt</Original>
+        <English>Antistasi Ultimate - Nordvakt</English>
+        <German>Antistasi Ultimate - Nordvakt</German>
+        <French>Antistasi Ultimate - Nordvakt</French>
+        <Czech>Antistasi Ultimate - Nordvakt</Czech>
+        <Russian>Antistasi Ultimate - Северный Дозор</Russian>
+        <Chinesesimp>Antistasi Ultimate - 诺德瓦克特</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_mission_info_camlaonam_mapname_text">
-        <Original>Antistasi Plus - Agent Orange</Original>
-        <English>Antistasi Plus - Agent Orange</English>
-        <French>Antistasi Plus - Agent Orange</French>
-        <German>Antistasi Plus - Agent Orange</German>
-        <Russian>Antistasi Plus - Agent Orange</Russian>
-        <Czech>Antistasi Plus - Agent Orange</Czech>
+        <Original>Antistasi Ultimate - Agent Orange</Original>
+        <English>Antistasi Ultimate - Agent Orange</English>
+        <French>Antistasi Ultimate - Agent Orange</French>
+        <German>Antistasi Ultimate - Agent Orange</German>
+        <Russian>Antistasi Ultimate - Agent Orange</Russian>
+        <Czech>Antistasi Ultimate - Agent Orange</Czech>
       </Key>
       <Key ID="STR_antistasi_mission_info_camlaonam_mapname_short_text">
-        <Original>Antistasi Plus - Agent Orange</Original>
-        <English>Antistasi Plus - Agent Orange</English>
-        <French>Antistasi Plus - Agent Orange</French>
-        <German>Antistasi Plus - Agent Orange</German>
-        <Russian>Antistasi Plus - Agent Orange</Russian>
-        <Czech>Antistasi Plus - Agent Orange</Czech>
+        <Original>Antistasi Ultimate - Agent Orange</Original>
+        <English>Antistasi Ultimate - Agent Orange</English>
+        <French>Antistasi Ultimate - Agent Orange</French>
+        <German>Antistasi Ultimate - Agent Orange</German>
+        <Russian>Antistasi Ultimate - Agent Orange</Russian>
+        <Czech>Antistasi Ultimate - Agent Orange</Czech>
       </Key>
       <Key ID="STR_antistasi_mission_info_camlaonam_blurb_text">
         <Original>Why are we still here, just to suffer?</Original>
@@ -2484,20 +2484,20 @@
         <Czech>Proč jsme pořád tady, jen trpět?</Czech>
       </Key>
       <Key ID="STR_antistasi_mission_info_khesanh_mapname_text">
-        <Original>Antistasi Plus - Battle of Khe Sanh</Original>
-        <English>Antistasi Plus - Battle of Khe Sanh</English>
-        <French>Antistasi Plus - Bataille de Khe Sanh</French>
-        <German>Antistasi Plus - Schlacht von Khe Sanh</German>
-        <Russian>Antistasi Plus - Битва при Кшешани</Russian>
-        <Czech>Antistasi Plus - Bitva u Khe Sanh</Czech>
+        <Original>Antistasi Ultimate - Battle of Khe Sanh</Original>
+        <English>Antistasi Ultimate - Battle of Khe Sanh</English>
+        <French>Antistasi Ultimate - Bataille de Khe Sanh</French>
+        <German>Antistasi Ultimate - Schlacht von Khe Sanh</German>
+        <Russian>Antistasi Ultimate - Битва при Кшешани</Russian>
+        <Czech>Antistasi Ultimate - Bitva u Khe Sanh</Czech>
       </Key>
       <Key ID="STR_antistasi_mission_info_khesanh_mapname_short_text">
-        <Original>Antistasi Plus - Battle of Khe Sanh</Original>
-        <English>Antistasi Plus - Battle of Khe Sanh</English>
-        <French>Antistasi Plus - Bataille de Khe Sanh</French>
-        <German>Antistasi Plus - Schlacht von Khe Sanh</German>
-        <Russian>Antistasi Plus - Осада Кшешаня</Russian>
-        <Czech>Antistasi Plus - Bitva u Khe Sanh</Czech>
+        <Original>Antistasi Ultimate - Battle of Khe Sanh</Original>
+        <English>Antistasi Ultimate - Battle of Khe Sanh</English>
+        <French>Antistasi Ultimate - Bataille de Khe Sanh</French>
+        <German>Antistasi Ultimate - Schlacht von Khe Sanh</German>
+        <Russian>Antistasi Ultimate - Осада Кшешаня</Russian>
+        <Czech>Antistasi Ultimate - Bitva u Khe Sanh</Czech>
       </Key>
       <Key ID="STR_antistasi_mission_info_khesanh_blurb_text">
         <Original>“In this world, a man, himself, is nothing. And there ain’t no world but this one.”</Original>
@@ -2507,20 +2507,20 @@
         <Czech>„V tomto světě člověk sám není nic. A neexistuje jiný svět než tento.“</Czech>
       </Key>
       <Key ID="STR_antistasi_mission_info_rhspkl_mapname_text">
-        <Original>Antistasi Plus - Red War</Original>
-        <English>Antistasi Plus - Red War</English>
-        <French>Antistasi Plus - Guerre rouge</French>
-        <German>Antistasi Plus - Roter Krieg</German>
-        <Russian>Antistasi Plus - Красная Война</Russian>
-        <Czech>Antistasi Plus - Červená válka</Czech>
+        <Original>Antistasi Ultimate - Red War</Original>
+        <English>Antistasi Ultimate - Red War</English>
+        <French>Antistasi Ultimate - Guerre rouge</French>
+        <German>Antistasi Ultimate - Roter Krieg</German>
+        <Russian>Antistasi Ultimate - Красная Война</Russian>
+        <Czech>Antistasi Ultimate - Červená válka</Czech>
       </Key>
       <Key ID="STR_antistasi_mission_info_rhspkl_mapname_short_text">
-        <Original>Antistasi Plus - Red War</Original>
-        <English>Antistasi Plus - Red War</English>
-        <French>Antistasi Plus - Guerre rouge</French>
-        <German>Antistasi Plus - Roter Krieg</German>
-        <Russian>Antistasi Plus - Красная Война</Russian>
-        <Czech>Antistasi Plus - Červená válka</Czech>
+        <Original>Antistasi Ultimate - Red War</Original>
+        <English>Antistasi Ultimate - Red War</English>
+        <French>Antistasi Ultimate - Guerre rouge</French>
+        <German>Antistasi Ultimate - Roter Krieg</German>
+        <Russian>Antistasi Ultimate - Красная Война</Russian>
+        <Czech>Antistasi Ultimate - Červená válka</Czech>
       </Key>
       <Key ID="STR_antistasi_mission_info_rhspkl_blurb_text">
         <Original>Close skirmishes of intense kind.</Original>
@@ -3799,7 +3799,7 @@
         <Russian>Авторы сценария</Russian>
       </Key>
       <Key ID="STR_antistasi_journal_entry_text_Credits_1">
-        <Original>UPSMon by Monsada, Kronzy and Cool=Azroul13.&lt;br/&gt;Persistent Save by zooloo75.&lt;br/&gt;Tags by Marker and Melbo.&lt;br/&gt;JAS by Jeroen&lt;br/&gt;Advanced Towing by Seth Duda.&lt;br/&gt;Antistasi Community Edition by Official Antistasi Community.&lt;br/&gt;Magrepack by Outlawled, R3vo and OOster.&lt;br/&gt;HALs_Store by HallyG, R3vo and barman75.&lt;br/&gt;Discord Rich Presence by ConnorAU.&lt;br/&gt;Antistasi Plus fork by Socrates.</Original>
+        <Original>UPSMon by Monsada, Kronzy and Cool=Azroul13.&lt;br/&gt;Persistent Save by zooloo75.&lt;br/&gt;Tags by Marker and Melbo.&lt;br/&gt;JAS by Jeroen&lt;br/&gt;Advanced Towing by Seth Duda.&lt;br/&gt;Antistasi Community Edition by Official Antistasi Community.&lt;br/&gt;Magrepack by Outlawled, R3vo and OOster.&lt;br/&gt;HALs_Store by HallyG, R3vo and barman75.&lt;br/&gt;Discord Rich Presence by ConnorAU.&lt;br/&gt;Antistasi Plus fork by Socrates.&lt;br/&gt;Antistasi Ultimate fork by Karl and stutpip123.</Original>
       </Key>
       <Key ID="STR_antistasi_journal_entry_header_Credits_2">
         <Original>Mods</Original>
