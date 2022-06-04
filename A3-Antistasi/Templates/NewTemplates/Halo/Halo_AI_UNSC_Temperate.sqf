@@ -13,69 +13,69 @@
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 ["baseSoldiers", [ // Cases matter. Lower case here because allVariables on namespace returns lowercase
-	["militia_squadleader", "B_Soldier_SL_F"],
-	["militia_rifleman", "B_Soldier_F"],
-	["militia_radioman", "B_Soldier_F"],
-	["militia_medic", "B_medic_F"],
-	["militia_engineer", "B_engineer_F"],
-	["militia_explosivesexpert", "B_soldier_exp_F"],
-	["militia_grenadier", "B_Soldier_GL_F"],
-	["militia_lat", "B_soldier_LAT_F"],
-	["militia_at", "B_soldier_AT_F"],
-	["militia_aa", "B_soldier_AA_F"],
-	["militia_machinegunner", "B_soldier_AR_F"],
-	["militia_marksman", "B_soldier_M_F"],
-	["militia_sniper", "B_sniper_F"],
+	["militia_squadleader", "OPTRE_UNSC_Army_Soldier_SquadLead_WDL"],
+	["militia_rifleman", "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL"],
+	["militia_radioman", "OPTRE_UNSC_Army_Soldier_Radioman_WDL"],
+	["militia_medic", "OPTRE_UNSC_Army_Soldier_Medic_WDL"],
+	["militia_engineer", "OPTRE_UNSC_Army_Soldier_Engineer_WDL"],
+	["militia_explosivesexpert", "OPTRE_UNSC_Army_Soldier_Demolitions_WDL"],
+	["militia_grenadier", "OPTRE_UNSC_Army_Soldier_Grenadier_WDL"],
+	["militia_lat", "OPTRE_UNSC_Army_Soldier_Rifleman_AT_WDL"],
+	["militia_at", "OPTRE_UNSC_Army_Soldier_AT_Specialist_WDL"],
+	["militia_aa", "OPTRE_UNSC_Army_Soldier_AA_Specialist_WDL"],
+	["militia_machinegunner", "OPTRE_UNSC_Army_Soldier_Autorifleman_WDL"],
+	["militia_marksman", "OPTRE_UNSC_Army_Soldier_Marksman_WDL"],
+	["militia_sniper", "OPTRE_UNSC_Army_Soldier_Sniper_WDL"],
 
-	["military_squadleader", "B_Soldier_SL_F"],
-	["military_rifleman", "B_Soldier_F"],
-	["military_radioman", "B_Soldier_F"],
-	["military_medic", "B_medic_F"],
-	["military_engineer", "B_engineer_F"],
-	["military_explosivesexpert", "B_soldier_exp_F"],
-	["military_grenadier", "B_Soldier_GL_F"],
-	["military_lat", "B_soldier_LAT_F"],
-	["military_at", "B_soldier_AT_F"],
-	["military_aa", "B_soldier_AA_F"],
-	["military_machinegunner", "B_soldier_AR_F"],
-	["military_marksman", "B_soldier_M_F"],
-	["military_sniper", "B_sniper_F"],
+	["military_squadleader", "OPTRE_UNSC_Army_Soldier_SquadLead_WDL"],
+	["military_rifleman", "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL"],
+	["military_radioman", "OPTRE_UNSC_Army_Soldier_Radioman_WDL"],
+	["military_medic", "OPTRE_UNSC_Army_Soldier_Medic_WDL"],
+	["military_engineer", "OPTRE_UNSC_Army_Soldier_Engineer_WDL"],
+	["military_explosivesexpert", "OPTRE_UNSC_Army_Soldier_Demolitions_WDL"],
+	["military_grenadier", "OPTRE_UNSC_Army_Soldier_Grenadier_WDL"],
+	["military_lat", "OPTRE_UNSC_Army_Soldier_Rifleman_AT_WDL"],
+	["military_at", "OPTRE_UNSC_Army_Soldier_AT_Specialist_WDL"],
+	["military_aa", "OPTRE_UNSC_Army_Soldier_AA_Specialist_WDL"],
+	["military_machinegunner", "OPTRE_UNSC_Army_Soldier_Autorifleman_WDL"],
+	["military_marksman", "OPTRE_UNSC_Army_Soldier_Marksman_WDL"],
+	["military_sniper", "OPTRE_UNSC_Army_Soldier_Sniper_WDL"],
 
-	["elite_squadleader", "B_Soldier_SL_F"],
-	["elite_rifleman", "B_Soldier_F"],
-	["elite_radioman", "B_Soldier_F"],
-	["elite_medic", "B_medic_F"],
-	["elite_engineer", "B_engineer_F"],
-	["elite_explosivesexpert", "B_soldier_exp_F"],
-	["elite_grenadier", "B_Soldier_GL_F"],
-	["elite_lat", "B_soldier_LAT_F"],
-	["elite_at", "B_soldier_AT_F"],
-	["elite_aa", "B_soldier_AA_F"],
-	["elite_machinegunner", "B_soldier_AR_F"],
-	["elite_marksman", "B_soldier_M_F"],
-	["elite_sniper", "B_sniper_F"],
+	["elite_squadleader", "OPTRE_Spartan3_Soldier_TeamLeader"],
+	["elite_rifleman", "OPTRE_Spartan3_Soldier_Rifleman_AR"],
+	["elite_radioman", "OPTRE_Spartan3_Soldier_Rifleman_BR"],
+	["elite_medic", "OPTRE_Spartan3_Soldier_Corpsman"],
+	["elite_engineer", "OPTRE_Spartan3_Soldier_Engineer"],
+	["elite_explosivesexpert", "OPTRE_Spartan3_Soldier_Engineer"],
+	["elite_grenadier", "OPTRE_Spartan3_Soldier_Rifleman_AR"],
+	["elite_lat", "OPTRE_Spartan3_Soldier_Rifleman_AT"],
+	["elite_at", "OPTRE_Spartan3_Soldier_Rifleman_AT"],
+	["elite_aa", "OPTRE_Spartan3_Soldier_Rifleman_AT"],
+	["elite_machinegunner", "OPTRE_Spartan3_Soldier_Automatic_Rifleman"],
+	["elite_marksman", "OPTRE_Spartan3_Soldier_Marksman"],
+	["elite_sniper", "OPTRE_Spartan3_Soldier_Scout_Sniper"],
 
-	["sf_squadleader", "B_recon_TL_F"],
-	["sf_rifleman", "B_recon_F"],
-	["sf_radioman", "B_recon_F"],
-	["sf_medic", "B_recon_medic_F"],
-	["sf_engineer", "B_recon_F"],
-	["sf_explosivesexpert", "B_recon_exp_F"],
-	["sf_grenadier", "B_recon_JTAC_F"],
-	["sf_lat", "B_recon_LAT_F"],
-	["sf_at", "B_recon_LAT_F"],
-	["sf_aa", "B_soldier_AA_F"],
-	["sf_machinegunner", "B_soldier_AR_F"],
-	["sf_marksman", "B_recon_M_F"],
-	["sf_sniper", "B_sniper_F"],
+	["sf_squadleader", "OPTRE_Spartan2_Soldier_TeamLeader"],
+	["sf_rifleman", "OPTRE_Spartan2_Soldier_Rifleman_AR"],
+	["sf_radioman", "OPTRE_Spartan2_Soldier_Rifleman_BR"],
+	["sf_medic", "OPTRE_Spartan2_Soldier_Corpsman"],
+	["sf_engineer", "OPTRE_Spartan2_Soldier_Engineer"],
+	["sf_explosivesexpert", "OPTRE_Spartan2_Soldier_Engineer"],
+	["sf_grenadier", "OPTRE_Spartan2_Soldier_Rifleman_AR"],
+	["sf_lat", "OPTRE_Spartan2_Soldier_Rifleman_AT"],
+	["sf_at", "OPTRE_Spartan2_Soldier_Rifleman_AT"],
+	["sf_aa", "OPTRE_Spartan2_Soldier_Rifleman_AT"],
+	["sf_machinegunner", "OPTRE_Spartan2_Soldier_Automatic_Rifleman"],
+	["sf_marksman", "OPTRE_Spartan2_Soldier_Marksman"],
+	["sf_sniper", "OPTRE_Spartan2_Soldier_Scout_Sniper"],
 
-	["other_crew", "B_crew_F"],
-	["other_unarmed", "B_Survivor_F"],
-	["other_official", "B_officer_F"],
-	["other_traitor", "B_G_Soldier_F"],
-	["other_pilot", "B_Helipilot_F"],
-	["police_squadleader", "B_G_Soldier_F"],
-	["police_standard", "B_G_Soldier_F"]
+	["other_crew", "OPTRE_UNSC_Army_Soldier_Crewman_WDL"],
+	["other_unarmed", "OPTRE_UNSC_Army_Soldier_Unarmed_WDL"],
+	["other_official", "OPTRE_UNSC_Army_Soldier_Officer_WDL"],
+	["other_traitor", "OPTRE_UNSC_Army_Soldier_Breacher_WDL"],
+	["other_pilot", "OPTRE_UNSC_Airforce_Soldier_Airman"],
+	["police_squadleader", "OPTRE_UNSC_Army_Soldier_Officer_WDL"],
+	["police_standard", "OPTRE_UNSC_Army_Soldier_ForwardObserver_WDL"]
 ]] call _fnc_saveToTemplate;
 
 //////////////////////////
@@ -256,12 +256,12 @@ _loadoutData setVariable ["items_unarmed_extras", []];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_sfLoadoutData setVariable ["uniforms", ["U_B_CTRG_Soldier_Arid_F", "U_B_CTRG_Soldier_3_Arid_F", "U_B_CTRG_Soldier_2_Arid_F"]];
-_sfLoadoutData setVariable ["vests", ["V_PlateCarrierL_CTRG"]];
-_sfLoadoutData setVariable ["Hvests", ["V_PlateCarrierH_CTRG"]];
-_sfLoadoutData setVariable ["backpacks", ["B_Kitbag_cbr", "B_Carryall_mcamo", "B_Carryall_cbr", "B_AssaultPack_cbr"]];
-_sfLoadoutData setVariable ["helmets", ["H_HelmetSpecB_blk", "H_HelmetSpecB", "H_Booniehat_mcamo", "H_Watchcap_khk"]];
-_sfLoadoutData setVariable ["binoculars", ["Laserdesignator"]];
+_sfLoadoutData setVariable ["uniforms", ["OPTRE_MJOLNIR_Undersuit"]];
+_sfLoadoutData setVariable ["vests", ["OPTRE_MJOLNIR_Mk4Armor"]];
+_sfLoadoutData setVariable ["Hvests", ["OPTRE_MJOLNIR_Mk4Armor"]];
+_sfLoadoutData setVariable ["backpacks", ["OPTRE_UNSC_Rucksack_Spartan", "OPTRE_UNSC_Heavy_Spartan"]];
+_sfLoadoutData setVariable ["helmets", ["OPTRE_MJOLNIR_Mk4Helmet", "OPTRE_MJOLNIR_ReconHelmet", "OPTRE_MJOLNIR_EVAHelmet"]];
+_sfLoadoutData setVariable ["binoculars", ["OPTRE_Smartfinder"]];
 
 _sfLoadoutData setVariable ["rifles", [
 ["arifle_SPAR_02_blk_F", "muzzle_snds_M", "acc_pointer_IR", "optic_Holosight_blk_F", ["30Rnd_556x45_Stanag_red", "30Rnd_556x45_Stanag_red", "30Rnd_556x45_Stanag_Tracer_Red"], [], ""],
@@ -339,12 +339,12 @@ _sfLoadoutData setVariable ["sidearms", [
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militaryLoadoutData setVariable ["uniforms", ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt", "U_B_CombatUniform_mcam_vest"]];
-_militaryLoadoutData setVariable ["vests", ["V_PlateCarrier1_rgr", "V_PlateCarrier1_blk"]];
-_militaryLoadoutData setVariable ["Hvests", ["V_PlateCarrier2_rgr", "V_PlateCarrier2_blk"]];
-_militaryLoadoutData setVariable ["GLvests", ["V_PlateCarrier1_rgr"]];
-_militaryLoadoutData setVariable ["backpacks", ["B_Carryall_cbr", "B_Carryall_mcamo", "B_Kitbag_rgr", "B_Kitbag_mcamo"]];
-_militaryLoadoutData setVariable ["helmets", ["H_HelmetB_camo", "H_HelmetB", "H_HelmetB_light"]];
+_militaryLoadoutData setVariable ["uniforms", ["OPTRE_UNSC_ODST_Uniform"]];
+_militaryLoadoutData setVariable ["vests", ["OPTRE_UNSC_M52D_Armor", "OPTRE_UNSC_M52D_Armor_Light", "OPTRE_UNSC_M52D_Armor_Rifleman"]];
+_militaryLoadoutData setVariable ["Hvests", ["OPTRE_UNSC_M52D_Armor_Marksman", "OPTRE_UNSC_M52D_Armor_Sniper"]];
+_militaryLoadoutData setVariable ["GLvests", ["OPTRE_UNSC_M52D_Armor_Demolitions"]];
+_militaryLoadoutData setVariable ["backpacks", ["OPTRE_UNSC_Backpack", "OPTRE_UNSC_Rucksack", "OPTRE_UNSC_Rucksack_Heavy", "OPTRE_UNSC_Rucksack_Medic"]];
+_militaryLoadoutData setVariable ["helmets", ["OPTRE_UNSC_CH252D_Helmet"]];
 _militaryLoadoutData setVariable ["missileATLaunchers", [
 	["launch_B_Titan_short_F", "", "acc_pointer_IR", "", ["Titan_AT"], [], ""]
 ]];
@@ -405,9 +405,9 @@ _militaryLoadoutData setVariable ["sidearms", [
 ///////////////////////////////
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_policeLoadoutData setVariable ["uniforms", ["U_B_GEN_Soldier_F", "U_B_GEN_Commander_F"]];
-_policeLoadoutData setVariable ["vests", ["V_TacVest_blk_POLICE"]];
-_policeLoadoutData setVariable ["helmets", ["H_Cap_police", "H_PASGT_basic_black_F", "H_PASGT_basic_blue_F"]];
+_policeLoadoutData setVariable ["uniforms", ["OPTRE_UNSC_Army_Uniform_S_OLI"]];
+_policeLoadoutData setVariable ["vests", ["OPTRE_UNSC_M52A_Armor_Soft"]];
+_policeLoadoutData setVariable ["helmets", ["OPTRE_PatrolCap_Navy"]];
 _policeLoadoutData setVariable ["smgs", [
 ["SMG_01_F", "", "acc_flashlight_smg_01", "optic_Holosight", [], [], ""],
 ["SMG_01_F", "", "acc_flashlight_smg_01", "optic_Yorris", [], [], ""],
@@ -426,10 +426,10 @@ _policeLoadoutData setVariable ["sidearms", ["hgun_Rook40_F"]];
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militiaLoadoutData setVariable ["uniforms", ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt", "U_B_CombatUniform_mcam_vest"]];
-_militiaLoadoutData setVariable ["vests", ["V_Chestrig_khk", "V_BandollierB_khk", "V_TacVest_brn"]];
-_militiaLoadoutData setVariable ["backpacks", ["B_AssaultPack_mcamo", "B_AssaultPack_khk"]];
-_militiaLoadoutData setVariable ["helmets", ["H_HelmetB_light", "H_Bandanna_khk", "H_Booniehat_mcamo", "H_MilCap_mcamo", "H_Beret_02"]];
+_militiaLoadoutData setVariable ["uniforms", ["OPTRE_UNSC_Army_Uniform_R_WDL", "OPTRE_UNSC_Army_Uniform_S_WDL", "OPTRE_UNSC_Army_Uniform_WDL_SlimLeg", "OPTRE_UNSC_Army_Uniform_WDL"]];
+_militiaLoadoutData setVariable ["vests", ["OPTRE_UNSC_M52A_Rifleman_WDL", "OPTRE_UNSC_M52A_Armor4_WDL", "OPTRE_UNSC_M52A_Armor3_WDL", "OPTRE_UNSC_M52A_Armor_TL_WDL", "OPTRE_UNSC_M52A_Armor2_WDL", "OPTRE_UNSC_M52A_Armor_Medic_WDL", "OPTRE_UNSC_M52A_Armor_Marksman_WDL", "OPTRE_UNSC_M52A_Armor1_WDL", "OPTRE_UNSC_M52A_Armor_Grenadier_WDL", "OPTRE_UNSC_M52A_Armor_Breacher_WDL", "OPTRE_UNSC_M52A_Armor_MG_WDL"]];
+_militiaLoadoutData setVariable ["backpacks", ["OPTRE_UNSC_Backpack", "OPTRE_UNSC_Rucksack", "OPTRE_UNSC_Rucksack_Heavy", "OPTRE_UNSC_Rucksack_Medic"]];
+_militiaLoadoutData setVariable ["helmets", ["OPTRE_UNSC_CH252_Helmet2_WDL", "OPTRE_UNSC_CH252_Helmet_WDL", "OPTRE_UNSC_CH252_Helmet2_Vacuum_WDL", "OPTRE_UNSC_CH252_Helmet_Vacuum_WDL"]];
 
 _militiaLoadoutData setVariable ["rifles", [
 ["arifle_TRG20_F", "", "acc_flashlight", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Red"], [], ""],
@@ -464,13 +464,13 @@ _militiaLoadoutData setVariable ["sidearms", ["hgun_ACPC2_F"]];
 //    Elite Loadout Data    //
 /////////////////////////////////
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_eliteLoadoutData setVariable ["uniforms", ["U_B_CTRG_Soldier_urb_2_F", "U_B_CTRG_Soldier_urb_1_F", "U_B_CTRG_Soldier_urb_3_F"]];
-_eliteLoadoutData setVariable ["vests", ["V_PlateCarrier2_blk"]];
-_eliteLoadoutData setVariable ["Hvests", ["V_PlateCarrierSpec_blk"]];
-_eliteLoadoutData setVariable ["GLvests", ["V_PlateCarrierGL_blk"]];
-_eliteLoadoutData setVariable ["backpacks", ["B_Kitbag_sgg", "B_TacticalPack_blk"]];
-_eliteLoadoutData setVariable ["helmets", ["H_HelmetSpecB", "H_HelmetSpecB_paint1", "H_HelmetSpecB_snakeskin"]];
-_eliteLoadoutData setVariable ["binoculars", ["Laserdesignator"]];
+_eliteLoadoutData setVariable ["uniforms", ["OPTRE_MJOLNIR_Undersuit"]];
+_eliteLoadoutData setVariable ["vests", ["OPTRE_MJOLNIR_MkVBArmor"]];
+_eliteLoadoutData setVariable ["Hvests", ["OPTRE_MJOLNIR_MkVBArmor"]];
+_eliteLoadoutData setVariable ["GLvests", ["OPTRE_MJOLNIR_MkVBArmor"]];
+_eliteLoadoutData setVariable ["backpacks", ["OPTRE_UNSC_Rucksack_Spartan", "OPTRE_UNSC_Heavy_Spartan"]];
+_eliteLoadoutData setVariable ["helmets", ["OPTRE_MJOLNIR_MkVBHelmet"]];
+_eliteLoadoutData setVariable ["binoculars", ["OPTRE_Smartfinder"]];
 _eliteLoadoutData setVariable ["ATLaunchers", ["launch_NLAW_F"]];
 _eliteLoadoutData setVariable ["missileATLaunchers", [
 	["launch_B_Titan_short_F", "", "acc_pointer_IR", "", ["Titan_AT"], [], ""]
@@ -525,15 +525,15 @@ _eliteLoadoutData setVariable ["sidearms", [
 //////////////////////////
 
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_crewLoadoutData setVariable ["uniforms", ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt"]];
-_crewLoadoutData setVariable ["vests", ["V_Chestrig_rgr"]];
+_crewLoadoutData setVariable ["uniforms", ["OPTRE_UNSC_Army_Uniform_WDL"]];
+_crewLoadoutData setVariable ["vests", ["OPTRE_UNSC_M52A_Armor3_WDL"]];
 _crewLoadoutData setVariable ["helmets", ["H_HelmetCrew_B"]];
 
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData setVariable ["uniforms", ["U_B_HeliPilotCoveralls"]];
-_pilotLoadoutData setVariable ["vests", ["V_TacVest_blk"]];
-_pilotLoadoutData setVariable ["helmets", ["H_CrewHelmetHeli_B", "H_PilotHelmetHeli_B"]];
+_pilotLoadoutData setVariable ["uniforms", ["OPTRE_UNSC_Airforce_Uniform"]];
+_pilotLoadoutData setVariable ["vests", ["OPTRE_UNSC_M52A_Armor_Pilot_AF"]];
+_pilotLoadoutData setVariable ["helmets", ["OPTRE_UNSC_VX16_Helmet_blk", "OPTRE_UNSC_VX16_HelmetV", "OPTRE_UNSC_VX16_HelmetNV", "OPTRE_UNSC_VX16_Helmet_Mask", "OPTRE_UNSC_VX16_Helmet"]];
 
 // ##################### DO NOT TOUCH ANYTHING BELOW THIS LINE #####################
 
