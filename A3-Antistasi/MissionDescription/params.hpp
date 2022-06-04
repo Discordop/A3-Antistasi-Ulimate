@@ -266,7 +266,7 @@ class Params
      };
      class Spacer51
      {
-          title = "ANTISTASI PLUS SETTINGS";
+          title = "ANTISTASI ULTIMATE SETTINGS";
           values[] = {""};
           texts[] = {""};
           default = "";

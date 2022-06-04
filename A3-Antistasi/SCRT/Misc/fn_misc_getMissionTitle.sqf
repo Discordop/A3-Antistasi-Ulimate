@@ -63,7 +63,7 @@ switch (toLower worldName) do {
 	};
 	default
 	{
-	    _title = "Antistasi Plus";
+	    _title = "Antistasi Ultimate";
 	};
 };
 

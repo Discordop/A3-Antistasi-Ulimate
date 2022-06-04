@@ -25,7 +25,7 @@ ctrlSetFocus ((findDisplay 70000) displayCtrl 1151);
 ["MAIN", 5400, false] call SCRT_fnc_ui_switchButton;
 
 private _gameInfoText = format [
-    "Antistasi - %2, Version: %1, Antistasi Plus Version: %6, Difficulty: %3, Unlock Weapon Number: %4, Limited Fast Travel: %5, Time since GC: %7", 
+    "Antistasi - %2, Version: %1, Antistasi Ultimate Version: %6, Difficulty: %3, Unlock Weapon Number: %4, Limited Fast Travel: %5, Time since GC: %7", 
     antistasiVersion, 
     worldName, 
     if (skillMult == 2) then {"Normal"} else {if (skillMult == 1) then {"Easy"} else {"Hard"}},

@@ -40,7 +40,7 @@ sliderSetPosition [5081, maxUnits];
 ((findDisplay 60000) displayCtrl 5080) ctrlSetText format ["AI Limit: %1", maxUnits];
 
 private _gameInfoText = format [
-    "Antistasi - %2, Version: %1, Antistasi Plus Version: %6, Difficulty: %3, Unlock Weapon Number: %4, Limited Fast Travel: %5, Time since GC: %7", 
+    "Antistasi - %2, Version: %1, Antistasi Ultimate Version: %6, Difficulty: %3, Unlock Weapon Number: %4, Limited Fast Travel: %5, Time since GC: %7", 
     antistasiVersion, 
     worldName, 
     if (skillMult == 2) then {"Normal"} else {if (skillMult == 1) then {"Easy"} else {"Hard"}},
