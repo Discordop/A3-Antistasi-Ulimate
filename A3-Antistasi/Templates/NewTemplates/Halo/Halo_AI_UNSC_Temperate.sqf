@@ -41,19 +41,19 @@
 	["military_marksman", "OPTRE_UNSC_Army_Soldier_Marksman_WDL"],
 	["military_sniper", "OPTRE_UNSC_Army_Soldier_Sniper_WDL"],
 
-	["elite_squadleader", "OPTRE_Spartan3_Soldier_TeamLeader"],
-	["elite_rifleman", "OPTRE_Spartan3_Soldier_Rifleman_AR"],
-	["elite_radioman", "OPTRE_Spartan3_Soldier_Rifleman_BR"],
-	["elite_medic", "OPTRE_Spartan3_Soldier_Corpsman"],
-	["elite_engineer", "OPTRE_Spartan3_Soldier_Engineer"],
-	["elite_explosivesexpert", "OPTRE_Spartan3_Soldier_Engineer"],
-	["elite_grenadier", "OPTRE_Spartan3_Soldier_Rifleman_AR"],
-	["elite_lat", "OPTRE_Spartan3_Soldier_Rifleman_AT"],
-	["elite_at", "OPTRE_Spartan3_Soldier_Rifleman_AT"],
-	["elite_aa", "OPTRE_Spartan3_Soldier_Rifleman_AT"],
-	["elite_machinegunner", "OPTRE_Spartan3_Soldier_Automatic_Rifleman"],
-	["elite_marksman", "OPTRE_Spartan3_Soldier_Marksman"],
-	["elite_sniper", "OPTRE_Spartan3_Soldier_Scout_Sniper"],
+	["elite_squadleader", "OPTRE_UNSC_Army_Soldier_SquadLead_WDL"],
+	["elite_rifleman", "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL"],
+	["elite_radioman", "OPTRE_UNSC_Army_Soldier_Radioman_WDL"],
+	["elite_medic", "OPTRE_UNSC_Army_Soldier_Medic_WDL"],
+	["elite_engineer", "OPTRE_UNSC_Army_Soldier_Engineer_WDL"],
+	["elite_explosivesexpert", "OPTRE_UNSC_Army_Soldier_Demolitions_WDL"],
+	["elite_grenadier", "OPTRE_UNSC_Army_Soldier_Grenadier_WDL"],
+	["elite_lat", "OPTRE_UNSC_Army_Soldier_Rifleman_AT_WDL"],
+	["elite_at", "OPTRE_UNSC_Army_Soldier_AT_Specialist_WDL"],
+	["elite_aa", "OPTRE_UNSC_Army_Soldier_AA_Specialist_WDL"],
+	["elite_machinegunner", "OPTRE_UNSC_Army_Soldier_Autorifleman_WDL"],
+	["elite_marksman", "OPTRE_UNSC_Army_Soldier_Marksman_WDL"],
+	["elite_sniper", "OPTRE_UNSC_Army_Soldier_Sniper_WDL"],
 
 	["sf_squadleader", "OPTRE_Spartan2_Soldier_TeamLeader"],
 	["sf_rifleman", "OPTRE_Spartan2_Soldier_Rifleman_AR"],
@@ -253,9 +253,9 @@ _loadoutData setVariable ["items_unarmed_extras", []];
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _sfLoadoutData setVariable ["uniforms", ["OPTRE_MJOLNIR_Undersuit"]];
 _sfLoadoutData setVariable ["vests", ["OPTRE_MJOLNIR_Mk4Armor"]];
-_sfLoadoutData setVariable ["Hvests", ["OPTRE_MJOLNIR_Mk4Armor"]];
+_sfLoadoutData setVariable ["Hvests", ["OPTRE_MJOLNIR_MkVBArmor"]];
 _sfLoadoutData setVariable ["backpacks", ["OPTRE_UNSC_Rucksack_Spartan", "OPTRE_UNSC_Heavy_Spartan", "OPTRE_ANPRC_521_Green_Spartan"]];
-_sfLoadoutData setVariable ["helmets", ["OPTRE_MJOLNIR_Mk4Helmet", "OPTRE_MJOLNIR_ReconHelmet", "OPTRE_MJOLNIR_EVAHelmet"]];
+_sfLoadoutData setVariable ["helmets", ["OPTRE_MJOLNIR_Mk4Helmet", "OPTRE_MJOLNIR_ReconHelmet", "OPTRE_MJOLNIR_EVAHelmet", "OPTRE_MJOLNIR_MkVBHelmet"]];
 _sfLoadoutData setVariable ["binoculars", ["OPTRE_Smartfinder"]];
 
 _sfLoadoutData setVariable ["rifles", [
@@ -309,12 +309,12 @@ _sfLoadoutData setVariable ["sidearms", [
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militaryLoadoutData setVariable ["uniforms", ["OPTRE_UNSC_ODST_Uniform"]];
-_militaryLoadoutData setVariable ["vests", ["OPTRE_UNSC_M52D_Armor", "OPTRE_UNSC_M52D_Armor_Light", "OPTRE_UNSC_M52D_Armor_Rifleman"]];
-_militaryLoadoutData setVariable ["Hvests", ["OPTRE_UNSC_M52D_Armor_Marksman", "OPTRE_UNSC_M52D_Armor_Sniper"]];
-_militaryLoadoutData setVariable ["GLvests", ["OPTRE_UNSC_M52D_Armor_Demolitions"]];
-_militaryLoadoutData setVariable ["backpacks", ["OPTRE_UNSC_Backpack", "OPTRE_UNSC_Rucksack", "OPTRE_UNSC_Rucksack_Heavy", "OPTRE_UNSC_Rucksack_Medic", "OPTRE_ANPRC_521_Black"]];
-_militaryLoadoutData setVariable ["helmets", ["OPTRE_UNSC_CH252D_Helmet"]];
+_militaryLoadoutData setVariable ["uniforms", ["OPTRE_UNSC_Army_Uniform_R_WDL", "OPTRE_UNSC_Army_Uniform_S_WDL", "OPTRE_UNSC_Army_Uniform_WDL_SlimLeg", "OPTRE_UNSC_Army_Uniform_WDL"]];
+_militaryLoadoutData setVariable ["vests", ["OPTRE_UNSC_M52A_Rifleman_WDL", "OPTRE_UNSC_M52A_Armor4_WDL", "OPTRE_UNSC_M52A_Armor3_WDL", "OPTRE_UNSC_M52A_Armor_Medic_WDL", "OPTRE_UNSC_M52A_Armor_Marksman_WDL", "OPTRE_UNSC_M52A_Armor_Breacher_WDL", "OPTRE_UNSC_M52A_Armor_MG_WDL"]];
+_militaryLoadoutData setVariable ["Hvests", ["OPTRE_UNSC_M52A_Armor_TL_WDL", "OPTRE_UNSC_M52A_Armor2_WDL"]];
+_militaryLoadoutData setVariable ["GLvests", ["OPTRE_UNSC_M52A_Armor1_WDL", "OPTRE_UNSC_M52A_Armor_Grenadier_WDL"]];
+_militaryLoadoutData setVariable ["backpacks", ["OPTRE_UNSC_Backpack", "OPTRE_UNSC_Rucksack", "OPTRE_UNSC_Rucksack_Heavy", "OPTRE_UNSC_Rucksack_Medic", "OPTRE_ANPRC_521_Green"]];
+_militaryLoadoutData setVariable ["helmets", ["OPTRE_UNSC_CH252_Helmet2_WDL", "OPTRE_UNSC_CH252_Helmet_WDL", "OPTRE_UNSC_CH252_Helmet2_Vacuum_WDL", "OPTRE_UNSC_CH252_Helmet_Vacuum_WDL"]];
 _militaryLoadoutData setVariable ["missileATLaunchers", [
 	["OPTRE_M41_SSR", "", "", "", ["OPTRE_M41_Twin_HEAT_G"], [], ""]
 ]];
@@ -428,14 +428,14 @@ _militiaLoadoutData setVariable ["sidearms", ["OPTRE_M6C"]];
 //    Elite Loadout Data    //
 /////////////////////////////////
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_eliteLoadoutData setVariable ["uniforms", ["OPTRE_MJOLNIR_Undersuit"]];
-_eliteLoadoutData setVariable ["vests", ["OPTRE_MJOLNIR_MkVBArmor"]];
-_eliteLoadoutData setVariable ["Hvests", ["OPTRE_MJOLNIR_MkVBArmor"]];
-_eliteLoadoutData setVariable ["GLvests", ["OPTRE_MJOLNIR_MkVBArmor"]];
-_eliteLoadoutData setVariable ["backpacks", ["OPTRE_UNSC_Rucksack_Spartan", "OPTRE_UNSC_Heavy_Spartan", "OPTRE_ANPRC_521_Green_Spartan"]];
-_eliteLoadoutData setVariable ["helmets", ["OPTRE_MJOLNIR_MkVBHelmet"]];
+_eliteLoadoutData setVariable ["uniforms", ["OPTRE_UNSC_ODST_Uniform"]];
+_eliteLoadoutData setVariable ["vests", ["OPTRE_UNSC_M52D_Armor", "OPTRE_UNSC_M52D_Armor_Light", "OPTRE_UNSC_M52D_Armor_Rifleman"]];
+_eliteLoadoutData setVariable ["Hvests", ["OPTRE_UNSC_M52D_Armor_Marksman", "OPTRE_UNSC_M52D_Armor_Sniper"]];
+_eliteLoadoutData setVariable ["GLvests", ["OPTRE_UNSC_M52D_Armor_Demolitions"]];
+_eliteLoadoutData setVariable ["backpacks", ["OPTRE_UNSC_Backpack", "OPTRE_UNSC_Rucksack", "OPTRE_UNSC_Rucksack_Heavy", "OPTRE_UNSC_Rucksack_Medic", "OPTRE_ANPRC_521_Black"]];
+_eliteLoadoutData setVariable ["helmets", ["OPTRE_UNSC_CH252D_Helmet"]];
 _eliteLoadoutData setVariable ["binoculars", ["OPTRE_Smartfinder"]];
-_eliteLoadoutData setVariable ["ATLaunchers", ["launch_NLAW_F"]];
+_eliteLoadoutData setVariable ["ATLaunchers", ["OPTRE_M41_SSR"]];
 _eliteLoadoutData setVariable ["missileATLaunchers", [
 	["OPTRE_M41_SSR", "", "", "", ["OPTRE_M41_Twin_HEAT_G"], [], ""]
 ]];
