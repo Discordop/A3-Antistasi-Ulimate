@@ -18,6 +18,14 @@ switch (true) do {
         diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using IFA trader stock.", servertime];
         [_traderX, "ww2mod"] call HALs_store_fnc_addTrader;    
     };
+    case (A3A_hasHalo): {
+        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using Halo trader stock.", servertime];
+        [_traderX, "halo"] call HALs_store_fnc_addTrader;    
+    };
+    case (A3A_hasCW): {
+        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using CW trader stock.", servertime];
+        [_traderX, "cw"] call HALs_store_fnc_addTrader;    
+    };
    case (A3A_hasVN && {A3A_hasUR}): {
         diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using VN UR trader stock.", servertime];
         [_traderX, "vnur"] call HALs_store_fnc_addTrader;
