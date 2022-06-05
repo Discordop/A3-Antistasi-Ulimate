@@ -123,7 +123,7 @@ lootCrate = "Box_Syndicate_Ammo_F";
 rallyPoint = "B_RadioBag_01_wdl_F";
 
 //black market stuff
-shop_UAV = ["I_UAV_01_F"];
+shop_UAV = ["OPTRE_Wombat_B"];
 shop_AA = ["OPTRE_M12R_AA"];
 shop_MRAP = ["OPTRE_M12_LRV", "OPTRE_M12_TD_ins", "OPTRE_M12G1_LRV"];
 shop_wheel_apc = ["OPTRE_M813_TT", "OPTRE_M12_FAV_APC", "OPTRE_M12_ins_APC"];
