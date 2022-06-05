@@ -178,7 +178,7 @@ _loadoutData setVariable ["lightATLaunchers", [
 _loadoutData setVariable ["ATLaunchers", []];
 _loadoutData setVariable ["missileATLaunchers", [
 ["LIB_M1A1_Bazooka", "", "", "",["LIB_1Rnd_60mm_M6"], [], ""]]];
-_loadoutData setVariable ["AALaunchers", [["LIB_M1A1_Bazooka", "", "", "",["LIB_1Rnd_60mm_M6"], [], ""]]];
+_loadoutData setVariable ["AALaunchers", []];
 _loadoutData setVariable ["sidearms", []];
 
 _loadoutData setVariable ["ATMines", ["LIB_TM44_MINE_mag"]];

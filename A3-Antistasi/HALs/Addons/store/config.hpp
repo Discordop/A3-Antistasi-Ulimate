@@ -11291,7 +11291,7 @@ class cfgHALsStore
 		};
 
 		class underbarrelhalo{
-	     	displayName = "Backpack Static";
+	     	displayName = "Underbarrel Accessories";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(LIB_Maxim_Bar, 600, 20);
@@ -11421,7 +11421,7 @@ class cfgHALsStore
 		};
 
 		class underbarrelcw{
-	     	displayName = "Backpack Static";
+	     	displayName = "Underbarrel Accessories";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(LIB_Maxim_Bar, 600, 20);
