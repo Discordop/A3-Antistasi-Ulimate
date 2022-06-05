@@ -23,7 +23,7 @@
 ["vehiclePayloadPlane", "OPTRE_YSS_1000_A"] call _fnc_saveToTemplate;
 ["vehicleHeli", "not_supported"] call _fnc_saveToTemplate;
 
-["vehicleCivCar", "OPTRE_M12_CIV"] call _fnc_saveToTemplate;
+["vehicleCivCar", "OPTRE_Genet"] call _fnc_saveToTemplate;
 ["vehicleCivTruck", "C_Van_01_transport_F"] call _fnc_saveToTemplate;
 ["vehicleCivHeli", "C_Heli_Light_01_civil_F"] call _fnc_saveToTemplate;
 ["vehicleCivBoat", "C_Rubberboat"] call _fnc_saveToTemplate;
@@ -52,18 +52,18 @@
 //  Rebel Starting Gear  //
 ///////////////////////////
 ["uniforms", [
-    "OPTRE_Ins_ER_jacket_brown_surplus",
     "OPTRE_Ins_ER_uniform_GAgreen",
     "OPTRE_Ins_ER_uniform_GAtan",
     "OPTRE_Ins_ER_uniform_GGgrey",
     "OPTRE_Ins_ER_uniform_GGod",
-    "OPTRE_Ins_ER_jacket_od_surplus",
     "OPTRE_Ins_ER_rolled_jean_orca",
     "OPTRE_Ins_ER_rolled_OD_blknblu",
     "OPTRE_Ins_ER_rolled_OD_blknred",
     "OPTRE_Ins_ER_rolled_OD_crimson",
     "OPTRE_Ins_ER_rolled_surplus_black",
     "OPTRE_Ins_ER_rolled_surplus_crimson",
+    "OPTRE_Ins_ER_jacket_brown_surplus",
+    "OPTRE_Ins_ER_jacket_od_surplus",
     "OPTRE_Ins_ER_jacket_surgeon1",
     "OPTRE_Ins_ER_jacket_surgeon2",
     "OPTRE_Ins_ER_jacket_surplus_brown",
