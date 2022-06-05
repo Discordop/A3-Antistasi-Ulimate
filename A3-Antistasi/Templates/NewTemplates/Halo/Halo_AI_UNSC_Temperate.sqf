@@ -202,8 +202,6 @@ _loadoutData setVariable ["smokeGrenades", ["OPTRE_M2_Smoke"]];
 _loadoutData setVariable ["signalsmokeGrenades", ["OPTRE_M2_Yellow", "OPTRE_M2_Red", "OPTRE_M2_Purple", "OPTRE_M2_Orange", "OPTRE_M2_Green", "OPTRE_M2_Blue"]];
 
 
-
-
 _loadoutData setVariable ["maps", ["ItemMap"]];
 _loadoutData setVariable ["watches", ["ItemWatch"]];
 _loadoutData setVariable ["compasses", ["ItemCompass"]];
@@ -254,7 +252,7 @@ private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _sfLoadoutData setVariable ["uniforms", ["OPTRE_MJOLNIR_Undersuit"]];
 _sfLoadoutData setVariable ["vests", ["OPTRE_MJOLNIR_Mk4Armor"]];
 _sfLoadoutData setVariable ["Hvests", ["OPTRE_MJOLNIR_MkVBArmor"]];
-_sfLoadoutData setVariable ["backpacks", ["OPTRE_UNSC_Rucksack_Spartan", "OPTRE_UNSC_Heavy_Spartan", "OPTRE_ANPRC_521_Green_Spartan"]];
+_sfLoadoutData setVariable ["backpacks", ["OPTRE_UNSC_Rucksack_Spartan", "OPTRE_UNSC_Rucksack_Heavy_Spartan", "OPTRE_ANPRC_521_Green_Spartan"]];
 _sfLoadoutData setVariable ["helmets", ["OPTRE_MJOLNIR_Mk4Helmet", "OPTRE_MJOLNIR_ReconHelmet", "OPTRE_MJOLNIR_EVAHelmet", "OPTRE_MJOLNIR_MkVBHelmet"]];
 _sfLoadoutData setVariable ["binoculars", ["OPTRE_Smartfinder"]];
 
@@ -310,7 +308,7 @@ _sfLoadoutData setVariable ["sidearms", [
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _militaryLoadoutData setVariable ["uniforms", ["OPTRE_UNSC_Army_Uniform_R_WDL", "OPTRE_UNSC_Army_Uniform_S_WDL", "OPTRE_UNSC_Army_Uniform_WDL_SlimLeg", "OPTRE_UNSC_Army_Uniform_WDL"]];
-_militaryLoadoutData setVariable ["vests", ["OPTRE_UNSC_M52A_Rifleman_WDL", "OPTRE_UNSC_M52A_Armor4_WDL", "OPTRE_UNSC_M52A_Armor3_WDL", "OPTRE_UNSC_M52A_Armor_Medic_WDL", "OPTRE_UNSC_M52A_Armor_Marksman_WDL", "OPTRE_UNSC_M52A_Armor_Breacher_WDL", "OPTRE_UNSC_M52A_Armor_MG_WDL"]];
+_militaryLoadoutData setVariable ["vests", ["OPTRE_UNSC_M52A_Armor_Rifleman_WDL", "OPTRE_UNSC_M52A_Armor4_WDL", "OPTRE_UNSC_M52A_Armor3_WDL", "OPTRE_UNSC_M52A_Armor_Medic_WDL", "OPTRE_UNSC_M52A_Armor_Marksman_WDL", "OPTRE_UNSC_M52A_Armor_Breacher_WDL", "OPTRE_UNSC_M52A_Armor_MG_WDL"]];
 _militaryLoadoutData setVariable ["Hvests", ["OPTRE_UNSC_M52A_Armor_TL_WDL", "OPTRE_UNSC_M52A_Armor2_WDL"]];
 _militaryLoadoutData setVariable ["GLvests", ["OPTRE_UNSC_M52A_Armor1_WDL", "OPTRE_UNSC_M52A_Armor_Grenadier_WDL"]];
 _militaryLoadoutData setVariable ["backpacks", ["OPTRE_UNSC_Backpack", "OPTRE_UNSC_Rucksack", "OPTRE_UNSC_Rucksack_Heavy", "OPTRE_UNSC_Rucksack_Medic", "OPTRE_ANPRC_521_Green"]];
@@ -384,7 +382,7 @@ _policeLoadoutData setVariable ["sidearms", ["OPTRE_M6C"]];
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _militiaLoadoutData setVariable ["uniforms", ["OPTRE_UNSC_Army_Uniform_R_WDL", "OPTRE_UNSC_Army_Uniform_S_WDL", "OPTRE_UNSC_Army_Uniform_WDL_SlimLeg", "OPTRE_UNSC_Army_Uniform_WDL"]];
-_militiaLoadoutData setVariable ["vests", ["OPTRE_UNSC_M52A_Rifleman_WDL", "OPTRE_UNSC_M52A_Armor4_WDL", "OPTRE_UNSC_M52A_Armor3_WDL", "OPTRE_UNSC_M52A_Armor_TL_WDL", "OPTRE_UNSC_M52A_Armor2_WDL", "OPTRE_UNSC_M52A_Armor_Medic_WDL", "OPTRE_UNSC_M52A_Armor_Marksman_WDL", "OPTRE_UNSC_M52A_Armor1_WDL", "OPTRE_UNSC_M52A_Armor_Grenadier_WDL", "OPTRE_UNSC_M52A_Armor_Breacher_WDL", "OPTRE_UNSC_M52A_Armor_MG_WDL"]];
+_militiaLoadoutData setVariable ["vests", ["OPTRE_UNSC_M52A_Armor_Rifleman_WDL", "OPTRE_UNSC_M52A_Armor4_WDL", "OPTRE_UNSC_M52A_Armor3_WDL", "OPTRE_UNSC_M52A_Armor_TL_WDL", "OPTRE_UNSC_M52A_Armor2_WDL", "OPTRE_UNSC_M52A_Armor_Medic_WDL", "OPTRE_UNSC_M52A_Armor_Marksman_WDL", "OPTRE_UNSC_M52A_Armor1_WDL", "OPTRE_UNSC_M52A_Armor_Grenadier_WDL", "OPTRE_UNSC_M52A_Armor_Breacher_WDL", "OPTRE_UNSC_M52A_Armor_MG_WDL"]];
 _militiaLoadoutData setVariable ["backpacks", ["OPTRE_UNSC_Backpack", "OPTRE_UNSC_Rucksack", "OPTRE_UNSC_Rucksack_Heavy", "OPTRE_UNSC_Rucksack_Medic", "OPTRE_ANPRC_521_Green"]];
 _militiaLoadoutData setVariable ["helmets", ["OPTRE_UNSC_CH252_Helmet2_WDL", "OPTRE_UNSC_CH252_Helmet_WDL", "OPTRE_UNSC_CH252_Helmet2_Vacuum_WDL", "OPTRE_UNSC_CH252_Helmet_Vacuum_WDL"]];
 
@@ -401,8 +399,8 @@ _militiaLoadoutData setVariable ["carbines", [
 ["OPTRE_MA5K", "", "", "optre_m7_sight", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow", "OPTRE_32Rnd_762x51_Mag_UW"], [], ""]
 ]];
 _militiaLoadoutData setVariable ["grenadeLaunchers", [
-["arifle_Mk20_GL_plain_F", "", "acc_flashlight", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Red"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
-["arifle_TRG21_GL_F", "", "acc_flashlight", "", ["30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_Tracer_Red"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
+["OPTRE_M319", "", "", "", ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
+["OPTRE_M319n", "", "", "", ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
 ]];
 _militiaLoadoutData setVariable ["SMGs", [
 ["OPTRE_M7", "", "", "optre_m7_sight", ["OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag_tracer", "OPTRE_60Rnd_5x23mm_Mag_tracer_yellow"], [], ""],

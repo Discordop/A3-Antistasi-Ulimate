@@ -2,7 +2,7 @@
 //   Rebel Information   //
 ///////////////////////////
 
-["name", "URF"] call _fnc_saveToTemplate;
+["name", "FIA"] call _fnc_saveToTemplate;
 
 ["flag", "Flag_FIA_F"] call _fnc_saveToTemplate;
 ["flagTexture", "\A3\Data_F\Flags\flag_FIA_CO.paa"] call _fnc_saveToTemplate;
@@ -23,7 +23,7 @@
 ["vehiclePayloadPlane", "OPTRE_YSS_1000_A"] call _fnc_saveToTemplate;
 ["vehicleHeli", "not_supported"] call _fnc_saveToTemplate;
 
-["vehicleCivCar", "C_Offroad_01_F"] call _fnc_saveToTemplate;
+["vehicleCivCar", "OPTRE_M12_CIV"] call _fnc_saveToTemplate;
 ["vehicleCivTruck", "C_Van_01_transport_F"] call _fnc_saveToTemplate;
 ["vehicleCivHeli", "C_Heli_Light_01_civil_F"] call _fnc_saveToTemplate;
 ["vehicleCivBoat", "C_Rubberboat"] call _fnc_saveToTemplate;
@@ -42,24 +42,33 @@
 ["baggedAA", [["I_AA_01_weapon_F","I_G_HMG_02_support_F"]]] call _fnc_saveToTemplate;
 ["baggedMortars", [["I_Mortar_01_weapon_F","I_Mortar_01_support_F"]]] call _fnc_saveToTemplate;
 
-["mineAT", ["ATMine_Range_Mag", "SLAMDirectionalMine_Wire_Mag"]] call _fnc_saveToTemplate;
+["mineAT", ["UNSCMine_Range_Mag"]] call _fnc_saveToTemplate;
 ["mineAPERS", ["ClaymoreDirectionalMine_Remote_Mag","APERSMine_Range_Mag", "APERSBoundingMine_Range_Mag", "APERSTripMine_Wire_Mag"]] call _fnc_saveToTemplate;
 
-["breachingExplosivesAPC", [["DemoCharge_Remote_Mag", 1]]] call _fnc_saveToTemplate;
-["breachingExplosivesTank", [["SatchelCharge_Remote_Mag", 1], ["DemoCharge_Remote_Mag", 2]]] call _fnc_saveToTemplate;
+["breachingExplosivesAPC", [["M168_Remote_Mag", 1], ["C7_Remote_Mag", 1], ["C12_Remote_Mag", 1]]] call _fnc_saveToTemplate;
+["breachingExplosivesTank", [["M168_Remote_Mag", 1], ["C7_Remote_Mag", 2], ["C12_Remote_Mag", 2]]] call _fnc_saveToTemplate;
 
 ///////////////////////////
 //  Rebel Starting Gear  //
 ///////////////////////////
 ["uniforms", [
-    "U_IG_Guerilla1_1",
-    "U_IG_Guerilla2_1",
-    "U_IG_Guerilla2_2",
-    "U_IG_Guerilla2_3",
-    "U_IG_Guerilla3_1",
-    "U_IG_leader",
-    "U_IG_Guerrilla_6_1",
-    "U_I_G_resistanceLeader_F"
+    "OPTRE_Ins_ER_jacket_brown_surplus",
+    "OPTRE_Ins_ER_uniform_GAgreen",
+    "OPTRE_Ins_ER_uniform_GAtan",
+    "OPTRE_Ins_ER_uniform_GGgrey",
+    "OPTRE_Ins_ER_uniform_GGod",
+    "OPTRE_Ins_ER_jacket_od_surplus",
+    "OPTRE_Ins_ER_rolled_jean_orca",
+    "OPTRE_Ins_ER_rolled_OD_blknblu",
+    "OPTRE_Ins_ER_rolled_OD_blknred",
+    "OPTRE_Ins_ER_rolled_OD_crimson",
+    "OPTRE_Ins_ER_rolled_surplus_black",
+    "OPTRE_Ins_ER_rolled_surplus_crimson",
+    "OPTRE_Ins_ER_jacket_surgeon1",
+    "OPTRE_Ins_ER_jacket_surgeon2",
+    "OPTRE_Ins_ER_jacket_surplus_brown",
+    "OPTRE_Ins_ER_jacket_surplus_OD",
+    "OPTRE_Ins_ER_jacket_surplus_redshirt"
 ]] call _fnc_saveToTemplate;
 
 ["headgear", [
@@ -77,38 +86,37 @@
 ]] call _fnc_saveToTemplate;
 
 private _initialRebelEquipment = [
-"hgun_ACPC2_F","hgun_Pistol_01_F","sgun_HunterShotgun_01_F", "hgun_PDW2000_F", "sgun_HunterShotgun_01_sawedoff_F",
-"30Rnd_9x21_Mag", "30Rnd_9x21_Red_Mag",
-"9Rnd_45ACP_Mag", "2Rnd_12Gauge_Pellets","2Rnd_12Gauge_Slug", "MiniGrenade", "SmokeShell", "10Rnd_9x21_Mag",
+"optre_hgun_comet_F","OPTRE_M90A",
+"4Rnd_454Casull", "OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets", "OPTRE_M9_Frag", "OPTRE_M2_Smoke",
 "B_AssaultPack_blk","B_AssaultPack_cbr","B_AssaultPack_rgr","B_AssaultPack_khk","B_AssaultPack_sgg",
 "V_BandollierB_blk","V_BandollierB_rgr","V_BandollierB_oli","V_Rangemaster_belt",
 "Binocular","acc_flashlight", "Laserbatteries","acc_flashlight_smg_01","acc_flashlight_pistol"];
 
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
-if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment pushBack "tf_anprc155_coyote"};
+if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment pushBack "OPTRE_ANPRC_515"};
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","TFAR_anprc154"]};
-if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment pushBack "TFAR_anprc155_coyote"};
+if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment pushBack "OPTRE_ANPRC_515"};
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 //////////////////////////////////////
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 ["baseSoldiers", [ // Cases matter. Lower case here because allVariables on namespace returns lowercase
-	["militia_unarmed", "I_G_Survivor_F"],
-	["militia_rifleman", "I_G_Soldier_F"],
-	["militia_staticcrew", "I_G_Soldier_F"],
-	["militia_medic", "I_G_medic_F"],
-	["militia_sniper", "I_G_Sharpshooter_F"],
-	["militia_marksman", "I_G_Soldier_M_F"],
-	["militia_lat", "I_G_Soldier_LAT_F"],
-	["militia_machinegunner", "I_G_Soldier_AR_F"],
-	["militia_explosivesexpert", "I_G_Soldier_exp_F"],
-	["militia_grenadier", "I_G_Soldier_GL_F"],
-	["militia_squadleader", "I_G_Soldier_SL_F"],
-	["militia_engineer", "I_G_engineer_F"],
-	["militia_at", "I_Soldier_AT_F"],
-	["militia_aa", "I_Soldier_AA_F"],
-	["militia_petros", "I_G_officer_F"]
+	["militia_unarmed", "OPTRE_Ins_ER_Unarmed"],
+	["militia_rifleman", "OPTRE_Ins_ER_Guerilla_AR"],
+	["militia_staticcrew", "OPTRE_Ins_ER_Farmer"],
+	["militia_medic", "OPTRE_Ins_ER_Surgeon"],
+	["militia_sniper", "OPTRE_Ins_ER_Assassin"],
+	["militia_marksman", "OPTRE_Ins_ER_Assassin"],
+	["militia_lat", "OPTRE_Ins_ER_Rebel_AT"],
+	["militia_machinegunner", "OPTRE_Ins_ER_Militia_MG"],
+	["militia_explosivesexpert", "OPTRE_Ins_ER_Deserter_GL"],
+	["militia_grenadier", "OPTRE_Ins_ER_Deserter_GL"],
+	["militia_squadleader", "OPTRE_Ins_ER_Terrorist"],
+	["militia_engineer", "OPTRE_Ins_ER_Hacker"],
+	["militia_at", "OPTRE_Ins_ER_Rebel_AT"],
+	["militia_aa", "OPTRE_Ins_ER_Rebel_AT"],
+	["militia_petros", "OPTRE_Ins_ER_Warlord"]
 ]] call _fnc_saveToTemplate;
 
 lootCrate = "Box_Syndicate_Ammo_F";
@@ -116,13 +124,13 @@ rallyPoint = "B_RadioBag_01_wdl_F";
 
 //black market stuff
 shop_UAV = ["I_UAV_01_F"];
-shop_AA = ["I_LT_01_AA_F"];
-shop_MRAP = ["I_MRAP_03_hmg_F", "B_MRAP_01_hmg_F", "O_MRAP_02_hmg_F"];
-shop_wheel_apc = ["O_APC_Wheeled_02_rcws_v2_F", "B_APC_Wheeled_01_cannon_F", "I_APC_Wheeled_03_cannon_F"];
-shop_track_apc = ["I_APC_tracked_03_cannon_F", "I_APC_tracked_03_cannon_F", "B_APC_Tracked_01_rcws_F"];
-shop_heli = ["O_Heli_Light_02_dynamicLoadout_F", "B_Heli_Light_01_dynamicLoadout_F", "I_Heli_light_03_dynamicLoadout_F"];
-shop_tank = ["I_LT_01_cannon_F", "I_LT_01_AT_F", "I_MBT_03_cannon_F"];
-shop_plane = ["I_Plane_Fighter_03_dynamicLoadout_F"];
+shop_AA = ["OPTRE_M12R_AA"];
+shop_MRAP = ["OPTRE_M12_LRV", "OPTRE_M12_TD_ins", "OPTRE_M12G1_LRV"];
+shop_wheel_apc = ["OPTRE_M813_TT", "OPTRE_M12_FAV_APC", "OPTRE_M12_ins_APC"];
+shop_track_apc = ["OPTRE_M412_IFV_UNSC", "OPTRE_M413_MGS_UNSC", "OTPRE_M494"];
+shop_heli = ["OPTRE_UNSC_hornet", "OPTRE_UNSC_falcon_unarmed", "OPTRE_UNSC_falcon"];
+shop_tank = ["OPTRE_M808B_UNSC", "OPTRE_M808BM_UNSC", "OPTRE_M808S"];
+shop_plane = ["OPTRE_YSS_1000_A_VTOL"];
 
 additionalShopLight = [];
 additionalShopAtgmVehicles = [];
@@ -174,16 +182,13 @@ _loadoutData setVariable ["compasses", ["ItemCompass"]];
 _loadoutData setVariable ["radios", []];
 _loadoutData setVariable ["gpses", []];
 _loadoutData setVariable ["NVGs", []];
-_loadoutData setVariable ["binoculars", ["Binocular"]];
+_loadoutData setVariable ["binoculars", ["OPTRE_Binoculars"]];
 
 _loadoutData setVariable ["uniforms", [
-    "U_IG_Guerilla1_1",
-    "U_IG_Guerilla2_1",
-    "U_IG_Guerilla2_2",
-    "U_IG_Guerilla2_3",
-    "U_IG_Guerilla3_1",
-    "U_IG_leader",
-    "U_IG_Guerrilla_6_1"
+    "OPTRE_Ins_ER_uniform_GAgreen",
+    "OPTRE_Ins_ER_uniform_GAtan",
+    "OPTRE_Ins_ER_uniform_GGgrey",
+    "OPTRE_Ins_ER_uniform_GGod"
 ]];
 _loadoutData setVariable ["vests", []];
 _loadoutData setVariable ["backpacks", []];

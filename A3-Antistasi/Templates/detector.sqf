@@ -61,10 +61,10 @@ if (isClass (configfile >> "CfgPatches" >> "LIB_core")) then {
 //};
 
 //Halo Detection
-//if (isClass (configFile >> "CfgFactionClasses" >> "OPTRE_UNSC")) then {
- // A3A_hasHalo = true;
-  //[2,"Op Trebuchet Detected.",_fileName] call A3A_fnc_log;
-//};
+if (isClass (configFile >> "CfgFactionClasses" >> "OPTRE_UNSC")) then {
+  A3A_hasHalo = true;
+  [2,"Op Trebuchet Detected.",_fileName] call A3A_fnc_log;
+};
 
 if (isClass (configFile >> "CfgPatches" >> "vn_weapons")) then {
   A3A_hasVN = true;
