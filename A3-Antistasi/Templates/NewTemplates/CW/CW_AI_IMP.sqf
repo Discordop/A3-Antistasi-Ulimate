@@ -5,9 +5,9 @@
 ["name", "Empire"] call _fnc_saveToTemplate;
 ["spawnMarkerName", "Imperial support corridor"] call _fnc_saveToTemplate;
 
-["flag", "ls_flag_republic"] call _fnc_saveToTemplate;
+["flag", "Flag_JMSLLTE_Emp_black_F"] call _fnc_saveToTemplate;
 ["flagTexture", "\LS_statics_props\flags\data\flag_republic.paa"] call _fnc_saveToTemplate;
-["flagMarkerType", "Flag_JMSLLTE_Emp_black_F"] call _fnc_saveToTemplate;
+["flagMarkerType", "JLTS_flag_Rep"] call _fnc_saveToTemplate;
 
 //////////////////////////////////////
 //       Antistasi Plus Stuff       //
@@ -329,7 +329,7 @@ _militaryLoadoutData setVariable ["sidearms", [
 ///////////////////////////////
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_policeLoadoutData setVariable ["uniforms", ["JMS_LLTE_EmpOfficer_black_F_CombatUniform"]];
+_policeLoadoutData setVariable ["uniforms", ["JMSLLTE_EmpOfficer_black_F_CombatUniform"]];
 _policeLoadoutData setVariable ["vests", ["JMSLLTE_Officerrank_navy_lt_armor", "JMSLLTE_Officerrank_lt_armor"]];
 _policeLoadoutData setVariable ["helmets", ["JMSLLTE_EmpOfficerCap_black_helmet"]];
 _policeLoadoutData setVariable ["smgs", [
@@ -343,7 +343,7 @@ _policeLoadoutData setVariable ["sidearms", ["JMSLLTE_se14pistol", "", "", "", [
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militiaLoadoutData setVariable ["uniforms", ["JMSLLTE_EmpTrooper_F_CombatUniform", "JMSLLTE_EmpTrooperCamo_F_CombatUniform", "JMSLLTE_EmpTrooperDirty_F_CombatUniform"]];		//this line determines uniforms for militia loadouts -- Example: ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt"] -- Array, can contain multiple assets
+_militiaLoadoutData setVariable ["uniforms", ["JMSLLTE_EmpTrooper_F_CombatUniform", "JMSLLTE_EmpTrooperCamo_F_CombatUniform", "JMSLLTE_EmpTrooperDiry_F_CombatUniform"]];		//this line determines uniforms for militia loadouts -- Example: ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt"] -- Array, can contain multiple assets
 _militiaLoadoutData setVariable ["vests", ["JMSLLTE_TrooperBelt_armor", "JMSLLTE_TrooperCape_armor", "JMSLLTE_TrooperCapeBelt_armor", "JMSLLTE_TrooperPouchCape_armor", "JMSLLTE_TrooperPouch_armor", "JMSLLTE_TrooperPouchBelt_armor"]];			//this line determines vests for militia loadouts -- Example: ["V_PlateCarrierSpec_mtp", "V_PlateCarrierGL_mtp"] -- Array, can contain multiple assets
 _militiaLoadoutData setVariable ["backpacks", ["JMSLLTE_back_rebsmall_imp_v1"]];		//this line determines backpacks for militia loadouts -- Example: ["B_AssaultPack_mcamo", "B_Kitbag_mcamo"] -- Array, can contain multiple assets
 _militiaLoadoutData setVariable ["helmets", ["JMSLLTE_EmpTrooper_helmet"]];		//this line determines helmets for police loadouts -- Example: ["H_HelmetB_camo", "H_HelmetB_desert"] -- Array, can contain multiple assets
