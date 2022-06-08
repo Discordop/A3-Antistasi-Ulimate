@@ -11437,6 +11437,7 @@ class cfgHALsStore
 			ITEM(SWLW_e60r_aa_mag, 200, 15);
 			ITEM(SWLW_plx1_at_mag, 170, 15);
 			ITEM(SWLW_plx1_aa_mag, 220, 15);
+			ITEM(SWLW_Z7_mag, 200, 15);
 		};
 
 		class riflegrenadescw{
