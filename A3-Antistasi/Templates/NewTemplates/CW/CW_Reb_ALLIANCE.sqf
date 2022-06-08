@@ -10,7 +10,7 @@
 
 ["vehicleBasic", "CW_Quadbike"] call _fnc_saveToTemplate;
 ["vehicleLightUnarmed", "CW_Offroad_Mando"] call _fnc_saveToTemplate;
-["vehicleLightArmed", "CW_Offroad_Mando_HMG"] call _fnc_saveToTemplate; 
+["vehicleLightArmed", "JMSLLTE_B_veh_AA5_reb_F"] call _fnc_saveToTemplate; 
 ["vehicleTruck", "442_argon_transport_cis"] call _fnc_saveToTemplate; 
 ["vehicleAT", "CW_Offroad_Mando_AT"] call _fnc_saveToTemplate;
 ["vehicleAA", "CW_Ifrit_Mando_HMG"] call _fnc_saveToTemplate; 
@@ -20,7 +20,7 @@
 ["vehicleFuel", "I_G_Van_01_fuel_F"] call _fnc_saveToTemplate;
 
 ["vehiclePlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
-["vehiclePayloadPlane", "442_a10_plane_cas"] call _fnc_saveToTemplate;
+["vehiclePayloadPlane", "JMSLLTE_Awing_veh_F"] call _fnc_saveToTemplate;
 ["vehicleHeli", "not_supported"] call _fnc_saveToTemplate;
 
 ["vehicleCivCar", "C_Offroad_01_F"] call _fnc_saveToTemplate;
@@ -68,14 +68,14 @@
 ]] call _fnc_saveToTemplate;
 
 private _initialRebelEquipment = [
-"SWLW_Westar35SA",
-"SWLW_westar35c","SWLW_Westar35S",
+"JMSLLTE_dh17",
+"JMSLLTE_dl44pistol",
 "ls_weapon_rps6_disposable",
-"SWLW_Westar35S_Mag","SWLW_westar35c_Mag","SWLW_westar35sa_Mag","ls_mag_rpg_1rnd","3AS_ThermalDetonator","SmokeShell",
+"JMSLLTE_DL44_10rnd_Mag","JMSLLTE_DH17_30Rnd_Mag","ls_mag_rpg_1rnd","3AS_ThermalDetonator","SmokeShell",
 "JMSLLTE_back_rebpack_v1_wood","JMSLLTE_back_rebpack_v1_black","JMSLLTE_back_rebpack_v1_desert","JMSLLTE_back_rebpack_v1_snow",
 "JMSLLTE_CommandoBelt_armor","JMSLLTE_ComStrap_armor","JMSLLTE_CommandosVest2_armor","JMSLLTE_PathfinderBelt_armor","JMSLLTE_PathfinderVest_armor",
 "JMSLLTE_Path_1_black_cap","JMSLLTE_Path_1_white_cap","JMSLLTE_Path_1_brown_cap",
-"SWLB_clone_commander_binocular_night"];
+"Binocular","ItemCompass","ItemWatch"];
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","SWLB_comlink_hush98"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment pushBack "ls_mandalorian_tro_backpack"};
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","JLTS_clone_comlink"]};
@@ -86,21 +86,21 @@ if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment pus
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 ["baseSoldiers", [ // Cases matter. Lower case here because allVariables on namespace returns lowercase
-	["militia_unarmed", "ls_mandalorian_assault_traditional"],
-	["militia_rifleman", "ls_mandalorian_assault_traditional"],
-	["militia_staticcrew", "ls_mandalorian_assault_traditional"],
-	["militia_medic", "ls_mandalorian_medic_traditional"],
-	["militia_sniper", "ls_mandalorian_marksman_traditional"],
-	["militia_marksman", "ls_mandalorian_marksman_traditional"],
-	["militia_lat", "ls_mandalorian_at_traditional"],
-	["militia_machinegunner", "ls_mandalorian_heavy_traditional"],
-	["militia_explosivesexpert", "ls_mandalorian_demo_traditional"],
-	["militia_grenadier", "ls_mandalorian_demo_traditional"],
-	["militia_squadleader", "ls_mandalorian_rto_traditional"],
-	["militia_engineer", "ls_mandalorian_assault_traditional"],
-	["militia_at", "ls_mandalorian_heavyAT_traditional"],
-	["militia_aa", "ls_mandalorian_aa_traditional"],
-	["militia_petros", "ls_mandalorian_rto_traditional"]
+	["militia_unarmed", "JMSLLTE_scum_troop_trooper"],
+	["militia_rifleman", "JMSLLTE_scum_troop_trooper"],
+	["militia_staticcrew", "JMSLLTE_scum_troop_trooper"],
+	["militia_medic", "JMSLLTE_scum_troop_medic"],
+	["militia_sniper", "JMSLLTE_scum_troop_snip"],
+	["militia_marksman", "JMSLLTE_scum_troop_snip"],
+	["militia_lat", "JMSLLTE_scum_troop_trooperAT"],
+	["militia_machinegunner", "JMSLLTE_scum_troop_trooperH"],
+	["militia_explosivesexpert", "JMSLLTE_scum_troop_trooperH"],
+	["militia_grenadier", "JMSLLTE_scum_troop_trooperH"],
+	["militia_squadleader", "JMSLLTE_scum_troop_serg"],
+	["militia_engineer", "JMSLLTE_scum_troop_trooper"],
+	["militia_at", "JMSLLTE_scum_troop_trooperAT"],
+	["militia_aa", "JMSLLTE_scum_troop_trooperAT"],
+	["militia_petros", "JMSLLTE_scum_troop_serg"]
 ]] call _fnc_saveToTemplate;
 
 lootCrate = "Box_Syndicate_Ammo_F";

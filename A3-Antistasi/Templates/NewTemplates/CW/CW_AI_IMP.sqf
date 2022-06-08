@@ -101,7 +101,7 @@
 ["vehiclesLightAPCs", []] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
-["vehiclesSam", ["B_Radar_System_01_F","B_SAM_System_02_F"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
+["vehiclesSam", ["B_Radar_System_01_F","JMSLLTE_B_vehgr_XX91turbolaser_imp_F"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
 ["vehiclesTransportBoats", ["I_Boat_Transport_01_F"]] call _fnc_saveToTemplate; 
 ["vehiclesGunBoats", ["442_boat_armed"]] call _fnc_saveToTemplate; 
