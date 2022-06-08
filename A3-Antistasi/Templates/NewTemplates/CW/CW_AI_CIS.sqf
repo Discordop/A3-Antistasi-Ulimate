@@ -181,7 +181,7 @@ _loadoutData setVariable ["machineGuns", []];
 _loadoutData setVariable ["marksmanRifles", []];
 _loadoutData setVariable ["sniperRifles", []];
 _loadoutData setVariable ["lightATLaunchers", [
-["ls_weapon_rps6_loaded"]
+["ls_weapon_rps6_disposable"]
 ]];
 _loadoutData setVariable ["ATLaunchers", [["ls_weapon_rps6", "", "", "", ["ls_mag_rpg_1rnd"], [], ""]]];
 _loadoutData setVariable ["missileATLaunchers", [["SWLW_E60R", "", "", "", ["SWLW_e60r_at_mag"], [], ""]]];

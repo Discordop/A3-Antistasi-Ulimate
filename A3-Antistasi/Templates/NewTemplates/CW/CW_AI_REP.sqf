@@ -272,7 +272,7 @@ _sfLoadoutData setVariable ["SMGs", [
 ["SWLW_DC17M", "", "", "", ["SWLW_DC17M_Blaster_Mag"], [], ""]
 ]];
 _sfLoadoutData setVariable ["machineGuns", [
-["JLTS_Z6", "", "", "", ["JLTS_Z6_mag"], [], ""]
+["SWLW_Z6", "", "", "", ["SWLW_Z6_mag"], [], ""]
 ]];
 _sfLoadoutData setVariable ["marksmanRifles", [
 ["SWLW_DC17M", "", "", "swlw_attachment_scope_dc17m_sniper", ["SWLW_DC17M_Sniper_Mag"], [], ""]
@@ -299,32 +299,33 @@ _militaryLoadoutData setVariable ["missileATLaunchers", [
 ]];
 
 _militaryLoadoutData setVariable ["rifles", [
-["3AS_DC15C_F", "", "", "3as_optic_reflex_dc15c", ["3AS_40Rnd_EC40_Mag"], [], ""],
-["3AS_DC15A_F", "", "", "3as_optic_red_dc15a", ["3AS_45Rnd_EC50_Mag"], [], ""],
-["3AS_DC15C_F", "", "", "3as_optic_acog_dc15c", ["3AS_40Rnd_EC40_Mag"], [], ""]
+["SWLW_DC15AC", "", "", "", ["SWLW_DC15AC_Mag"], [], ""],
+["SWLW_DC15A", "", "", "", ["SWLW_DC15A_Mag"], [], ""],
+["SWLW_DC15A_wooden", "", "", "", ["SWLW_DC15A_Mag"], [], ""]
 ]];
 _militaryLoadoutData setVariable ["carbines", [
 ["SWLW_DC15s", "", "", "", ["SWLW_DC15s_Mag"], [], ""]
 ]];
 _militaryLoadoutData setVariable ["grenadeLaunchers", [
-["3AS_DC15C_GL", "", "", "3as_optic_reflex_dc15c", ["3AS_40Rnd_EC40_Mag"], ["1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "3Rnd_UGL_FlareWhite_F"], ""]
+["SWLW_DC15A_ugl", "", "", "", ["SWLW_DC15A_Mag"], ["SWLW_DC15A_UGL_Mag", "SWLW_DC15A_UGL_smoke_white_Mag", "SWLW_DC15A_UGL_flare_white_Mag"], ""]
 ]];
 _militaryLoadoutData setVariable ["SMGs", [
 ["SWLW_DC15s", "", "", "", ["SWLW_DC15s_Mag"], [], ""],
 ["SWLW_DP20", "", "", "", ["SWLW_DP20_Mag"], [], ""]
 ]];
 _militaryLoadoutData setVariable ["machineGuns", [
-["3AS_DC15L_F", "", "", "3as_optic_dc15l", ["3AS_200Rnd_EC40_Mag"], [], ""],
-["3AS_DC15L_F", "", "", "", ["3AS_200Rnd_EC40_Mag"], [], ""],
-["JLTS_Z6", "", "", "", ["JLTS_Z6_mag"], [], ""]
+["SWLW_DC15SAW", "", "", "", ["SWLW_DC15SAW_Mag"], [], ""],
+["SWLW_DC15SAW_wooden", "", "", "", ["SWLW_DC15SAW_Mag"], [], ""],
+["SWLW_Z6", "", "", "", ["SWLW_Z6_mag"], [], ""]
 ]];
 _militaryLoadoutData setVariable ["marksmanRifles", [
-["3AS_DC15C_F", "", "", "3as_optic_acog_dc15c", ["3AS_40Rnd_EC40_Mag"], [], ""],
-["3AS_DC15A_F", "", "", "3as_optic_lescope_dc15a", ["3AS_45Rnd_EC50_Mag"], [], ""],
-["JLTS_DC15X", "", "", "jlts_dc15x_scope", ["JLTS_DC15X_mag"], [], ""]
+["SWLW_DC15BR", "", "", "", ["SWLW_DC15BR_Mag"], [], ""],
+["SWLW_DC15A", "", "", "", ["SWLW_DC15A_Mag"], [], ""],
+["SWLW_DC15X", "", "", "", ["SWLW_DC15X_mag"], [], ""]
 ]];
 _militaryLoadoutData setVariable ["sniperRifles", [
-["JLTS_DC15X", "", "", "jlts_dc15x_scope", ["JLTS_DC15X_mag"], [], ""]
+["SWLW_DC15X", "", "", "", ["SWLW_DC15X_mag"], [], ""],
+["SWLW_DC15X_wooden", "", "", "", ["SWLW_DC15X_mag"], [], ""]
 ]];
 _militaryLoadoutData setVariable ["sidearms", [
 ["SWLW_DC17", "", "", "", ["SWLW_DC17_Mag"], [], ""]
@@ -354,23 +355,23 @@ _militiaLoadoutData setVariable ["backpacks", ["SWLB_clone_backpack", "SWLB_clon
 _militiaLoadoutData setVariable ["helmets", ["SWLB_clone_P1_helmet"]];		//this line determines helmets for police loadouts -- Example: ["H_HelmetB_camo", "H_HelmetB_desert"] -- Array, can contain multiple assets
 
 _militiaLoadoutData setVariable ["rifles", [
-["3AS_DC15C_F", "", "", "", ["3AS_40Rnd_EC40_Mag"], [], ""]
+["SWLW_DC15AC", "", "", "", ["SWLW_DC15AC_Mag"], [], ""]
 ]];
 _militiaLoadoutData setVariable ["carbines", [
 ["SWLW_DC15s", "", "", "", ["SWLW_DC15s_Mag"], [], ""]
 ]];
 _militiaLoadoutData setVariable ["grenadeLaunchers", [
-["3AS_DC15C_GL", "", "", "", ["3AS_40Rnd_EC40_Mag"], ["1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "3Rnd_UGL_FlareWhite_F"], ""]
+["SWLW_DC15A_ugl", "", "", "", ["SWLW_DC15A_Mag"], ["SWLW_DC15A_UGL_Mag", "SWLW_DC15A_UGL_smoke_white_Mag", "SWLW_DC15A_UGL_flare_white_Mag"], ""]
 ]];
 _militiaLoadoutData setVariable ["SMGs", [
 ["SWLW_DC15s", "", "", "", ["SWLW_DC15s_Mag"], [], ""],
 ["SWLW_DP20", "", "", "", ["SWLW_DP20_Mag"], [], ""]
 ]];
 _militiaLoadoutData setVariable ["machineGuns", [
-["3AS_DC15L_F", "", "", "", ["3AS_200Rnd_EC40_Mag"], [], ""]
+["SWLW_DC15SAW", "", "", "", ["SWLW_DC15SAW_Mag"], [], ""]
 ]];
-_militiaLoadoutData setVariable ["marksmanRifles", [["3AS_DC15C_F", "", "", "", ["3AS_40Rnd_EC40_Mag"], [], ""]]];
-_militiaLoadoutData setVariable ["sniperRifles", [["3AS_DC15A_F", "", "", "3as_optic_lescope_dc15a", ["3AS_45Rnd_EC50_Mag"], [], ""]]];
+_militiaLoadoutData setVariable ["marksmanRifles", [["SWLW_DC15A", "", "", "", ["SWLW_DC15A_Mag"], [], ""]]];
+_militiaLoadoutData setVariable ["sniperRifles", [["SWLW_DC15X_wooden", "", "", "", ["SWLW_DC15X_mag"], [], ""]]];
 _militiaLoadoutData setVariable ["sidearms", ["SWLW_DC17", "", "", "", ["SWLW_DC17_Mag"], [], ""]];
 
 /////////////////////////////////
@@ -390,30 +391,31 @@ _eliteLoadoutData setVariable ["missileATLaunchers", [
 ]];
 
 _eliteLoadoutData setVariable ["rifles", [
-["3AS_DC15C_F", "", "", "3as_optic_reflex_dc15c", ["3AS_40Rnd_EC40_Mag"], [], ""],
-["3AS_DC15A_F", "", "", "3as_optic_red_dc15a", ["3AS_45Rnd_EC50_Mag"], [], ""],
-["3AS_DC15C_F", "", "", "3as_optic_acog_dc15c", ["3AS_40Rnd_EC40_Mag"], [], ""]]];
+["SWLW_DC15AC", "", "", "", ["SWLW_DC15AC_Mag"], [], ""],
+["SWLW_DC15A", "", "", "", ["SWLW_DC15A_Mag"], [], ""],
+["SWLW_DC15A_wooden", "", "", "", ["SWLW_DC15A_Mag"], [], ""]]];
 _eliteLoadoutData setVariable ["carbines", [
 ["SWLW_DC15s", "", "", "", ["SWLW_DC15s_Mag"], [], ""]]];
 _eliteLoadoutData setVariable ["grenadeLaunchers", [
-["3AS_DC15C_GL", "", "", "3as_optic_reflex_dc15c", ["3AS_40Rnd_EC40_Mag"], ["1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "3Rnd_UGL_FlareWhite_F"], ""]
+["SWLW_DC15A_ugl", "", "", "", ["SWLW_DC15A_Mag"], ["SWLW_DC15A_UGL_Mag", "SWLW_DC15A_UGL_smoke_white_Mag", "SWLW_DC15A_UGL_flare_white_Mag"], ""]
 ]];
 _eliteLoadoutData setVariable ["SMGs", [
 ["SWLW_DC15s", "", "", "", ["SWLW_DC15s_Mag"], [], ""],
 ["SWLW_DP20", "", "", "", ["SWLW_DP20_Mag"], [], ""]
 ]];
 _eliteLoadoutData setVariable ["machineGuns", [
-["3AS_DC15L_F", "", "", "3as_optic_dc15l", ["3AS_200Rnd_EC40_Mag"], [], ""],
-["3AS_DC15L_F", "", "", "", ["3AS_200Rnd_EC40_Mag"], [], ""],
-["JLTS_Z6", "", "", "", ["JLTS_Z6_mag"], [], ""]
+["SWLW_DC15SAW", "", "", "", ["SWLW_DC15SAW_Mag"], [], ""],
+["SWLW_DC15SAW_wooden", "", "", "", ["SWLW_DC15SAW_Mag"], [], ""],
+["SWLW_Z6", "", "", "", ["SWLW_Z6_mag"], [], ""]
 ]];
 _eliteLoadoutData setVariable ["marksmanRifles", [
-["3AS_DC15C_F", "", "", "3as_optic_acog_dc15c", ["3AS_40Rnd_EC40_Mag"], [], ""],
-["3AS_DC15A_F", "", "", "3as_optic_lescope_dc15a", ["3AS_45Rnd_EC50_Mag"], [], ""],
-["JLTS_DC15X", "", "", "jlts_dc15x_scope", ["JLTS_DC15X_mag"], [], ""]
+["SWLW_DC15BR", "", "", "", ["SWLW_DC15BR_Mag"], [], ""],
+["SWLW_DC15A", "", "", "", ["SWLW_DC15A_Mag"], [], ""],
+["SWLW_DC15X", "", "", "", ["SWLW_DC15X_mag"], [], ""]
 ]];
 _eliteLoadoutData setVariable ["sniperRifles", [
-["JLTS_DC15X", "", "", "jlts_dc15x_scope", ["JLTS_DC15X_mag"], [], ""]
+["SWLW_DC15X_wooden", "", "", "", ["SWLW_DC15X_mag"], [], ""],
+["SWLW_DC15X", "", "", "", ["SWLW_DC15X_mag"], [], ""]
 ]];
 _eliteLoadoutData setVariable ["sidearms", [
 ["SWLW_DC17", "", "", "", ["SWLW_DC17_Mag"], [], ""]
