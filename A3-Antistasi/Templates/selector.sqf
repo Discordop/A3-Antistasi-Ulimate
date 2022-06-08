@@ -90,6 +90,11 @@ A3A_Reb_template = switch(true) do {
             [2, "Using Temperate CHDKZ Template", _filename] call A3A_fnc_log;
         };
     };
+    case (A3A_hasEmp): {
+        ["Templates\NewTemplates\CW\CW_Reb_ALLIANCE.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using Rebel Alliance Template", _filename] call A3A_fnc_log;
+        "Emp"
+    };
     case (A3A_hasCW): {
         ["Templates\NewTemplates\CW\CW_Reb_MAN.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using Mandalorian Template", _filename] call A3A_fnc_log;
@@ -271,6 +276,11 @@ A3A_Occ_template = switch(true) do {
         [2, "Using Aegis EUROFOR Template", _filename] call A3A_fnc_log;
         "Vanilla" //intentionally, as aegis expands vanilla
     };
+    case (A3A_hasEmp): {
+        ["Templates\NewTemplates\CW\CW_AI_IMP.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using Empire Template", _filename] call A3A_fnc_log;
+        "Emp"
+    };
     case (A3A_hasCW): {
         ["Templates\NewTemplates\CW\CW_AI_REP.sqf", west] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using Republic Template", _filename] call A3A_fnc_log;
@@ -382,6 +392,11 @@ A3A_Inv_template = switch(true) do{
         ["Templates\NewTemplates\Aegis\Aegis_AI_AFRF.sqf", east] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using Aegis Russia Template", _filename] call A3A_fnc_log;
         "Vanilla" //intentionally, as aegis expands vanilla
+    };
+    case (A3A_hasEmp): {
+        ["Templates\NewTemplates\CW\CW_AI_CISHol.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using CIS Holdout Template", _filename] call A3A_fnc_log;
+        "Emp"
     };
     case (A3A_hasCW): {
         ["Templates\NewTemplates\CW\CW_AI_CIS.sqf", east] call A3A_fnc_compatibilityLoadFaction;

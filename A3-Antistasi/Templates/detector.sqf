@@ -29,6 +29,7 @@ A3A_hasGlobMobAaf = false;
 A3A_hasCW = false;
 A3A_hasHalo = false;
 A3A_hasSwe = false;
+A3A_hasEmp = false;
 
 //Aegis submods
 private _activeAegis = false;
@@ -55,10 +56,17 @@ if (isClass (configfile >> "CfgPatches" >> "LIB_core")) then {
 };
 
 //Clone Wars Detection
-//if (isClass (configFile >> "CfgFactionClasses" >> "JLTS_CIS") && isClass (configFile >> "CfgFactionClasses" >> "442_CIS") && isClass (configFile >> "CfgFactionClasses" >> "3AS_CIS") && isClass (configFile >> "CfgFactionClasses" >> "LS_CIS")) then {
-  //A3A_hasCW = true;
-  //[2,"Clone Wars Detected.",_fileName] call A3A_fnc_log;
-//};
+if (isClass (configFile >> "CfgFactionClasses" >> "JLTS_CIS") && isClass (configFile >> "CfgFactionClasses" >> "442_CIS") && isClass (configFile >> "CfgFactionClasses" >> "3AS_CIS") && isClass (configFile >> "CfgFactionClasses" >> "LS_CIS")) then {
+  A3A_hasCW = true;
+  [2,"Clone Wars Detected.",_fileName] call A3A_fnc_log;
+};
+
+//Empire Detection
+if (isClass (configFile >> "CfgFactionClasses" >> "JMSLLTE_empire_fact")) then {
+  A3A_hasEmp = true;
+  [2,"JMs Empire Detected.",_fileName] call A3A_fnc_log;
+};
+
 
 //Halo Detection
 if (isClass (configFile >> "CfgFactionClasses" >> "OPTRE_UNSC")) then {
@@ -255,6 +263,13 @@ if (!A3A_hasCup && A3A_hasSwe) then {
 	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
 };
 
+if (!A3A_hasCW && A3A_hasEmp) then {
+	private _text = "JM's Empire detected but Clone Wars Mods are not loaded";
+  systemChat _text;
+  [1, _text, _fileName] call A3A_fnc_log;
+	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
+};
+
 //No Mods found logging
-if (!A3A_hasRHS && !A3A_hasCup && !A3A_hasAegis && !A3A_hasIFA && !A3A_hasCW && !A3A_hasHalo && !A3A_hasSwe) then {[2,"No Side Replacement Mods Detected.",_fileName] call A3A_fnc_log;};
+if (!A3A_hasRHS && !A3A_hasCup && !A3A_hasAegis && !A3A_hasIFA && !A3A_hasCW && !A3A_hasHalo && !A3A_hasSwe %% !A3A_hasEmp) then {[2,"No Side Replacement Mods Detected.",_fileName] call A3A_fnc_log;};
 if (!A3A_hasIvory && !A3A_hasTCGM && !A3A_hasADV) then {[2,"No Addon Mods Detected.",_fileName] call A3A_fnc_log;};
