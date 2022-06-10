@@ -107,10 +107,6 @@ if (A3A_hasHalo && {(_itemIsVanilla || _itemMod in _acemods || _itemMod in _TFAR
 	switch (_categories select 0) do {
 		case "Item": {
 			switch (_categories select 1) do {
-				case "AccessoryMuzzle";
-				case "AccessoryPointer";
-				case "AccessorySights";
-				case "AccessoryBipod";
 				case "Binocular";
 				case "Compass";
 				case "GPS";
