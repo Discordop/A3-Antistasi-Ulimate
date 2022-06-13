@@ -5,9 +5,9 @@
 ["name", "Bundeswehr"] call _fnc_saveToTemplate; 						
 ["spawnMarkerName", "Bundeswehr Support Corridor"] call _fnc_saveToTemplate; 			
 
-["flag", "Flag_US_F"] call _fnc_saveToTemplate; 						
+["flag", "BWA3_Flag_Germany"] call _fnc_saveToTemplate; 						
 ["flagTexture", "\A3\Data_F\Flags\flag_us_CO.paa"] call _fnc_saveToTemplate; 				
-["flagMarkerType", "flag_USA"] call _fnc_saveToTemplate; 			
+["flagMarkerType", "flag_Germany"] call _fnc_saveToTemplate; 			
 
 //////////////////////////////////////
 //       Antistasi Plus Stuff       //
@@ -87,18 +87,18 @@
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; 
 
 ["vehiclesBasic", ["B_Quadbike_01_F"]] call _fnc_saveToTemplate; 			
-["vehiclesLightUnarmed", ["CUP_B_HMMWV_SOV_M2_NATO_T","CUP_B_HMMWV_SOV_NATO_T","CUP_B_M1165_GMV_WDL_USA", "CUP_B_HMMWV_Unarmed_USA", "CUP_B_HMMWV_Transport_USA", "CUP_B_M1151_USA"]] call _fnc_saveToTemplate; 		
-["vehiclesLightArmed",["CUP_B_M1151_M2_USMC", "CUP_B_M1151_Deploy_USMC", "CUP_B_M1151_Mk19_USMC", "CUP_B_M1165_GMV_USMC", "CUP_B_M1167_USMC", "CUP_B_RG31_Mk19_OD_USMC", "CUP_B_RG31E_M2_OD_USMC", "CUP_B_RG31_M2_OD_USMC", "CUP_B_RG31_M2_OD_GC_USMC", "CUP_B_HMMWV_Avenger_USMC"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
+["vehiclesLightUnarmed", ["BWA3_Eagle_Fleck","CUP_B_FENNEK_GER_Wdl"]] call _fnc_saveToTemplate; 		
+["vehiclesLightArmed",["BWA3_Dingo2_FLW200_M2_Fleck", "BWA3_Dingo2_FLW200_MG3_Fleck", "BWA3_Dingo2_FLW200_GMW_Fleck", "BWA3_Dingo2_FLW200_M2_CG13_Fleck", "BWA3_Dingo2_FLW200_MG3_CG13_Fleck", "BWA3_Dingo2_FLW200_GMW_CG13_Fleck", "BWA3_Multi_Fleck"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
 ["vehiclesTrucks", ["CUP_B_MTVR_USMC"]] call _fnc_saveToTemplate; 			
 ["vehiclesCargoTrucks", ["B_T_Truck_01_flatbed_F"]] call _fnc_saveToTemplate; 		
-["vehiclesAmmoTrucks", ["CUP_B_MTVR_Ammo_USMC"]] call _fnc_saveToTemplate; 		
-["vehiclesRepairTrucks", ["CUP_B_MTVR_Repair_USMC"]] call _fnc_saveToTemplate; 		
+["vehiclesAmmoTrucks", ["CUP_B_M113A3_Reammo_GER"]] call _fnc_saveToTemplate; 		
+["vehiclesRepairTrucks", ["CUP_B_M113A3_Repair_GER"]] call _fnc_saveToTemplate; 		
 ["vehiclesFuelTrucks", ["CUP_B_MTVR_Refuel_USMC"]] call _fnc_saveToTemplate;		
-["vehiclesMedical", ["CUP_B_HMMWV_Ambulance_USMC", "CUP_B_M113_Med_USA"]] call _fnc_saveToTemplate;			
-["vehiclesAPCs", ["CUP_B_M1126_ICV_M2_Woodland", "CUP_B_M1126_ICV_MK19_Woodland", "CUP_B_M113_USA", "CUP_B_M2Bradley_USA_W", "CUP_B_M2A3Bradley_USA_W", "CUP_B_M7Bradley_USA_W", "CUP_B_AAV_USMC", "CUP_B_LAV25_USMC", "CUP_B_LAV25M240_USMC", "CUP_B_LAV25_HQ_USMC"]] call _fnc_saveToTemplate; 				
-["vehiclesTanks", ["CUP_B_M1128_MGS_Woodland", "CUP_B_M1135_ATGMV_Woodland", "CUP_B_M1A1_Woodland_USMC", "CUP_B_M1A2_TUSK_MG_USMC", "CUP_B_M60A3_USMC"]] call _fnc_saveToTemplate; 			
-["vehiclesAA", ["CUP_B_M6LineBacker_USA_W"]] call _fnc_saveToTemplate; 				
-["vehiclesLightAPCs", ["CUP_B_LAV25_USMC", "CUP_B_LAV25M240_USMC"]] call _fnc_saveToTemplate;			
+["vehiclesMedical", ["CUP_B_M113A3_Med_GER"]] call _fnc_saveToTemplate;			
+["vehiclesAPCs", ["CUP_B_Boxer_GMG_GER_WDL", "CUP_B_Boxer_HMG_GER_WDL", "BWA3_Puma_Fleck"]] call _fnc_saveToTemplate; 				
+["vehiclesTanks", ["CUP_B_Leopard2A6_GER", "BWA3_Leopard2_Fleck"]] call _fnc_saveToTemplate; 			
+["vehiclesAA", ["CUP_B_nM1097_AVENGER_NATO_T"]] call _fnc_saveToTemplate; 				
+["vehiclesLightAPCs", []] call _fnc_saveToTemplate;			
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;				
 
 ["vehiclesSam", ["B_Radar_System_01_F","B_SAM_System_03_F"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
@@ -123,11 +123,11 @@
 ["uavsAttack", ["CUP_B_USMC_DYN_MQ9", "B_UAV_02_dynamicLoadout_F"]] call _fnc_saveToTemplate; 				
 ["uavsPortable", ["B_UAV_01_F"]] call _fnc_saveToTemplate; 				
 
-["vehiclesMilitiaLightArmed", ["CUP_I_M151_M2_SYND", "CUP_B_HMMWV_M1114_USMC", "CUP_B_HMMWV_M2_USMC"]] call _fnc_saveToTemplate; 
+["vehiclesMilitiaLightArmed", ["BWA3_Eagle_FLW100_Fleck"]] call _fnc_saveToTemplate; 
 ["vehiclesMilitiaTrucks", ["CUP_B_MTVR_USA"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["CUP_I_M151_SYND", "CUP_B_HMMWV_Transport_NATO_T", "CUP_B_HMMWV_Unarmed_USMC"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaApcs", ["CUP_B_AAV_USMC", "CUP_B_M113_USA"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTanks", ["CUP_B_M60A3_USMC"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["BWA3_Eagle_Fleck"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaApcs", ["CUP_B_M113A3_GER"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTanks", ["CUP_B_Leopard2A6_GER"]] call _fnc_saveToTemplate;
 
 ["vehiclesPolice", ["CUP_LADA_LM_CIV", "CUP_C_S1203_Militia_CIV"]] call _fnc_saveToTemplate;
 
