@@ -22,7 +22,7 @@ private _filename = "fn_logistics_tryLoad";
 if (!isServer) exitWith {};
 params ["_cargo"];
 
-private _vehicles = (nearestObjects [_cargo,["Car","Ship", "Tank"], 10]) - [_cargo];
+private _vehicles = (nearestObjects [_cargo,["Car","Ship","Tank","Helicopter"], 10]) - [_cargo];
 private _vehicle = _vehicles#0;
 if (isNil "_vehicle") exitWith {["Logistics", "No vehicle is close enough."] remoteExec ["A3A_fnc_customHint", remoteExecutedOwner]};
 

@@ -108,8 +108,8 @@
 ["vehiclesAmphibious", []] call _fnc_saveToTemplate; 		
 
 ["vehiclesPlanesCAS", ["sfp_jas39_gbu39"]] call _fnc_saveToTemplate; 		
-["vehiclesPlanesAA", ["sfp_jas39_gbu39"]] call _fnc_saveToTemplate; 			
-["vehiclesPlanesTransport", ["CUP_B_C130J_USMC"]] call _fnc_saveToTemplate; 	
+["vehiclesPlanesAA", ["sfp_jas39_cap"]] call _fnc_saveToTemplate; 			
+["vehiclesPlanesTransport", ["sfp_tp84_2015", "sfp_s100b"]] call _fnc_saveToTemplate; 	
 
 ["vehiclesHelisLight", ["sfp_hkp9", "sfp_hkp6"]] call _fnc_saveToTemplate; 		
 ["vehiclesHelisTransport", ["sfp_hkp9_sog", "sfp_hkp16", "sfp_hkp16_ffv","sfp_hkp4"]] call _fnc_saveToTemplate; 	

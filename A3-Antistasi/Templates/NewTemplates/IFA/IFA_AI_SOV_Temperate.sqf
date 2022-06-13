@@ -110,7 +110,7 @@
 ["vehiclesAmphibious", ["not_supported"]] call _fnc_saveToTemplate;
 
 ["vehiclesPlanesCAS", ["LIB_Pe2"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["LIB_P39", "LIB_RA_P39_2", "LIB_RA_P39_3"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["LIB_P39"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["LIB_Li2"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["LIB_US6_Open"]] call _fnc_saveToTemplate;

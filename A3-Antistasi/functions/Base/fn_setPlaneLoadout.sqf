@@ -212,6 +212,42 @@ if (_type == "AA") then
         {
             _loadout = ["uns_pylonRack_2Rnd_AIM9D", "uns_pylonRack_2Rnd_AIM9D"];
         };
+        case "LIB_FW190F8": 
+        {
+            _loadout = ["LIB_1Rnd_SC50", "LIB_1Rnd_SC50", "LIB_1Rnd_SC50", "LIB_1Rnd_SC50", "LIB_1Rnd_SC50"];
+        };
+        case "LIB_FW190F8_3_w": 
+        {
+            _loadout = ["LIB_1Rnd_SC50", "LIB_1Rnd_SC50", "LIB_1Rnd_SC50", "LIB_1Rnd_SC50", "LIB_1Rnd_SC50"];
+        };
+        case "LIB_P39": 
+        {
+            _loadout = ["LIB_1Rnd_SC250"];
+        };
+        case "LIB_P39_w": 
+        {
+            _loadout = ["LIB_1Rnd_SC250"];
+        };
+        case "OPTRE_YSS_1000_A": 
+        {
+            _loadout = ["OPTRE_STMedusa_6Rnd_AA_Missile", "OPTRE_STMedusa_6Rnd_AA_Missile", "OPTRE_M1024_2000Rnd_30mm", "OPTRE_STMedusa_6Rnd_AA_Missile", "OPTRE_STMedusa_6Rnd_AA_Missile"];
+        };
+        case "3as_Z95_Republic": 
+        {
+            _loadout = ["PylonRack_Missile_BIM9X_x1", "PylonRack_Missile_BIM9X_x1", "PylonRack_Missile_BIM9X_x2", "PylonRack_Missile_BIM9X_x2", "PylonRack_Missile_AMRAAM_D_x2", "PylonRack_Missile_AMRAAM_D_x2","3as_PylonWeapon_Z95_240Rnd_Heavy_Shells"];
+        };
+        case "3as_Tri_Fighter_dynamicLoadout": 
+        {
+            _loadout = ["", "", "", "", "", "", "3as_PylonWeapon_75Rnd_Tri_Heavy_shells"];
+        };
+        case "JMSLLTE_TIEinterceptor_veh_F": 
+        {
+            _loadout = [];
+        };
+        case "sfp_jas39_cap": 
+        {
+            _loadout = ["sfp_1x_rb98", "sfp_1x_rb98", "sfp_1x_rb100", "sfp_1x_rb100", "sfp_1x_rb100", "sfp_1x_rb100", "sfp_droptank_300gal"];
+        };
         default
         {
             [1, format ["Plane type %1 currently not supported for AA, please add the case!", typeOf _plane], _fileName] call A3A_fnc_log;
