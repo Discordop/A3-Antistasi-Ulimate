@@ -464,7 +464,7 @@ _policeLoadoutData setVariable ["sidearms", [["BWA3_P12", "", "", "", ["BWA3_12R
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
 _militiaLoadoutData setVariable ["uniforms", ["CUP_U_B_GER_Flecktarn_1", "CUP_U_B_GER_Flecktarn_2", "CUP_U_B_GER_Flecktarn_3", "CUP_U_B_GER_Flecktarn_4", "CUP_U_B_GER_Flecktarn_5", "CUP_U_B_GER_Flecktarn_6", "CUP_U_B_GER_Flecktarn_7", "CUP_U_B_GER_Flecktarn_8"]];		
-_militiaLoadoutData setVariable ["vests", ["CUP_V_B_GER_Vest_1", "CUP_V_B_GER_Vest_2", "CUP_V_B_GER_Vest_3", "CUP_V_B_GER_Carrier_Vest", "CUP_V_B_GER_Carrier_Rig_2", "CUP_V_B_GER_Carrier_Rig"]];			
+_militiaLoadoutData setVariable ["vests", ["CUP_V_B_GER_Vest_1", "CUP_V_B_GER_Vest_2", "CUP_V_B_GER_Carrier_Vest_3", "CUP_V_B_GER_Carrier_Vest", "CUP_V_B_GER_Carrier_Rig_2", "CUP_V_B_GER_Carrier_Rig"]];			
 _militiaLoadoutData setVariable ["backpacks", ["BWA3_AssaultPack_Fleck", "BWA3_FieldPack_Fleck", "BWA3_TacticalPack_Fleck"]];		
 _militiaLoadoutData setVariable ["helmets", ["CUP_H_Ger_M92_Cover", "CUP_H_Ger_M92_GG_CB", "CUP_H_Ger_M92_Cover_GG_CF", "CUP_H_Ger_M92_Cover_GG"]];		
 _militiaLoadoutData setVariable ["lightATLaunchers", [
