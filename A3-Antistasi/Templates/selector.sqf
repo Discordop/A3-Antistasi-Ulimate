@@ -221,8 +221,13 @@ A3A_Occ_template = switch(true) do {
     };
     case (A3A_hasSwe): {
         ["Templates\NewTemplates\Swe\Swe_AI_SweAF_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
-        [2, "Using Swedish Armed Forces Template", _filename] call A3A_fnc_log;
+        [2, "Using Swedish Forces Pack Template", _filename] call A3A_fnc_log;
         "Swe"
+    };
+    case (A3A_hasBun): {
+        ["Templates\NewTemplates\BWMod\BW_AI_BUN_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using Bundeswehr Template", _filename] call A3A_fnc_log;
+        "Bun"
     };
     case (A3A_hasCup): {
         switch(cupOccupantFaction) do {

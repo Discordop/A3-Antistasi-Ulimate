@@ -30,6 +30,8 @@ A3A_hasCW = false;
 A3A_hasHalo = false;
 A3A_hasSwe = false;
 A3A_hasEmp = false;
+A3A_hasBun = false;
+
 
 //Aegis submods
 private _activeAegis = false;
@@ -72,6 +74,12 @@ if (isClass (configFile >> "CfgFactionClasses" >> "JMSLLTE_empire_fact")) then {
 if (isClass (configFile >> "CfgFactionClasses" >> "OPTRE_UNSC")) then {
   A3A_hasHalo = true;
   [2,"Op Trebuchet Detected.",_fileName] call A3A_fnc_log;
+};
+
+//BWMod Detection
+if (isClass (configFile >> "CfgFactionClasses" >> "BWA3_Faction_Fleck")) then {
+  A3A_hasBun = true;
+  [2,"BWMod Detected.",_fileName] call A3A_fnc_log;
 };
 
 if (isClass (configFile >> "CfgPatches" >> "vn_weapons")) then {
@@ -263,6 +271,13 @@ if (!A3A_hasCup && A3A_hasSwe) then {
 	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
 };
 
+if (!A3A_hasCup && A3A_hasBun) then {
+	private _text = "BWMod detected but CUP is not loaded";
+  systemChat _text;
+  [1, _text, _fileName] call A3A_fnc_log;
+	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
+};
+
 if (!A3A_hasCW && A3A_hasEmp) then {
 	private _text = "JM's Empire detected but Clone Wars Mods are not loaded";
   systemChat _text;
@@ -271,5 +286,5 @@ if (!A3A_hasCW && A3A_hasEmp) then {
 };
 
 //No Mods found logging
-if (!A3A_hasRHS && !A3A_hasCup && !A3A_hasAegis && !A3A_hasIFA && !A3A_hasCW && !A3A_hasHalo && !A3A_hasSwe && !A3A_hasEmp) then {[2,"No Side Replacement Mods Detected.",_fileName] call A3A_fnc_log;};
+if (!A3A_hasRHS && !A3A_hasCup && !A3A_hasAegis && !A3A_hasIFA && !A3A_hasCW && !A3A_hasHalo && !A3A_hasSwe && !A3A_hasEmp && !A3A_hasBun) then {[2,"No Side Replacement Mods Detected.",_fileName] call A3A_fnc_log;};
 if (!A3A_hasIvory && !A3A_hasTCGM && !A3A_hasADV) then {[2,"No Addon Mods Detected.",_fileName] call A3A_fnc_log;};
