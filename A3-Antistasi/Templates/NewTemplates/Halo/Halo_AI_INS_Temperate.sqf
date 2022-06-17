@@ -280,6 +280,8 @@ _sfLoadoutData setVariable ["grenadeLaunchers", [
 ["OPTRE_MA5CGL", "", "", "optre_ma5c_smartlink", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "OPTRE_1Rnd_Smoke_Grenade_shell"], ""],
 ["OPTRE_MA5BGL", "", "", "optre_ma5_smartlink", ["OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag_Tracer", "OPTRE_60Rnd_762x51_Mag_Tracer_Yellow"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "OPTRE_1Rnd_Smoke_Grenade_shell"], ""],
 ["OPTRE_MA32BGL", "", "", "optre_m393_acog", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "OPTRE_1Rnd_Smoke_Grenade_shell"], ""],
+["OPTRE_MA37K", "", "", "optre_m7_sight", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], [], ""],
+["OPTRE_MA5K", "", "", "optre_m7_sight", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow", "OPTRE_32Rnd_762x51_Mag_UW"], [], ""],
 ["OPTRE_MA37GL", "", "", "optre_ma37_smartlink_scope", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "OPTRE_1Rnd_Smoke_Grenade_shell"], ""],
 ["OPTRE_MA32GL", "", "", "optre_m393_eotech", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "OPTRE_1Rnd_Smoke_Grenade_shell"], ""],
 ["OPTRE_MA5AGL", "", "", "optre_m393_acog", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "OPTRE_1Rnd_Smoke_Grenade_shell"], ""],
@@ -342,6 +344,10 @@ _militaryLoadoutData setVariable ["grenadeLaunchers", [
 ["OPTRE_MA37GL", "", "", "optre_ma37_smartlink_scope", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "OPTRE_1Rnd_Smoke_Grenade_shell"], ""],
 ["OPTRE_MA32GL", "", "", "optre_m393_eotech", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "OPTRE_1Rnd_Smoke_Grenade_shell"], ""],
 ["OPTRE_MA5AGL", "", "", "optre_m393_acog", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "OPTRE_1Rnd_Smoke_Grenade_shell"], ""],
+["OPTRE_MA32B", "", "", "optre_m393_acog", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], [], ""],
+["OPTRE_MA37", "", "", "optre_ma37_smartlink_scope", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], [], ""],
+["OPTRE_MA32", "", "", "optre_m393_eotech", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], [], ""],
+["OPTRE_MA5A", "", "", "optre_m393_acog", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], [], ""],
 ["OPTRE_MA37BGL", "", "", "optre_m393_acog", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "OPTRE_1Rnd_Smoke_Grenade_shell"], ""]
 ]];
 _militaryLoadoutData setVariable ["SMGs", [
@@ -406,6 +412,11 @@ _militiaLoadoutData setVariable ["carbines", [
 ]];
 _militiaLoadoutData setVariable ["grenadeLaunchers", [
 ["OPTRE_M319", "", "", "", ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
+["OPTRE_MA5C", "", "", "optre_ma5c_smartlink", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], [], ""],
+["OPTRE_MA32B", "", "", "optre_m393_acog", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], [], ""],
+["OPTRE_MA37", "", "", "optre_ma37_smartlink_scope", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], [], ""],
+["OPTRE_MA32", "", "", "optre_m393_eotech", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], [], ""],
+["OPTRE_MA5A", "", "", "optre_m393_acog", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], [], ""],
 ["OPTRE_M319n", "", "", "", ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
 ]];
 _militiaLoadoutData setVariable ["SMGs", [
@@ -464,6 +475,10 @@ _eliteLoadoutData setVariable ["grenadeLaunchers", [
 ["OPTRE_MA32BGL", "", "", "optre_m393_acog", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "OPTRE_1Rnd_Smoke_Grenade_shell"], ""],
 ["OPTRE_MA37GL", "", "", "optre_ma37_smartlink_scope", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "OPTRE_1Rnd_Smoke_Grenade_shell"], ""],
 ["OPTRE_MA32GL", "", "", "optre_m393_eotech", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "OPTRE_1Rnd_Smoke_Grenade_shell"], ""],
+["OPTRE_MA37", "", "", "optre_ma37_smartlink_scope", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], [], ""],
+["OPTRE_MA32", "", "", "optre_m393_eotech", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], [], ""],
+["OPTRE_MA5A", "", "", "optre_m393_acog", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], [], ""],
+["OPTRE_MA37K", "", "", "optre_m7_sight", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], [], ""],
 ["OPTRE_MA5AGL", "", "", "optre_m393_acog", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "OPTRE_1Rnd_Smoke_Grenade_shell"], ""],
 ["OPTRE_MA37BGL", "", "", "optre_m393_acog", ["OPTRE_32Rnd_762x51_Mag_Tracer", "OPTRE_32Rnd_762x51_Mag", "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "OPTRE_1Rnd_Smoke_Grenade_shell"], ""]
 ]];
