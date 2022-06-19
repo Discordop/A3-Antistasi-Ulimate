@@ -198,6 +198,10 @@ if (gameMode == 1) then
             _mrkCSAT = ["outpost_1", "resource_2", "control_3", "control_5", "control_6", "control_9", "control_12", "control_14", "outpost_6", "resource_3", "outpost_8", "control_30", "airport_2", "control_31", "control_32", "control_33", "control_34", "control_35", "control_38", "control_39", "control_40", "airport_3", "control_42", "control_43", "control_44", "control_45", "control_46", "control_47", "control_51", "control_57"];
             _controlsCSAT = ["control_3", "control_5", "control_6", "control_9", "control_12", "control_14", "control_30", "control_31", "control_32", "control_33", "control_34", "control_35", "control_38", "control_39", "control_40", "control_42", "control_43", "control_44", "control_45", "control_46", "control_47", "control_51", "control_57"];
         };
+		case "malden": {
+			_mrkCSAT = ["airport_2", "seaport_2", "factory_2", "resource", "outpost_7", "resource_5", "seaport_1"];
+			_controlsCSAT = ["control_11", "control_12", "control_20", "control_10", "control_13", "control_28"];
+		};
 	};
     _controlsNATO = _controlsNATO - _controlsCSAT;
 	_mrkNATO = markersX - _mrkCSAT - ["Synd_HQ"];

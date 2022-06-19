@@ -1,0 +1,64 @@
+#include "MissionDescription\master.hpp"
+
+OnLoadName = $STR_antistasi_mission_info_malden_mapname_short_text;
+OnLoadMission = $STR_antistasi_mission_info_malden_blurb_text;
+briefingName = $STR_antistasi_mission_info_malden_mapname_text;
+overviewText = $STR_antistasi_mission_info_malden_description_text;
+loadScreen = "Pictures\Mission\pic.jpg";
+overviewPicture = "Pictures\Mission\pic.jpg";
+
+class CfgDiscordRichPresence
+{
+    applicationID="819852407265034260";
+    defaultDetails="";
+    defaultState="";
+    defaultLargeImageKey="altis";
+    defaultLargeImageText="Antistasi Plus - Altis Requiem";
+    defaultSmallImageKey="arma_3_logo";
+    defaultSmallImageText="Arma 3 Custom Scenario";
+    useTimeElapsed=1;
+};
+
+class CfgFunctions
+{
+    #include "MissionDescription\CfgFunctionsContents.hpp"
+};
+
+class CfgNotifications
+{
+    #include "MissionDescription\CfgNotificationsContents.hpp"
+};
+
+class CfgSounds
+{
+    #include "MissionDescription\CfgSoundsContents.hpp"
+};
+
+class CfgDebriefing
+{
+	#include "MissionDescription\CfgDebriefingContents.hpp"
+	class End1
+	{
+		title = "V I C T O R Y";
+		subtitle = "Malden is Ours!";
+		description = "The population of Malden loves you!<br/>The brave soldiers have proven their valour, and Petros, Malden new Prime Minister, could at last to have a nice holidays. A deserved rest in a Greek island with drinks and fine food.";
+		picture = "n_inf";
+		pictureColor[] = {0.0,0.5,0.0,1};
+	};
+    class petrosDead
+    {
+        title = "Petros is Dead";
+        subtitle = "Petros is Dead";
+        description = "Congratulations!: Petros is Dead. Now with rebels without a leader, you may think about joining them, and free Malden";
+        picture = "b_unknown";
+        pictureColor[] = {0.5,0.0,0.0,1};
+    };
+    class destroyedSites
+    {
+        title = "Malden is Destroyed";
+        subtitle = "Malden got Destroyed by OPFOR";
+        description = "One third of the population in Malden has been murdered by the OPFOR.<br/>Malden no longer exists, nobody wants to live here.";
+        picture = "b_unknown";
+        pictureColor[] = {0.5,0.0,0.0,1};
+    };
+};
