@@ -476,9 +476,13 @@ _militiaLoadoutData setVariable ["shotguns", [
 ]];
 
 _militiaLoadoutData setVariable ["rifles", [
-["CUP_arifle_G3A3_modern_ris", "", "", "", ["CUP_20Rnd_762x51_G3", "CUP_20Rnd_TE1_Red_Tracer_762x51_G3", "CUP_20Rnd_TE1_Yellow_Tracer_762x51_G3"], [], ""],
+["CUP_arifle_G36A", "", "", "cup_optic_g36optics", ["CUP_30Rnd_556x45_G36", "CUP_30Rnd_556x45_G36", "CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36", "CUP_30Rnd_TE1_Red_Tracer_556x45_G36"], [], ""],
+["CUP_arifle_G36E", "", "", "cup_optic_g36optics", ["CUP_30Rnd_556x45_G36", "CUP_30Rnd_556x45_G36", "CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36", "CUP_30Rnd_TE1_Red_Tracer_556x45_G36"], [], ""],
+["CUP_arifle_G36K", "", "", "cup_optic_g36optics", ["CUP_30Rnd_556x45_G36", "CUP_30Rnd_556x45_G36", "CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36", "CUP_30Rnd_TE1_Red_Tracer_556x45_G36"], [], ""],
+["CUP_arifle_G36A", "", "", "cup_optic_g36optics", ["CUP_30Rnd_556x45_G36", "CUP_30Rnd_556x45_G36", "CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36", "CUP_30Rnd_TE1_Red_Tracer_556x45_G36"], [], ""],
+["CUP_arifle_G36E", "", "", "cup_optic_g36optics", ["CUP_30Rnd_556x45_G36", "CUP_30Rnd_556x45_G36", "CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36", "CUP_30Rnd_TE1_Red_Tracer_556x45_G36"], [], ""],
+["CUP_arifle_G36K", "", "", "cup_optic_g36optics", ["CUP_30Rnd_556x45_G36", "CUP_30Rnd_556x45_G36", "CUP_30Rnd_TE1_Yellow_Tracer_556x45_G36", "CUP_30Rnd_TE1_Red_Tracer_556x45_G36"], [], ""],
 ["CUP_arifle_G3A3_ris", "", "", "", ["CUP_20Rnd_762x51_G3", "CUP_20Rnd_TE1_Red_Tracer_762x51_G3", "CUP_20Rnd_TE1_Yellow_Tracer_762x51_G3"], [], ""],
-["CUP_arifle_G3A3_modern_ris_black", "", "", "", ["CUP_20Rnd_762x51_G3", "CUP_20Rnd_TE1_Red_Tracer_762x51_G3", "CUP_20Rnd_TE1_Yellow_Tracer_762x51_G3"], [], ""],
 ["CUP_arifle_G3A3_ris_black", "", "", "", ["CUP_20Rnd_762x51_G3", "CUP_20Rnd_TE1_Red_Tracer_762x51_G3", "CUP_20Rnd_TE1_Yellow_Tracer_762x51_G3"], [], ""]
 ]];
 _militiaLoadoutData setVariable ["carbines", [
