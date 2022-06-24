@@ -133,7 +133,7 @@
 
 ["staticMGs", ["CUP_B_M2StaticMG_US"]] call _fnc_saveToTemplate; 					
 ["staticAT", ["sfp_rbs56"]] call _fnc_saveToTemplate; 					
-["staticAA", ["sfp_81_rbs70"]] call _fnc_saveToTemplate; 					
+["staticAA", ["CUP_B_Stinger_AA_pod_Base_USMC"]] call _fnc_saveToTemplate; 					
 ["staticMortars", ["sfp_grk84"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["sfp_fh77"]] call _fnc_saveToTemplate;
 
