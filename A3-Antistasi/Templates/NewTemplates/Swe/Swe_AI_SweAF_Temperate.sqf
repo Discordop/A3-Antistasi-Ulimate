@@ -104,11 +104,11 @@
 ["vehiclesSam", ["B_Radar_System_01_F","B_SAM_System_03_F"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
 ["vehiclesTransportBoats", ["sfp_gruppbat"]] call _fnc_saveToTemplate; 	
-["vehiclesGunBoats", ["sfp_strb90"]] call _fnc_saveToTemplate; 			
+["vehiclesGunBoats", ["sfp_strb90", "sfp_rbb_norrkoping"]] call _fnc_saveToTemplate; 			
 ["vehiclesAmphibious", []] call _fnc_saveToTemplate; 		
 
-["vehiclesPlanesCAS", ["sfp_jas39_gbu39"]] call _fnc_saveToTemplate; 		
-["vehiclesPlanesAA", ["sfp_jas39_cap"]] call _fnc_saveToTemplate; 			
+["vehiclesPlanesCAS", ["I_Plane_Fighter_03_dynamicLoadout_F"]] call _fnc_saveToTemplate; 		
+["vehiclesPlanesAA", ["I_Plane_Fighter_04_F"]] call _fnc_saveToTemplate; 			
 ["vehiclesPlanesTransport", ["sfp_tp84_2015", "sfp_s100b"]] call _fnc_saveToTemplate; 	
 
 ["vehiclesHelisLight", ["sfp_hkp9", "sfp_hkp6"]] call _fnc_saveToTemplate; 		
