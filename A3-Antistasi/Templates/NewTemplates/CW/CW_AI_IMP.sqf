@@ -101,7 +101,7 @@
 ["vehiclesLightAPCs", []] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
-["vehiclesSam", ["B_Radar_System_01_F","JMSLLTE_B_vehgr_XX91turbolaser_imp_F"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
+["vehiclesSam", ["B_Radar_System_01_F","3as_XX9"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
 ["vehiclesTransportBoats", ["I_Boat_Transport_01_F"]] call _fnc_saveToTemplate; 
 ["vehiclesGunBoats", ["442_boat_armed"]] call _fnc_saveToTemplate; 
@@ -131,7 +131,7 @@
 
 ["staticMGs", ["3AS_HeavyRepeater_Unarmoured"]] call _fnc_saveToTemplate;
 ["staticAT", ["3as_ParticleCannon"]] call _fnc_saveToTemplate;
-["staticAA", ["B_static_AA_F"]] call _fnc_saveToTemplate;
+["staticAA", ["JMSLLTE_B_vehgr_XX91turbolaser_imp_F"]] call _fnc_saveToTemplate;
 ["staticMortars", ["3AS_Republic_Mortar"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["not_supported"]] call _fnc_saveToTemplate;
 

@@ -131,6 +131,29 @@ if (_type == "CAS") then
             _plane setVariable ["rocketLauncher", ["uns_ffar_launcher_dl", "Uns_ZuniLauncher_dl"]];
             _plane setVariable ["missileLauncher", ["uns_AGM12_Launcher_dl"]];
         };
+		//WW2
+		case "LIB_Ju87";
+		case "LIB_DAK_Ju87";
+        case "LIB_Ju87_w":
+        {
+            _loadout = ["LIB_1Rnd_SC250","LIB_1Rnd_SC250","LIB_1Rnd_SC500","LIB_1Rnd_SC250","LIB_1Rnd_SC250"];
+        };
+		case "LIB_Pe2";
+        case "LIB_Pe2_w":
+        {
+            _loadout = ["LIB_1Rnd_SC500","LIB_1Rnd_SC500","LIB_1Rnd_SC500","LIB_1Rnd_SC500"];
+        };
+        //Clone Wars
+        case "3AS_BTLB_Bomber";
+        case "3AS_BTLB_Bomber_Shadow":
+        {
+            _loadout = ["PylonMissile_1Rnd_Mk82_F","PylonMissile_1Rnd_Mk82_F","PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F","PylonRack_Missile_AGM_02_x2","PylonRack_Missile_AGM_02_x2","PylonMissile_1Rnd_BombCluster_01_F","PylonMissile_1Rnd_BombCluster_01_F"];
+        };
+        //JMs Empire
+        case "JMSLLTE_TIEbomber_veh_F":
+        {
+            _loadout = ["PylonRack_JMSLLTE_20Rnd_VL6179_proton_bomb","PylonRack_JMSLLTE_20Rnd_VL6179_proton_bomb"];
+        };
         default
         {
             [1, format ["Plane type %1 currently not supported for CAS, please add the case!", typeOf _plane], _fileName] call A3A_fnc_log;
@@ -212,18 +235,13 @@ if (_type == "AA") then
         {
             _loadout = ["uns_pylonRack_2Rnd_AIM9D", "uns_pylonRack_2Rnd_AIM9D"];
         };
-        case "LIB_FW190F8": 
-        {
-            _loadout = ["LIB_1Rnd_SC50", "LIB_1Rnd_SC50", "LIB_1Rnd_SC50", "LIB_1Rnd_SC50", "LIB_1Rnd_SC50"];
-        };
+        case "LIB_FW190F8";
+		case "LIB_DAK_FW190F8";
         case "LIB_FW190F8_3_w": 
         {
             _loadout = ["LIB_1Rnd_SC50", "LIB_1Rnd_SC50", "LIB_1Rnd_SC50", "LIB_1Rnd_SC50", "LIB_1Rnd_SC50"];
         };
-        case "LIB_P39": 
-        {
-            _loadout = ["LIB_1Rnd_SC250"];
-        };
+        case "LIB_P39";
         case "LIB_P39_w": 
         {
             _loadout = ["LIB_1Rnd_SC250"];
