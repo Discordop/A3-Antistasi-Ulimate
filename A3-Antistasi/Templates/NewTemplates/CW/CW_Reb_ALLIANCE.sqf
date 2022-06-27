@@ -9,11 +9,11 @@
 ["flagMarkerType", "RedCrystal"] call _fnc_saveToTemplate;
 
 ["vehicleBasic", "CW_Quadbike"] call _fnc_saveToTemplate;
-["vehicleLightUnarmed", "CW_Offroad_Mando"] call _fnc_saveToTemplate;
-["vehicleLightArmed", "JMSLLTE_B_veh_AA5_reb_F"] call _fnc_saveToTemplate; 
-["vehicleTruck", "442_argon_transport_cis"] call _fnc_saveToTemplate; 
-["vehicleAT", "CW_Offroad_Mando_AT"] call _fnc_saveToTemplate;
-["vehicleAA", "CW_Ifrit_Mando_HMG"] call _fnc_saveToTemplate; 
+["vehicleLightUnarmed", "CW_V2_Offroad_Rebel"] call _fnc_saveToTemplate;
+["vehicleLightArmed", "CW_V2_Offroad_Rebel_HMG"] call _fnc_saveToTemplate; 
+["vehicleTruck", "442_argon_transport"] call _fnc_saveToTemplate; 
+["vehicleAT", "CW_V2_Offroad_Rebel_AT"] call _fnc_saveToTemplate;
+["vehicleAA", "CW_Ifrit_V2_Rebel_HMG"] call _fnc_saveToTemplate; 
 
 ["vehicleBoat", "I_C_Boat_Transport_02_F"] call _fnc_saveToTemplate;
 ["vehicleRepair", "I_G_Offroad_01_repair_F"] call _fnc_saveToTemplate;
@@ -109,9 +109,9 @@ rallyPoint = "B_RadioBag_01_wdl_F";
 //black market stuff
 shop_UAV = ["3as_uas2"];
 shop_AA = ["3AS_GAT_Light"];
-shop_MRAP = ["ls_ground_barc", "3AS_BarcSideCar", "lsd_car_ast"];
+shop_MRAP = ["CW_Ifrit_V2_Rebel", "3AS_BarcSideCar", "lsd_car_ast"];
 shop_wheel_apc = ["3as_RTT", "3as_saber_m1", "ls_ground_mtt_federation"];
-shop_track_apc = ["3as_saber_m1Recon", "3AS_n99", "3as_saber_super"];
+shop_track_apc = ["JMSLLTE_B_veh_AA5_reb_F", "3AS_n99", "3as_saber_super"];
 shop_heli = ["ls_heli_laatle", "lsd_heli_laatc", "lsd_heli_laati"];
 shop_tank = ["442_aat", "3as_ATAP_base", "3as_ATTE_Base"];
 shop_plane = ["3as_arc_170_razor"];

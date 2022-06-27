@@ -87,8 +87,8 @@
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate;
 
 ["vehiclesBasic", ["JMSLLTE_B_veh_74z_imp_F"]] call _fnc_saveToTemplate; 			//this line determines basic vehicles, the lightest kind available. -- Example: ["vehiclesBasic", ["B_Quadbike_01_F"]] -- Array, can contain multiple assets
-["vehiclesLightUnarmed", ["CW_Ifrit"]] call _fnc_saveToTemplate; 		
-["vehiclesLightArmed",["CW_Ifrit_HMG", "CW_Offroad_AT", "JMSLLTE_B_veh_74z_imp_F"]] call _fnc_saveToTemplate; 		
+["vehiclesLightUnarmed", ["CW_Ifrit_Empire"]] call _fnc_saveToTemplate; 		
+["vehiclesLightArmed",["CW_Ifrit_Imperial_HMG", "CW_Offroad_Imperial_AT", "JMSLLTE_B_veh_74z_imp_F"]] call _fnc_saveToTemplate; 		
 ["vehiclesTrucks", ["442_argon_transport", "442_argon_covered"]] call _fnc_saveToTemplate; 		
 ["vehiclesCargoTrucks", ["442_argon_transport", "442_argon_covered"]] call _fnc_saveToTemplate; 		
 ["vehiclesAmmoTrucks", ["442_argon_ammo"]] call _fnc_saveToTemplate; 	
@@ -96,7 +96,7 @@
 ["vehiclesFuelTrucks", ["442_argon_fuel"]] call _fnc_saveToTemplate;	
 ["vehiclesMedical", ["442_argon_medical"]] call _fnc_saveToTemplate;	
 ["vehiclesAPCs", ["3as_saber_m1", "JMSLLTE_B_veh_ITT_imp_F", "JMSLLTE_B_veh_ITT_imp_F"]] call _fnc_saveToTemplate; 		
-["vehiclesTanks", ["3as_UTAT", "3as_saber_super", "3as_saber_m1G"]] call _fnc_saveToTemplate; 	
+["vehiclesTanks", ["3AS_ATJT_Base", "3as_UTAT", "3as_saber_super", "3as_saber_m1G"]] call _fnc_saveToTemplate; 	
 ["vehiclesAA", ["3as_saber_m1Recon"]] call _fnc_saveToTemplate; 		
 ["vehiclesLightAPCs", []] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
@@ -121,16 +121,16 @@
 ["uavsAttack", ["B_UAV_02_dynamicLoadout_F", "B_T_UAV_03_dynamicLoadout_F"]] call _fnc_saveToTemplate;
 ["uavsPortable", ["3as_uas2"]] call _fnc_saveToTemplate;
 
-["vehiclesMilitiaLightArmed", ["CW_Offroad_HMG"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaLightArmed", ["CW_Offroad_Imperial_HMG"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTrucks", ["442_argon_transport", "442_argon_covered"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["CW_Offroad_Rep"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["CW_Offroad_Imperial"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaApcs", ["JMSLLTE_B_veh_ITT_imp_F"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTanks", ["3as_saber_m1"]] call _fnc_saveToTemplate;
 
-["vehiclesPolice", ["CW_Offroad_Rep"]] call _fnc_saveToTemplate;
+["vehiclesPolice", ["CW_Offroad_Imperial"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["3AS_HeavyRepeater_Unarmoured"]] call _fnc_saveToTemplate;
-["staticAT", ["B_static_AT_F"]] call _fnc_saveToTemplate;
+["staticAT", ["3as_ParticleCannon"]] call _fnc_saveToTemplate;
 ["staticAA", ["B_static_AA_F"]] call _fnc_saveToTemplate;
 ["staticMortars", ["3AS_Republic_Mortar"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["not_supported"]] call _fnc_saveToTemplate;

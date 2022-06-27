@@ -96,12 +96,12 @@
 ["vehiclesFuelTrucks", ["442_argon_fuel"]] call _fnc_saveToTemplate;	
 ["vehiclesMedical", ["442_argon_medical"]] call _fnc_saveToTemplate;	
 ["vehiclesAPCs", ["3as_saber_m1", "3as_RTT", "3as_RTT"]] call _fnc_saveToTemplate; 		
-["vehiclesTanks", ["3as_UTAT", "3as_saber_super", "3as_saber_m1G"]] call _fnc_saveToTemplate; 	
+["vehiclesTanks", ["3AS_ATJT_Base","3as_UTAT", "3as_saber_super", "3as_saber_m1G"]] call _fnc_saveToTemplate; 	
 ["vehiclesAA", ["3as_saber_m1Recon"]] call _fnc_saveToTemplate; 		
 ["vehiclesLightAPCs", []] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
-["vehiclesSam", ["B_Radar_System_01_F","B_SAM_System_02_F"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
+["vehiclesSam", ["B_Radar_System_01_F","3as_XX9"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
 ["vehiclesTransportBoats", ["I_Boat_Transport_01_F"]] call _fnc_saveToTemplate; 
 ["vehiclesGunBoats", ["442_boat_armed"]] call _fnc_saveToTemplate; 
@@ -130,7 +130,7 @@
 ["vehiclesPolice", ["CW_Offroad_Rep"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["3AS_HeavyRepeater_Unarmoured"]] call _fnc_saveToTemplate;
-["staticAT", ["B_static_AT_F"]] call _fnc_saveToTemplate;
+["staticAT", ["3as_ParticleCannon"]] call _fnc_saveToTemplate;
 ["staticAA", ["B_static_AA_F"]] call _fnc_saveToTemplate;
 ["staticMortars", ["3AS_Republic_Mortar"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["not_supported"]] call _fnc_saveToTemplate;
