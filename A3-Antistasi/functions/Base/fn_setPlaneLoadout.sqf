@@ -143,6 +143,11 @@ if (_type == "CAS") then
         {
             _loadout = ["LIB_1Rnd_SC500","LIB_1Rnd_SC500","LIB_1Rnd_SC500","LIB_1Rnd_SC500"];
         };
+		//Halo
+        case "OPTRE_YSS_1000_A_VTOL":
+        {
+            _loadout = ["OPTRE_32Rnd_Anvil3_missiles","OPTRE_4Rnd_Scorpion_missiles","OPTRE_32Rnd_Anvil3_missiles","OPTRE_4Rnd_Scorpion_missiles","OPTRE_M1024_2000Rnd_30mm"];
+        };
         //Clone Wars
         case "3AS_BTLB_Bomber";
         case "3AS_BTLB_Bomber_Shadow":
@@ -248,7 +253,7 @@ if (_type == "AA") then
         };
         case "OPTRE_YSS_1000_A": 
         {
-            _loadout = ["OPTRE_STMedusa_6Rnd_AA_Missile", "OPTRE_STMedusa_6Rnd_AA_Missile", "OPTRE_M1024_2000Rnd_30mm", "OPTRE_STMedusa_6Rnd_AA_Missile", "OPTRE_STMedusa_6Rnd_AA_Missile"];
+            _loadout = ["OPTRE_STMedusa_6Rnd_AA_Missile", "OPTRE_3Rnd_Jackknife_missile", "OPTRE_STMedusa_6Rnd_AA_Missile", "OPTRE_3Rnd_Jackknife_missile", "OPTRE_M1024_2000Rnd_30mm"];
         };
         case "3as_Z95_Republic": 
         {
