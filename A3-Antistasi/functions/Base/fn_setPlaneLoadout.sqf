@@ -159,6 +159,28 @@ if (_type == "CAS") then
         {
             _loadout = ["PylonRack_JMSLLTE_20Rnd_VL6179_proton_bomb","PylonRack_JMSLLTE_20Rnd_VL6179_proton_bomb"];
         };
+        case "CUP_I_JAS_39_RACS";
+        case "CUP_I_JAS_39_HIL":
+        {
+            _loadout = ["PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_AP_F","PylonRack_7Rnd_Rocket_04_AP_F","PylonRack_Missile_AGM_02_x2","PylonRack_Missile_AGM_02_x2"];
+        };
+        case "CUP_B_AV8B_DYN_USMC":
+        {
+            _loadout = ["CUP_PylonPod_1Rnd_AIM_9L_LAU_Sidewinder_M","CUP_PylonPod_19Rnd_CRV7_HE_plane_M","CUP_PylonPod_3Rnd_Mk82_M","CUP_PylonPod_3Rnd_Mk82_M","CUP_PylonPod_19Rnd_CRV7_HE_plane_M","CUP_PylonPod_1Rnd_AIM_9L_LAU_Sidewinder_M"];
+        };
+        case "CUP_B_GR9_DYN_GB":
+        {
+            _loadout = ["CUP_PylonPod_19Rnd_CRV7_HE_plane_M","CUP_PylonPod_1Rnd_GBU12_M","CUP_PylonPod_1Rnd_AIM_9L_LAU_Sidewinder_M","CUP_PylonPod_1Rnd_GBU12_M","CUP_PylonPod_ANAAQ_28","CUP_PylonPod_1Rnd_GBU12_M","CUP_PylonPod_1Rnd_AIM_9L_LAU_Sidewinder_M","CUP_PylonPod_1Rnd_GBU12_M","CUP_PylonPod_19Rnd_CRV7_HE_plane_M"];
+        };
+        case "CUP_B_A10_DYN_USA":
+        {
+            _loadout = ["CUP_PylonPod_2Rnd_AIM_9L_LAU_Sidewinder_M","CUP_PylonPod_19Rnd_CRV7_HE_plane_M","CUP_PylonPod_3Rnd_Mk82_M","CUP_PylonPod_1Rnd_GBU12_M","CUP_PylonPod_1Rnd_GBU12_M","CUP_PylonPod_1Rnd_GBU12_M","CUP_PylonPod_1Rnd_GBU12_M","CUP_PylonPod_1Rnd_GBU12_M","CUP_PylonPod_3Rnd_Mk82_M","CUP_PylonPod_19Rnd_CRV7_HE_plane_M","CUP_PylonPod_2Rnd_AIM_9L_LAU_Sidewinder_M"];
+        };
+        case "CUP_B_Su25_Dyn_CDF";
+        case "CUP_O_Su25_Dyn_RU":
+        {
+            _loadout = ["CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_20Rnd_S8_plane_M","CUP_PylonPod_20Rnd_S8_plane_M","CUP_PylonPod_1Rnd_FAB250_plane_M","CUP_PylonPod_1Rnd_FAB250_plane_M","CUP_PylonPod_1Rnd_FAB250_plane_M","CUP_PylonPod_1Rnd_FAB250_plane_M","CUP_PylonPod_20Rnd_S8_plane_M","CUP_PylonPod_20Rnd_S8_plane_M","CUP_PylonPod_1Rnd_R73_Vympel"];
+        };
         default
         {
             [1, format ["Plane type %1 currently not supported for CAS, please add the case!", typeOf _plane], _fileName] call A3A_fnc_log;
@@ -180,6 +202,8 @@ if (_type == "AA") then
             _loadout = ["PylonMissile_Missile_AA_R73_x1","PylonMissile_Missile_AA_R73_x1","PylonMissile_Missile_AA_R73_x1","PylonMissile_Missile_AA_R73_x1","PylonMissile_Missile_AA_R73_x1","PylonMissile_Missile_AA_R73_x1","PylonMissile_Missile_AA_R73_x1","PylonMissile_Missile_AA_R73_x1","PylonMissile_Missile_AA_R77_x1","PylonMissile_Missile_AA_R77_x1","PylonMissile_Missile_AA_R77_INT_x1","PylonMissile_Missile_AA_R77_INT_x1","PylonMissile_Missile_AA_R77_INT_x1"];
         };
         //Vanilla IND Air superiority fighter
+        case "CUP_I_JAS_39_RACS";
+        case "CUP_I_JAS_39_HIL";
         case "I_Plane_Fighter_04_F":
         {
             _loadout = ["PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_BIM9X_x1","PylonRack_Missile_AMRAAM_C_x1","PylonRack_Missile_AMRAAM_C_x1","PylonRack_Missile_BIM9X_x2","PylonRack_Missile_BIM9X_x2"];
@@ -270,6 +294,16 @@ if (_type == "AA") then
         case "sfp_jas39_cap": 
         {
             _loadout = ["sfp_1x_rb98", "sfp_1x_rb98", "sfp_1x_rb100", "sfp_1x_rb100", "sfp_1x_rb100", "sfp_1x_rb100", "sfp_droptank_300gal"];
+        };
+        case "CUP_B_F35B_USMC";
+        case "CUP_B_F35B_BAF": 
+        {
+            _loadout = ["CUP_PylonPod_1Rnd_AIM_9L_LAU_Sidewinder_M", "CUP_PylonPod_1Rnd_AIM_120_AMRAAM_M", "CUP_PylonPod_1Rnd_AIM_120_AMRAAM_M", "CUP_PylonPod_1Rnd_AIM_120_AMRAAM_M", "CUP_PylonPod_1Rnd_AIM_120_AMRAAM_M", "CUP_PylonWeapon_220Rnd_TE1_Red_Tracer_GAU22_M", "CUP_PylonPod_1Rnd_AIM_120_AMRAAM_M", "CUP_PylonPod_1Rnd_AIM_120_AMRAAM_M", "CUP_PylonPod_1Rnd_AIM_120_AMRAAM_M", "CUP_PylonPod_1Rnd_AIM_120_AMRAAM_M", "CUP_PylonPod_1Rnd_AIM_9L_LAU_Sidewinder_M"];
+        };
+        case "CUP_B_SU34_CDF";
+        case "CUP_O_SU34_RU": 
+        {
+            _loadout = ["CUP_PylonPod_1Rnd_R73_Vympel", "CUP_PylonPod_1Rnd_R73_Vympel", "CUP_PylonPod_1Rnd_R73_Vympel", "CUP_PylonPod_1Rnd_Kh29_M", "CUP_PylonPod_1Rnd_Kh29_M", "CUP_PylonPod_1Rnd_Kh29_M", "CUP_PylonPod_1Rnd_Kh29_M", "CUP_PylonPod_1Rnd_Kh29_M", "CUP_PylonPod_1Rnd_Kh29_M", "CUP_PylonPod_1Rnd_R73_Vympel", "CUP_PylonPod_1Rnd_R73_Vympel", "CUP_PylonPod_1Rnd_R73_Vympel"];
         };
         default
         {
