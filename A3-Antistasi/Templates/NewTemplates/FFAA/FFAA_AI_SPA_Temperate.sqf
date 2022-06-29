@@ -116,8 +116,8 @@
 ["vehiclesHelisAttack", ["ffaa_famet_tigre"]] call _fnc_saveToTemplate; 		
 
 ["vehiclesArtillery", [
-["ffaa_ar_m109",["CUP_12Rnd_MLRS_HE"]],
-["ffaa_et_m109",["CUP_12Rnd_MLRS_DPICM"]]
+["ffaa_ar_m109",["32Rnd_155mm_Mo_Shells"]],
+["ffaa_et_m109",["32Rnd_155mm_Mo_Shells"]]
 ]] call _fnc_saveToTemplate; 		
 
 ["uavsAttack", ["CUP_B_USMC_DYN_MQ9"]] call _fnc_saveToTemplate; 				

@@ -159,6 +159,7 @@ if (_type == "CAS") then
         {
             _loadout = ["PylonRack_JMSLLTE_20Rnd_VL6179_proton_bomb","PylonRack_JMSLLTE_20Rnd_VL6179_proton_bomb"];
         };
+		//CUP AA Loadouts
         case "CUP_I_JAS_39_RACS";
         case "CUP_I_JAS_39_HIL":
         {
@@ -180,6 +181,11 @@ if (_type == "CAS") then
         case "CUP_O_Su25_Dyn_RU":
         {
             _loadout = ["CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_20Rnd_S8_plane_M","CUP_PylonPod_20Rnd_S8_plane_M","CUP_PylonPod_1Rnd_FAB250_plane_M","CUP_PylonPod_1Rnd_FAB250_plane_M","CUP_PylonPod_1Rnd_FAB250_plane_M","CUP_PylonPod_1Rnd_FAB250_plane_M","CUP_PylonPod_20Rnd_S8_plane_M","CUP_PylonPod_20Rnd_S8_plane_M","CUP_PylonPod_1Rnd_R73_Vympel"];
+        };
+		//FFAA
+        case "ffaa_ar_harrier":
+        {
+            _loadout = ["PylonRack_Missile_BIM9X_x1","CUP_PylonPod_3Rnd_AGM65_Maverick_M","PylonRack_12Rnd_missiles","PylonRack_12Rnd_missiles","CUP_PylonPod_3Rnd_AGM65_Maverick_M","PylonRack_Missile_BIM9X_x1"];
         };
         default
         {
@@ -304,6 +310,11 @@ if (_type == "AA") then
         case "CUP_O_SU34_RU": 
         {
             _loadout = ["CUP_PylonPod_1Rnd_R73_Vympel", "CUP_PylonPod_1Rnd_R73_Vympel", "CUP_PylonPod_1Rnd_R73_Vympel", "CUP_PylonPod_1Rnd_Kh29_M", "CUP_PylonPod_1Rnd_Kh29_M", "CUP_PylonPod_1Rnd_Kh29_M", "CUP_PylonPod_1Rnd_Kh29_M", "CUP_PylonPod_1Rnd_Kh29_M", "CUP_PylonPod_1Rnd_Kh29_M", "CUP_PylonPod_1Rnd_R73_Vympel", "CUP_PylonPod_1Rnd_R73_Vympel", "CUP_PylonPod_1Rnd_R73_Vympel"];
+        };
+		//FFAA
+        case "ffaa_ea_ef18m":
+        {
+            _loadout = ["PylonMissile_1Rnd_Missile_AA_04_F","PylonRack_Missile_BIM9X_x2","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_C_x2","ffaa_ef18m_Fueltank_1rnd_M","PylonRack_Missile_AMRAAM_C_x2","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_BIM9X_x2","PylonMissile_1Rnd_Missile_AA_04_F"];
         };
         default
         {
