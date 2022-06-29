@@ -219,6 +219,11 @@ A3A_Occ_template = switch(true) do {
         };
         "RHS"
     };
+    case (A3A_hasFFAA): {
+        ["Templates\NewTemplates\FFAA\FFAA_AI_SPA_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using FFAA Spanish Template", _filename] call A3A_fnc_log;
+        "FFAA"
+    };
     case (A3A_hasSwe): {
         ["Templates\NewTemplates\Swe\Swe_AI_SweAF_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using Swedish Forces Pack Template", _filename] call A3A_fnc_log;

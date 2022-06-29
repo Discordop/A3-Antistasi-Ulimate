@@ -31,7 +31,7 @@ A3A_hasHalo = false;
 A3A_hasSwe = false;
 A3A_hasEmp = false;
 A3A_hasBun = false;
-
+A3A_hasFFAA = false;
 
 //Aegis submods
 private _activeAegis = false;
@@ -110,10 +110,8 @@ if (A3A_hasGlobMob && {isClass (configfile >> "CfgVehicles" >> "gmx_aaf_leopard1
 
 //FFAA Detection
 if (isClass (configfile >> "CfgPatches" >> "ffaa_armas")) then {
-  private _text = "FFAA detected, but it is no longer supported.";
-  systemChat _text;
-  [1, _text, _fileName] call A3A_fnc_log;
-  ["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
+  A3A_hasFFAA = true;
+  [2,"FFAA Detected.",_fileName] call A3A_fnc_log;
 };
 
 //Ivory Car Pack Detection
@@ -278,6 +276,13 @@ if (!A3A_hasCup && A3A_hasBun) then {
 	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
 };
 
+if (!A3A_hasCup && A3A_hasFFAA) then {
+	private _text = "FFAA detected but CUP is not loaded";
+  systemChat _text;
+  [1, _text, _fileName] call A3A_fnc_log;
+	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
+};
+
 if (!A3A_hasCW && A3A_hasEmp) then {
 	private _text = "JM's Empire detected but Clone Wars Mods are not loaded";
   systemChat _text;
@@ -286,5 +291,5 @@ if (!A3A_hasCW && A3A_hasEmp) then {
 };
 
 //No Mods found logging
-if (!A3A_hasRHS && !A3A_hasCup && !A3A_hasAegis && !A3A_hasIFA && !A3A_hasCW && !A3A_hasHalo && !A3A_hasSwe && !A3A_hasEmp && !A3A_hasBun) then {[2,"No Side Replacement Mods Detected.",_fileName] call A3A_fnc_log;};
+if (!A3A_hasRHS && !A3A_hasCup && !A3A_hasAegis && !A3A_hasIFA && !A3A_hasCW && !A3A_hasHalo && !A3A_hasSwe && !A3A_hasEmp && !A3A_hasBun && !A3A_hasFFAA) then {[2,"No Side Replacement Mods Detected.",_fileName] call A3A_fnc_log;};
 if (!A3A_hasIvory && !A3A_hasTCGM && !A3A_hasADV) then {[2,"No Addon Mods Detected.",_fileName] call A3A_fnc_log;};
