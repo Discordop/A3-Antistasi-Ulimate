@@ -152,7 +152,28 @@ A3A_logistics_vehicleHardpoints append [
 
     ["CUP_B_HMMWV_Transport_USA" call A3A_fnc_classNameToModel,[
        [1,         [0,-1.7,-0.65],    []  ]
-    ]]
+    ]],
+	
+	["\ffaa_et_pegaso\ffaa_et_m250_blindado.p3d",[
+		[1,[-0.1,1,-0.5],[]],
+		[1,[-0.1,0.2,-0.5],[]],
+		[1,[-0.1,-0.6,-0.5],[]],
+		[1,[-0.1,-1.4,-0.5],[]],
+		[1,[-0.1,-2.2,-0.5],[]],
+		[1,[-0.1,-3,-0.5],[]]
+	]],
+	
+	["\ffaa_et_pegaso\ffaa_et_pegaso.p3d",[
+		[1,[0,-0.6,-0.45],[]],
+		[1,[0,-1.4,-0.45],[]],
+		[1,[0,-2.2,-0.45],[]],
+		[1,[0,-3,-0.45],[]],
+		[1,[0,-3.8,-0.45],[]]
+	]],
+	
+	["ffaa_neton_mk2\ffaa_neton_mk2.p3d",[
+		[1,[0.05,-1.7,-1.16],[]]
+	]]
 ];
 
 
@@ -177,6 +198,7 @@ A3A_logistics_attachmentOffset append [
     ["CUP_B_Igla_AA_pod_CDF" call A3A_fnc_classNameToModel,                     [0.25,0,1.6],                  [0, 1, 0],                4,      250],
     ["CUP_B_2b14_82mm_ACR" call A3A_fnc_classNameToModel,                       [0, -0.55, 0.8],            [0, 1, 0],                  2,      2000],              //Podnos Mortar
     ["CUP_B_M252_USMC" call A3A_fnc_classNameToModel,                           [0, -0.55, 0.75],            [0, 1, 0],                  2,      2000],              //Podnos Mortar
+    ["ffaa_mistral_tripode" call A3A_fnc_classNameToModel,                    [0.0, -0.7, 1.25],          [0, 1, 0],                  2,      250],               //TOW launcher
 //Crates
     ["CUP_BOX_US_ARMY_Ammo_F" call A3A_fnc_classNameToModel,                      [0,0,0.35],                 [0,0,0],                    1],
 //Other
@@ -195,6 +217,8 @@ A3A_logistics_coveredVehicles append [
     "CUP_I_V3S_Covered_TKG",
     "CUP_B_Ural_CDF",
     "CUP_B_UAZ_Unarmed_ACR",
+    "ffaa_et_pegaso_carga_lona",
+    "ffaa_et_m250_carga_lona_blin",
     "CUP_C_Datsun_Covered"
 ];
 
@@ -220,5 +244,6 @@ A3A_logistics_weapons append [
     ["CUP_B_ZU23_CDF" call A3A_fnc_classNameToModel, ["C_Boat_Civil_01_F" call A3A_fnc_classNameToModel, "B_Boat_Transport_01_F" call A3A_fnc_classNameToModel, "C_Boat_Transport_02_F" call A3A_fnc_classNameToModel, "CUP_I_Hilux_unarmed_IND_G_F" call A3A_fnc_classNameToModel]],
     ["CUP_B_2b14_82mm_ACR" call A3A_fnc_classNameToModel, _commonBlacklist],
     ["CUP_B_M252_USMC" call A3A_fnc_classNameToModel, _commonBlacklist],
+    ["ffaa_mistral_tripode" call A3A_fnc_classNameToModel,[]],
     ["CUP_B_Igla_AA_pod_CDF" call A3A_fnc_classNameToModel, ["C_Boat_Civil_01_F" call A3A_fnc_classNameToModel, "B_Boat_Transport_01_F" call A3A_fnc_classNameToModel, "C_Boat_Transport_02_F" call A3A_fnc_classNameToModel, "CUP_I_Hilux_unarmed_IND_G_F" call A3A_fnc_classNameToModel]]
 ];

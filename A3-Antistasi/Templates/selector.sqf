@@ -589,3 +589,4 @@ if (A3A_hasHalo) then {call compile preProcessFileLineNumbers "Templates\NewTemp
 if (A3A_hasCW) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\CW\CW_Logistics_Nodes.sqf"};
 if (A3A_hasUR) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\VN_UR\VN_UR_Logistics_Nodes.sqf"};
 if (A3A_hasSwe) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\Swe\Swe_Logistics_Nodes.sqf"};
+if (A3A_hasFFAA) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\FFAA\FFAA_Logistics_Nodes.sqf"};
