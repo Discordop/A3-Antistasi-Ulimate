@@ -333,8 +333,8 @@ _policeLoadoutData setVariable ["uniforms", ["JMSLLTE_EmpOfficer_black_F_CombatU
 _policeLoadoutData setVariable ["vests", ["JMSLLTE_Officerrank_navy_lt_armor", "JMSLLTE_Officerrank_lt_armor"]];
 _policeLoadoutData setVariable ["helmets", ["JMSLLTE_EmpOfficerCap_black_helmet"]];
 _policeLoadoutData setVariable ["smgs", [
-["JMSLLTE_dh17rifle", "", "", "", ["JMSLLTE_DH17_60Rnd_Mag"], [], ""],
-["JMSLLTE_dh17", "", "", "", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""]
+["JMSLLTE_dh17rifle", "", "", "jmsllte_dh17_bl_scope", ["JMSLLTE_DH17_60Rnd_Mag"], [], ""],
+["JMSLLTE_dh17", "", "", "jmsllte_dh17_bl_scope", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""]
 ]];
 _policeLoadoutData setVariable ["sidearms", ["JMSLLTE_se14pistol", "", "", "", ["JMSLLTE_SE14_30rnd_Mag"], [], ""]];
 
@@ -358,7 +358,7 @@ _militiaLoadoutData setVariable ["grenadeLaunchers", [
 ["JMSLLTE_e10", "", "", "", ["JMSLLTE_E11_60Rnd_Mag"], [], ""]
 ]];
 _militiaLoadoutData setVariable ["SMGs", [
-["JMSLLTE_dh17", "", "", "", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""],
+["JMSLLTE_dh17", "", "", "jmsllte_dh17_bl_scope", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""],
 ["JMSLLTE_dc15s", "", "", "", ["JMSLLTE_DC15S_40Rnd_Mag"], [], ""]
 ]];
 _militiaLoadoutData setVariable ["machineGuns", [
