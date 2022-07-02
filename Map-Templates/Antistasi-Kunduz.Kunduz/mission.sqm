@@ -6,13 +6,9 @@ class EditorData
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=1026;
-	mods[]=
-	{
-		"3denEnhanced"
-	};
 	class ItemIDProvider
 	{
-		nextID=1470;
+		nextID=1481;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=175;
+		nextID=186;
 	};
 	class Camera
 	{
-		pos[]={1468.7302,61.681473,3586.7153};
-		dir[]={-0.50734562,-0.62399536,0.59433609};
-		up[]={-0.40513104,0.7814272,0.47459599};
-		aside[]={0.76057547,-1.0989606e-007,0.64925337};
+		pos[]={3919.0005,36.412193,4503.6416};
+		dir[]={-0.11179692,-0.43097946,0.89541614};
+		up[]={-0.053395543,0.90236014,0.42766178};
+		aside[]={0.99230039,1.4086254e-007,0.12389258};
 	};
 };
 binarizationWanted=0;
@@ -202,34 +198,7 @@ dlcs[]=
 randomSeed=2288247;
 class ScenarioData
 {
-	author="Karl";
-};
-class CustomAttributes
-{
-	class Category0
-	{
-		name="Scenario";
-		class Attribute0
-		{
-			property="cba_settings_hasSettingsFile";
-			expression="false";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"BOOL"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		nAttributes=1;
-	};
+	author="Karl, Stutpip123";
 };
 class Mission
 {
@@ -249,7 +218,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=459;
+		items=456;
 		class Item0
 		{
 			dataType="Object";
@@ -8630,20 +8599,20 @@ class Mission
 			name="Outposts";
 			class Entities
 			{
-				items=11;
+				items=17;
 				class Item0
 				{
 					dataType="Marker";
-					position[]={1415.397,23.813,3642.762};
+					position[]={1406.3104,23.812988,3626.6252};
 					name="milb_1_vehicle";
 					markerType="RECTANGLE";
 					type="rectangle";
 					colorName="ColorGreen";
-					a=24.226999;
-					b=9.3459997;
+					a=5;
+					b=5;
 					angle=117.13999;
 					id=1282;
-					atlOffset=-17.059067;
+					atlOffset=-16.000385;
 				};
 				class Item1
 				{
@@ -8683,7 +8652,7 @@ class Mission
 					colorName="ColorRed";
 					a=82.330002;
 					b=84.120003;
-					angle=222.62698;
+					angle=222.62697;
 					id=247;
 					atlOffset=45.310585;
 				};
@@ -8782,9 +8751,87 @@ class Mission
 					angle=269.50388;
 					id=1416;
 				};
+				class Item11
+				{
+					dataType="Marker";
+					position[]={1414.4598,40.773186,3642.1172};
+					name="milb_1_vehicle_1";
+					markerType="RECTANGLE";
+					type="rectangle";
+					colorName="ColorGreen";
+					a=5;
+					b=5;
+					angle=117.13998;
+					id=1475;
+				};
+				class Item12
+				{
+					dataType="Marker";
+					position[]={1421.9797,43.004875,3657.314};
+					name="milb_1_vehicle_2";
+					markerType="RECTANGLE";
+					type="rectangle";
+					colorName="ColorGreen";
+					a=5;
+					b=5;
+					angle=117.13998;
+					id=1476;
+				};
+				class Item13
+				{
+					dataType="Marker";
+					position[]={1431.693,43.002701,3672.1968};
+					name="milb_1_vehicle_3";
+					markerType="RECTANGLE";
+					type="rectangle";
+					colorName="ColorGreen";
+					a=5;
+					b=5;
+					angle=117.13998;
+					id=1477;
+				};
+				class Item14
+				{
+					dataType="Marker";
+					position[]={1452.9821,37.443001,3619.3789};
+					name="milb_1_sam";
+					markerType="RECTANGLE";
+					type="";
+					colorName="ColorBrown";
+					a=17.448;
+					b=12.104;
+					angle=44.485992;
+					id=1469;
+					atlOffset=-0.0002822876;
+				};
+				class Item15
+				{
+					dataType="Marker";
+					position[]={1400.0074,42.491253,3662.0442};
+					name="milb_1_mortar_2";
+					markerType="ELLIPSE";
+					type="";
+					colorName="ColorYellow";
+					a=5.8460002;
+					b=5.8340001;
+					id=1468;
+				};
+				class Item16
+				{
+					dataType="Marker";
+					position[]={1484.505,35.167,3635.2471};
+					name="milb_1_mortar_1";
+					markerType="ELLIPSE";
+					type="";
+					colorName="ColorYellow";
+					a=5.8460002;
+					b=5.8340001;
+					id=1467;
+					atlOffset=1.4025841;
+				};
 			};
 			id=1296;
-			atlOffset=15.180523;
+			atlOffset=2.7635841;
 		};
 		class Item415
 		{
@@ -9057,7 +9104,7 @@ class Mission
 					position[]={3854.791,20.436001,4481.6221};
 					name="spawnpoint";
 					type="hd_start";
-					angle=28.146967;
+					angle=28.146965;
 					id=211;
 					atlOffset=12.870616;
 				};
@@ -9124,7 +9171,7 @@ class Mission
 			name="Airport";
 			class Entities
 			{
-				items=4;
+				items=12;
 				class Item0
 				{
 					dataType="Marker";
@@ -9141,15 +9188,16 @@ class Mission
 				class Item1
 				{
 					dataType="Marker";
-					position[]={3818.1575,4.3520899,4622.6353};
+					position[]={3933.0759,4.2019043,4662.0308};
 					name="airp_vehicle";
 					markerType="RECTANGLE";
 					type="rectangle";
 					colorName="ColorGreen";
-					a=16.458;
-					b=5.0430002;
-					angle=249.82391;
+					a=5;
+					b=5;
+					angle=158.46773;
 					id=1293;
+					atlOffset=-0.89206409;
 				};
 				class Item2
 				{
@@ -9168,19 +9216,128 @@ class Mission
 				class Item3
 				{
 					dataType="Marker";
-					position[]={3838.6531,4.495069,4571.7744};
+					position[]={3917.4402,4.4950252,4603.5918};
 					name="airp_vehicle_1";
 					markerType="RECTANGLE";
 					type="rectangle";
 					colorName="ColorGreen";
-					a=16.458;
-					b=5.0430002;
-					angle=249.82391;
+					a=5;
+					b=5;
+					angle=337.06912;
 					id=1415;
+					atlOffset=0.56530571;
+				};
+				class Item4
+				{
+					dataType="Marker";
+					position[]={3927.5,4.7559214,4607.749};
+					name="airp_vehicle_2";
+					markerType="RECTANGLE";
+					type="rectangle";
+					colorName="ColorGreen";
+					a=5;
+					b=5;
+					angle=337.06909;
+					id=1470;
+					atlOffset=1.0849643;
+				};
+				class Item5
+				{
+					dataType="Marker";
+					position[]={3937.5186,4.6421814,4612.0234};
+					name="airp_vehicle_3";
+					markerType="RECTANGLE";
+					type="rectangle";
+					colorName="ColorGreen";
+					a=5;
+					b=5;
+					angle=337.06909;
+					id=1471;
+					atlOffset=0.84067392;
+				};
+				class Item6
+				{
+					dataType="Marker";
+					position[]={3947.9407,4.5391307,4616.2896};
+					name="airp_vehicle_4";
+					markerType="RECTANGLE";
+					type="rectangle";
+					colorName="ColorGreen";
+					a=5;
+					b=5;
+					angle=337.06909;
+					id=1472;
+					atlOffset=0.73611069;
+				};
+				class Item7
+				{
+					dataType="Marker";
+					position[]={3922.2859,4.2677851,4657.3877};
+					name="airp_vehicle_5";
+					markerType="RECTANGLE";
+					type="rectangle";
+					colorName="ColorGreen";
+					a=5;
+					b=5;
+					angle=158.4677;
+					id=1473;
+					atlOffset=-0.5731988;
+				};
+				class Item8
+				{
+					dataType="Marker";
+					position[]={3911.6296,4.673502,4652.8691};
+					name="airp_vehicle_6";
+					markerType="RECTANGLE";
+					type="rectangle";
+					colorName="ColorGreen";
+					a=5;
+					b=5;
+					angle=158.4677;
+					id=1474;
+					atlOffset=-0.016680717;
+				};
+				class Item9
+				{
+					dataType="Marker";
+					position[]={3942.3149,4.4710002,4640.1929};
+					name="airp_sam";
+					markerType="RECTANGLE";
+					type="";
+					colorName="ColorBrown";
+					a=14.022;
+					b=10.208;
+					angle=66.516998;
+					id=1478;
+					atlOffset=0.0001039505;
+				};
+				class Item10
+				{
+					dataType="Marker";
+					position[]={3995.0293,5.4407401,4638.4775};
+					name="airp_mortar_1";
+					markerType="ELLIPSE";
+					type="ellipse";
+					colorName="ColorYellow";
+					a=4.803;
+					b=5.3460002;
+					id=1479;
+				};
+				class Item11
+				{
+					dataType="Marker";
+					position[]={4006.196,5.2980614,4665.7915};
+					name="airp_mortar_2";
+					markerType="ELLIPSE";
+					type="ellipse";
+					colorName="ColorYellow";
+					a=4.803;
+					b=5.3460002;
+					id=1480;
 				};
 			};
 			id=1315;
-			atlOffset=3.8924408;
+			atlOffset=-0.38108921;
 		};
 		class Item419
 		{
@@ -10497,7 +10654,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+					expression="_this setGroupID [_value];";
 					class Value
 					{
 						class data
@@ -10922,45 +11079,6 @@ class Mission
 				};
 				nAttributes=2;
 			};
-		};
-		class Item456
-		{
-			dataType="Marker";
-			position[]={1484.505,35.167,3635.2471};
-			name="milb_1_mortar_1";
-			markerType="ELLIPSE";
-			type="";
-			colorName="ColorYellow";
-			a=5.8460002;
-			b=5.8340001;
-			id=1467;
-			atlOffset=1.4025841;
-		};
-		class Item457
-		{
-			dataType="Marker";
-			position[]={1400.0074,42.491253,3662.0442};
-			name="milb_1_mortar_2";
-			markerType="ELLIPSE";
-			type="";
-			colorName="ColorYellow";
-			a=5.8460002;
-			b=5.8340001;
-			id=1468;
-		};
-		class Item458
-		{
-			dataType="Marker";
-			position[]={1452.9821,37.443001,3619.3789};
-			name="milb_1_sam";
-			markerType="RECTANGLE";
-			type="";
-			colorName="ColorBrown";
-			a=17.448;
-			b=12.104;
-			angle=44.485996;
-			id=1469;
-			atlOffset=-0.0002822876;
 		};
 	};
 	class Connections
