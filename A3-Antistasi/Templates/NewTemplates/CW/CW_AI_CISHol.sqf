@@ -2,7 +2,7 @@
 //   Side Information   //
 //////////////////////////
 
-["name", "CIS Holdout"] call _fnc_saveToTemplate;
+["name", "CIS Remnant"] call _fnc_saveToTemplate;
 ["spawnMarkerName", "CIS Support Corridor"] call _fnc_saveToTemplate;
 
 ["flag", "ls_flag_cis"] call _fnc_saveToTemplate;
