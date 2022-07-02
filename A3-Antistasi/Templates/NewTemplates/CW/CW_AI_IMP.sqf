@@ -70,7 +70,7 @@
 	["sf_sniper", "JMSLLTE_emp_spec_DTS"],
 
 	["other_crew", "JMSLLTE_emp_navy_Crew"],
-	["other_unarmed", "JLTS_Clone_P2_DC15S"],
+	["other_unarmed", "JMSLLTE_emp_storm_trooper"],
 	["other_official", "JMSLLTE_emp_navy_fieldOf"],
 	["other_traitor", "JMSLLTE_emp_storm_scoutL"],
 	["other_pilot", "JMSLLTE_emp_navy_TIEpilot"],
