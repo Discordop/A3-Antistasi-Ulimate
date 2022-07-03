@@ -205,6 +205,13 @@ if (gameMode == 1) then
 			_mrkCSAT = ["airport_2", "seaport_2", "factory_2", "resource", "outpost_7", "resource_5", "seaport_1"];
 			_controlsCSAT = ["control_11", "control_12", "control_20", "control_10", "control_13", "control_28"];
 		};
+		case "lingor3": {
+			_mrkCSAT = ["airport_3", "milbase_1", "outpost_12"];
+			_controlsCSAT = ["control_14"];
+		};
+		case "OPTRE_Madrigal": {
+			_mrkCSAT = ["outpost_4", "outpost_10"];
+		};
 	};
     _controlsNATO = _controlsNATO - _controlsCSAT;
 	_mrkNATO = markersX - _mrkCSAT - ["Synd_HQ"];
