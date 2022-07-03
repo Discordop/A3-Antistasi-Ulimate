@@ -114,7 +114,7 @@ shop_wheel_apc = ["3as_RTT", "3as_saber_m1", "ls_ground_mtt_federation"];
 shop_track_apc = ["JMSLLTE_B_veh_AA5_reb_F", "3AS_n99", "3as_saber_super"];
 shop_heli = ["ls_heli_laatle", "lsd_heli_laatc", "lsd_heli_laati"];
 shop_tank = ["442_aat", "3as_ATAP_base", "3as_ATTE_Base"];
-shop_plane = ["3as_arc_170_razor"];
+shop_plane = ["JMSLLTE_Xwing_veh_F", "JMSLLTE_Awing_veh_F", "3AS_BTLB_Bomber"];
 
 additionalShopLight = [];
 additionalShopAtgmVehicles = [];

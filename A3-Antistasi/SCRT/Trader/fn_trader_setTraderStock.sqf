@@ -14,25 +14,17 @@ diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Choosing t
 diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Trader: %2", servertime, str _traderX];
 
 switch (true) do {
-    case (A3A_hasIFA): {
-        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using IFA trader stock.", servertime];
-        [_traderX, "ww2mod"] call HALs_store_fnc_addTrader;    
-    };
     case (A3A_hasHalo): {
         diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using Halo trader stock.", servertime];
         [_traderX, "halo"] call HALs_store_fnc_addTrader;    
     };
+    case (A3A_hasEmp): {
+        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using GCW trader stock.", servertime];
+        [_traderX, "emp"] call HALs_store_fnc_addTrader;    
+    };
     case (A3A_hasCW): {
         diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using CW trader stock.", servertime];
         [_traderX, "cw"] call HALs_store_fnc_addTrader;    
-    };
-   case (A3A_hasVN && {A3A_hasUR}): {
-        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using VN UR trader stock.", servertime];
-        [_traderX, "vnur"] call HALs_store_fnc_addTrader;
-    };
-    case (A3A_hasVN): {
-        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using VN trader stock.", servertime];
-        [_traderX, "vn"] call HALs_store_fnc_addTrader;
     };
     case (A3A_coldWarMode): {
         diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using 3CBF CW trader stock.", servertime];
@@ -50,14 +42,26 @@ switch (true) do {
         diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using RHS trader stock.", servertime];
         [_traderX, "rhs"] call HALs_store_fnc_addTrader;
     };
-    case (A3A_hasAegis): {
-        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Initializing Aegis trader.", servertime];
-        [_traderX, "aegis"] call HALs_store_fnc_addTrader;
-    };
     case (A3A_hasCup): {
         diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using CUP trader stock.", servertime];
         [_traderX, "cup"] call HALs_store_fnc_addTrader;
     }; 
+   case (A3A_hasVN && {A3A_hasUR}): {
+        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using VN UR trader stock.", servertime];
+        [_traderX, "vnur"] call HALs_store_fnc_addTrader;
+    };
+    case (A3A_hasVN): {
+        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using VN trader stock.", servertime];
+        [_traderX, "vn"] call HALs_store_fnc_addTrader;
+    };
+    case (A3A_hasIFA): {
+        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Using IFA trader stock.", servertime];
+        [_traderX, "ww2mod"] call HALs_store_fnc_addTrader;    
+    };
+    case (A3A_hasAegis): {
+        diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Initializing Aegis trader.", servertime];
+        [_traderX, "aegis"] call HALs_store_fnc_addTrader;
+    };
     default  {
         diag_log format ["%1: [Antistasi] | INFO | fn_trader_setTraderStock | Initializing vanilla trader.", servertime];
         [_traderX, "vanilla"] call HALs_store_fnc_addTrader;
