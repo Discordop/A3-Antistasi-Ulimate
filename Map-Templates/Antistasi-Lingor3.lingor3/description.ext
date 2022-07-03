@@ -1,0 +1,65 @@
+#include "MissionDescription\master.hpp"
+
+OnLoadName = "Antistasi Ultimate - Hunting Grounds";
+OnLoadMission = $STR_antistasi_mission_info_rhspkl_blurb_text;
+briefingName = Antistasi Ultimate - Hunting Grounds;
+overviewText = $STR_antistasi_mission_info_altis_description_text;
+loadScreen = "Pictures\Mission\pic.jpg";
+overviewPicture = "Pictures\Mission\pic.jpg";
+
+class CfgDiscordRichPresence 
+{
+    applicationID="819852407265034260";
+    defaultDetails="";
+    defaultState="";
+    defaultLargeImageKey="pkl";
+    defaultLargeImageText="Antistasi Ultimate - Hunting Grounds";
+    defaultSmallImageKey="arma_3_logo";
+    defaultSmallImageText="Arma 3 Custom Scenario";
+    useTimeElapsed=1;
+};
+
+class CfgFunctions 
+{
+    #include "MissionDescription\CfgFunctionsContents.hpp"
+};
+
+class CfgNotifications
+{
+    #include "MissionDescription\CfgNotificationsContents.hpp"
+};
+
+class CfgSounds
+{
+    #include "MissionDescription\CfgSoundsContents.hpp"
+};
+
+class CfgDebriefing
+{
+    #include "MissionDescription\CfgDebriefingContents.hpp"
+
+	class End1
+	{
+		title = "V I C T O R Y";
+		subtitle = "Lingor is Ours!";
+		description = "The population of Lingor loves you!<br/>The brave rebel soldiers have proven their valour, and Petros, Lingor's new Prime Minister, could at last to have a nice holiday. A well deserved rest for everyone involved.";
+		picture = "n_inf";
+		pictureColor[] = {0.0,0.5,0.0,1};
+	};
+    class petrosDead
+    {
+        title = "Petros is Dead";
+        subtitle = "Petros is Dead";
+        description = "Congratulations! Petros is Dead. Now with rebels without a leader, you may think about joining them, and free Lingor";
+        picture = "b_unknown";
+        pictureColor[] = {0.5,0.0,0.0,1};
+    };
+    class destroyedSites
+    {
+        title = "Lingor is Destroyed";
+        subtitle = "Lingor got Destroyed by CSAT";
+        description = "One third of the population in Lingor has been murdered by OPFOR.<br/>Lingor no longer exists, nobody wants to live here.";
+        picture = "b_unknown";
+        pictureColor[] = {0.5,0.0,0.0,1};
+    };
+};
