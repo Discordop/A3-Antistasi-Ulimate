@@ -6,7 +6,7 @@
 ["spawnMarkerName", "Imperial support corridor"] call _fnc_saveToTemplate;
 
 ["flag", "Flag_JMSLLTE_Emp_black_F"] call _fnc_saveToTemplate;
-["flagTexture", "\JMSLLTE_props\Flags\flag_EmpBlack.paa"] call _fnc_saveToTemplate;
+["flagTexture", "\LS_statics_props\flags\data\flag_republic.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "JLTS_flag_Rep"] call _fnc_saveToTemplate;
 
 //////////////////////////////////////

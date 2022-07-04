@@ -5,7 +5,7 @@
 ["name", "Rebel Alliance"] call _fnc_saveToTemplate; 						//this line determines the faction name -- Example: ["name", "NATO"] - ENTER ONLY ONE OPTION
 
 ["flag", "Flag_JMSLLTE_Reb_white_F"] call _fnc_saveToTemplate;
-["flagTexture", "\JMSLLTE_props\Flags\flag_ScumWhite.paa"] call _fnc_saveToTemplate;
+["flagTexture", "\LS_statics_props\flags\data\flag_mandalorian.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "RedCrystal"] call _fnc_saveToTemplate;
 
 ["vehicleBasic", "CW_Quadbike"] call _fnc_saveToTemplate;
