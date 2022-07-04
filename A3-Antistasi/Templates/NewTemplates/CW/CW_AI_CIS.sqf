@@ -100,7 +100,7 @@
 ["vehiclesLightAPCs", []] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
-["vehiclesSam", ["B_Radar_System_01_F","3as_FlakCannon"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
+["vehiclesSam", ["lsd_cis_radarDish","3as_FlakCannon"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
 
 ["vehiclesTransportBoats", ["B_Boat_Transport_01_F"]] call _fnc_saveToTemplate;

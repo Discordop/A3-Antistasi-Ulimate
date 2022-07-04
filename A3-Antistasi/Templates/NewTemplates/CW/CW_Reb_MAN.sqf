@@ -11,13 +11,13 @@
 ["vehicleBasic", "CW_Quadbike"] call _fnc_saveToTemplate;
 ["vehicleLightUnarmed", "CW_Offroad_Mando"] call _fnc_saveToTemplate;
 ["vehicleLightArmed", "CW_Offroad_Mando_HMG"] call _fnc_saveToTemplate; 
-["vehicleTruck", "442_argon_transport_cis"] call _fnc_saveToTemplate; 
+["vehicleTruck", "CW_Mando_argon_transport"] call _fnc_saveToTemplate; 
 ["vehicleAT", "CW_Offroad_Mando_AT"] call _fnc_saveToTemplate;
 ["vehicleAA", "CW_Ifrit_Mando_HMG"] call _fnc_saveToTemplate; 
 
 ["vehicleBoat", "I_C_Boat_Transport_02_F"] call _fnc_saveToTemplate;
-["vehicleRepair", "I_G_Offroad_01_repair_F"] call _fnc_saveToTemplate;
-["vehicleFuel", "I_G_Van_01_fuel_F"] call _fnc_saveToTemplate;
+["vehicleRepair", "CW_Mando_argon_repair"] call _fnc_saveToTemplate;
+["vehicleFuel", "CW_Mando_argon_fuel"] call _fnc_saveToTemplate;
 
 ["vehiclePlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
 ["vehiclePayloadPlane", "442_a10_plane_cas"] call _fnc_saveToTemplate;

@@ -5,23 +5,23 @@
 ["name", "Rebel Alliance"] call _fnc_saveToTemplate; 						//this line determines the faction name -- Example: ["name", "NATO"] - ENTER ONLY ONE OPTION
 
 ["flag", "Flag_JMSLLTE_Reb_white_F"] call _fnc_saveToTemplate;
-["flagTexture", "\LS_statics_props\flags\data\flag_mandalorian.paa"] call _fnc_saveToTemplate;
+["flagTexture", "\JMSLLTE_props\Flags\flag_ScumWhite.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "RedCrystal"] call _fnc_saveToTemplate;
 
 ["vehicleBasic", "CW_Quadbike"] call _fnc_saveToTemplate;
 ["vehicleLightUnarmed", "CW_V2_Offroad_Rebel"] call _fnc_saveToTemplate;
 ["vehicleLightArmed", "CW_V2_Offroad_Rebel_HMG"] call _fnc_saveToTemplate; 
-["vehicleTruck", "442_argon_transport"] call _fnc_saveToTemplate; 
+["vehicleTruck", "CW_rebel_argon_transport"] call _fnc_saveToTemplate; 
 ["vehicleAT", "CW_V2_Offroad_Rebel_AT"] call _fnc_saveToTemplate;
 ["vehicleAA", "CW_Ifrit_V2_Rebel_HMG"] call _fnc_saveToTemplate; 
 
 ["vehicleBoat", "I_C_Boat_Transport_02_F"] call _fnc_saveToTemplate;
-["vehicleRepair", "I_G_Offroad_01_repair_F"] call _fnc_saveToTemplate;
-["vehicleFuel", "I_G_Van_01_fuel_F"] call _fnc_saveToTemplate;
+["vehicleRepair", "CW_rebel_argon_repair"] call _fnc_saveToTemplate;
+["vehicleFuel", "CW_rebel_argon_fuel"] call _fnc_saveToTemplate;
 
 ["vehiclePlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
-["vehiclePayloadPlane", "JMSLLTE_Awing_veh_F"] call _fnc_saveToTemplate;
-["vehicleHeli", "not_supported"] call _fnc_saveToTemplate;
+["vehiclePayloadPlane", "3AS_BTLB_Bomber"] call _fnc_saveToTemplate;
+["vehicleHeli", "JMSLLTE_Uwing_veh_F"] call _fnc_saveToTemplate;
 
 ["vehicleCivCar", "C_Offroad_01_F"] call _fnc_saveToTemplate;
 ["vehicleCivTruck", "C_Van_01_transport_F"] call _fnc_saveToTemplate;

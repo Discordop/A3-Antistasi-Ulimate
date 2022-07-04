@@ -6,7 +6,7 @@
 ["spawnMarkerName", "Imperial support corridor"] call _fnc_saveToTemplate;
 
 ["flag", "Flag_JMSLLTE_Emp_black_F"] call _fnc_saveToTemplate;
-["flagTexture", "\LS_statics_props\flags\data\flag_republic.paa"] call _fnc_saveToTemplate;
+["flagTexture", "\JMSLLTE_props\Flags\flag_EmpBlack.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "JLTS_flag_Rep"] call _fnc_saveToTemplate;
 
 //////////////////////////////////////
@@ -88,20 +88,20 @@
 
 ["vehiclesBasic", ["JMSLLTE_B_veh_74z_imp_F"]] call _fnc_saveToTemplate; 			//this line determines basic vehicles, the lightest kind available. -- Example: ["vehiclesBasic", ["B_Quadbike_01_F"]] -- Array, can contain multiple assets
 ["vehiclesLightUnarmed", ["CW_Ifrit_Empire"]] call _fnc_saveToTemplate; 		
-["vehiclesLightArmed",["CW_Ifrit_Imperial_HMG", "CW_Offroad_Imperial_AT", "JMSLLTE_B_veh_74z_imp_F"]] call _fnc_saveToTemplate; 		
-["vehiclesTrucks", ["442_argon_transport", "442_argon_covered"]] call _fnc_saveToTemplate; 		
-["vehiclesCargoTrucks", ["442_argon_transport", "442_argon_covered"]] call _fnc_saveToTemplate; 		
-["vehiclesAmmoTrucks", ["442_argon_ammo"]] call _fnc_saveToTemplate; 	
-["vehiclesRepairTrucks", ["442_argon_repair"]] call _fnc_saveToTemplate; 	
-["vehiclesFuelTrucks", ["442_argon_fuel"]] call _fnc_saveToTemplate;	
-["vehiclesMedical", ["442_argon_medical"]] call _fnc_saveToTemplate;	
-["vehiclesAPCs", ["3as_saber_m1", "JMSLLTE_B_veh_ITT_imp_F", "JMSLLTE_B_veh_ITT_imp_F"]] call _fnc_saveToTemplate; 		
-["vehiclesTanks", ["3AS_ATJT_Base", "3as_UTAT", "3as_saber_super", "3as_saber_m1G"]] call _fnc_saveToTemplate; 	
+["vehiclesLightArmed",["CW_Ifrit_Imperial_HMG", "CW_Offroad_Imperial_AT", "JMSLLTE_B_veh_74z_imp_F", "CW_Ifrit_Imperial_AT"]] call _fnc_saveToTemplate; 		
+["vehiclesTrucks", ["CW_argon_transport", "CW_argon_covered"]] call _fnc_saveToTemplate; 		
+["vehiclesCargoTrucks", ["CW_argon_transport", "CW_argon_covered"]] call _fnc_saveToTemplate; 		
+["vehiclesAmmoTrucks", ["CW_argon_ammo"]] call _fnc_saveToTemplate; 	
+["vehiclesRepairTrucks", ["CW_argon_repair"]] call _fnc_saveToTemplate; 	
+["vehiclesFuelTrucks", ["CW_argon_fuel"]] call _fnc_saveToTemplate;	
+["vehiclesMedical", ["CW_argon_medical"]] call _fnc_saveToTemplate;	
+["vehiclesAPCs", ["3as_saber_m1", "JMSLLTE_B_veh_ITT_imp_F", "3as_saber_m1G"]] call _fnc_saveToTemplate; 		
+["vehiclesTanks", ["3AS_ATJT_Base", "3as_UTAT", "3as_saber_super"]] call _fnc_saveToTemplate; 	
 ["vehiclesAA", ["3as_saber_m1Recon"]] call _fnc_saveToTemplate; 		
 ["vehiclesLightAPCs", []] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
-["vehiclesSam", ["B_Radar_System_01_F","3as_XX9"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
+["vehiclesSam", ["lsd_cis_radarDish","3as_XX9"]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
 ["vehiclesTransportBoats", ["I_Boat_Transport_01_F"]] call _fnc_saveToTemplate; 
 ["vehiclesGunBoats", ["442_boat_armed"]] call _fnc_saveToTemplate; 
@@ -122,7 +122,7 @@
 ["uavsPortable", ["3as_uas2"]] call _fnc_saveToTemplate;
 
 ["vehiclesMilitiaLightArmed", ["CW_Offroad_Imperial_HMG"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTrucks", ["442_argon_transport", "442_argon_covered"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTrucks", ["CW_argon_transport", "CW_argon_covered"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaCars", ["CW_Offroad_Imperial"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaApcs", ["JMSLLTE_B_veh_ITT_imp_F"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTanks", ["3as_saber_m1"]] call _fnc_saveToTemplate;
@@ -275,7 +275,7 @@ _sfLoadoutData setVariable ["machineGuns", [
 ["JMSLLTE_DLT19BlasterRifle", "", "", "", ["JMSLLTE_DLT19_75Rnd_Mag"], [], ""]
 ]];
 _sfLoadoutData setVariable ["marksmanRifles", [
-["JMSLLTE_E17DRifle", "", "", "", ["JMSLLTE_E17d_5Rnd_Mag"], [], ""]
+["JMSLLTE_E22", "", "", "", ["JMSLLTE_E22_60Rnd_Mag"], [], ""]
 ]];
 _sfLoadoutData setVariable ["sniperRifles", [
 ["JMSLLTE_E17DRifle", "", "", "", ["JMSLLTE_E17d_5Rnd_Mag"], [], ""]
@@ -301,18 +301,30 @@ _militaryLoadoutData setVariable ["missileATLaunchers", [
 _militaryLoadoutData setVariable ["rifles", [
 ["JMSLLTE_e11", "", "", "", ["JMSLLTE_E11_60Rnd_Mag"], [], ""],
 ["JMSLLTE_e11", "", "jmsllte_acc_flashlight", "", ["JMSLLTE_E11_60Rnd_Mag"], [], ""],
-["JMSLLTE_e11", "", "", "jmsllte_e11_bl_scope", ["JMSLLTE_E11_60Rnd_Mag"], [], ""]
+["JMSLLTE_e11", "", "", "jmsllte_e11_bl_scope", ["JMSLLTE_E11_60Rnd_Mag"], [], ""],
+["JMSLLTE_e11", "", "jmsllte_acc_flashlight", "jmsllte_e11_bl_scope", ["JMSLLTE_E11_60Rnd_Mag"], [], ""],
+["SWLW_DC15AC", "", "", "", ["SWLW_DC15AC_Mag"], [], ""],
+["SWLW_DC15A", "", "", "", ["SWLW_DC15A_Mag"], [], ""],
+["SWLW_DC15A_wooden", "", "", "", ["SWLW_DC15A_Mag"], [], ""]
 ]];
 _militaryLoadoutData setVariable ["carbines", [
-["JMSLLTE_e11carb", "", "", "", ["JMSLLTE_E11_60Rnd_Mag"], [], ""]
+["JMSLLTE_e11carb", "", "", "jmsllte_e11_bl_scope", ["JMSLLTE_E11_60Rnd_Mag"], [], ""],
+["JMSLLTE_e11carb", "", "", "", ["JMSLLTE_E11_60Rnd_Mag"], [], ""],
+["SWLW_DC15s", "", "", "", ["SWLW_DC15s_Mag"], [], ""]
 ]];
 _militaryLoadoutData setVariable ["grenadeLaunchers", [
 ["SWLW_DC15A_ugl", "", "", "", ["SWLW_DC15A_Mag"], ["SWLW_DC15A_UGL_Mag", "SWLW_DC15A_UGL_smoke_white_Mag", "SWLW_DC15A_UGL_flare_white_Mag"], ""]
 ]];
 _militaryLoadoutData setVariable ["SMGs", [
-["JMSLLTE_e11carb", "", "", "", ["JMSLLTE_E11_60Rnd_Mag"], [], ""]
+["JMSLLTE_e11carb", "", "", "jmsllte_e11_bl_scope", ["JMSLLTE_E11_60Rnd_Mag"], [], ""],
+["JMSLLTE_e11carb", "", "", "", ["JMSLLTE_E11_60Rnd_Mag"], [], ""],
+["JMSLLTE_e11carb", "", "jmsllte_acc_flashlight", "", ["JMSLLTE_E11_60Rnd_Mag"], [], ""],
+["JMSLLTE_e11carb", "", "jmsllte_acc_flashlight", "jmsllte_e11_bl_scope", ["JMSLLTE_E11_60Rnd_Mag"], [], ""],
+["SWLW_DC15s", "", "", "", ["SWLW_DC15s_Mag"], [], ""],
+["SWLW_DP20", "", "", "", ["SWLW_DP20_Mag"], [], ""]
 ]];
 _militaryLoadoutData setVariable ["machineGuns", [
+["JMSLLTE_rt97cBlasterRifle", "", "", "", ["JMSLLTE_RT97C_150Rnd_Mag"], [], ""],
 ["JMSLLTE_DLT19BlasterRifle", "", "", "", ["JMSLLTE_DLT19_75Rnd_Mag"], [], ""]
 ]];
 _militaryLoadoutData setVariable ["marksmanRifles", [
@@ -349,23 +361,41 @@ _militiaLoadoutData setVariable ["backpacks", ["JMSLLTE_back_rebsmall_imp_v1"]];
 _militiaLoadoutData setVariable ["helmets", ["JMSLLTE_EmpTrooper_helmet"]];		//this line determines helmets for police loadouts -- Example: ["H_HelmetB_camo", "H_HelmetB_desert"] -- Array, can contain multiple assets
 
 _militiaLoadoutData setVariable ["rifles", [
-["JMSLLTE_e10", "", "", "", ["JMSLLTE_E11_60Rnd_Mag"], [], ""]
+["JMSLLTE_e10", "", "", "", ["JMSLLTE_E11_60Rnd_Mag"], [], ""],
+["JMSLLTE_e10", "", "", "", ["JMSLLTE_E11_60Rnd_Mag"], [], ""],
+["SWLW_DC15AC", "", "", "", ["SWLW_DC15AC_Mag"], [], ""]
 ]];
 _militiaLoadoutData setVariable ["carbines", [
-["JMSLLTE_e10", "", "", "", ["JMSLLTE_E11_60Rnd_Mag"], [], ""]
+["JMSLLTE_e10", "", "", "", ["JMSLLTE_E11_60Rnd_Mag"], [], ""],
+["SWLW_DC15s", "", "", "", ["SWLW_DC15s_Mag"], [], ""]
 ]];
 _militiaLoadoutData setVariable ["grenadeLaunchers", [
-["JMSLLTE_e10", "", "", "", ["JMSLLTE_E11_60Rnd_Mag"], [], ""]
+["JMSLLTE_e10", "", "", "", ["JMSLLTE_E11_60Rnd_Mag"], [], ""],
+["SWLW_DC15A_ugl", "", "", "", ["SWLW_DC15A_Mag"], ["SWLW_DC15A_UGL_Mag", "SWLW_DC15A_UGL_smoke_white_Mag", "SWLW_DC15A_UGL_flare_white_Mag"], ""]
 ]];
 _militiaLoadoutData setVariable ["SMGs", [
 ["JMSLLTE_dh17", "", "", "jmsllte_dh17_bl_scope", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""],
-["JMSLLTE_dc15s", "", "", "", ["JMSLLTE_DC15S_40Rnd_Mag"], [], ""]
+["JMSLLTE_dh17", "", "", "jmsllte_dh17_bl_scope", ["JMSLLTE_DH17_30Rnd_Mag"], [], ""],
+["SWLW_DC15s", "", "", "", ["SWLW_DC15s_Mag"], [], ""],
+["SWLW_DP20", "", "", "", ["SWLW_DP20_Mag"], [], ""]
 ]];
 _militiaLoadoutData setVariable ["machineGuns", [
-["JMSLLTE_DLT19BlasterRifle", "", "", "", ["JMSLLTE_DLT19_75Rnd_Mag"], [], ""]
+["JMSLLTE_rt97cBlasterRifle", "", "", "", ["JMSLLTE_RT97C_150Rnd_Mag"], [], ""],
+["JMSLLTE_rt97cBlasterRifle", "", "", "", ["JMSLLTE_RT97C_150Rnd_Mag"], [], ""],
+["SWLW_DC15SAW", "", "", "", ["SWLW_DC15SAW_Mag"], [], ""]
 ]];
-_militiaLoadoutData setVariable ["marksmanRifles", [["JMSLLTE_dlt20a", "", "", "", ["JMSLLTE_DLT20a_10Rnd_Mag"], [], ""]]];
-_militiaLoadoutData setVariable ["sniperRifles", [["JMSLLTE_DLT19xRifle", "", "", "", ["JMSLLTE_DLT19x_10Rnd_Mag"], [], ""]]];
+_militiaLoadoutData setVariable ["marksmanRifles", [
+["JMSLLTE_dlt20a", "", "", "jmsllte_a280_bl_scope", ["JMSLLTE_DLT20a_10Rnd_Mag"], [], ""],
+["JMSLLTE_dlt20a", "", "", "jmsllte_a280c_bl_scope", ["JMSLLTE_DLT20a_10Rnd_Mag"], [], ""],
+["JMSLLTE_dlt20a", "", "", "jmsllte_a300_bl_scope", ["JMSLLTE_DLT20a_10Rnd_Mag"], [], ""],
+["JMSLLTE_dlt20a", "", "", "", ["JMSLLTE_DLT20a_10Rnd_Mag"], [], ""],
+["SWLW_DC15A", "", "", "", ["SWLW_DC15A_Mag"], [], ""],
+["SWLW_DC15A", "", "", "", ["SWLW_DC15A_Mag"], [], ""]
+]];
+_militiaLoadoutData setVariable ["sniperRifles", [
+["JMSLLTE_DLT19xRifle", "", "", "", ["JMSLLTE_DLT19x_10Rnd_Mag"], [], ""],
+["SWLW_DC15X_wooden", "", "", "", ["SWLW_DC15X_mag"], [], ""]
+]];
 _militiaLoadoutData setVariable ["sidearms", ["JMSLLTE_se14pistol", "", "", "", ["JMSLLTE_SE14_30rnd_Mag"], [], ""]];
 
 /////////////////////////////////
@@ -395,13 +425,17 @@ _eliteLoadoutData setVariable ["grenadeLaunchers", [
 ["SWLW_DC15A_ugl", "", "", "", ["SWLW_DC15A_Mag"], ["SWLW_DC15A_UGL_Mag", "SWLW_DC15A_UGL_smoke_white_Mag", "SWLW_DC15A_UGL_flare_white_Mag"], ""]
 ]];
 _eliteLoadoutData setVariable ["SMGs", [
-["JMSLLTE_e11carb", "", "", "", ["JMSLLTE_E11_60Rnd_Mag"], [], ""]
+["JMSLLTE_e11carb", "", "", "jmsllte_e11_bl_scope", ["JMSLLTE_E11_60Rnd_Mag"], [], ""]
 ]];
 _eliteLoadoutData setVariable ["machineGuns", [
-["JMSLLTE_DLT19BlasterRifle", "", "", "", ["JMSLLTE_DLT19_75Rnd_Mag"], [], ""]
+["JMSLLTE_DLT19BlasterRifle", "", "", "", ["JMSLLTE_DLT19_75Rnd_Mag"], [], ""],
+["SWLW_Z6", "", "", "", ["SWLW_Z6_mag"], [], ""]
 ]];
 _eliteLoadoutData setVariable ["marksmanRifles", [
-["JMSLLTE_DLT19xRifle", "", "", "", ["JMSLLTE_DLT19x_10Rnd_Mag"], [], ""]
+["JMSLLTE_DLT19xRifle", "", "", "", ["JMSLLTE_DLT19x_10Rnd_Mag"], [], ""],
+["JMSLLTE_dlt20a", "", "", "", ["JMSLLTE_DLT20a_10Rnd_Mag"], [], ""],
+["SWLW_DC15BR", "", "", "", ["SWLW_DC15BR_Mag"], [], ""],
+["SWLW_DC15A", "", "", "", ["SWLW_DC15A_Mag"], [], ""]
 ]];
 _eliteLoadoutData setVariable ["sniperRifles", [
 ["JMSLLTE_E17DRifle", "", "", "", ["JMSLLTE_E17d_5Rnd_Mag"], [], ""]
