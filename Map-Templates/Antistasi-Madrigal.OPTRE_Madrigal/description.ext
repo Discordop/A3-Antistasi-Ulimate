@@ -1,0 +1,64 @@
+#include "MissionDescription\master.hpp"
+
+OnLoadName = "Antistasi Ultimate - Madrigal Madness";
+OnLoadMission = $STR_antistasi_mission_info_altis_blurb_text;
+briefingName = "Antistasi Ultimate - Madrigal Madness";
+overviewText = $STR_antistasi_mission_info_altis_description_text;
+loadScreen = "Pictures\Mission\pic.jpg";
+overviewPicture = "Pictures\Mission\pic.jpg";
+
+class CfgDiscordRichPresence
+{
+    applicationID="819852407265034260";
+    defaultDetails="";
+    defaultState="";
+    defaultLargeImageKey="altis";
+    defaultLargeImageText="Antistasi Ultimate - Madrigal Madness";
+    defaultSmallImageKey="arma_3_logo";
+    defaultSmallImageText="Arma 3 Custom Scenario";
+    useTimeElapsed=1;
+};
+
+class CfgFunctions
+{
+    #include "MissionDescription\CfgFunctionsContents.hpp"
+};
+
+class CfgNotifications
+{
+    #include "MissionDescription\CfgNotificationsContents.hpp"
+};
+
+class CfgSounds
+{
+    #include "MissionDescription\CfgSoundsContents.hpp"
+};
+
+class CfgDebriefing
+{
+	#include "MissionDescription\CfgDebriefingContents.hpp"
+	class End1
+	{
+		title = "V I C T O R Y";
+		subtitle = "Madrigal is Ours!";
+		description = "The population of Madrigal loves you!<br/>The brave soldiers have proven their valour, and Petros, Madrigal new Prime Minister, could at last to have a nice holidays. A deserved rest in a Greek island with drinks and fine food.";
+		picture = "n_inf";
+		pictureColor[] = {0.0,0.5,0.0,1};
+	};
+    class petrosDead
+    {
+        title = "Petros is Dead";
+        subtitle = "Petros is Dead";
+        description = "Congratulations!: Petros is Dead. Now with rebels without a leader, you may think about joining them, and free Madrigal";
+        picture = "b_unknown";
+        pictureColor[] = {0.5,0.0,0.0,1};
+    };
+    class destroyedSites
+    {
+        title = "Madrigal is Destroyed";
+        subtitle = "Madrigal got Destroyed by OPFOR";
+        description = "One third of the population in Madrigal has been murdered by the OPFOR.<br/>Madrigal no longer exists, nobody wants to live here.";
+        picture = "b_unknown";
+        pictureColor[] = {0.5,0.0,0.0,1};
+    };
+};
