@@ -151,7 +151,7 @@ if (gameMode == 1) then
 			_mrkCSAT = ["outpost_8", "factory_4", "resource_7", "outpost_7", "resource_8", "factory_3"];
 			_controlsCSAT = ["control_45", "control_44", "control_19", "control_20", "control_18"];
 		};
-			case "kunduz": {
+		case "kunduz": {
 			_mrkCSAT = ["outpost"];
 		};
 		case "napf": {
@@ -159,6 +159,10 @@ if (gameMode == 1) then
             _controlsCSAT = ["control_44", "control_49", "control_43", "control_53", "control_23", "control_52", "control_46", "control_47", "control_54", "control_50", "control_16", "control_17"];
 		};
 		case "panthera3": {
+			_mrkCSAT = ["airport_4", "outpost_9", "outpost_10", "outpost_12", "control_64", "control_63", "control_50", "control_65"];
+            _controlsCSAT = ["control_64", "control_63", "control_50", "control_65"];
+		};
+		case "Winthera3": {
 			_mrkCSAT = ["airport_4", "outpost_9", "outpost_10", "outpost_12", "control_64", "control_63", "control_50", "control_65"];
             _controlsCSAT = ["control_64", "control_63", "control_50", "control_65"];
 		};

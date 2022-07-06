@@ -13,7 +13,7 @@ class CfgDiscordRichPresence
     defaultDetails="";
     defaultState="";
     defaultLargeImageKey="panthera";
-    defaultLargeImageText="Antistasi Ultimate - Waterways";
+    defaultLargeImageText="Antistasi Ultimate - Frozen Waterways";
     defaultSmallImageKey="arma_3_logo";
     defaultSmallImageText="Arma 3 Custom Scenario";
     useTimeElapsed=1;

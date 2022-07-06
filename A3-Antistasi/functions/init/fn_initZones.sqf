@@ -232,6 +232,13 @@ switch (toLower worldName) do {
 		configClasses (configfile >> "CfgWorlds" >> worldName >> "Names");
 	};
 
+	case "Winthera3": {
+		_cityConfigs = "(getText (_x >> ""type"") in [""NameLocal"", ""NameCityCapital"", ""NameCity"", ""NameVillage"", ""CityCenter""]) &&
+		!(getText (_x >> ""Name"") isEqualTo """") &&
+		!((configName _x) in ['idrsko','ladra','cesnjica','koprivnik','goreljek','jereka','ribcevlaz','starfuz','sredvas','bitnje','cezsoca','logmangart','strmec','belca','dovje','kocna','bdobrava','skooma','suzid','sseloo','zirovnica','vrba','obrne','gorje','ribno','lesce','lancovo','selca','kneza','Pikia','baca','sela','podljubinj', 'volce','dolje','bolhowo','ditchwood','rontushospital','ramons','bazovica','villasimona','fortieste','rubinaisland','savagia',""Mork"", ""trenta"", ""Kleinfort"", ""Freckle"", ""dino10"", ""dino11"", ""dino12"", ""dino13"", ""dino3"", ""dino5"", ""dino7""])"
+		configClasses (configfile >> "CfgWorlds" >> worldName >> "Names");
+	};
+
 	default {
 		_cityConfigs = "(getText (_x >> ""type"") in [""NameCityCapital"", ""NameCity"", ""NameVillage"", ""CityCenter""]) &&
 		!(getText (_x >> ""Name"") isEqualTo """") &&
@@ -449,6 +456,13 @@ switch (toLower worldName) do {
 	    antennas = [];
 	};
 	case "panthera3":
+	{
+		_posAntennas = [[8247.17,8508.42,0],[1279.23,7194.89,0],[355.621,3020.95,0],[1260.02,1607.94,0],[4786.39,6836.08,0],[4193.22,3819.86,0],[6536.41,2014.64,0],[6906.09,770.765,0],[6237.4,4675.6,0]];
+		_posBank = [[1126.75,5762.61,0],[1247.99,6384.2,0],[188.976,1507.52,0],[161.512,1692.07,0],[159.84,1706.39,0],[197.559,1512.86,0],[2687.69,1548.56,0],[7257.44,5873.08,0]];
+		_blackListPos = [];
+	    antennas = [];
+	};
+	case "Winthera3":
 	{
 		_posAntennas = [[8247.17,8508.42,0],[1279.23,7194.89,0],[355.621,3020.95,0],[1260.02,1607.94,0],[4786.39,6836.08,0],[4193.22,3819.86,0],[6536.41,2014.64,0],[6906.09,770.765,0],[6237.4,4675.6,0]];
 		_posBank = [[1126.75,5762.61,0],[1247.99,6384.2,0],[188.976,1507.52,0],[161.512,1692.07,0],[159.84,1706.39,0],[197.559,1512.86,0],[2687.69,1548.56,0],[7257.44,5873.08,0]];
