@@ -162,7 +162,7 @@ if (gameMode == 1) then
 			_mrkCSAT = ["airport_4", "outpost_9", "outpost_10", "outpost_12", "control_64", "control_63", "control_50", "control_65"];
             _controlsCSAT = ["control_64", "control_63", "control_50", "control_65"];
 		};
-		case "Winthera3": {
+		case "winthera3": {
 			_mrkCSAT = ["airport_4", "outpost_9", "outpost_10", "outpost_12", "control_64", "control_63", "control_50", "control_65"];
             _controlsCSAT = ["control_64", "control_63", "control_50", "control_65"];
 		};
@@ -213,8 +213,12 @@ if (gameMode == 1) then
 			_mrkCSAT = ["airport_3", "milbase_1", "outpost_12"];
 			_controlsCSAT = ["control_14"];
 		};
-		case "OPTRE_Madrigal": {
+		case "optre_madrigal": {
 			_mrkCSAT = ["outpost_4", "outpost_10"];
+		};
+		case "kapaulio": {
+			_mrkCSAT = ["airport_1", "milbase_3", "outpost_21", "outpost_27"];
+			_controlsCSAT = ["control_20", "control_30"];
 		};
 	};
     _controlsNATO = _controlsNATO - _controlsCSAT;
