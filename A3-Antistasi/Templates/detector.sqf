@@ -63,11 +63,11 @@ if (isClass (configFile >> "CfgFactionClasses" >> "JLTS_CIS") && isClass (config
   [2,"Clone Wars Detected.",_fileName] call A3A_fnc_log;
 };
 
-//Empire Detection
-if (isClass (configFile >> "CfgFactionClasses" >> "JMSLLTE_empire_fact")) then {
-  A3A_hasEmp = true;
-  [2,"JMs Empire Detected.",_fileName] call A3A_fnc_log;
-};
+//Empire Detection, Deactivated due to removal of the mod from Steam 6/7/22
+//if (isClass (configFile >> "CfgFactionClasses" >> "JMSLLTE_empire_fact")) then {
+  //A3A_hasEmp = true;
+  //[2,"JMs Empire Detected.",_fileName] call A3A_fnc_log;
+//};
 
 
 //Halo Detection

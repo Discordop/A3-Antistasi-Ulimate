@@ -218,7 +218,7 @@ A3A_logistics_attachmentOffset = [
     ["3AS_Republic_Mortar" call A3A_fnc_classNameToModel,                             [-0.1,-0.5,0.74],           [0, 1, 0],                  2,      2000],              //Mortar
     ["3as_CIS_Mortar" call A3A_fnc_classNameToModel,                             [-0.1,-0.5,0.74],           [0, 1, 0],                  2,      2000],              //Mortar
     ["ls_merc_mortar" call A3A_fnc_classNameToModel,                             [-0.1,-0.5,0.74],           [0, 1, 0],                  2,      2000],              //Mortar
-    ["3AS_HeavyRepeater_Unarmoured" call A3A_fnc_classNameToModel,                           [0, -2, 1],          [-1.5, -2, 0],                  4,      100],               //M2 High
+    ["3AS_HeavyRepeater_Unarmoured" call A3A_fnc_classNameToModel,                           [0.1, 3.2, 2.85],          [0, 0, 0],                  4,      100],               //M2 High
     ["3as_ParticleCannon" call A3A_fnc_classNameToModel,                           [0, -2, 1],          [-1.5, -2, 0],                  4,      1500],               //M2 High
 
     //medium sized crates
@@ -260,5 +260,5 @@ A3A_logistics_weapons = [
     ["3as_CIS_Mortar" call A3A_fnc_classNameToModel,["C_Boat_Civil_01_F" call A3A_fnc_classNameToModel, "B_Boat_Transport_01_F" call A3A_fnc_classNameToModel, "C_Boat_Transport_02_F" call A3A_fnc_classNameToModel]],
     ["ls_merc_mortar" call A3A_fnc_classNameToModel,["C_Boat_Civil_01_F" call A3A_fnc_classNameToModel, "B_Boat_Transport_01_F" call A3A_fnc_classNameToModel, "C_Boat_Transport_02_F" call A3A_fnc_classNameToModel]],
     ["3as_ParticleCannon" call A3A_fnc_classNameToModel,[]],
-    ["3AS_HeavyRepeater_Unarmoured" call A3A_fnc_classNameToModel,[]]
+    ["3AS_HeavyRepeater_Unarmoured" call A3A_fnc_classNameToModel,["C_Boat_Civil_01_F" call A3A_fnc_classNameToModel, "B_Boat_Transport_01_F" call A3A_fnc_classNameToModel, "C_Boat_Transport_02_F" call A3A_fnc_classNameToModel]]
 ];
