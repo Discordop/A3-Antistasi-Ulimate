@@ -29,7 +29,7 @@
 ["vehicleCivBoat", "C_Rubberboat"] call _fnc_saveToTemplate;
 ["vehicleCivSupply", "C_Van_01_box_F"] call _fnc_saveToTemplate;
 
-["staticMG", "I_G_HMG_02_high_F"] call _fnc_saveToTemplate; 					
+["staticMG", "CUP_B_M2StaticMG_USMC"] call _fnc_saveToTemplate; 					
 ["staticAT", "CUP_I_SPG9_NAPA"] call _fnc_saveToTemplate; 					
 ["staticAA", "CUP_I_ZU23_NAPA"] call _fnc_saveToTemplate; 					
 ["staticMortar", "CUP_I_M252_RACS"] call _fnc_saveToTemplate; 				
@@ -37,7 +37,7 @@
 ["staticMortarMagSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
 
 //Static weapon definitions
-["baggedMGs", [["I_G_HMG_02_high_weapon_F","I_G_HMG_02_support_high_F"]]] call _fnc_saveToTemplate; 				
+["baggedMGs", [["CUP_B_M2_Gun_Bag", "CUP_B_M2_Tripod_Bag"]]] call _fnc_saveToTemplate; 				
 ["baggedAT", [["CUP_B_SPG9_Gun_Bag","CUP_B_SPG9_Tripod_Bag"]]] call _fnc_saveToTemplate; 					
 ["baggedAA", [["I_AA_01_weapon_F","I_G_HMG_02_support_F"]]] call _fnc_saveToTemplate; 					
 ["baggedMortars", [["CUP_B_M252_Gun_Bag","CUP_B_M252_Bipod_Bag"]]] call _fnc_saveToTemplate; 			

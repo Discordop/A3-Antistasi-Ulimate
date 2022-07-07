@@ -132,7 +132,7 @@
 
 ["vehiclesPolice", ["B_GEN_Offroad_01_gen_F"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["I_HMG_02_high_F"]] call _fnc_saveToTemplate; 					
+["staticMGs", ["CUP_B_M2StaticMG_US"]] call _fnc_saveToTemplate; 					
 ["staticAT", ["CUP_B_TOW2_TriPod_US"]] call _fnc_saveToTemplate; 					
 ["staticAA", ["CUP_B_Stinger_AA_pod_Base_USMC"]] call _fnc_saveToTemplate; 					
 ["staticMortars", ["CUP_B_M252_USMC"]] call _fnc_saveToTemplate;
