@@ -109,6 +109,10 @@ A3A_Reb_template = switch(true) do {
     };
     case (A3A_hasIFA): {
         switch(true) do {
+            case (_terrainName in _winterMaps): {
+                ["Templates\NewTemplates\IFA\IFA_Reb_POL_Winter.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Winter WW2 Polish Template", _filename] call A3A_fnc_log;
+            };
             case (_terrainName in tropicalMaps);
             case (_terrainName in _temperateMaps): {
                 ["Templates\NewTemplates\IFA\IFA_Reb_POL_Temperate.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
@@ -227,8 +231,16 @@ A3A_Occ_template = switch(true) do {
         "FFAA"
     };
     case (A3A_hasSwe): {
-        ["Templates\NewTemplates\Swe\Swe_AI_SweAF_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
-        [2, "Using Swedish Forces Pack Template", _filename] call A3A_fnc_log;
+        switch(true) do {
+            case (_terrainName in _winterMaps): {
+                ["Templates\NewTemplates\IFA\IFA_AI_SweAF_Winter.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Swedish Forces Pack Winter Template", _filename] call A3A_fnc_log;
+            };
+            default {
+                ["Templates\NewTemplates\Swe\Swe_AI_SweAF_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Swedish Forces Pack Temperate Template", _filename] call A3A_fnc_log;
+            };
+        };
         "Swe"
     };
     case (A3A_hasBun): {
@@ -305,6 +317,10 @@ A3A_Occ_template = switch(true) do {
     };
     case (A3A_hasIFA): {
         switch(true) do {
+            case (_terrainName in _winterMaps): {
+                ["Templates\NewTemplates\IFA\IFA_AI_WEH_Winter.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Winter WW2 German Template", _filename] call A3A_fnc_log;
+            };
             case (_terrainName in tropicalMaps);
             case (_terrainName in _temperateMaps): {
                 ["Templates\NewTemplates\IFA\IFA_AI_WEH_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
@@ -422,6 +438,10 @@ A3A_Inv_template = switch(true) do{
     };
     case (A3A_hasIFA): {
         switch(true) do {
+            case (_terrainName in _winterMaps): {
+                ["Templates\NewTemplates\IFA\IFA_AI_SOV_Winter.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Winter WW2 Soviet Template", _filename] call A3A_fnc_log;
+            };
             case (_terrainName in tropicalMaps);
             case (_terrainName in _temperateMaps): {
                 ["Templates\NewTemplates\IFA\IFA_AI_SOV_Temperate.sqf", east] call A3A_fnc_compatibilityLoadFaction;
