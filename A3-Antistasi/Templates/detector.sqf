@@ -32,6 +32,7 @@ A3A_hasSwe = false;
 A3A_hasEmp = false;
 A3A_hasBun = false;
 A3A_hasFFAA = false;
+A3A_hasPedagne = false;
 
 //Aegis submods
 private _activeAegis = false;
@@ -234,6 +235,12 @@ if (isClass (configfile >> "CfgFactionClasses" >> "sfp_swe_1990")) then {
   [2,"Swedish Forces Pack Detected.",_fileName] call A3A_fnc_log;
 };
 
+//Pedagne Detection
+if (isClass (configfile >> "CfgFactionClasses" >> "PedagneMOD")) then {
+  A3A_hasPedagne = true;
+  [2,"Pedagne Detected.",_fileName] call A3A_fnc_log;
+};
+
 if (A3A_has3CBFactions && (!_activeAfrf || !_activeUsaf || !_activeGref || !_activeSaf)) then {
   private _text = "3CB Factions should be used together with all RHS mods - AFRF, USAF, GREF and SAF. Enable those mods to proceed.";
   systemChat _text;
@@ -269,6 +276,13 @@ if (!A3A_hasCup && A3A_hasSwe) then {
 	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
 };
 
+if (!A3A_hasCup && A3A_hasPedagne) then {
+	private _text = "Swedish Forces Pack detected but CUP is not loaded";
+  systemChat _text;
+  [1, _text, _fileName] call A3A_fnc_log;
+	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
+};
+
 if (!A3A_hasCup && A3A_hasBun) then {
 	private _text = "BWMod detected but CUP is not loaded";
   systemChat _text;
@@ -291,5 +305,5 @@ if (!A3A_hasCW && A3A_hasEmp) then {
 };
 
 //No Mods found logging
-if (!A3A_hasRHS && !A3A_hasCup && !A3A_hasAegis && !A3A_hasIFA && !A3A_hasCW && !A3A_hasHalo && !A3A_hasSwe && !A3A_hasEmp && !A3A_hasBun && !A3A_hasFFAA) then {[2,"No Side Replacement Mods Detected.",_fileName] call A3A_fnc_log;};
+if (!A3A_hasRHS && !A3A_hasCup && !A3A_hasAegis && !A3A_hasIFA && !A3A_hasCW && !A3A_hasHalo && !A3A_hasSwe && !A3A_hasEmp && !A3A_hasBun && !A3A_hasFFAA && !A3A_hasPedagne) then {[2,"No Side Replacement Mods Detected.",_fileName] call A3A_fnc_log;};
 if (!A3A_hasIvory && !A3A_hasTCGM && !A3A_hasADV) then {[2,"No Addon Mods Detected.",_fileName] call A3A_fnc_log;};

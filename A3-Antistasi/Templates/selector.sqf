@@ -243,6 +243,23 @@ A3A_Occ_template = switch(true) do {
         };
         "Swe"
     };
+    case (A3A_hasPedagne): {
+        switch(true) do {
+            case (_terrainName in _temperateMaps): {
+                ["Templates\NewTemplates\Pedagne\PED_AI_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Temperate Pedagne Template", _filename] call A3A_fnc_log;
+            };
+            case (_terrainName in tropicalMaps): {
+                ["Templates\NewTemplates\Pedagne\PED_AI_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+                [2, "Using Temperate Pedagne Template", _filename] call A3A_fnc_log;
+            };
+            default {
+                ["Templates\NewTemplates\Pedagne\PED_AI_Arid.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+                [2, ""Using Arid Pedagne Template", _filename] call A3A_fnc_log;
+            };
+        };
+        "Pedagne"
+    };
     case (A3A_hasBun): {
         ["Templates\NewTemplates\BWMod\BW_AI_BUN_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using Bundeswehr Template", _filename] call A3A_fnc_log;
