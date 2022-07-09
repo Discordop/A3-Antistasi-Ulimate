@@ -290,6 +290,7 @@ if (_type == "AA") then
         {
             _loadout = ["OPTRE_STMedusa_6Rnd_AA_Missile", "OPTRE_3Rnd_Jackknife_missile", "OPTRE_STMedusa_6Rnd_AA_Missile", "OPTRE_3Rnd_Jackknife_missile", "OPTRE_M1024_2000Rnd_30mm"];
         };
+        case "3as_Z95_blue";
         case "3as_Z95_Republic": 
         {
             _loadout = ["PylonRack_Missile_BIM9X_x1", "PylonRack_Missile_BIM9X_x1", "PylonRack_Missile_BIM9X_x2", "PylonRack_Missile_BIM9X_x2", "PylonRack_Missile_AMRAAM_D_x2", "PylonRack_Missile_AMRAAM_D_x2","3as_PylonWeapon_Z95_240Rnd_Heavy_Shells"];
