@@ -90,9 +90,9 @@
 ["vehiclesLightUnarmed", ["ASZ_LR90_EI"]] call _fnc_saveToTemplate; 		
 ["vehiclesLightArmed",["ASZ_LR110_CCpara_MG3", "ASZ_LR90_M2", "ASZ_LR90_MK19", "ASZ_LR90_TOW"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
 ["vehiclesTrucks", ["ASZ_ACTL4x4_EI"]] call _fnc_saveToTemplate; 			
-["vehiclesCargoTrucks", ["CUP_B_MTVR_USA"]] call _fnc_saveToTemplate; 		
-["vehiclesAmmoTrucks", ["ASZ_ACTL6x6_logistic"]] call _fnc_saveToTemplate; 		
-["vehiclesRepairTrucks", ["ASZ_ACTL6x6_repair", "ASZ_VCC2_rep"]] call _fnc_saveToTemplate; 		
+["vehiclesCargoTrucks", ["ASZ_ACTL6x6_logistic"]] call _fnc_saveToTemplate; 		
+["vehiclesAmmoTrucks", ["CUP_B_MTVR_Ammo_BAF_DES"]] call _fnc_saveToTemplate; 		
+["vehiclesRepairTrucks", ["ASZ_ACTL6x6_repair", "ASZ_VCC2_rep", "ASZ_VM90_El_rep"]] call _fnc_saveToTemplate; 		 		
 ["vehiclesFuelTrucks", ["ASZ_ACTL6x6_fuel"]] call _fnc_saveToTemplate;		
 ["vehiclesMedical", ["ASZ_VM90_EI_amb", "ASZ_VCC2_EI_amb"]] call _fnc_saveToTemplate;			
 ["vehiclesAPCs", ["ASZ_PUMA4x4CC_MG3", "ASZ_PUMA4x4_M2", "ASZ_PUMA4x4_TOW", "ASZ_PUMA6x6_AT", "ASZ_PUMA6x6CC_MG3", "ASZ_PUMA6x6_hitrole", "ASZ_PUMA6x6_M2", "ASZ_VCC1_EI", "ASZ_VCC1_EI_camo", "ASZ_VCC1_EI_plus", "ASZ_VCC1_EI_camo_plus", "ASZ_VCC2_EI"]] call _fnc_saveToTemplate; 				
@@ -132,10 +132,10 @@
 
 ["vehiclesPolice", ["ASZ_LR110_CC"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["CUP_B_L111A1_BAF_MPT"]] call _fnc_saveToTemplate; 					
-["staticAT", ["CUP_B_TOW2_TriPod_US"]] call _fnc_saveToTemplate; 					
+["staticMGs", ["CUP_B_M2StaticMG_USMC"]] call _fnc_saveToTemplate; 					
+["staticAT", ["CUP_B_TOW2_TriPod_USMC"]] call _fnc_saveToTemplate; 					
 ["staticAA", ["CUP_B_Stinger_AA_pod_Base_USMC"]] call _fnc_saveToTemplate; 					
-["staticMortars", ["CUP_B_L16A2_BAF_DDPM"]] call _fnc_saveToTemplate;
+["staticMortars", ["CUP_B_M252_USMC"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["CUP_B_M119_USMC"]] call _fnc_saveToTemplate;
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
@@ -143,8 +143,8 @@
 
 ["howitzerMagazineHE", "CUP_30Rnd_105mmHE_M119_M"] call _fnc_saveToTemplate;
 
-["baggedMGs", [["CUP_B_L111A1_Gun_Bag", "CUP_B_L111A1_Tripod_Bag"]]] call _fnc_saveToTemplate; 				
-["baggedAT", [["CUP_B_TOW2_Tripod_Bag", "CUP_B_Tow_Gun_Bag"]]] call _fnc_saveToTemplate; 					
+["baggedMGs", [["CUP_B_M2_Gun_Bag", "CUP_B_M2_Tripod_Bag"]]] call _fnc_saveToTemplate; 				
+["baggedAT", [["CUP_B_TOW2_Tripod_Bag", "CUP_B_Tow_Gun_Bag"]]] call _fnc_saveToTemplate; 						
 ["baggedAA", []] call _fnc_saveToTemplate; 					
 ["baggedMortars", [["CUP_B_L16A2_Bipod_Bag", "CUP_B_L16A2_Gun_Bag"]]] call _fnc_saveToTemplate; 			//this line determines bagged static mortars -- Example: ["baggedMortars", [["B_Mortar_01_weapon_F", "B_Mortar_01_support_F"]]] -- Array, can contain multiple assets
 

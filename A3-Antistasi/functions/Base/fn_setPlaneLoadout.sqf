@@ -187,6 +187,11 @@ if (_type == "CAS") then
         {
             _loadout = ["PylonRack_Missile_BIM9X_x1","CUP_PylonPod_3Rnd_AGM65_Maverick_M","PylonRack_12Rnd_missiles","PylonRack_12Rnd_missiles","CUP_PylonPod_3Rnd_AGM65_Maverick_M","PylonRack_Missile_BIM9X_x1"];
         };
+		//Pedagne
+        case "ASZ_AV8B":
+        {
+            _loadout = ["PylonMissile_1Rnd_LG_scalpel","PylonRack_20Rnd_Rocket_03_HE_F","PylonRack_3Rnd_Missile_AGM_02_F","PylonRack_3Rnd_Missile_AGM_02_F","PylonRack_20Rnd_Rocket_03_AP_F","PylonMissile_1Rnd_LG_scalpel"];
+        };
         default
         {
             [1, format ["Plane type %1 currently not supported for CAS, please add the case!", typeOf _plane], _fileName] call A3A_fnc_log;
@@ -315,6 +320,11 @@ if (_type == "AA") then
         case "ffaa_ea_ef18m":
         {
             _loadout = ["PylonMissile_1Rnd_Missile_AA_04_F","PylonRack_Missile_BIM9X_x2","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_C_x2","ffaa_ef18m_Fueltank_1rnd_M","PylonRack_Missile_AMRAAM_C_x2","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_BIM9X_x2","PylonMissile_1Rnd_Missile_AA_04_F"];
+        };
+		//Pedagne
+        case "ASZ_EFA":
+        {
+            _loadout = ["PylonMissile_Missile_BIM9X_x1","PylonRack_Missile_AMRAAM_D_x2","CUP_PylonPod_2Rnd_AIM_9L_LAU_Sidewinder_M","PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_BIM9X_x1","PylonMissile_Missile_BIM9X_x1","CUP_PylonPod_2Rnd_AIM_9L_LAU_Sidewinder_M","PylonRack_Missile_AMRAAM_D_x2","PylonMissile_Missile_BIM9X_x1"];
         };
         default
         {
