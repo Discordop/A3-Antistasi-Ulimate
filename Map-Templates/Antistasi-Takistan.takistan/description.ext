@@ -13,7 +13,7 @@ class CfgDiscordRichPresence
     defaultDetails="";
     defaultState="";
     defaultLargeImageKey="takistan";
-    defaultLargeImageText="Antistasi Plus - Takistan";
+    defaultLargeImageText="Antistasi Ultimate - Takistan";
     defaultSmallImageKey="arma_3_logo";
     defaultSmallImageText="Arma 3 Custom Scenario";
     useTimeElapsed=1;

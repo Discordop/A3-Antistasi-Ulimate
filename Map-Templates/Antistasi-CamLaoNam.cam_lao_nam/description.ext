@@ -13,7 +13,7 @@ class CfgDiscordRichPresence
     defaultDetails="";
     defaultState="";
     defaultLargeImageKey="cam_lao_nam";
-    defaultLargeImageText="Antistasi Plus - Agent Orange";
+    defaultLargeImageText="Antistasi Ultimate - Agent Orange";
     defaultSmallImageKey="arma_3_logo";
     defaultSmallImageText="Arma 3 Custom Scenario";
     useTimeElapsed=1;

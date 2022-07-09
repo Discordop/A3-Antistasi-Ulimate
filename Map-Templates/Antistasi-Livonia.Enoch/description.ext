@@ -13,7 +13,7 @@ class CfgDiscordRichPresence
     defaultDetails="";
     defaultState="";
     defaultLargeImageKey="livonia";
-    defaultLargeImageText="Antistasi Plus - Horizon Scan";
+    defaultLargeImageText="Antistasi Ultimate - Horizon Scan";
     defaultSmallImageKey="arma_3_logo";
     defaultSmallImageText="Arma 3 Custom Scenario";
     useTimeElapsed=1;

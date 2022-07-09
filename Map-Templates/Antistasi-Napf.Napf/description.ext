@@ -13,7 +13,7 @@ class CfgDiscordRichPresence
     defaultDetails="";
     defaultState="";
     defaultLargeImageKey="napf";
-    defaultLargeImageText="Antistasi Plus - Harvest Blue";
+    defaultLargeImageText="Antistasi Ultimate - Harvest Blue";
     defaultSmallImageKey="arma_3_logo";
     defaultSmallImageText="Arma 3 Custom Scenario";
     useTimeElapsed=1;

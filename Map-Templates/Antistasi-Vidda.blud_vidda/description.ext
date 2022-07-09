@@ -13,7 +13,7 @@ class CfgDiscordRichPresence
     defaultDetails="";
     defaultState="";
     defaultLargeImageKey="vidda";
-    defaultLargeImageText="Antistasi Plus - Sample Text";
+    defaultLargeImageText="Antistasi Ultimate - Vidda";
     defaultSmallImageKey="arma_3_logo";
     defaultSmallImageText="Arma 3 Custom Scenario";
     useTimeElapsed=1;

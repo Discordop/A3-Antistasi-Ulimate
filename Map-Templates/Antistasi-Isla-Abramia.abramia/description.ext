@@ -13,7 +13,7 @@ class CfgDiscordRichPresence
     defaultDetails="";
     defaultState="";
     defaultLargeImageKey="abramia";
-    defaultLargeImageText="Antistasi Plus - White Mountains";
+    defaultLargeImageText="Antistasi Ultimate - White Mountains";
     defaultSmallImageKey="arma_3_logo";
     defaultSmallImageText="Arma 3 Custom Scenario";
     useTimeElapsed=1;

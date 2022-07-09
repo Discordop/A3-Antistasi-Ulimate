@@ -13,7 +13,7 @@ class CfgDiscordRichPresence
     defaultDetails="";
     defaultState="";
     defaultLargeImageKey="altis";
-    defaultLargeImageText="Antistasi Plus - Altis Requiem";
+    defaultLargeImageText="Antistasi Ultimate - Malden Requiem";
     defaultSmallImageKey="arma_3_logo";
     defaultSmallImageText="Arma 3 Custom Scenario";
     useTimeElapsed=1;

@@ -13,7 +13,7 @@ class CfgDiscordRichPresence
     defaultDetails="";
     defaultState="";
     defaultLargeImageKey="vt7";
-    defaultLargeImageText="Antistasi Plus - Kesäsota";
+    defaultLargeImageText="Antistasi Ultimate - Kesäsota";
     defaultSmallImageKey="arma_3_logo";
     defaultSmallImageText="Arma 3 Custom Scenario";
     useTimeElapsed=1;

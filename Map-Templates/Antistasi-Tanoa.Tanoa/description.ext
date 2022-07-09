@@ -13,7 +13,7 @@ class CfgDiscordRichPresence
     defaultDetails="";
     defaultState="";
     defaultLargeImageKey="tanoa";
-    defaultLargeImageText="Antistasi Plus - Horizon Islands";
+    defaultLargeImageText="Antistasi Ultimate - Horizon Islands";
     defaultSmallImageKey="arma_3_logo";
     defaultSmallImageText="Arma 3 Custom Scenario";
     useTimeElapsed=1;

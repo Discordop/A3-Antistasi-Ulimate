@@ -13,7 +13,7 @@ class CfgDiscordRichPresence
     defaultDetails="";
     defaultState="";
     defaultLargeImageKey="pkl";
-    defaultLargeImageText="Antistasi Plus - Red War";
+    defaultLargeImageText="Antistasi Ultimate - Red War";
     defaultSmallImageKey="arma_3_logo";
     defaultSmallImageText="Arma 3 Custom Scenario";
     useTimeElapsed=1;

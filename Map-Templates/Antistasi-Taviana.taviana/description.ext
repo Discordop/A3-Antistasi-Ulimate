@@ -13,7 +13,7 @@ class CfgDiscordRichPresence
     defaultDetails="";
     defaultState="";
     defaultLargeImageKey="taviana";
-    defaultLargeImageText="Antistasi Plus - The Red Dawn";
+    defaultLargeImageText="Antistasi Ultimate - The Red Dawn";
     defaultSmallImageKey="arma_3_logo";
     defaultSmallImageText="Arma 3 Custom Scenario";
     useTimeElapsed=1;

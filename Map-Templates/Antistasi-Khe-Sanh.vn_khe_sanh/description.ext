@@ -13,7 +13,7 @@ class CfgDiscordRichPresence
     defaultDetails="";
     defaultState="";
     defaultLargeImageKey="khe_sanh";
-    defaultLargeImageText="Antistasi Plus - Siege of Khe Sanh";
+    defaultLargeImageText="Antistasi Ultimate - Siege of Khe Sanh";
     defaultSmallImageKey="arma_3_logo";
     defaultSmallImageText="Arma 3 Custom Scenario";
     useTimeElapsed=1;
