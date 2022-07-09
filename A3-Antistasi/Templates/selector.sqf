@@ -255,7 +255,7 @@ A3A_Occ_template = switch(true) do {
             };
             default {
                 ["Templates\NewTemplates\Pedagne\PED_AI_Arid.sqf", west] call A3A_fnc_compatibilityLoadFaction;
-                [2, ""Using Arid Pedagne Template", _filename] call A3A_fnc_log;
+                [2, "Using Arid Pedagne Template", _filename] call A3A_fnc_log;
             };
         };
         "Pedagne"
