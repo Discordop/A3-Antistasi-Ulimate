@@ -115,6 +115,9 @@ class SCRT
         class trader_buyBlackMarketVehicle {};
         class trader_rerollTrader {};
         class trader_setTraderDiscount {};
+        class trader_tryOpenMandoWorkshopMenu {};
+        class trader_getDroids {};
+        class trader_makeDroids {};
     };
 
     class Common 

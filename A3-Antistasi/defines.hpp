@@ -4,6 +4,11 @@
 #endif
 
 // Control types
+#define GUI_GRID_W (0.025)
+#define GUI_GRID_H (0.04)
+#define GUI_TEXT_SIZE_SMALL 	(GUI_GRID_H * 0.8)
+#define GUI_TEXT_SIZE_MEDIUM 	(GUI_GRID_H * 1)
+#define GUI_TEXT_SIZE_LARGE 	(GUI_GRID_H * 1.2)
 #define CT_STATIC           0
 #define CT_BUTTON           1
 #define CT_EDIT             2
@@ -122,6 +127,26 @@ class RscText
     w = 0;
 };
 
+class RscTextMandoWorkshop
+{
+    access = 0;
+    idc = -1;
+    type = CT_STATIC;
+    style = ST_MULTI;
+    linespacing = 1;
+    colorBackground[] = {0,0,0,0};
+    colorText[] = {1,1,1,.5};
+    text = "";
+    shadow = 2;
+    font = "RobotoCondensedBold";
+    SizeEx = 2;
+    fixedWidth = 0;
+    x = 0;
+    y = 0;
+    h = 0;
+    w = 0;
+};
+
 class RscTextSingle
 {
 	access = 0;
@@ -149,9 +174,29 @@ class RscPicture
     type = CT_STATIC;
     style = ST_PICTURE;
 	fade = 1;
-    colorBackground[] = {0,0,0,0};
+    colorBackground[] = {1,1,1,1};
     colorText[] = {1,1,1,1};
-    font = "PuristaLight";
+    font = "RobotoCondensed";
+    sizeEx = 0;
+    lineSpacing = 0;
+    text = "";
+    fixedWidth = 0;
+    shadow = 0;
+    x = 0;
+    y = 0;
+    w = 0.2;
+    h = 0.15;
+};
+
+class RscPictureMandoWorkshop
+{
+    access = 0;
+    idc = -1;
+    type = CT_STATIC;
+    style = ST_PICTURE;
+    colorBackground[] = {1,1,1,1};
+    colorText[] = {1,1,1,1};
+    font = "RobotoCondensed";
     sizeEx = 0;
     lineSpacing = 0;
     text = "";
@@ -235,41 +280,149 @@ class ScrollBar
 */
 class RscListBox
 {
-     access = 0;
-     type = 5;
-     style = 0;
-     w = 0.4;
-     h = 0.4;
-     font = "TahomaB";
-     sizeEx = 0.04;
-     rowHeight = 0;
-     colorText[] = {1,1,1,1};
-     colorScrollbar[] = {1,1,1,1};
-     colorSelect[] = {0,0,0,1};
-     colorSelect2[] = {1,0.5,0,1};
-     colorSelectBackground[] = {0.6,0.6,0.6,1};
-     colorSelectBackground2[] = {0.2,0.2,0.2,1};
-     colorBackground[] = {0.2,0.2,0.2,0.9};
-     maxHistoryDelay = 1.0;
-     soundSelect[] = {"",0.1,1};
-     period = 1;
-     autoScrollSpeed = -1;
-     autoScrollDelay = 5;
-     autoScrollRewind = 0;
-     arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
-     arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
-     shadow = 0;
-     class ListScrollBar// : ScrollBar //ListScrollBar is class name required for Arma 3
-     {
-          color[] = {1,1,1,0.6};
-          colorActive[] = {1,1,1,1};
-          colorDisabled[] = {1,1,1,0.3};
-          thumb = "#(argb,8,8,3)color(1,1,1,1)";
-          arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
-          arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
-          border = "#(argb,8,8,3)color(1,1,1,1)";
-          shadow = 0;
-     };
+	access = 0;
+	type = 5;
+	style = 0;
+	w = 0.4;
+	h = 0.4;
+	font = "TahomaB";
+	sizeEx = 0.04;
+	rowHeight = 0;
+	colorText[] = {1,1,1,1};
+	colorDisabled[] = {1,1,1,0.3};
+	colorScrollbar[] = {1,1,1,1};
+	colorSelect[] = {0,0,0,1};
+	colorSelect2[] = {1,0.5,0,1};
+	colorSelectBackground[] = {0.6,0.6,0.6,1};
+	colorSelectBackground2[] = {0.2,0.2,0.2,1};
+	colorBackground[] = {0.2,0.2,0.2,0.9};
+	maxHistoryDelay = 1.0;
+	soundSelect[] = {"",0.1,1};
+	period = 1;
+	autoScrollSpeed = -1;
+	autoScrollDelay = 5;
+	autoScrollRewind = 0;
+	arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
+	arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
+	shadow = 0;
+	class ListScrollBar// : ScrollBar //ListScrollBar is class name required for Arma 3
+	{
+	color[] = {1,1,1,0.6};
+	colorActive[] = {1,1,1,1};
+	colorDisabled[] = {1,1,1,0.3};
+	thumb = "#(argb,8,8,3)color(1,1,1,1)";
+	arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
+	arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
+	border = "#(argb,8,8,3)color(1,1,1,1)";
+	shadow = 0;
+	};
+};
+class RscEdit
+{
+	deletable = 0;
+	fade = 0;
+	access = 0;
+	type = 2;
+	x = 0;
+	y = 0;
+	h = 0.04;
+	w = 0.2;
+	colorBackground[] = 
+	{
+		0,
+		0,
+		0,
+		0
+	};
+	colorText[] = 
+	{
+		0.95,
+		0.95,
+		0.95,
+		1
+	};
+	colorDisabled[] = 
+	{
+		1,
+		1,
+		1,
+		0.25
+	};
+	colorSelection[] = 
+	{
+		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.13])",
+		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.54])",
+		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.21])",
+		1
+	};
+	autocomplete = "";
+	text = "";
+	size = 0.2;
+	style = "0x00 + 0x40";
+	font = "RobotoCondensed";
+	shadow = 2;
+	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	canModify = 1;
+	tooltipColorText[] = 
+	{
+		1,
+		1,
+		1,
+		1
+	};
+	tooltipColorBox[] = 
+	{
+		1,
+		1,
+		1,
+		1
+	};
+	tooltipColorShade[] = 
+	{
+		0,
+		0,
+		0,
+		0.65
+	};
+};
+class RscListBoxMandoWorkshop
+{
+	access = 0;
+	type = 5;
+	style = 0;
+	w = 0.4;
+	h = 0.4;
+	font = "RobotoCondensedBold";
+	sizeEx = 0.04;
+	rowHeight = 0;
+	colorDisabled[] = {1,1,1,0.3};
+	colorText[] = {1,1,1,1};
+	colorScrollbar[] = {1,1,1,1};
+	colorSelect[] = {0,0,0,1};
+	colorSelect2[] = {1,0.5,0,1};
+	colorSelectBackground[] = {0.6,0.6,0.6,1};
+	colorSelectBackground2[] = {0.2,0.2,0.2,1};
+	colorBackground[] = {0.2,0.2,0.2,0.9};
+	maxHistoryDelay = 1.0;
+	soundSelect[] = {"",0.1,1};
+	period = 1;
+	autoScrollSpeed = -1;
+	autoScrollDelay = 5;
+	autoScrollRewind = 0;
+	arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
+	arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
+	shadow = 0;
+	class ListScrollBar// : ScrollBar //ListScrollBar is class name required for Arma 3
+	{
+	  color[] = {1,1,1,0.6};
+	  colorActive[] = {1,1,1,1};
+	  colorDisabled[] = {1,1,1,0.3};
+	  thumb = "#(argb,8,8,3)color(1,1,1,1)";
+	  arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
+	  arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
+	  border = "#(argb,8,8,3)color(1,1,1,1)";
+	  shadow = 0;
+	};
 };
 class headerBase
 {

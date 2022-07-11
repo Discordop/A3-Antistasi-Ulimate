@@ -3,6 +3,7 @@
 // Whether order should be maintained is unknown.
 #include "..\defines.hpp"
 #include "..\UI\commanderMenu.hpp"
+#include "..\UI\workshop.hpp"
 #include "..\UI\playerMenu.hpp"
 #include "..\UI\menu.hpp"
 #include "..\Garage\Dialogs.hpp"
