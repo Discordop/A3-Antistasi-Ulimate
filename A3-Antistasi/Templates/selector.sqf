@@ -18,7 +18,7 @@ tropicalMaps = ["tanoa", "cam_lao_nam", "vn_khe_sanh", "rhspkl", "lingor3"]; //g
 
 private _winterMaps = ["chernarus_winter", "winthera3", "napfwinter"];
 
-private _temperateMaps = ["panthera3", "enoch", "vt7", "cup_chernarus_a3", "napf", "abramia", "taviana", "gm_weferlingen_summer", "blud_vidda", "tembelan", "sara", "optre_madrigal", "kapaulio"];
+private _temperateMaps = ["panthera3", "enoch", "vt7", "cup_chernarus_a3", "napf", "abramia", "taviana", "gm_weferlingen_summer", "blud_vidda", "tembelan", "sara", "optre_madrigal", "kapaulio", "chernarus", "chernarus_summer"];
 //Mod selector
 
 private _terrainName = toLower worldName;
