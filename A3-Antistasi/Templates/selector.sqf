@@ -16,7 +16,7 @@ private _aridMaps = ["altis", "takistan", "tem_anizay", "kunduz", "malden"];
 
 tropicalMaps = ["tanoa", "cam_lao_nam", "vn_khe_sanh", "rhspkl", "lingor3"]; //global because used by QRF code
 
-private _winterMaps = ["chernarus_winter", "winthera3", "napfwinter"];
+private _winterMaps = ["chernarus_winter", "winthera3", "napfwinter", "gm_weferlingen_winter"];
 
 private _temperateMaps = ["panthera3", "enoch", "vt7", "cup_chernarus_a3", "napf", "abramia", "taviana", "gm_weferlingen_summer", "blud_vidda", "tembelan", "sara", "optre_madrigal", "kapaulio", "chernarus", "chernarus_summer"];
 //Mod selector
