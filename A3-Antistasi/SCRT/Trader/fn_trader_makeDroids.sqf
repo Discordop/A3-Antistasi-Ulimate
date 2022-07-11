@@ -29,7 +29,7 @@ if (player == player) then {
 
 			if (_result) then {
 				if (finite _input && _input >= 1) then {
-					["Mandalorian Workshop", "Order Has Been Approved."] remoteExec ["A3A_fnc_customHint", 0, false];
+					["Mandalorian Workshop", "Order Has Been Approved."] call A3A_fnc_customHint;
 					{
 						if (_x == "CW_DroidParts" && {_x == "CW_DroidParts"} count magazines player != _scrap - _partsRequired) then {
 							player removeMagazine _x;
@@ -42,18 +42,18 @@ if (player == player) then {
 					};
 					
 				} else {
-					["Mandalorian Workshop", "Shipment amount has to be over 1."] remoteExec ["A3A_fnc_customHint", 0, false];
+					["Mandalorian Workshop", "Shipment amount has to be over 1."] call A3A_fnc_customHint;
 				};
 			} else {
-				["Mandalorian Workshop", "Order Has Been Cancelled."] remoteExec ["A3A_fnc_customHint", 0, false];
+				["Mandalorian Workshop", "Order Has Been Cancelled."] call A3A_fnc_customHint;
 			};
 		};
 	} else {
-		["Mandalorian Workshop", "You do not have enough droid scrap in your inventory."] remoteExec ["A3A_fnc_customHint", 0, false];
+		["Mandalorian Workshop", "You do not have enough droid scrap in your inventory."] call A3A_fnc_customHint;
 	};
 	/*
 	if (player != theBoss) then {
-		["Mandalorian Workshop - ignore this one, is debug", "Clan funds not deducted. Your personal money was taken as you're not the commander role."] remoteExec ["A3A_fnc_customHint", 0, false];
+		["Mandalorian Workshop - ignore this one, is debug", "Clan funds not deducted. Your personal money was taken as you're not the commander role."] call A3A_fnc_customHint;
 	};
 	*/
 };
