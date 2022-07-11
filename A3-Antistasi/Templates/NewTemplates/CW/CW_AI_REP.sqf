@@ -96,7 +96,7 @@
 ["vehiclesFuelTrucks", ["442_argon_fuel"]] call _fnc_saveToTemplate;	
 ["vehiclesMedical", ["442_argon_medical"]] call _fnc_saveToTemplate;	
 ["vehiclesAPCs", ["3as_saber_m1", "3as_RTT", "3as_RTT", "3as_saber_m1G"]] call _fnc_saveToTemplate; 		
-["vehiclesTanks", ["3AS_ATJT_Base","3as_UTAT", "3as_saber_super"]] call _fnc_saveToTemplate; 	
+["vehiclesTanks", ["3AS_ATJT_Base", "3as_saber_super"]] call _fnc_saveToTemplate; 	
 ["vehiclesAA", ["3as_saber_m1Recon"]] call _fnc_saveToTemplate; 		
 ["vehiclesLightAPCs", []] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
