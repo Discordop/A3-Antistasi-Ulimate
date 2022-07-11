@@ -131,7 +131,7 @@
 
 ["staticMGs", ["3AS_HeavyRepeater_Unarmoured"]] call _fnc_saveToTemplate;
 ["staticAT", ["3as_ParticleCannon"]] call _fnc_saveToTemplate;
-["staticAA", ["B_static_AA_F"]] call _fnc_saveToTemplate;
+["staticAA", ["AA_Turret"]] call _fnc_saveToTemplate;
 ["staticMortars", ["3AS_Republic_Mortar"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["not_supported"]] call _fnc_saveToTemplate;
 
