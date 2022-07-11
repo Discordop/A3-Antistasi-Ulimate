@@ -56,9 +56,10 @@ private _allExceptNVs = _weapons + _explosives + _backpacks + _items + _optics +
 		private _categories = _item call A3A_fnc_equipmentClassToCategories;
 		if ("MissileLaunchers" in _categories && {allowGuidedLaunchers == 0}) exitWith {};
 		if ("Explosives" in _categories) exitWith {};
+		if (_item == "CW_DroidParts") exitWith {};
 		if ("Backpacks" in _categories && {_item in allBackpacksTool}) exitWith {};			// should be UAV & static backpacks
 		if ("StaticWeaponParts" in _categories) exitWith {};
-
+		
 		_item call A3A_fnc_unlockEquipment;
 
 		private _name = switch (true) do {
