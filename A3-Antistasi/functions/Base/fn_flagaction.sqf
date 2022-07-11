@@ -24,6 +24,19 @@ switch _typeX do
     case "mission":
     {
         petros addAction ["Mission Request", {CreateDialog "missionMenu";},nil,0,false,true,"","(isPlayer _this) and (vehicle _this == _this) and (_this == _this getVariable ['owner',objNull]) and (_this call A3A_fnc_isMember) and (petros == leader group petros)",4];
+        if (A3A_hasCW) then {
+			petros addAction [
+				"Mandalorian Workshop", 
+				{call SCRT_fnc_trader_tryOpenMandoWorkshopMenu},
+				nil,
+				5,
+				false,
+				true,
+				"",
+				"(isPlayer _this) and (vehicle _this == _this) and (_this == _this getVariable ['owner',objNull])",
+				3
+			];
+        };
         petros addAction ["HQ Management", {
             closeDialog 0;
 		    closeDialog 0;
