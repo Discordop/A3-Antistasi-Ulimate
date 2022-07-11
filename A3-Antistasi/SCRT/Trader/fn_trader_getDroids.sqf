@@ -5,9 +5,9 @@ unitArray =
 	"JLTS_Droid_B1_Training_AR",
 	"JLTS_Droid_B1_Training_E5",
 	"JLTS_Droid_B1_Training_Sniper",
+	"3AS_CIS_B2_F",
 	"lsd_cis_bxAssassin_specops",
 	"lsd_cis_bxDiplomat_specops",
-	"lsd_cis_bxP2Trooper_specops",
 	"CWDependencies_Mando_Droid"
 ];
 
@@ -33,11 +33,13 @@ _script = [] spawn {
 	{
 		_index = lbCurSel 7100;
 		_droidType = lbData [7100, _index];
+		_scrap = {_x == "CW_DroidParts"} count magazines player;
 		_input = parseNumber ctrlText 7700;
 		
 		switch (_droidType) do
 		{
 			case "3AS_CIS_TS_F": {moneyRequired = 0, partsRequired = 5, droidDescription = "T-Series Droid, Not very useful in fights."};
+			case "3AS_CIS_B2_F": {moneyRequired = 0, partsRequired = 15, droidDescription = "WATCH THOSE WRIST ROCKETS!"};
 			case "JLTS_Droid_B1_Training_AR": {moneyRequired = 0, partsRequired = 6, droidDescription = "standard B1 Droid, programmed to use a heavy gun."};
 			case "JLTS_Droid_B1_Training_E5": {moneyRequired = 0, partsRequired = 3, droidDescription = "This is the standard for a B1 Droid. It works... ish."};
 			case "JLTS_Droid_B1_Training_Sniper": {moneyRequired = 0, partsRequired = 6, droidDescription = "A deadly shot... sometimes!"};
@@ -56,6 +58,7 @@ _script = [] spawn {
 		};
 		*/
 		ctrlSetText [7500, format["%1 | Parts Required: %2", droidDescription, partsRequired] ];
+		ctrlSetText [8300, format["%1", _scrap] ];
 		sleep 0.1;
 	};
 

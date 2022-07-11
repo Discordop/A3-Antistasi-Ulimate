@@ -24,7 +24,7 @@ class droidProduction
 			y = 0.291 * safezoneH + safezoneY;
 			w = 0.0771668 * safezoneW;
 			h = 0.231 * safezoneH;
-			sizeEx = 0.7 * GUI_GRID_H;
+			sizeEx = 0.8 * GUI_GRID_H;
 		};
 		class DroidProduction_ListWeapons: RscListboxMandoWorkshop
 		{
@@ -33,7 +33,7 @@ class droidProduction
 			y = 0.291 * safezoneH + safezoneY;
 			w = 0.0771668 * safezoneW;
 			h = 0.231 * safezoneH;
-			sizeEx = 0.7 * GUI_GRID_H;
+			sizeEx = 0.8 * GUI_GRID_H;
 		};
 		class DroidProduction_Image: RscPictureMandoWorkshop
 		{
@@ -100,11 +100,45 @@ class droidProduction
 			idc = 7700;
 
 			text = "1"; //--- ToDo: Localize;
+			x = 0.3611 * safezoneW + safezoneX;
+			y = 0.654 * safezoneH + safezoneY;
+			w = 0.128611 * safezoneW;
+			h = 0.044 * safezoneH;
+			colorBackground[] = {0.3,0.3,0.3,1};
+		};
+		class DroidProduction_PartsOnPerson: RscTextMandoWorkshop
+		{
+			idc = 8200;
+			text = "Parts In Inventory:"; //--- ToDo: Localize;
+			x = 0.505144 * safezoneW + safezoneX;
+			y = 0.588 * safezoneH + safezoneY;
+			w = 0.0823112 * safezoneW;
+			h = 0.066 * safezoneH;
+			colorBackground[] = {0.25,0.25,0.25,1};
+			colorActive[] = {0.25,0.25,0.25,0.25};
+			sizeEx = 1.4 * GUI_GRID_H;
+		};
+		class DroidProduction_PartsOnPersonText: RscTextMandoWorkshop
+		{
+			idc = 8300;
+			text = "0"; //--- ToDo: Localize;
+			x = 0.587456 * safezoneW + safezoneX;
+			y = 0.588 * safezoneH + safezoneY;
+			w = 0.0205778 * safezoneW;
+			h = 0.066 * safezoneH;
+			colorBackground[] = {0.25,0.25,0.25,1};
+			sizeEx = 1.5 * GUI_GRID_H;
+		};
+		class DroidProduction_ShipmentAmountText: RscText
+		{
+			idc = 8100;
+			text = "Amount:"; //--- ToDo: Localize;
 			x = 0.304511 * safezoneW + safezoneX;
 			y = 0.654 * safezoneH + safezoneY;
-			w = 0.1852 * safezoneW;
-			h = 0.055 * safezoneH;
+			w = 0.056589 * safezoneW;
+			h = 0.044 * safezoneH;
 			colorBackground[] = {0.25,0.25,0.25,1};
+			sizeEx = 1.4 * GUI_GRID_H;
 		};
 		class DroidProduction_OrderNow: RscButton
 		{
