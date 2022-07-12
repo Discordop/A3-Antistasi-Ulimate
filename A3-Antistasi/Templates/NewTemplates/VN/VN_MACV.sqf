@@ -101,14 +101,14 @@
 
 ["vehiclesBasic", ["vn_b_wheeled_m151_01"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["vn_b_wheeled_m151_01","vn_b_wheeled_m151_02"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed",["vn_b_wheeled_m151_mg_02","vn_b_wheeled_m151_mg_03","vn_b_wheeled_m151_mg_04","vn_b_wheeled_m151_mg_05"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed",["vn_b_wheeled_m151_mg_02","vn_b_wheeled_m151_mg_03","vn_b_wheeled_m151_mg_04","vn_b_wheeled_m151_mg_05", "vn_b_wheeled_m54_mg_03","vn_b_wheeled_m54_mg_01"]] call _fnc_saveToTemplate;
 ["vehiclesTrucks", ["vn_b_wheeled_m54_01","vn_b_wheeled_m54_02"]] call _fnc_saveToTemplate;
 ["vehiclesCargoTrucks", []] call _fnc_saveToTemplate;
 ["vehiclesAmmoTrucks", ["vn_b_wheeled_m54_ammo"]] call _fnc_saveToTemplate;
 ["vehiclesRepairTrucks", ["vn_b_wheeled_m54_repair"]] call _fnc_saveToTemplate;
 ["vehiclesFuelTrucks", ["vn_b_wheeled_m54_fuel"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["vn_b_wheeled_m54_02_sog"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["vn_b_wheeled_m54_mg_03","vn_b_wheeled_m54_mg_01"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["vn_b_armor_m113_acav_01","vn_b_armor_m113_acav_02","vn_b_armor_m113_acav_03","vn_b_armor_m113_acav_04","vn_b_armor_m113_acav_05","vn_b_armor_m113_acav_06"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["vn_b_armor_m41_01_02"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["vn_b_wheeled_m54_mg_02"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", []] call _fnc_saveToTemplate;			//this line determines light APCs
@@ -116,12 +116,12 @@
 
 ["vehiclesSam", ["",""]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
-["vehiclesTransportBoats", ["vn_o_boat_02_01"]] call _fnc_saveToTemplate;
-["vehiclesGunBoats", ["vn_b_boat_06_02","vn_b_boat_05_02"]] call _fnc_saveToTemplate;
+["vehiclesTransportBoats", ["vn_b_boat_09_01"]] call _fnc_saveToTemplate;
+["vehiclesGunBoats", ["vn_b_boat_06_02","vn_b_boat_05_02","vn_b_boat_10_01","vn_b_boat_12_04","vn_b_boat_11_01","vn_b_boat_12_03", "vn_b_boat_13_04","vn_b_boat_13_03"]] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", []] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["vn_b_air_f4c_hcas"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["vn_b_air_f4c_cap"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["vn_b_air_f4c_hcas","vn_b_air_f100d_cas"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["vn_b_air_f4c_cap","vn_b_air_f100d_cap"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["vn_b_air_ch34_01_01"]] call _fnc_saveToTemplate;
@@ -141,7 +141,7 @@
 ["vehiclesMilitiaLightArmed", ["vn_i_wheeled_m151_mg_01_mp"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTrucks", ["vn_b_wheeled_m54_02_sog"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaCars", ["vn_i_wheeled_m151_01_mp"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaApcs", ["vn_b_wheeled_m54_mg_03","vn_b_wheeled_m54_mg_01"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaApcs", ["vn_b_armor_m113_01","vn_b_wheeled_m54_mg_03","vn_b_wheeled_m54_mg_01"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTanks", ["vn_b_armor_m41_01_02"]] call _fnc_saveToTemplate;
 
 ["vehiclesPolice", ["vn_b_wheeled_m151_02_mp", "vn_b_wheeled_m151_01_mp"]] call _fnc_saveToTemplate;

@@ -108,7 +108,7 @@
 ["vehiclesFuelTrucks", ["vn_o_wheeled_z157_fuel"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["vn_o_wheeled_btr40_02"]] call _fnc_saveToTemplate;
 ["vehiclesAPCs", ["vn_o_wheeled_btr40_mg_02"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["vn_o_armor_type63_01", "vn_o_armor_m41_01"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["vn_o_armor_type63_01", "vn_o_armor_m41_01", "vn_o_armor_pt76a_01_nva65", "vn_o_armor_pt76a_01", "vn_o_armor_pt76b_01", "vn_o_armor_type63_01_nva65"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["vn_o_wheeled_btr40_mg_03","vn_o_wheeled_z157_mg_02"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", []] call _fnc_saveToTemplate;			//this line determines light APCs
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;				//this line determines IFVs
@@ -119,8 +119,8 @@
 ["vehiclesGunBoats", ["vn_o_boat_04_02"]] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", []] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["vn_o_air_mi2_04_04"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["vn_o_air_mi2_05_06"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["vn_o_air_mig19_cas"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["vn_o_air_mig19_cap"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["vn_o_air_mi2_01_03"]] call _fnc_saveToTemplate;

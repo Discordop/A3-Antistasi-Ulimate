@@ -108,7 +108,7 @@
 ["vehiclesRepairTrucks", ["vn_b_wheeled_m54_repair"]] call _fnc_saveToTemplate;
 ["vehiclesFuelTrucks", ["vn_b_wheeled_m54_fuel"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["vn_b_wheeled_m54_02_sog"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["uns_xm706e1", "uns_xm706e2"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["uns_xm706e1", "uns_xm706e2","vn_b_armor_m113_acav_01","vn_b_armor_m113_acav_02","vn_b_armor_m113_acav_03","vn_b_armor_m113_acav_04","vn_b_armor_m113_acav_05","vn_b_armor_m113_acav_06"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["uns_m48a3", "uns_M67A", "vn_b_armor_m41_01_02"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["uns_m163","vn_b_wheeled_m54_mg_02"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", []] call _fnc_saveToTemplate;			//this line determines light APCs
@@ -117,7 +117,7 @@
 ["vehiclesSam", ["",""]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
 
 ["vehiclesTransportBoats", ["vn_o_boat_02_01"]] call _fnc_saveToTemplate;
-["vehiclesGunBoats", ["vn_b_boat_06_02","vn_b_boat_05_02","uns_pbr_mk18", "uns_pbr", "uns_PBR_M10"]] call _fnc_saveToTemplate;
+["vehiclesGunBoats", ["vn_b_boat_06_02","vn_b_boat_05_02","uns_pbr_mk18", "uns_pbr", "uns_PBR_M10","vn_b_boat_10_01","vn_b_boat_12_04","vn_b_boat_11_01","vn_b_boat_12_03", "vn_b_boat_13_04","vn_b_boat_13_03"]] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", []] call _fnc_saveToTemplate;
 
 ["vehiclesPlanesCAS", ["vn_b_air_f4c_hcas", "uns_A4E_skyhawk_CAS", "uns_A6_Intruder_CAS", "uns_A7N_CAS"]] call _fnc_saveToTemplate;
@@ -141,7 +141,7 @@
 ["vehiclesMilitiaLightArmed", ["vn_i_wheeled_m151_mg_01_mp"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTrucks", ["vn_b_wheeled_m54_02_sog"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaCars", ["vn_i_wheeled_m151_01_mp"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaApcs", ["vn_b_wheeled_m54_mg_03","vn_b_wheeled_m54_mg_01"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaApcs", ["vn_b_armor_m113_01","vn_b_wheeled_m54_mg_03","vn_b_wheeled_m54_mg_01"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTanks", ["uns_m551"]] call _fnc_saveToTemplate;
 
 ["vehiclesPolice", ["vn_b_wheeled_m151_02_mp", "vn_b_wheeled_m151_01_mp"]] call _fnc_saveToTemplate;

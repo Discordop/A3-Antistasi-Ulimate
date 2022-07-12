@@ -81,6 +81,14 @@ if (_type == "CAS") then
             _plane setVariable ["mainGun", "vn_ns23_v_01"];
             _plane setVariable ["rocketLauncher", ["vn_rocket_s5_heat_launcher"]];
         };
+        case "vn_b_air_f100d_cas":
+        {
+            _loadout = ["vn_rocket_ffar_f4_lau3_m151_he_x19","vn_rocket_ffar_f4_lau3_m156_wp_x19","vn_bomb_750_m117_he_mag_x1","vn_bomb_750_blu1b_fb_mag_x1","vn_missile_agm45_03_mag_x1","vn_missile_agm12c_mag_01_x1"];
+        };
+        case "vn_o_air_mig19_cas":
+        {
+            _loadout = ["vn_rocket_s5_he_x16","vn_rocket_s5_heat_x16","vn_bomb_1000_fab500_he_mag_x1","vn_bomb_1000_fab500_he_mag_x1"];
+        };
         case "RHSGREF_A29B_HIDF":
         {
             _loadout = ["rhs_mag_AGM114K_2_plane","rhs_mag_FFAR_7_USAF","rhs_mag_mk82","rhs_mag_FFAR_7_USAF","rhs_mag_AGM114N_2_plane","rhsusf_ANALE40_CMFlare_Chaff_Magazine_x2"];
@@ -248,6 +256,14 @@ if (_type == "AA") then
         case "vn_b_air_f4c_cap":
         {
             _loadout = ["vn_fuel_f4_370_mag","vn_fuel_f4_370_mag","","","vn_fuel_f4_600_mag","vn_missile_f4_lau7_aim9e_mag_x2","vn_missile_f4_lau7_aim9e_mag_x2","vn_missile_aim7e2_mag_x1","vn_missile_aim7e2_mag_x1","vn_missile_aim7e2_mag_x1","vn_missile_aim7e2_mag_x1"];
+        };
+        case "vn_b_air_f100d_cap":
+        {
+            _loadout = ["vn_rocket_ffar_f4_lau59_m151_he_x7","vn_rocket_ffar_f4_lau59_m156_wp_x7","vn_fuel_f100_335_mag","vn_fuel_f100_335_mag","vn_missile_f100_lau7_aim9e_mag_x2","vn_missile_f100_lau7_aim9e_mag_x2"];
+        };
+        case "vn_o_air_mig19_cap":
+        {
+            _loadout = ["vn_missile_mig19_01_aa2_mag_x1","vn_missile_mig19_01_aa2_mag_x1","vn_missile_mig19_01_aa2_mag_x1","vn_missile_mig19_01_aa2_mag_x1"];
         };
         case "vn_o_air_mi2_05_06":
         {
