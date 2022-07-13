@@ -141,11 +141,17 @@ if (gameMode == 1) then
 		};
 		case "cup_chernarus_a3": {
 			_mrkCSAT = ["airport_3","outpost_24","outpost_20", "outpost_23", "outpost_20","seaport_5","control_143", "control_144", "control_145", "control_149", "control_147","control_169", "control_165", "control_138", "control_137", "control_158"];
-                        _controlsCSAT = ["control_143", "control_144", "control_145", "control_149", "control_147","control_169", "control_165", "control_138", "control_137", "control_158"];
+            _controlsCSAT = ["control_143", "control_144", "control_145", "control_149", "control_147","control_169", "control_165", "control_138", "control_137", "control_158"];
+		};
+		case "chernarus": {
+			_mrkCSAT = ["outpost_21"];
+		};
+		case "chernarus_summer": {
+			_mrkCSAT = ["outpost_21"];
 		};
 		case "chernarus_winter": {
-			_mrkCSAT = ["airport_3","outpost_24","outpost_20", "outpost_23", "outpost_20","seaport_5","control_143", "control_144", "control_145", "control_149", "control_147","control_169", "control_165", "control_138", "control_137", "control_158"];
-                        _controlsCSAT = ["control_143", "control_144", "control_145", "control_149", "control_147","control_169", "control_165", "control_138", "control_137", "control_158"];
+			_mrkCSAT = ["outpost_21", "control_30"];
+			_controlsCSAT = ["control_30"];
 		};
 		case "tem_anizay": {
 			_mrkCSAT = ["outpost_8", "factory_4", "resource_7", "outpost_7", "resource_8", "factory_3"];
