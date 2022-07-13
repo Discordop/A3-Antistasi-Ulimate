@@ -12,7 +12,7 @@ class CfgDiscordRichPresence
     applicationID="884134734874165378";
     defaultDetails="";
     defaultState="";
-    defaultLargeImageKey="takistan";
+    defaultLargeImageKey="kunduz_big_picture";
     defaultLargeImageText="Antistasi Ultimate - Kunduz";
     defaultSmallImageKey="arma_3_logo";
     defaultSmallImageText="Arma 3 Custom Scenario";
