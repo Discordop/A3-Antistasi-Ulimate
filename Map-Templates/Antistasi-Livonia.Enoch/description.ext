@@ -9,7 +9,7 @@ overviewPicture = "Pictures\Mission\pic.jpg";
 
 class CfgDiscordRichPresence 
 {
-    applicationID="819852407265034260";
+    applicationID="884134734874165378";
     defaultDetails="";
     defaultState="";
     defaultLargeImageKey="livonia";
