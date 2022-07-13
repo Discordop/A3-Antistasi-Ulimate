@@ -27,7 +27,7 @@ class EditorData
 	};
 };
 binarizationWanted=0;
-sourceName="Antistasi-ChernarusWinter";
+sourceName="Antistasi-Chernarus";
 addons[]=
 {
 	"A3_Ui_F",
@@ -197,7 +197,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Antistasi Ultimate - Winter Warfare";
+		briefingName="Antistasi Ultimate - Harvest Green";
 		resistanceWest=0;
 		startWind=0.1;
 		forecastWind=0.1;
