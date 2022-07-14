@@ -17,6 +17,27 @@ A3A_logistics_vehicleHardpoints = [
 		[1,[0.01,-1.5,-0.9],[]],
 		[1,[0.01,-2.3,-0.9],[]]]],
 
+    ["C_Quadbike_01_F" call A3A_fnc_classNameToModel, [
+        // always 1,    location                locked seats
+        [1,             [0,-0.9,-0.453],          [0]]
+    ]],
+
+    //4x4s
+    //Offroad
+    ["C_Offroad_01_F" call A3A_fnc_classNameToModel, [
+        // always 1,    location                locked seats
+        [1,             [-0.05,-1.3,-0.683],     [3,4]],
+        [1,             [-0.05,-2.3,-0.683],     [1,2]]
+    ]],
+
+        //Small Truck
+    ["C_Van_01_transport_F" call A3A_fnc_classNameToModel, [
+        [1,             [0,-0.7475,-0.615],      [2,3,4,5]],
+        [1,             [0,-1.4375,-0.615],      [6,7]],
+        [1,             [0,-2.2,-0.615],         [8,9]],
+        [1,             [0,-3,-0.615],           [10,11]]
+        ]],
+
         //Van Transport
     ["C_Van_02_transport_F" call A3A_fnc_classNameToModel, [
         [1,             [0,-1.245,-0.921],       []],
@@ -120,9 +141,10 @@ A3A_logistics_vehicleHardpoints = [
 
     //Boats
     //Motorboat civilian
-	["OPTRE_Vehicles\catfish\optre_catfish",[
-		[1,[0.25,-1.5,-0.45],[]],
-		[1,[0.25,-2.3,-0.45],[]]]],
+    ["C_Boat_Civil_01_F" call A3A_fnc_classNameToModel, [
+        [1,             [0,-0.9425,-1.026],       [0,1]],
+        [1,             [0,-1.5725,-1.026],       []]
+    ]],
 
     //Speedboat minigun
     ["B_Boat_Armed_01_minigun_F" call A3A_fnc_classNameToModel, [

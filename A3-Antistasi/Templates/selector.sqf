@@ -568,6 +568,11 @@ A3A_Civ_template = switch(true) do {
         [2, "Using Clone Wars Civ Template", _filename] call A3A_fnc_log;
         "CW"
     };
+    case (A3A_hasHalo): {
+        ["Templates\NewTemplates\Halo\Halo_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using Halo CIV Template", _filename] call A3A_fnc_log;
+		"Halo"
+    };
     case (A3A_hasIFA): {
         ["Templates\NewTemplates\IFA\IFA_Civ.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using IFA CIV Template", _filename] call A3A_fnc_log;
