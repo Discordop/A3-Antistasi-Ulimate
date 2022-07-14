@@ -248,6 +248,13 @@ switch (toLower worldName) do {
 		configClasses (configfile >> "CfgWorlds" >> worldName >> "Names");
 	};
 	
+	case "optre_madrigal": {
+		_cityConfigs = "(getText (_x >> ""type"") in [""NameLocal"", ""NameCityCapital"", ""NameCity"", ""NameVillage"", ""CityCenter""]) &&
+		!(getText (_x >> ""Name"") isEqualTo """") &&
+		!((configName _x) in [""Airbase"", ""Castilla_Facility"", ""Cstport"", ""Enix_Relay"", ""Factory_1"", ""Factory_2"", ""Fort_Romeo"", ""Gladius_Academy"", ""Laredo_Base"", ""Mines"", ""Sierra_Outpost"", ""Space_Port"", ""Victor_Outpost""])"
+		configClasses (configfile >> "CfgWorlds" >> worldName >> "Names");
+	};	
+
 	default {
 		_cityConfigs = "(getText (_x >> ""type"") in [""NameCityCapital"", ""NameCity"", ""NameVillage"", ""CityCenter""]) &&
 		!(getText (_x >> ""Name"") isEqualTo """") &&
