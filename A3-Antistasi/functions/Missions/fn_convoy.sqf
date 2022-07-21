@@ -1,7 +1,6 @@
 //Mission: Capture/destroy the convoy
 if (!isServer and hasInterface) exitWith {};
 params ["_mrkDest", "_mrkOrigin", ["_convoyType", ""], ["_startDelay", -1], ["_visible", false]];
-
 private _fileName = "fn_convoy";
 
 private _difficult = if (random 10 < tierWar) then {true} else {false};
