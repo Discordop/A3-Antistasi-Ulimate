@@ -233,7 +233,7 @@ A3A_Occ_template = switch(true) do {
     case (A3A_hasSwe): {
         switch(true) do {
             case (_terrainName in _winterMaps): {
-                ["Templates\NewTemplates\IFA\IFA_AI_SweAF_Winter.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+                ["Templates\NewTemplates\Swe\Swe_AI_SweAF_Winter.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using Swedish Forces Pack Winter Template", _filename] call A3A_fnc_log;
             };
             default {
