@@ -1,8 +1,8 @@
 #include "MissionDescription\master.hpp"
 
-OnLoadName = $STR_antistasi_mission_info_sahrani_mapname_short_text;
+OnLoadName = "Antistasi Ultimate - Sahrani Struggle";
 OnLoadMission = $STR_antistasi_mission_info_sahrani_blurb_text;
-briefingName = $STR_antistasi_mission_info_sahrani_mapname_text;
+briefingName = "Antistasi Ultimate - Sahrani Struggle";
 overviewText = $STR_antistasi_mission_info_sahrani_description_text;
 loadScreen = "Pictures\Mission\pic.jpg";
 overviewPicture = "Pictures\Mission\pic.jpg";
@@ -13,7 +13,7 @@ class CfgDiscordRichPresence
     defaultDetails="";
     defaultState="";
     defaultLargeImageKey="tanoa";
-    defaultLargeImageText="Antistasi Ultimate - Horizon Islands";
+    defaultLargeImageText="Antistasi Ultimate - Sahrani Struggle";
     defaultSmallImageKey="arma_3_logo";
     defaultSmallImageText="Arma 3 Custom Scenario";
     useTimeElapsed=1;

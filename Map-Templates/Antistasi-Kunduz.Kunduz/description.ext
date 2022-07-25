@@ -1,8 +1,8 @@
 #include "MissionDescription\master.hpp"
 
-OnLoadName = $STR_antistasi_mission_info_kunduz_mapname_short_text;
+OnLoadName = "Antistasi Ultimate - Kunduz";
 OnLoadMission = $STR_antistasi_mission_info_kunduz_blurb_text;
-briefingName = $STR_antistasi_mission_info_kunduz_mapname_text;
+briefingName = "Antistasi Ultimate - Kunduz";
 overviewText = $STR_antistasi_mission_info_kunduz_description_text;
 loadScreen = "Pictures\Mission\pic.jpg";
 overviewPicture = "Pictures\Mission\pic.jpg";

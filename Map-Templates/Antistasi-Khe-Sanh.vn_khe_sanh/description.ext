@@ -1,8 +1,8 @@
 #include "MissionDescription\master.hpp"
 
-OnLoadName = $STR_antistasi_mission_info_khesanh_mapname_short_text;
+OnLoadName = "Antistasi Ultimate - Siege of Khe Sanh";
 OnLoadMission = $STR_antistasi_mission_info_khesanh_blurb_text;
-briefingName = $STR_antistasi_mission_info_khesanh_mapname_text;
+briefingName = "Antistasi Ultimate - Siege of Khe Sanh";
 overviewText = $STR_antistasi_mission_info_altis_description_text;
 loadScreen = "Pictures\Mission\pic.jpg";
 overviewPicture = "Pictures\Mission\pic.jpg";

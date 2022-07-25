@@ -1,8 +1,8 @@
 #include "MissionDescription\master.hpp"
 
-OnLoadName = $STR_antistasi_mission_info_napf_mapname_short_text;
+OnLoadName = "Antistasi Ultimate - Napf";
 OnLoadMission = $STR_antistasi_mission_info_napf_blurb_text;
-briefingName = $STR_antistasi_mission_info_napf_mapname_text;
+briefingName = "Antistasi Ultimate - Napf";
 overviewText = $STR_antistasi_mission_info_altis_description_text;
 loadScreen = "Pictures\Mission\pic.jpg";
 overviewPicture = "Pictures\Mission\pic.jpg";
@@ -13,7 +13,7 @@ class CfgDiscordRichPresence
     defaultDetails="";
     defaultState="";
     defaultLargeImageKey="napf";
-    defaultLargeImageText="Antistasi Ultimate - Harvest Blue";
+    defaultLargeImageText="Antistasi Ultimate - Napf";
     defaultSmallImageKey="arma_3_logo";
     defaultSmallImageText="Arma 3 Custom Scenario";
     useTimeElapsed=1;

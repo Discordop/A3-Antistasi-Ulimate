@@ -1,8 +1,8 @@
 #include "MissionDescription\master.hpp"
 
-OnLoadName = $STR_antistasi_mission_info_Chernarus2020_mapname_short_text;
+OnLoadName = "Antistasi Ultimate - Tembelan Island";
 OnLoadMission = $STR_antistasi_mission_info_Chernarus2020_blurb_text;
-briefingName = $STR_antistasi_mission_info_Chernarus2020_mapname_text;
+briefingName = "Antistasi Ultimate - Tembelan Island";
 overviewText = $STR_antistasi_mission_info_altis_description_text;
 loadScreen = "Pictures\Mission\pic.jpg";
 overviewPicture = "Pictures\Mission\pic.jpg";
