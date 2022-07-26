@@ -1799,14 +1799,14 @@
     </Container>
     <Container name="credits_generic">
       <Key ID="STR_antistasi_credits_generic_author_text">
-        <Original>Socrates</Original>
-        <English>Socrates</English>
-        <French>La Socrates</French>
-        <German>Die Socrates</German>
-        <Russian>Socrates</Russian>
-        <Czech>Socrates</Czech>
-        <Korean>Socrates</Korean>
-        <Chinesesimp>Socrates</Chinesesimp>
+        <Original>Karl and Stutpip123</Original>
+        <English>Karl and Stutpip123</English>
+        <French>La Karl et Stutpip123</French>
+        <German>Die Karl und Stutpip123</German>
+        <Russian>Karl а также Stutpip123</Russian>
+        <Czech>Karl a Stutpip123</Czech>
+        <Korean>Karl 그리고 Stutpip123</Korean>
+        <Chinesesimp>Karl 和 Stutpip123</Chinesesimp>
       </Key>
       <Key ID="STR_antistasi_credits_generic_overview_text">
         <Original>Build FIA Army from scratch and defeat the AAF and CSAT forces in a whole map Dynamic Mission.</Original>
