@@ -33,6 +33,8 @@ A3A_hasEmp = false;
 A3A_hasBun = false;
 A3A_hasFFAA = false;
 A3A_hasPedagne = false;
+A3A_hasPLA = false;
+A3A_has3CBBAF = false;
 
 //Aegis submods
 private _activeAegis = false;
@@ -70,6 +72,19 @@ if (isClass (configFile >> "CfgFactionClasses" >> "JLTS_CIS") && isClass (config
   //[2,"JMs Empire Detected.",_fileName] call A3A_fnc_log;
 //};
 
+//3CB BAF Detection
+if (A3A_hasRHS && (
+  isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Weapons") &&
+  isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Vehicles") &&
+  isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Units_Common") &&
+  isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Equipment")
+) ) then {A3A_has3CBBAF = true; Info("3CB BAF Detected.") };
+
+//PLA Detection
+if (isClass (configFile >> "CfgPatches" >> "mas_chi_army") && isClass (configfile >> "CfgPatches" >> "ZBD04_LK")) then {
+  A3A_hasPLA = true;
+  [2,"PLA Mods Detected.",_fileName] call A3A_fnc_log;
+};
 
 //Halo Detection
 if (isClass (configFile >> "CfgFactionClasses" >> "OPTRE_UNSC")) then {
@@ -276,6 +291,13 @@ if (!A3A_hasCup && A3A_hasSwe) then {
 	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
 };
 
+if (!A3A_hasCup && A3A_hasPLA) then {
+	private _text = "PLA Mods detected but CUP is not loaded";
+  systemChat _text;
+  [1, _text, _fileName] call A3A_fnc_log;
+	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
+};
+
 if (!A3A_hasCup && A3A_hasPedagne) then {
 	private _text = "Pedagne detected but CUP is not loaded";
   systemChat _text;
@@ -305,5 +327,5 @@ if (!A3A_hasCW && A3A_hasEmp) then {
 };
 
 //No Mods found logging
-if (!A3A_hasRHS && !A3A_hasCup && !A3A_hasAegis && !A3A_hasIFA && !A3A_hasCW && !A3A_hasHalo && !A3A_hasSwe && !A3A_hasEmp && !A3A_hasBun && !A3A_hasFFAA && !A3A_hasPedagne) then {[2,"No Side Replacement Mods Detected.",_fileName] call A3A_fnc_log;};
+if (!A3A_hasRHS && !A3A_hasCup && !A3A_hasAegis && !A3A_hasIFA && !A3A_hasCW && !A3A_hasHalo && !A3A_hasSwe && !A3A_hasEmp && !A3A_hasBun && !A3A_hasFFAA && !A3A_hasPedagne && !A3A_hasPLA && !A3A_has3CBBAF) then {[2,"No Side Replacement Mods Detected.",_fileName] call A3A_fnc_log;};
 if (!A3A_hasIvory && !A3A_hasTCGM && !A3A_hasADV) then {[2,"No Addon Mods Detected.",_fileName] call A3A_fnc_log;};

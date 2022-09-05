@@ -156,6 +156,28 @@ A3A_Reb_template = switch(true) do {
 
 //Occ Templates
 A3A_Occ_template = switch(true) do {
+    case (A3A_has3CBBAF): {
+        switch(true) do {
+            case (toLower worldName in arcticmaps): {
+                Info("Using arctic BAF Template");
+                ["Templates\NewTemplates\3CBF\3CBBAF_AI_BAF_Arctic.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+            };
+            case (toLower worldName in temperatemaps): {
+
+                Info("Using temperate BAF Template");
+                ["Templates\NewTemplates\3CBF\3CBBAF_AI_BAF_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+            };
+            case (toLower worldName in tropicalmaps): {
+                Info("Using tropical BAF Template");
+                ["Templates\NewTemplates\3CBF\3CBBAF_AI_BAF_Tropical.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+            };
+            default {
+                Info("Using arid BAF Template");
+                ["Templates\NewTemplates\3CBF\3CBBAF_AI_BAF_Arid.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+            };
+        };
+        "3CBBAF"
+    };
     case (A3A_hasGlobMobAaf): {
         ["Templates\NewTemplates\GM\GMAAF_AI_AAF.sqf", west] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using GM AAF Template", _filename] call A3A_fnc_log;
@@ -415,6 +437,11 @@ A3A_Inv_template = switch(true) do{
             };
         };
         "RHS"
+    };
+    case (A3A_hasPLA): {
+        ["Templates\NewTemplates\PLA\PLA_AI_CHI_Temperate.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using PLA Template", _filename] call A3A_fnc_log;
+        "PLA"
     };
     case (A3A_hasCup): {
         switch(true) do {
