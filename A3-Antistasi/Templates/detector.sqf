@@ -73,12 +73,10 @@ if (isClass (configFile >> "CfgFactionClasses" >> "JLTS_CIS") && isClass (config
 //};
 
 //3CB BAF Detection
-if (A3A_hasRHS && (
-  isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Weapons") &&
-  isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Vehicles") &&
-  isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Units_Common") &&
-  isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Equipment")
-) ) then {A3A_has3CBBAF = true; Info("3CB BAF Detected.") };
+if (A3A_hasRHS && ( isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Weapons") && isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Vehicles") && isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Units_Common") && isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Equipment"))) then {
+  A3A_has3CBBAF = true; 
+  [2,"3CB BAF Detected.",_fileName] call A3A_fnc_log;
+};
 
 //PLA Detection
 if (isClass (configFile >> "CfgPatches" >> "mas_chi_army") && isClass (configfile >> "CfgPatches" >> "ZBD04_LK")) then {
