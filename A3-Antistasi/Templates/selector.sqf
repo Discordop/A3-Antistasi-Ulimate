@@ -646,6 +646,7 @@ A3A_LoadedContentAddons = A3A_LoadedContentAddons apply {toLower _x};
 call compileScript ["Templates\NewTemplates\Vanilla\Vanilla_Logistics_Nodes.sqf"];//Always call vanilla as it initialises the arrays.
 if (A3A_hasRHS) then {call compileScript ["Templates\NewTemplates\RHS\RHS_Logistics_Nodes.sqf"]};
 if (A3A_has3CBFactions) then {call compileScript ["Templates\NewTemplates\3CBF\3CBF_Logistics_Nodes.sqf"]};
+if (A3A_has3CBBAF) then {call compileScript ["Templates\NewTemplates\3CBF\3CBBAF_Logistics_Nodes.sqf"]};
 if (A3A_hasCup) then {call compileScript ["Templates\NewTemplates\CUP\Cup_Logistics_Nodes.sqf"];};
 if (A3A_hasAegis) then {call compileScript ["Templates\NewTemplates\Aegis\Aegis_Logistics_Nodes.sqf"];};
 if (A3A_hasIFA) then {call compileScript ["Templates\NewTemplates\IFA\IFA_Logistics_Nodes.sqf"];};

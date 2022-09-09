@@ -13,67 +13,67 @@
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 ["baseSoldiers", [ // Cases matter. Lower case here because allVariables on namespace returns lowercase
-	["militia_squadleader", "rhsusf_usmc_marpat_wd_squadleader"],
-	["militia_rifleman", "rhsusf_usmc_marpat_wd_rifleman"],
-	["militia_radioman", "rhsusf_usmc_marpat_wd_rifleman"],
-	["militia_medic", "rhsusf_army_ucp_medic"],
-	["militia_engineer", "rhsusf_usmc_marpat_wd_engineer"],
-	["militia_explosivesexpert", "rhsusf_army_ucp_explosives"],
-	["militia_grenadier", "rhsusf_usmc_marpat_wd_grenadier"],
-	["militia_lat", "rhsusf_army_ucp_maaws"],
-	["militia_at", "rhsusf_army_ucp_maaws"],
-	["militia_aa", "rhsusf_usmc_marpat_wd_stinger"],
-	["militia_machinegunner", "rhsusf_usmc_marpat_wd_machinegunner"],
-	["militia_marksman", "rhsusf_usmc_marpat_wd_marksman"],
-	["militia_sniper", "rhsusf_usmc_marpat_wd_sniper_M107"],
+	["militia_squadleader", "UK3CB_BAF_FT_Arctic"],
+	["militia_rifleman", "UK3CB_BAF_Rifleman_Arctic"],
+	["militia_radioman", "UK3CB_BAF_RO_Arctic"],
+	["militia_medic", "UK3CB_BAF_Medic_Arctic"],
+	["militia_engineer", "UK3CB_BAF_Engineer_Arctic"],
+	["militia_explosivesexpert", "UK3CB_BAF_Explosive_Arctic"],
+	["militia_grenadier", "UK3CB_BAF_Grenadier_Arctic"],
+	["militia_lat", "UK3CB_BAF_LAT_ILAW_Arctic"],
+	["militia_at", "UK3CB_BAF_LAT_ILAW_Arctic"],
+	["militia_aa", "UK3CB_BAF_MAT_Arctic"],
+	["militia_machinegunner", "UK3CB_BAF_MGLMG_Arctic"],
+	["militia_marksman", "UK3CB_BAF_Sharpshooter_Arctic"],
+	["militia_sniper", "UK3CB_BAF_Marksman_Arctic"],
 
-	["military_squadleader", "rhsusf_army_ocp_squadleader"],
-	["military_rifleman", "rhsusf_army_ocp_rifleman"],
-	["military_radioman", "rhsusf_army_ocp_rifleman"],
-	["military_medic", "rhsusf_army_ocp_medic"],
-	["military_engineer", "rhsusf_army_ocp_engineer"],
-	["military_explosivesexpert", "rhsusf_army_ocp_explosives"],
-	["military_grenadier", "rhsusf_army_ocp_grenadier"],
-	["military_lat", "rhsusf_army_ocp_riflemanat"],
-	["military_at", "rhsusf_army_ocp_maaws"],
-	["military_aa", "rhsusf_army_ocp_aa"],
-	["military_machinegunner", "rhsusf_army_ocp_machinegunner"],
-	["military_marksman", "rhsusf_army_ocp_marksman"],
-	["military_sniper", "rhsusf_army_ucp_sniper"],
+	["military_squadleader", "UK3CB_BAF_FT_Arctic"],
+	["military_rifleman", "UK3CB_BAF_Rifleman_Arctic"],
+	["military_radioman", "UK3CB_BAF_RO_Arctic"],
+	["military_medic", "UK3CB_BAF_Medic_Arctic"],
+	["military_engineer", "UK3CB_BAF_Engineer_Arctic"],
+	["military_explosivesexpert", "UK3CB_BAF_Explosive_Arctic"],
+	["military_grenadier", "UK3CB_BAF_Grenadier_Arctic"],
+	["military_lat", "UK3CB_BAF_LAT_ILAW_Arctic"],
+	["military_at", "UK3CB_BAF_LAT_Arctic"],
+	["military_aa", "UK3CB_BAF_MAT_Arctic"],
+	["military_machinegunner", "UK3CB_BAF_MGGPMG_Arctic"],
+	["military_marksman", "UK3CB_BAF_Marksman_Arctic"],
+	["military_sniper", "UK3CB_BAF_Marksman_Arctic"],
 
-	["elite_squadleader", "rhsusf_army_ocp_squadleader"],
-	["elite_rifleman", "rhsusf_army_ocp_rifleman"],
-	["elite_radioman", "rhsusf_army_ocp_rifleman"],
-	["elite_medic", "rhsusf_army_ocp_medic"],
-	["elite_engineer", "rhsusf_army_ocp_engineer"],
-	["elite_explosivesexpert", "rhsusf_army_ocp_explosives"],
-	["elite_grenadier", "rhsusf_army_ocp_grenadier"],
-	["elite_lat", "rhsusf_army_ocp_riflemanat"],
-	["elite_at", "rhsusf_army_ocp_maaws"],
-	["elite_aa", "rhsusf_army_ocp_aa"],
-	["elite_machinegunner", "rhsusf_army_ocp_machinegunner"],
-	["elite_marksman", "rhsusf_army_ocp_marksman"],
-	["elite_sniper", "rhsusf_army_ucp_sniper"],
+	["elite_squadleader", "UK3CB_BAF_FT_Arctic"],
+	["elite_rifleman", "UK3CB_BAF_Rifleman_Arctic"],
+	["elite_radioman", "UK3CB_BAF_RO_Arctic"],
+	["elite_medic", "UK3CB_BAF_Medic_Arctic"],
+	["elite_engineer", "UK3CB_BAF_Engineer_Arctic"],
+	["elite_explosivesexpert", "UK3CB_BAF_Explosive_Arctic"],
+	["elite_grenadier", "UK3CB_BAF_Grenadier_Arctic"],
+	["elite_lat", "UK3CB_BAF_LAT_Arctic"],
+	["elite_at", "UK3CB_BAF_MAT_Arctic"],
+	["elite_aa", "UK3CB_BAF_MAT_Arctic"],
+	["elite_machinegunner", "UK3CB_BAF_MGGPMG_Arctic"],
+	["elite_marksman", "UK3CB_BAF_Marksman_Arctic_REC"],
+	["elite_sniper", "UK3CB_BAF_Sniper_Arctic_Ghillie_L115"],
 
-	["sf_squadleader", "rhsusf_socom_marsoc_teamleader"],
-	["sf_rifleman", "rhsusf_socom_marsoc_cso"],
-	["sf_radioman", "rhsusf_socom_marsoc_cso"],
-	["sf_medic", "rhsusf_socom_marsoc_sarc"],
-	["sf_engineer", "rhsusf_socom_marsoc_cso_mechanic"],
-	["sf_explosivesexpert", "rhsusf_army_ocp_explosives"],
-	["sf_grenadier", "rhsusf_socom_marsoc_cso_grenadier"],
-	["sf_lat", "rhsusf_army_ocp_maaws"],
-	["sf_at", "rhsusf_army_ocp_maaws"],
-	["sf_aa", "rhsusf_army_ocp_aa"],
-	["sf_machinegunner", "rhsusf_army_ocp_machinegunner"],
-	["sf_marksman", "rhsusf_army_ocp_marksman"],
-	["sf_sniper", "rhsusf_army_ucp_sniper"],
+	["sf_squadleader", "UK3CB_BAF_SC_Arctic_REC"],
+	["sf_rifleman", "UK3CB_BAF_Pointman_Arctic_REC"],
+	["sf_radioman", "UK3CB_BAF_Pointman_Arctic_REC"],
+	["sf_medic", "UK3CB_BAF_Medic_Arctic_REC"],
+	["sf_engineer", "UK3CB_BAF_Explosive_Arctic_REC"],
+	["sf_explosivesexpert", "UK3CB_BAF_Explosive_Arctic_REC"],
+	["sf_grenadier", "UK3CB_BAF_FAC_Arctic_REC"],
+	["sf_lat", "UK3CB_BAF_MAT_Arctic"],
+	["sf_at", "UK3CB_BAF_MAT_Arctic"],
+	["sf_aa", "UK3CB_BAF_MAT_Arctic"],
+	["sf_machinegunner", "UK3CB_BAF_MGLMG_Arctic_REC"],
+	["sf_marksman", "UK3CB_BAF_Spotter_Arctic_Ghillie_L129"],
+	["sf_sniper", "UK3CB_BAF_Sniper_Arctic_Ghillie_L135"],
 
-	["other_crew", "rhsusf_army_ucp_crewman"],
+	["other_crew", "UK3CB_BAF_Crewman_RTR_Arctic"],
 	["other_unarmed", "B_Survivor_F"],
-	["other_official", "rhsusf_army_ucp_officer"],
+	["other_official", "UK3CB_BAF_Officer_Arctic"],
 	["other_traitor", "B_G_Soldier_F"],
-	["other_pilot", "rhsusf_army_ucp_helipilot"],
+	["other_pilot", "UK3CB_BAF_HeliPilot_Army_Arctic"],
 	["police_squadleader", "B_G_Soldier_F"],
 	["police_standard", "B_G_Soldier_F"]
 ]] call _fnc_saveToTemplate;
@@ -88,12 +88,12 @@
 
 ["vehiclesBasic", ["B_Quadbike_01_F"]] call _fnc_saveToTemplate; 			//this line determines basic vehicles, the lightest kind available. -- Example: ["vehiclesBasic", ["B_Quadbike_01_F"]] -- Array, can contain multiple assets
 ["vehiclesLightUnarmed", ["UK3CB_BAF_LandRover_Hard_Arctic_A", "UK3CB_BAF_LandRover_Snatch_FFR_Green_A_DPMT", "UK3CB_BAF_LandRover_Soft_Arctic_A"]] call _fnc_saveToTemplate; 		//this line determines light and unarmed vehicles. -- Example: ["vehiclesLightUnarmed", ["B_MRAP_01_F"]] -- Array, can contain multiple assets
-["vehiclesLightArmed", ["UK3CB_BAF_Husky_Passenger_GMG_Green_DPMT", "UK3CB_BAF_Husky_Passenger_GPMG_Green_DPMT", "UK3CB_BAF_Husky_Passenger_HMG_Green_DPMT", "UK3CB_BAF_LandRover_WMIK_GMG_FFR_Green_B_DPMT", "UK3CB_BAF_LandRover_WMIK_GPMG_FFR_Green_B_DPMT", "UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_B_DPMT", "UK3CB_BAF_LandRover_WMIK_Milan_FFR_Green_B_DPMT", "UK3CB_BAF_Panther_GPMG_Green_A_DPMT"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed", ["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
-["vehiclesTrucks", ["UK3CB_BAF_MAN_HX60_Transport_Green_DPMT", "UK3CB_BAF_MAN_HX58_Transport_Green_DPMT"]] call _fnc_saveToTemplate; 			//this line determines the trucks -- Example: ["vehiclesTrucks", ["B_Truck_01_transport_F", "B_Truck_01_covered_F"]] -- Array, can contain multiple assets
-["vehiclesCargoTrucks", ["UK3CB_BAF_MAN_HX60_Cargo_Green_A_DPMT", "UK3CB_BAF_MAN_HX58_Cargo_Green_A_DPMT"]] call _fnc_saveToTemplate; 		//this line determines cargo trucks -- Example: ["vehiclesCargoTrucks", ["B_Truck_01_transport_F", "B_Truck_01_covered_F"]] -- Array, can contain multiple assets
+["vehiclesLightArmed", ["UK3CB_BAF_Husky_Passenger_GMG_Green_Arctic", "UK3CB_BAF_Husky_Passenger_GPMG_Green_Arctic", "UK3CB_BAF_Husky_Passenger_HMG_Green_Arctic", "UK3CB_BAF_LandRover_WMIK_GMG_FFR_Green_B_DPMT", "UK3CB_BAF_LandRover_WMIK_GPMG_FFR_Green_B_DPMT", "UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_B_DPMT", "UK3CB_BAF_LandRover_WMIK_Milan_FFR_Green_B_DPMT", "UK3CB_BAF_Panther_GPMG_Green_A_Arctic"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed", ["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
+["vehiclesTrucks", ["UK3CB_BAF_MAN_HX60_Transport_Green_Arctic", "UK3CB_BAF_MAN_HX58_Transport_Green_Arctic"]] call _fnc_saveToTemplate; 			//this line determines the trucks -- Example: ["vehiclesTrucks", ["B_Truck_01_transport_F", "B_Truck_01_covered_F"]] -- Array, can contain multiple assets
+["vehiclesCargoTrucks", ["UK3CB_BAF_MAN_HX60_Cargo_Green_A_Arctic", "UK3CB_BAF_MAN_HX58_Cargo_Green_A_Arctic"]] call _fnc_saveToTemplate; 		//this line determines cargo trucks -- Example: ["vehiclesCargoTrucks", ["B_Truck_01_transport_F", "B_Truck_01_covered_F"]] -- Array, can contain multiple assets
 ["vehiclesAmmoTrucks", ["rhsusf_M977A4_AMMO_usarmy_wd", "rhsusf_M977A4_AMMO_BKIT_usarmy_wd", "rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd"]] call _fnc_saveToTemplate; 		//this line determines ammo trucks -- Example: ["vehiclesAmmoTrucks", ["B_Truck_01_ammo_F"]] -- Array, can contain multiple assets
-["vehiclesRepairTrucks", ["UK3CB_BAF_MAN_HX60_Repair_Green_DPMT", "UK3CB_BAF_MAN_HX58_Repair_Green_DPMT"]] call _fnc_saveToTemplate; 		//this line determines repair trucks -- Example: ["vehiclesRepairTrucks", ["B_Truck_01_Repair_F"]] -- Array, can contain multiple assets
-["vehiclesFuelTrucks", ["UK3CB_BAF_MAN_HX60_Fuel_Green_DPMT", "UK3CB_BAF_MAN_HX58_Fuel_Green_DPMT"]] call _fnc_saveToTemplate;		//this line determines fuel trucks -- Array, can contain multiple assets
+["vehiclesRepairTrucks", ["UK3CB_BAF_MAN_HX60_Repair_Green_Arctic", "UK3CB_BAF_MAN_HX58_Repair_Green_Arctic"]] call _fnc_saveToTemplate; 		//this line determines repair trucks -- Example: ["vehiclesRepairTrucks", ["B_Truck_01_Repair_F"]] -- Array, can contain multiple assets
+["vehiclesFuelTrucks", ["UK3CB_BAF_MAN_HX60_Fuel_Green_Arctic", "UK3CB_BAF_MAN_HX58_Fuel_Green_DPMT"]] call _fnc_saveToTemplate;		//this line determines fuel trucks -- Array, can contain multiple assets
 ["vehiclesMedical", ["UK3CB_BAF_LandRover_Amb_FFR_Green_A_DPMT"]] call _fnc_saveToTemplate;			//this line determines medical vehicles -- Array, can contain multiple assets
 ["vehiclesAPCs", ["UK3CB_BAF_FV432_Mk3_GPMG_Green_DPMT", "UK3CB_BAF_FV432_Mk3_RWS_Green_DPMT", "UK3CB_BAF_Warrior_A3_W_MTP", "UK3CB_BAF_Warrior_A3_W_Cage_MTP", "UK3CB_BAF_Warrior_A3_W_Cage_Camo_MTP", "UK3CB_BAF_Warrior_A3_W_Camo_MTP"]] call _fnc_saveToTemplate; 				//this line determines APCs -- Example: ["vehiclesAPCs", ["B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_CRV_F"]] -- Array, can contain multiple assets
 ["vehiclesTanks", ["rhsusf_m1a1aimwd_usarmy", "rhsusf_m1a1aim_tuski_wd", "rhsusf_m1a2sep1wd_usarmy", "rhsusf_m1a2sep1tuskiwd_usarmy", "rhsusf_m1a2sep1tuskiiwd_usarmy", "rhsusf_m1a1fep_wd"]] call _fnc_saveToTemplate; 			//this line determines tanks -- Example: ["vehiclesTanks", ["B_MBT_01_cannon_F", "B_MBT_01_TUSK_F"]] -- Array, can contain multiple assets
