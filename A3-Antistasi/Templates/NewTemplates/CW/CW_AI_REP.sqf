@@ -260,25 +260,25 @@ _sfLoadoutData setVariable ["helmets", ["SWLB_clone_commando_helmet_k1"]];				//
 _sfLoadoutData setVariable ["binoculars", ["SWLB_clone_commander_binocular"]];
 
 _sfLoadoutData setVariable ["rifles", [
-["SWLW_DC17M", "", "", "", ["SWLW_DC17M_Blaster_Mag"], [], ""]
+["SWLW_DC17M", "swlw_attachment_dc17m_blaster", "", "", ["SWLW_DC17M_Blaster_Mag"], [], ""]
 ]];
 _sfLoadoutData setVariable ["carbines", [
-["SWLW_DC17M", "", "", "", ["SWLW_DC17M_Blaster_Mag"], [], ""]
+["SWLW_DC17M", "swlw_attachment_dc17m_blaster", "", "", ["SWLW_DC17M_Blaster_Mag"], [], ""]
 ]];
 _sfLoadoutData setVariable ["grenadeLaunchers", [
-["SWLW_DC17M", "", "", "", ["SWLW_DC17M_Blaster_Mag"], ["SWLW_DC17M_AT_Mag"], ""]
+["SWLW_DC17M", "swlw_attachment_dc17m_at", "", "", ["SWLW_DC17M_Blaster_Mag"], ["SWLW_DC17M_AT_Mag"], ""]
 ]];
 _sfLoadoutData setVariable ["SMGs", [
-["SWLW_DC17M", "", "", "", ["SWLW_DC17M_Blaster_Mag"], [], ""]
+["SWLW_DC17M", "swlw_attachment_dc17m_blaster", "", "", ["SWLW_DC17M_Blaster_Mag"], [], ""]
 ]];
 _sfLoadoutData setVariable ["machineGuns", [
 ["SWLW_Z6", "", "", "", ["SWLW_Z6_mag"], [], ""]
 ]];
 _sfLoadoutData setVariable ["marksmanRifles", [
-["SWLW_DC17M", "", "", "swlw_attachment_scope_dc17m_sniper", ["SWLW_DC17M_Sniper_Mag"], [], ""]
+["SWLW_DC17M", "swlw_attachment_dc17m_sniper", "", "swlw_attachment_scope_dc17m_sniper", ["SWLW_DC17M_Sniper_Mag"], [], ""]
 ]];
 _sfLoadoutData setVariable ["sniperRifles", [
-["SWLW_DC17M", "", "", "swlw_attachment_scope_dc17m_sniper", ["SWLW_DC17M_Sniper_Mag"], [], ""]
+["SWLW_DC17M", "swlw_attachment_dc17m_sniper", "", "swlw_attachment_scope_dc17m_sniper", ["SWLW_DC17M_Sniper_Mag"], [], ""]
 ]];
 _sfLoadoutData setVariable ["sidearms", [
 ["SWLW_DC15SA", "", "", "", ["SWLW_DC15SA_Mag"], [], ""]
