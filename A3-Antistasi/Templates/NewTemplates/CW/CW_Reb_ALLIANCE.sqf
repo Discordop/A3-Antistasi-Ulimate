@@ -76,9 +76,9 @@ private _initialRebelEquipment = [
 "JMSLLTE_CommandoBelt_armor","JMSLLTE_ComStrap_armor","JMSLLTE_CommandosVest2_armor","JMSLLTE_PathfinderBelt_armor","JMSLLTE_PathfinderVest_armor",
 "JMSLLTE_Path_1_black_cap","JMSLLTE_Path_1_white_cap","JMSLLTE_Path_1_brown_cap",
 "Binocular","ItemCompass","ItemWatch"];
-if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","SWLB_comlink_hush98"]};
+if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","SWLB_comlink_hush98","tf_anprc154"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment pushBack "ls_mandalorian_tro_backpack"};
-if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","JLTS_clone_comlink"]};
+if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","JLTS_clone_comlink","TFAR_anprc154"]};
 if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment pushBack "JLTS_Clone_ARC_backpack"};
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
