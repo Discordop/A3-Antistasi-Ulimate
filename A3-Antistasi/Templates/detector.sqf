@@ -72,12 +72,6 @@ if (isClass (configFile >> "CfgFactionClasses" >> "JLTS_CIS") && isClass (config
   //[2,"JMs Empire Detected.",_fileName] call A3A_fnc_log;
 //};
 
-//3CB BAF Detection
-if (A3A_hasRHS && ( isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Weapons") && isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Vehicles") && isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Units_Common") && isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Equipment"))) then {
-  A3A_has3CBBAF = true; 
-  [2,"3CB BAF Detected.",_fileName] call A3A_fnc_log;
-};
-
 //PLA Detection
 if (isClass (configFile >> "CfgPatches" >> "mas_chi_army") && isClass (configfile >> "CfgPatches" >> "ZBD04_LK")) then {
   A3A_hasPLA = true;
@@ -266,6 +260,12 @@ if((_activeAfrf || _activeUsaf || _activeGref || _activeSaf) && (_activeCupUnits
   systemChat _text;
   [1, _text, _fileName] call A3A_fnc_log;
 	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
+};
+
+//3CB BAF Detection
+if (A3A_hasRHS && ( isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Weapons") && isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Vehicles") && isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Units_Common") && isClass (configfile >> "CfgPatches" >> "UK3CB_BAF_Equipment"))) then {
+  A3A_has3CBBAF = true; 
+  [2,"3CB BAF Detected.",_fileName] call A3A_fnc_log;
 };
 
 if (A3A_hasAceMedical && isClass (configFile >> "CfgPatches" >> "LIB_core")) then {
