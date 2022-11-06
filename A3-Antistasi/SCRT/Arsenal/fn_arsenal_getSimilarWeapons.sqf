@@ -41,7 +41,13 @@ private _blacklistedClasses = [
 	"uns_Shotgun",
 	"uns_Rifle_boltaction_base",
 	"uns_Rifle_boltaction_clip_base",
-	"Uns_Pistol"
+	"Uns_Pistol",
+	"LIB_LMG",
+	"LIB_RIFLE",
+	"LIB_LAUNCHER",
+	"LIB_SRIFLE",
+	"LIB_PISTOL",
+	"LIB_SMG"
 ];
 
 private _possibleClassesMap = createHashMap;
