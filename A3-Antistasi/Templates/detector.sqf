@@ -275,13 +275,6 @@ if (A3A_hasAceMedical && isClass (configFile >> "CfgPatches" >> "LIB_core")) the
 	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
 };
 
-if (!A3A_hasAceMedical && A3A_hasCW) then {
-	private _text = "Clone Wars modset loaded but Ace is missing, please load Ace";
-  systemChat _text;
-  [1, _text, _fileName] call A3A_fnc_log;
-	["modUnautorized",false,1,false,false] call BIS_fnc_endMission;
-};
-
 if (!A3A_hasCup && A3A_hasSwe) then {
 	private _text = "Swedish Forces Pack detected but CUP is not loaded";
   systemChat _text;
