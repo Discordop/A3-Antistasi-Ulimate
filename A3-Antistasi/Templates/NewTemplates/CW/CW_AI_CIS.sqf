@@ -227,18 +227,34 @@ _loadoutData setVariable ["items_medical_medic", ["MEDIC"] call A3A_fnc_itemset_
 _loadoutData setVariable ["items_miscEssentials", [] call A3A_fnc_itemset_miscEssentials];
 
 
-_loadoutData setVariable ["items_squadleader_extras", ["ACE_microDAGR", "ACE_DAGR", "Laserbatteries", "Laserbatteries", "Laserbatteries"]];
+if (A3A_hasACE) then {
+	_loadoutData setVariable ["items_squadleader_extras", ["ACE_microDAGR", "ACE_DAGR", "Laserbatteries", "Laserbatteries", "Laserbatteries"]];
+} else {
+	_loadoutData setVariable ["items_squadleader_extras", ["Laserbatteries", "Laserbatteries", "Laserbatteries"]];
+};
 _loadoutData setVariable ["items_rifleman_extras", ["CW_DroidParts"]];
 _loadoutData setVariable ["items_medic_extras", ["CW_DroidParts"]];
 _loadoutData setVariable ["items_grenadier_extras", ["CW_DroidParts"]];
-_loadoutData setVariable ["items_explosivesExpert_extras", ["CW_DroidParts", "Toolkit", "MineDetector", "ACE_Clacker","ACE_DefusalKit"]];
+if (A3A_hasACE) then {
+	_loadoutData setVariable ["items_explosivesExpert_extras", ["CW_DroidParts", "Toolkit", "MineDetector", "ACE_Clacker","ACE_DefusalKit"]];
+} else {
+	_loadoutData setVariable ["items_explosivesExpert_extras", ["CW_DroidParts", "Toolkit", "MineDetector"]];
+};
 _loadoutData setVariable ["items_engineer_extras", ["CW_DroidParts", "Toolkit", "MineDetector"]];
 _loadoutData setVariable ["items_lat_extras", ["CW_DroidParts"]];
 _loadoutData setVariable ["items_at_extras", ["CW_DroidParts"]];
 _loadoutData setVariable ["items_aa_extras", ["CW_DroidParts"]];
 _loadoutData setVariable ["items_machineGunner_extras", ["CW_DroidParts"]];
-_loadoutData setVariable ["items_marksman_extras", ["CW_DroidParts", "ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"]];
-_loadoutData setVariable ["items_sniper_extras", ["CW_DroidParts", "ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"]];
+if (A3A_hasACE) then {
+	_loadoutData setVariable ["items_marksman_extras", ["CW_DroidParts", "ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"]];
+} else {
+	_loadoutData setVariable ["items_marksman_extras", ["CW_DroidParts"]];
+};
+if (A3A_hasACE) then {
+	_loadoutData setVariable ["items_sniper_extras", ["CW_DroidParts", "ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"]];
+} else {
+	_loadoutData setVariable ["items_sniper_extras", ["CW_DroidParts"]];
+};
 _loadoutData setVariable ["items_police_extras", ["CW_DroidParts"]];
 _loadoutData setVariable ["items_crew_extras", ["CW_DroidParts"]];
 _loadoutData setVariable ["items_unarmed_extras", ["CW_DroidParts"]];
