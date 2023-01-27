@@ -157,15 +157,15 @@ A3A_Reb_template = switch(true) do {
 A3A_Occ_template = switch(true) do {
     case (A3A_has3CBBAF): {
         switch(true) do {
-            case (toLower worldName in wintermaps): {
+            case (toLower worldName in winterMaps): {
                 ["Templates\NewTemplates\3CBF\3CBBAF_AI_BAF_Arctic.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using arctic BAF Template", _filename] call A3A_fnc_log;
             };
-            case (toLower worldName in temperatemaps): {
+            case (toLower worldName in temperateMaps): {
                 ["Templates\NewTemplates\3CBF\3CBBAF_AI_BAF_Temperate.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using temperate BAF Template", _filename] call A3A_fnc_log;
             };
-            case (toLower worldName in tropicalmaps): {
+            case (toLower worldName in tropicalMaps): {
                 ["Templates\NewTemplates\3CBF\3CBBAF_AI_BAF_Tropical.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using tropical BAF Template", _filename] call A3A_fnc_log;
             };
