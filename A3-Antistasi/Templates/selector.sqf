@@ -157,7 +157,7 @@ A3A_Reb_template = switch(true) do {
 A3A_Occ_template = switch(true) do {
     case (A3A_has3CBBAF): {
         switch(true) do {
-            case (toLower worldName in arcticmaps): {
+            case (toLower worldName in wintermaps): {
                 ["Templates\NewTemplates\3CBF\3CBBAF_AI_BAF_Arctic.sqf", west] call A3A_fnc_compatibilityLoadFaction;
                 [2, "Using arctic BAF Template", _filename] call A3A_fnc_log;
             };
