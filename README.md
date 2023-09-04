@@ -1,7 +1,9 @@
 <div align="center">
-  <h1>Antistasi Ultimate</h1>
+  <h1>OLD Antistasi Ultimate (Please use the newer mod version)</h1>
   <p>
         Antistasi Ultimate is a fork version of the Antistasi Plus mission by Socrates, who forked from the Official Antistasi Community, who forked from Barbolani.
+
+        https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate - NEWER VERSION
   </p>
 </div>
 
