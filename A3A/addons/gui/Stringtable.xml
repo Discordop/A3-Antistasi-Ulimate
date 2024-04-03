@@ -3244,36 +3244,42 @@
                 <Russian>Создать новую игру с </Russian>
                 <Chinesesimp>创建新游戏</Chinesesimp>
                 <Korean>새 게임 만들기: </Korean>
+                <French>Créer une nouvelle partie avec</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_setup_confirm_delete">
                 <Original>Are you sure that you want to delete the game with ID %1 on %2?</Original>
                 <Russian>Вы действительно хотите удалить игру с ID %1 на %2?</Russian>
                 <Chinesesimp>您确定要删除 %2 上 ID 为 %1 的游戏吗？</Chinesesimp>
                 <Korean>정말 %2에서 ID가 %1인 게임을 삭제하시겠습니까?</Korean>
+                <French>Êtes-vous sûr de vouloir supprimer la partie avec l'ID %1 sur %2 ?</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_setup_confirm_start_copy">
                 <Original>Copy game with ID %1, </Original>
                 <Russian>Копировать игру с ID %1, </Russian>
                 <Chinesesimp>复制 ID 为 %1 的游戏，</Chinesesimp>
                 <Korean>ID가 %1인 게임 복사, </Korean>
+                <French>Copier la partie avec l'ID %1, </French>
             </Key>
             <Key ID="STR_antistasi_dialogs_setup_confirm_start_load">
                 <Original>Load game with ID %1, </Original>
                 <Russian>Загрузить игру с ID %1, </Russian>
                 <Chinesesimp>加载 ID 为 %1 的游戏，</Chinesesimp>
                 <Korean>ID가 %1인 게임 불러오기, </Korean>
+                <French>Charger la partie avec l'ID %1, </French>
             </Key>
             <Key ID="STR_antistasi_dialogs_setup_confirm_occ_inv">
                 <Original>%1 occupants and %2 invaders?</Original>
                 <Russian>%1 оккупантами и %2 захватчиками?</Russian>
                 <Chinesesimp>%1 防守方和 %2 入侵者？</Chinesesimp>
                 <Korean>%1이(가) 점령군이고 %2이(가) 침략군입니까?</Korean>
+                <French>%1 occupants et %2 envahisseurs ?</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_setup_confirm_game_name">
                 <Original>name "%1", </Original>
                 <Russian>названием "%1", </Russian>
                 <Chinesesimp>名称“%1”，</Chinesesimp>
                 <Korean>"%1"(으)로 명명, </Korean>
+                <French>nom "%1", </French>
             </Key>
         </Container>
         <Container name="setup_dialog_table">
@@ -3283,6 +3289,7 @@
                 <Russian>Карта</Russian>
                 <Chinesesimp>地图</Chinesesimp>
                 <Korean>지도</Korean>
+                <French>Carte</French>
             </Key>
             <Key ID="STR_antistasi_setup_dialog_table_name">
                 <Original>Name</Original>
@@ -3290,6 +3297,7 @@
                 <Russian>Название</Russian>
                 <Chinesesimp>名字</Chinesesimp>
                 <Korean>이름</Korean>
+                <French>Nom</French>
             </Key>
             <Key ID="STR_antistasi_setup_dialog_table_version">
                 <Original>Version</Original>
@@ -3297,6 +3305,7 @@
                 <Russian>Версия</Russian>
                 <Chinesesimp>载具</Chinesesimp>
                 <Korean>버전</Korean>
+                <French>Version</French>
             </Key>
             <Key ID="STR_antistasi_setup_dialog_table_time">
                 <Original>Time</Original>
@@ -3304,6 +3313,7 @@
                 <Russian>Время</Russian>
                 <Chinesesimp>时间</Chinesesimp>
                 <Korean>시간</Korean>
+                <French>Temps</French>
             </Key>
             <Key ID="STR_antistasi_setup_dialog_table_file">
                 <Original>File</Original>
@@ -3311,6 +3321,7 @@
                 <Russian>Файл</Russian>
                 <Chinesesimp>文件</Chinesesimp>
                 <Korean>파일</Korean>
+                <French>Fichier</French>
             </Key>
         </Container>
         <Container name="hqpos_dialog">
